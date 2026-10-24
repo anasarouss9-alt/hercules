@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dd1d21">
+  <meta name="description" content="CITY PROM / Station Shell HERCULES à Tanger : carburants Shell V-Power & FuelSave, boutique, sanitaires, air/eau, lubrifiants et restaurant Relais de l’Aéroport.">
+  <title>CITY PROM Shell HERCULES Tanger | Relais de l’Aéroport</title>
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            shell: {
+              red: '#dd1d21',
+              redDark: '#ad0b0f',
+              yellow: '#ffd500',
+              yellowDark: '#e6c000',
+              bgLight: '#f8f9fa',
+              cardDark: '#1a1d21',
+              ink: '#0f172a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Shell Brand Utility Styling */
+    .shell-gradient-bg {
+      background: radial-gradient(circle at 85% 15%, rgba(255, 213, 0, 0.15), transparent 45%),
+                  linear-gradient(135deg, #ffffff 0%, #fdfbf7 50%, #fff8e1 100%);
+    }
+    .shell-card-hover {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .shell-card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(221, 29, 33, 0.12);
+    }
+    /* Smooth Scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-slate-950 text-white text-xs md:text-sm py-2.5 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <!-- Official Shell Pecten SVG -->
+        <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-5 h-5 flex-shrink-0 object-contain">
+        <span class="font-medium">
+          <strong class="text-shell-yellow font-bold">CITY PROM · Shell HERCULES</strong> · Boukhalef, Tanger
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-xs text-slate-300">
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Service 24h/24 & 7j/7</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:inline">Relais de l’Aéroport</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#accueil" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/80 border border-amber-300/60 p-2 shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform">
+            <!-- Shell Pecten SVG -->
+            <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-black text-xl tracking-tight text-slate-900 group-hover:text-shell-red transition-colors">CITY PROM</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Shell HERCULES Tanger</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <a href="#restaurant" class="hover:text-shell-red transition-colors">Restaurant</a>
+          <a href="#boutique" class="hover:text-shell-red transition-colors">Boutique</a>
+          <a href="#services" class="hover:text-shell-red transition-colors">Services</a>
+          <a href="#localisation" class="hover:text-shell-red transition-colors">Localisation</a>
+        </nav>
+
+        <!-- Right Controls & Language Switcher -->
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <select id="langSelect" aria-label="Langue / Language" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-lg px-2.5 py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-shell-red">
+              <option value="fr">FR 🇫🇷</option>
+              <option value="ar">العربية 🇲🇦</option>
+              <option value="en">EN 🇬🇧</option>
+            </select>
+          </div>
+
+          <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-shell-red hover:bg-shell-redDark text-white text-xs md:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition-all hover:shadow-md">
+            <span>Itinéraire</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" aria-expanded="false" class="md:hidden p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobileMenu" class="hidden md:hidden py-4 border-t border-slate-100 space-y-3">
+        <a href="#restaurant" class="block px-3 py-2 rounded-md text-base font-semibold text-slate-700 hover:bg-slate-100">Restaurant</a>
+        <a href="#boutique" class="block px-3 py-2 rounded-md text-base font-semibold text-slate-700 hover:bg-slate-100">Boutique</a>
+        <a href="#services" class="block px-3 py-2 rounded-md text-base font-semibold text-slate-700 hover:bg-slate-100">Services</a>
+        <a href="#localisation" class="block px-3 py-2 rounded-md text-base font-semibold text-slate-700 hover:bg-slate-100">Localisation</a>
+        <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="block text-center bg-shell-red text-white font-bold py-2.5 rounded-xl">Ouvrir sur Google Maps ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- Shell Official Ribbon Notice -->
+    <div class="bg-amber-100 border-y border-amber-300/80 py-2.5 text-center text-xs md:text-sm font-bold text-amber-950 flex items-center justify-center gap-2 px-4">
+      <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-4 h-4  flex-shrink-0 object-contain">
+      <span data-i18n="ribbonText">Station-service officielle Shell HERCULES · Tanger Boukhalef</span>
+      <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="underline hover:text-shell-red text-xs">Fiche Shell ↗</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="shell-gradient-bg py-12 md:py-20 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/80 border border-red-200 text-shell-redDark font-extrabold text-xs uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-shell-red"></span>
+              <span data-i18n="heroBadge">CITY PROM · Shell HERCULES Tanger</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+              CITY PROM.<br>
+              <span class="text-shell-red">Votre étape idéale à Tanger.</span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed" data-i18n="heroDesc">
+              Faites le plein avec les carburants de qualité Shell V-Power & FuelSave, profitez d'une pause au restaurant Relais de l’Aéroport, découvrez notre boutique et bénéficiez de nos services de vidange et gonflage.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#restaurant" class="bg-shell-red hover:bg-shell-redDark text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                <span data-i18n="btnRestaurant">Restaurant & Café</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </a>
+              <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-bold text-sm px-6 py-3.5 rounded-xl shadow-sm hover:shadow transition-all flex items-center gap-2">
+                <svg class="w-4 h-4 text-shell-red" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="btnMap">Voir sur Google Maps</span>
+              </a>
+            </div>
+
+            <!-- Key Quick Facts -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-xl mx-auto lg:mx-0">
+              <div class="bg-white/80 backdrop-blur p-3 rounded-xl border border-slate-200 text-center lg:text-left">
+                <div class="text-xs font-bold text-slate-500 uppercase" data-i18n="stat1Title">Ouverture</div>
+                <div class="text-sm font-black text-slate-900" data-i18n="stat1Value">24h / 24 - 7j / 7</div>
+              </div>
+              <div class="bg-white/80 backdrop-blur p-3 rounded-xl border border-slate-200 text-center lg:text-left">
+                <div class="text-xs font-bold text-slate-500 uppercase" data-i18n="stat2Title">Carburants</div>
+                <div class="text-sm font-black text-slate-900" data-i18n="stat2Value">Shell V-Power</div>
+              </div>
+              <div class="col-span-2 sm:col-span-1 bg-white/80 backdrop-blur p-3 rounded-xl border border-slate-200 text-center lg:text-left">
+                <div class="text-xs font-bold text-slate-500 uppercase" data-i18n="stat3Title">Restauration</div>
+                <div class="text-sm font-black text-slate-900" data-i18n="stat3Value">Relais Aéroport</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Real Location & Maps Card -->
+          <div class="lg:col-span-5">
+            <div class="relative bg-slate-900 rounded-3xl p-3 shadow-2xl overflow-hidden border border-slate-800">
+              
+              <!-- Real Google Maps Live Location Preview Widget -->
+              <div class="relative w-full h-[360px] rounded-2xl overflow-hidden bg-slate-800">
+                <iframe 
+                  title="Carte Google Maps Shell Hercules Tanger"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.387994328509!2d-5.896235923588965!3d35.72540832734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b862b632d2d39%3A0x7e44ed7f53a42a87!2sStation%20service%20SHELL!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+                  class="w-full h-full border-0 filter opacity-90 hover:opacity-100 transition-opacity"
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <!-- Overlay Badge -->
+                <div class="absolute top-3 left-3 right-3 bg-slate-900/90 backdrop-blur-md p-3 rounded-xl border border-slate-700/80 flex items-center justify-between text-white shadow-lg">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center flex-shrink-0">
+                      <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
+                    </div>
+                    <div>
+                      <div class="text-xs font-black text-white">Station Shell HERCULES</div>
+                      <div class="text-[11px] text-slate-300">Route de Rabat, Boukhalef, Tanger</div>
+                    </div>
+                  </div>
+                  <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="bg-shell-red hover:bg-shell-redDark text-white p-2 rounded-lg transition-colors" title="Ouvrir dans Google Maps">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </div>
+
+                <!-- Bottom Photo Link Floating Button -->
+                <div class="absolute bottom-3 inset-x-3">
+                  <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900/95 hover:bg-slate-900 text-white font-bold text-xs py-2.5 px-4 rounded-xl border border-slate-700/80 flex items-center justify-between shadow-lg backdrop-blur-md transition-all">
+                    <span class="flex items-center gap-2">
+                      <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 002-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                      <span data-i18n="gmapsPhotoBtn">Consulter les photos réelles sur Google Maps</span>
+                    </span>
+                    <span class="text-amber-400 font-extrabold">Voir ↗</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATION PHOTO BAND -->
+    <section class="bg-slate-50 py-10 md:py-14 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <figure class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+          <img src="shell-station.png" alt="Shell station canopy under a blue sky" class="w-full h-64 sm:h-80 md:h-[420px] object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
+          <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <span class="text-shell-yellow text-xs font-black uppercase tracking-widest">Shell HERCULES · Tanger</span>
+              <h2 class="text-2xl md:text-4xl font-black text-white tracking-tight mt-1">Une station qui vous accueille 24h/24</h2>
+            </div>
+            <a href="#services" class="self-start sm:self-auto bg-shell-yellow hover:bg-shell-yellowDark text-slate-900 font-bold text-sm px-5 py-3 rounded-xl shadow-md transition-all">Nos services</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- RESTAURANT SECTION -->
+    <section id="restaurant" class="py-16 md:py-24 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="restKicker">Espace Restauration</span>
+          <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4 tracking-tight" data-i18n="restTitle">Relais de l’Aéroport</h2>
+          <p class="text-slate-600 text-base" data-i18n="restSub">Une pause gourmande et conviviale lors de vos déplacements à Tanger.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs uppercase tracking-wider">
+              <span>☕ Cafe & Restaurant</span>
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-black tracking-tight" data-i18n="restCardHeading">Menu & Restauration du Relais</h3>
+            
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="restCardDesc">
+              Profitez d’un espace moderne et confortable pour prendre un café, un petit-déjeuner ou un repas complet avant de reprendre la route.
+            </p>
+
+            <!-- Status Notice Box -->
+            <div class="bg-amber-500/10 border border-amber-500/40 rounded-2xl p-5 text-amber-200 space-y-2">
+              <div class="flex items-center gap-2 font-bold text-amber-400 text-sm">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span data-i18n="statusRestTitle">Menu bientôt disponible</span>
+              </div>
+              <p class="text-xs text-amber-200/90 leading-normal" data-i18n="statusRestBody">
+                L'établissement travaille actuellement à la finalisation et à la mise à jour complète de la carte du restaurant et des boissons. Les plats et tarifs seront ajoutés très prochainement.
+              </p>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-4 text-xs font-semibold text-slate-400">
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Cartes bancaires acceptées</span>
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Salle climatisée</span>
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Accès PMR</span>
+            </div>
+          </div>
+
+          <!-- Menu Sheet Preview Mock -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full max-w-sm bg-white text-slate-900 rounded-2xl p-6 shadow-2xl border-4 border-amber-400 transform lg:rotate-2">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-7 h-7 p-0.5">
+                    <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
+                  </div>
+                  <span class="font-black text-xs uppercase tracking-wider text-slate-800">Relais de l’Aéroport</span>
+                </div>
+                <span class="bg-red-100 text-shell-red font-bold text-[10px] px-2 py-0.5 rounded-md uppercase" data-i18n="badgeMenuPending">À venir</span>
+              </div>
+
+              <div class="space-y-3.5">
+                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-500">
+                  <span data-i18n="menuItem1">Petit-Déjeuner & Boissons Chaudes</span>
+                  <span class="text-slate-400" data-i18n="menuItemPending">À venir</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-500">
+                  <span data-i18n="menuItem2">Plats Chauds & Sandwichs</span>
+                  <span class="text-slate-400" data-i18n="menuItemPending">À venir</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-500">
+                  <span data-i18n="menuItem3">Jus Frais & Rafraîchissements</span>
+                  <span class="text-slate-400" data-i18n="menuItemPending">À venir</span>
+                </div>
+              </div>
+
+              <div class="mt-6 p-3 bg-slate-50 rounded-xl text-center border border-slate-200">
+                <span class="text-[11px] font-bold text-slate-500 block" data-i18n="menuNote">Catalogue et tarifs en cours de finalisation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SHOP SECTION -->
+    <section id="boutique" class="py-16 md:py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="shopKicker">Boutique Shell Select</span>
+          <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4 tracking-tight" data-i18n="shopTitle">Tout le nécessaire pour la route</h2>
+          <p class="text-slate-600 text-base" data-i18n="shopSub">Snacks, boissons fraîches, huiles Shell Helix et accessoires auto disponibles dans notre boutique.</p>
+        </div>
+
+        <!-- Shop Pending Notice -->
+        <div class="max-w-3xl mx-auto mb-10 bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center text-amber-900 text-xs md:text-sm shadow-sm">
+          <p class="font-bold flex items-center justify-center gap-2 text-amber-800">
+            <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span data-i18n="shopNoticeTitle">Catalogue boutique bientôt disponible</span>
+          </p>
+          <p class="text-amber-700/90 mt-1" data-i18n="shopNoticeBody">L'établissement travaille actuellement à la préparation de la liste complète des articles et produits en magasin.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Category 1 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-4">
+                🥤
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat1Title">Snacks & Rafraîchissements</h3>
+              <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat1Desc">Boissons fraîches, cafés, confiseries, biscuits et en-cas rapides.</p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
+              <span data-i18n="toBeAddedSoon">À venir très prochainement</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-red-100 text-shell-red flex items-center justify-center font-bold text-2xl mb-4">
+                🛢️
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat2Title">Huiles & Lubrifiants Shell</h3>
+              <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat2Desc">Gamme complète d'huiles moteurs Shell Helix, Advance et liquides d'entretien.</p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
+              <span data-i18n="toBeAddedSoon">À venir très prochainement</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-2xl mb-4">
+                🚗
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat3Title">Accessoires Voyage & Auto</h3>
+              <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat3Desc">Produits de lavage, essuie-glaces, chargeurs et essentiels de route.</p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
+              <span data-i18n="toBeAddedSoon">À venir très prochainement</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (OFFICIAL SHELL HERCULES DATA) -->
+    <section id="services" class="py-16 md:py-24 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="servicesKicker">Prestations sur place</span>
+          <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4 tracking-tight" data-i18n="servicesTitle">Services Shell HERCULES</h2>
+          <p class="text-slate-600 text-base" data-i18n="servicesSub">Découvrez les équipements et services disponibles dans notre station de Tanger Boukhalef.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Fuel -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-red-100 p-2 text-shell-red mb-4">
+              <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2" data-i18n="serv1Title">Carburants Shell</h3>
+            <p class="text-xs text-slate-500 leading-relaxed" data-i18n="serv1Desc">Shell V-Power Diesel, Shell FuelSave Sans Plomb et Shell FuelSave Diesel.</p>
+          </div>
+
+          <!-- Air & Water -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg mb-4">
+              💨
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2" data-i18n="serv2Title">Air & Eau / Gonflage</h3>
+            <p class="text-xs text-slate-500 leading-relaxed" data-i18n="serv2Desc">Borne de contrôle de pression des pneu et appoint d'eau gratuit.</p>
+          </div>
+
+          <!-- Lubricants & Oil Change -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg mb-4">
+              🛠️
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2" data-i18n="serv3Title">Vidange & Lubrifiants</h3>
+            <p class="text-xs text-slate-500 leading-relaxed" data-i18n="serv3Desc">Service de vidange express et conseils en huiles moteur Shell Helix.</p>
+          </div>
+
+          <!-- Sanitary & Shop -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">
+              🚻
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2" data-i18n="serv4Title">Toilettes & Confort</h3>
+            <p class="text-xs text-slate-500 leading-relaxed" data-i18n="serv4Desc">Sanitaires propres et entretenus accessibles 24h/24 aux clients.</p>
+          </div>
+
+        </div>
+
+        <!-- Additional Official Shell Station Features Bar -->
+        <div class="mt-8 bg-amber-50/80 border border-amber-200/80 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-amber-950">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-shell-red flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <span data-i18n="extraServTitle">Équipements répertoriés Shell HERCULES :</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-slate-700 font-medium">
+            <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200">💳 Cartes Carburant & Bancaires</span>
+            <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200">⛽ Service en Piste</span>
+            <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200">🚚 Accès Poids Lourds</span>
+            <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200">🎁 Programme My Shell</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION -->
+    <section id="localisation" class="py-16 md:py-24 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Location Info -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="text-amber-400 text-xs font-black uppercase tracking-widest" data-i18n="locKicker">Localisation & Accès</span>
+              <h2 class="text-3xl md:text-4xl font-black text-white mt-2 mb-4 tracking-tight" data-i18n="locTitle">Station Shell HERCULES Tanger</h2>
+              <p class="text-slate-300 text-sm md:text-base leading-relaxed" data-i18n="locSub">
+                Idéalement située à Boukhalef sur la Route de Rabat, à proximité immédiate de l'Aéroport de Tanger Ibn Battouta.
+              </p>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              
+              <!-- Address -->
+              <div class="flex items-start gap-3.5 bg-slate-800/80 p-4 rounded-2xl border border-slate-700/80">
+                <div class="w-9 h-9 rounded-xl bg-shell-red/20 text-shell-red flex items-center justify-center font-bold flex-shrink-0">
+                  📍
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="addressLabel">Adresse Officielle</div>
+                  <div class="text-sm font-semibold text-white mt-0.5">Route de Rabat, Boukhalef, Tanger, Maroc</div>
+                </div>
+              </div>
+
+              <!-- Station Opening Hours -->
+              <div class="flex items-start gap-3.5 bg-slate-800/80 p-4 rounded-2xl border border-slate-700/80">
+                <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold flex-shrink-0">
+                  🕒
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="hoursLabel">Horaires de la Station</div>
+                  <div class="text-sm font-semibold text-white mt-0.5" data-i18n="hoursValue">Ouvert 24h / 24, 7j / 7 (Carburants & Piste)</div>
+                </div>
+              </div>
+
+              <!-- Phone Contact -->
+              <div class="flex items-start gap-3.5 bg-slate-800/80 p-4 rounded-2xl border border-slate-700/80">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold flex-shrink-0">
+                  📞
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="phoneLabel">Téléphones</div>
+                  <div class="text-sm font-semibold text-white mt-0.5 flex flex-wrap gap-4">
+                    <a href="tel:+212661835244" class="hover:text-amber-400 underline">+212 6 61 83 52 44</a>
+                    <a href="tel:+212522920020" class="hover:text-amber-400 underline">+212 5 22 92 00 20</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="bg-shell-red hover:bg-shell-redDark text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all flex items-center gap-2">
+                <span>Ouvrir sur Google Maps ↗</span>
+              </a>
+              <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-sm px-6 py-3 rounded-xl transition-all">
+                <span>Fiche Officielle Shell ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Map & Visual Section -->
+          <div class="lg:col-span-6">
+            <div class="bg-slate-800 rounded-3xl p-3 border border-slate-700 shadow-2xl">
+              <div class="w-full h-[380px] rounded-2xl overflow-hidden relative">
+                <iframe 
+                  title="Google Maps Shell HERCULES Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.387994328509!2d-5.896235923588965!3d35.72540832734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b862b632d2d39%3A0x7e44ed7f53a42a87!2sStation%20service%20SHELL!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+                  class="w-full h-full border-0 filter opacity-95"
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-slate-800">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white p-1.5 flex items-center justify-center flex-shrink-0">
+            <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
+          </div>
+          <div>
+            <div class="font-black text-base text-white">CITY PROM · Shell HERCULES</div>
+            <div class="text-[11px] text-slate-400">Station-Service & Restauration Relais de l’Aéroport · Tanger</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-6 font-semibold text-slate-300">
+          <a href="#restaurant" class="hover:text-shell-yellow transition-colors">Restaurant</a>
+          <a href="#boutique" class="hover:text-shell-yellow transition-colors">Boutique</a>
+          <a href="#services" class="hover:text-shell-yellow transition-colors">Services</a>
+          <a href="#localisation" class="hover:text-shell-yellow transition-colors">Localisation</a>
+          <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="hover:text-shell-yellow transition-colors">Shell.com ↗</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+        <div>© <span id="copyrightYear"></span> CITY PROM Tanger · Station Shell HERCULES. Tous droits réservés.</div>
+        <div class="text-slate-600 text-[11px]">Route de Rabat, Boukhalef, Tanger, Maroc</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MULTILINGUAL & INTERACTIVE SCRIPT -->
+  <script>
+    const translations = {
+      fr: {
+        ribbonText: "Station-service officielle Shell HERCULES · Tanger Boukhalef",
+        heroBadge: "CITY PROM · Shell HERCULES Tanger",
+        heroDesc: "Faites le plein avec les carburants de qualité Shell V-Power & FuelSave, profitez d'une pause au restaurant Relais de l’Aéroport, découvrez notre boutique et bénéficiez de nos services de vidange et gonflage.",
+        btnRestaurant: "Restaurant & Café",
+        btnMap: "Voir sur Google Maps",
+        stat1Title: "Ouverture",
+        stat1Value: "24h / 24 - 7j / 7",
+        stat2Title: "Carburants",
+        stat2Value: "Shell V-Power",
+        stat3Title: "Restauration",
+        stat3Value: "Relais Aéroport",
+        gmapsPhotoBtn: "Consulter les photos réelles sur Google Maps",
+        restKicker: "Espace Restauration",
+        restTitle: "Relais de l’Aéroport",
+        restSub: "Une pause gourmande et conviviale lors de vos déplacements à Tanger.",
+        restCardHeading: "Menu & Restauration du Relais",
+        restCardDesc: "Profitez d’un espace moderne et confortable pour prendre un café, un petit-déjeuner ou un repas complet avant de reprendre la route.",
+        statusRestTitle: "Menu bientôt disponible",
+        statusRestBody: "L'établissement travaille actuellement à la finalisation et à la mise à jour complète de la carte du restaurant et des boissons. Les plats et tarifs seront ajoutés très prochainement.",
+        badgeMenuPending: "À venir",
+        menuItem1: "Petit-Déjeuner & Boissons Chaudes",
+        menuItem2: "Plats Chauds & Sandwichs",
+        menuItem3: "Jus Frais & Rafraîchissements",
+        menuItemPending: "À venir",
+        menuNote: "Catalogue et tarifs en cours de finalisation par l'établissement.",
+        shopKicker: "Boutique Shell Select",
+        shopTitle: "Tout le nécessaire pour la route",
+        shopSub: "Snacks, boissons fraîches, huiles Shell Helix et accessoires auto disponibles dans notre boutique.",
+        shopNoticeTitle: "Catalogue boutique bientôt disponible",
+        shopNoticeBody: "L'établissement travaille actuellement à la préparation de la liste complète des articles et produits en magasin.",
+        shopCat1Title: "Snacks & Rafraîchissements",
+        shopCat1Desc: "Boissons fraîches, cafés, confiseries, biscuits et en-cas rapides.",
+        shopCat2Title: "Huiles & Lubrifiants Shell",
+        shopCat2Desc: "Gamme complète d'huiles moteurs Shell Helix, Advance et liquides d'entretien.",
+        shopCat3Title: "Accessoires Voyage & Auto",
+        shopCat3Desc: "Produits de lavage, essuie-glaces, chargeurs et essentiels de route.",
+        toBeAddedSoon: "À venir très prochainement",
+        servicesKicker: "Prestations sur place",
+        servicesTitle: "Services Shell HERCULES",
+        servicesSub: "Découvrez les équipements et services disponibles dans notre station de Tanger Boukhalef.",
+        serv1Title: "Carburants Shell",
+        serv1Desc: "Shell V-Power Diesel, Shell FuelSave Sans Plomb et Shell FuelSave Diesel.",
+        serv2Title: "Air & Eau / Gonflage",
+        serv2Desc: "Borne de contrôle de pression des pneu et appoint d'eau gratuit.",
+        serv3Title: "Vidange & Lubrifiants",
+        serv3Desc: "Service de vidange express et conseils en huiles moteur Shell Helix.",
+        serv4Title: "Toilettes & Confort",
+        serv4Desc: "Sanitaires propres et entretenus accessibles 24h/24 aux clients.",
+        extraServTitle: "Équipements répertoriés Shell HERCULES :",
+        locKicker: "Localisation & Accès",
+        locTitle: "Station Shell HERCULES Tanger",
+        locSub: "Idéalement située à Boukhalef sur la Route de Rabat, à proximité immédiate de l'Aéroport de Tanger Ibn Battouta.",
+        addressLabel: "Adresse Officielle",
+        hoursLabel: "Horaires de la Station",
+        hoursValue: "Ouvert 24h / 24, 7j / 7 (Carburants & Piste)",
+        phoneLabel: "Téléphones"
+      },
+      ar: {
+        ribbonText: "محطة الخدمة الرسمية شل هيركوليس · طنجة بوخالف",
+        heroBadge: "CITY PROM · شل هيركوليس طنجة",
+        heroDesc: "تزود بوقود شل عالي الجودة Shell V-Power & FuelSave، واستمتع باستراحة في مطعم Relais de l’Aéroport، واكتشف متجرنا واستفد من خدمات تغيير الزيت ونفخ العجلات.",
+        btnRestaurant: "المطعم والمقهى",
+        btnMap: "عرض على خرائط Google",
+        stat1Title: "أوقات العمل",
+        stat1Value: "24 ساعة / 24 - 7 أيام / 7",
+        stat2Title: "أنواع الوقود",
+        stat2Value: "Shell V-Power",
+        stat3Title: "المطعم",
+        stat3Value: "Relais Aéroport",
+        gmapsPhotoBtn: "تصفح الصور الحقيقية على خرائط Google",
+        restKicker: "فضاء المطعم",
+        restTitle: "Relais de l’Aéroport",
+        restSub: "استراحة مريحة وشهية خلال تنقلاتكم بمدينة طنجة.",
+        restCardHeading: "قائمة الطعام والمشروبات",
+        restCardDesc: "استمتع بفضاء حديث ومريح لتناول القهوة أو الفطور أو وجبة كاملة قبل مواصلة طريقك.",
+        statusRestTitle: "قائمة الطعام ستتاح قريبًا",
+        statusRestBody: "تشتغل إدارة المحطة حالياً على إعداد وتحديث قائمة المأكولات والمشروبات بالكامل. ستضاف الأطباق والأسعار قريباً جداً.",
+        badgeMenuPending: "قريباً",
+        menuItem1: "الفطور والمشروبات الساخنة",
+        menuItem2: "الأطباق الساخنة والشطائر",
+        menuItem3: "العصائر الطازجة والمشروبات المنعشة",
+        menuItemPending: "قريباً",
+        menuNote: "جاري إعداد وتأكيد اللائحة والأسعار من طرف المحطة.",
+        shopKicker: "متجر Shell Select",
+        shopTitle: "كل ما تحتاجه للطريق",
+        shopSub: "وجبات خفيفة، مشروبات باردة، زيوت Shell Helix ومستلزمات السيارات متوفرة بمتجرنا.",
+        shopNoticeTitle: "كتالوج المتجر سيتاح قريبًا",
+        shopNoticeBody: "تشتغل إدارة المحطة حالياً على إعداد القائمة الكاملة للمنتجات والسلع المتوفرة بالمتجر.",
+        shopCat1Title: "المشروبات والوجبات الخفيفة",
+        shopCat1Desc: "مشروبات باردة، قهوة، حلويات، بسكويت ووجبات سريعة.",
+        shopCat2Title: "زيوت ومحركات شل",
+        shopCat2Desc: "تشكيلة كاملة من زيوت المحركات Shell Helix وAdvance وسوائل الصيانة.",
+        shopCat3Title: "مستلزمات السفر والسيارة",
+        shopCat3Desc: "منتجات التنظيف، مساحات الزجاج، الشواحن والضروريات.",
+        toBeAddedSoon: "سيضاف قريباً جداً",
+        servicesKicker: "الخدمات بالموقع",
+        servicesTitle: "خدمات شل هيركوليس",
+        servicesSub: "اكتشف التجهيزات والخدمات المتوفرة بمحطتنا ببوخالف طنجة.",
+        serv1Title: "وقود شل",
+        serv1Desc: "Shell V-Power Diesel وShell FuelSave Sans Plomb وShell FuelSave Diesel.",
+        serv2Title: "الهواء والماء / مراقبة الضغط",
+        serv2Desc: "جهاز مراقبة ضغط الإطارات وتزويد الماء مجاناً.",
+        serv3Title: "تغيير الزيت والصيانة",
+        serv3Desc: "خدمة تغيير الزيت السريعة واستشارات زيوت المحركات Shell Helix.",
+        serv4Title: "دورات المياه والراحة",
+        serv4Desc: "مرافق صحية نظيفة ومجهزة متوفرة على مدار 24 ساعة للزبناء.",
+        extraServTitle: "التجهيزات المعتمدة بمحطة شل هيركوليس:",
+        locKicker: "الموقع والوصول",
+        locTitle: "محطة شل هيركوليس طنجة",
+        locSub: "موقع متميز ببوخالف على طريق الرباط، بالقرب من مطار طنجة ابن بطوطة.",
+        addressLabel: "العنوان الرسمي",
+        hoursLabel: "أوقات عمل المحطة",
+        hoursValue: "مفتوح 24/24 ساعة، 7/7 أيام (الوقود والخدمات)",
+        phoneLabel: "الهاتف"
+      },
+      en: {
+        ribbonText: "Official Shell HERCULES Station · Tangier Boukhalef",
+        heroBadge: "CITY PROM · Shell HERCULES Tangier",
+        heroDesc: "Fuel up with high-quality Shell V-Power & FuelSave fuels, enjoy a break at the Relais de l’Aéroport restaurant, explore our shop, and benefit from our oil change & tyre pressure services.",
+        btnRestaurant: "Restaurant & Café",
+        btnMap: "View on Google Maps",
+        stat1Title: "Opening Hours",
+        stat1Value: "24/7 Service",
+        stat2Title: "Fuels",
+        stat2Value: "Shell V-Power",
+        stat3Title: "Dining",
+        stat3Value: "Relais Aéroport",
+        gmapsPhotoBtn: "View real station photos on Google Maps",
+        restKicker: "Dining & Refreshments",
+        restTitle: "Relais de l’Aéroport",
+        restSub: "A welcoming food break during your travel around Tangier.",
+        restCardHeading: "Restaurant Menu & Cafe",
+        restCardDesc: "Enjoy a modern, comfortable space for coffee, breakfast, or a meal before taking the road.",
+        statusRestTitle: "Menu to be added soon",
+        statusRestBody: "The establishment is currently finalizing the full food and drink menu. Dishes and pricing will be updated very soon.",
+        badgeMenuPending: "Coming Soon",
+        menuItem1: "Breakfast & Hot Drinks",
+        menuItem2: "Hot Meals & Sandwiches",
+        menuItem3: "Fresh Juices & Refreshments",
+        menuItemPending: "Pending",
+        menuNote: "Menu items and prices currently being finalized by management.",
+        shopKicker: "Shell Select Shop",
+        shopTitle: "Everything for your journey",
+        shopSub: "Snacks, cold drinks, Shell Helix oils, and travel accessories available at our shop.",
+        shopNoticeTitle: "Shop catalog coming soon",
+        shopNoticeBody: "The establishment is currently preparing the full product list for the shop catalog.",
+        shopCat1Title: "Snacks & Refreshments",
+        shopCat1Desc: "Cold drinks, coffees, snacks, biscuits, and quick bites.",
+        shopCat2Title: "Shell Oils & Lubricants",
+        shopCat2Desc: "Full range of Shell Helix motor oils, Advance oils, and maintenance fluids.",
+        shopCat3Title: "Travel & Car Accessories",
+        shopCat3Desc: "Cleaning supplies, wiper blades, chargers, and road essentials.",
+        toBeAddedSoon: "To be added soon",
+        servicesKicker: "On-site Amenities",
+        servicesTitle: "Shell HERCULES Services",
+        servicesSub: "Explore the facilities and services available at our station in Tangier Boukhalef.",
+        serv1Title: "Shell Fuels",
+        serv1Desc: "Shell V-Power Diesel, Shell FuelSave Unleaded, and Shell FuelSave Diesel.",
+        serv2Title: "Air & Water / Tyre Check",
+        serv2Desc: "Tyre pressure checking unit and free water refills.",
+        serv3Title: "Oil Change & Lubricants",
+        serv3Desc: "Express oil change service and Shell Helix motor oil advice.",
+        serv4Title: "Restrooms & Amenities",
+        serv4Desc: "Clean, maintained restrooms accessible 24/7 for customers.",
+        extraServTitle: "Shell HERCULES Features:",
+        locKicker: "Location & Access",
+        locTitle: "Shell HERCULES Station Tangier",
+        locSub: "Conveniently located at Boukhalef on Route de Rabat, near Tangier Ibn Battouta Airport.",
+        addressLabel: "Official Address",
+        hoursLabel: "Station Hours",
+        hoursValue: "Open 24/7 (Fuels & Forecourt)",
+        phoneLabel: "Phone Numbers"
+      }
+    };
+
+    // Update Language
+    const langSelect = document.getElementById("langSelect");
+    function updateLanguage(locale) {
+      const dict = translations[locale] || translations.fr;
+      document.documentElement.lang = locale;
+      document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+      langSelect.value = locale;
+    }
+
+    langSelect.addEventListener("change", (e) => updateLanguage(e.target.value));
+
+    // Dynamic Copyright Year
+    document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        mobileBtn.setAttribute("aria-expanded", "true");
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
+</body>
+</html>
