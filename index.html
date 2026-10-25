@@ -6,12 +6,12 @@
   <meta name="theme-color" content="#dd1d21">
   <meta name="description" content="CITY PROM / Station Shell HERCULES à Tanger : carburants Shell V-Power & FuelSave, boutique, sanitaires, air/eau, lubrifiants et restaurant Relais de l’Aéroport.">
   <title>CITY PROM Shell HERCULES Tanger | Relais de l’Aéroport</title>
-  
+
   <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -50,6 +50,14 @@
       box-shadow: 0 20px 35px -10px rgba(221, 29, 33, 0.12);
     }
     html { scroll-behavior: smooth; }
+    .star-btn {
+      background: none; border: 0; padding: 0 2px; cursor: pointer;
+      font-size: 1.9rem; line-height: 1; color: #475569;
+      transition: color .15s, transform .15s;
+    }
+    .star-btn:hover { transform: scale(1.15); }
+    .star-btn:focus-visible { outline: 2px solid #ffd500; border-radius: 6px; }
+    .star-btn.on { color: #fbbf24; }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
@@ -60,11 +68,11 @@
       <div class="flex items-center gap-2">
         <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-5 h-5 flex-shrink-0 object-contain">
         <span class="font-medium">
-          <strong class="text-shell-yellow font-bold">CITY PROM · Shell HERCULES</strong> · Boukhalef, Tanger
+          <strong class="text-shell-yellow font-bold">CITY PROM · Shell HERCULES</strong> · Boukhalef, <span data-i18n="cityName">Tanger</span>
         </span>
       </div>
       <div class="flex items-center gap-4 text-xs text-slate-300">
-        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Service 24h/24 & 7j/7</span>
+        <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> <span data-i18n="topService">Service 24h/24 & 7j/7</span></span>
         <span class="hidden md:inline text-slate-600">|</span>
         <span class="hidden md:inline">Relais de l’Aéroport</span>
       </div>
@@ -75,19 +83,17 @@
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        
-        <!-- Brand Logo -->
+
         <a href="#accueil" class="flex items-center gap-3 group">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/80 border border-amber-300/60 p-2 shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform">
             <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
           </div>
           <div class="flex flex-col">
             <span class="font-black text-xl tracking-tight text-slate-900 group-hover:text-shell-red transition-colors">CITY PROM</span>
-            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Shell HERCULES Tanger</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider" data-i18n="brandSub">Shell HERCULES Tanger</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
           <a href="#restaurant" class="hover:text-shell-red transition-colors" data-i18n="navRestaurant">Restaurant</a>
           <a href="#boutique" class="hover:text-shell-red transition-colors" data-i18n="navBoutique">Boutique</a>
@@ -96,7 +102,6 @@
           <a href="#localisation" class="hover:text-shell-red transition-colors" data-i18n="navLocation">Localisation</a>
         </nav>
 
-        <!-- Right Controls & Language Switcher -->
         <div class="flex items-center gap-3">
           <div class="relative">
             <select id="langSelect" aria-label="Langue / Language" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-lg px-2.5 py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-shell-red">
@@ -113,14 +118,12 @@
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
 
-          <!-- Mobile Menu Button -->
-          <button id="mobileMenuBtn" aria-expanded="false" class="md:hidden p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700">
+          <button id="mobileMenuBtn" aria-expanded="false" aria-label="Menu" class="md:hidden p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
 
-      <!-- Mobile Dropdown Navigation -->
       <div id="mobileMenu" class="hidden md:hidden py-4 border-t border-slate-100 space-y-3">
         <a href="#restaurant" class="block px-3 py-2 rounded-md text-base font-semibold text-slate-700 hover:bg-slate-100" data-i18n="navRestaurant">Restaurant</a>
         <a href="#boutique" class="block px-3 py-2 rounded-md text-base font-semibold text-slate-700 hover:bg-slate-100" data-i18n="navBoutique">Boutique</a>
@@ -133,30 +136,29 @@
   </header>
 
   <main class="flex-grow">
-    
-    <!-- Shell Official Ribbon Notice -->
+
     <div class="bg-amber-100 border-y border-amber-300/80 py-2.5 text-center text-xs md:text-sm font-bold text-amber-950 flex items-center justify-center gap-2 px-4">
       <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-4 h-4 flex-shrink-0 object-contain">
       <span data-i18n="ribbonText">Station-service officielle Shell HERCULES · Tanger Boukhalef</span>
-      <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="underline hover:text-shell-red text-xs">Fiche Shell ↗</a>
+      <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="underline hover:text-shell-red text-xs" data-i18n="shellSheetShort">Fiche Shell ↗</a>
     </div>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section id="accueil" class="shell-gradient-bg py-12 md:py-20 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/80 border border-red-200 text-shell-redDark font-extrabold text-xs uppercase tracking-wider">
               <span class="w-2 h-2 rounded-full bg-shell-red"></span>
               <span data-i18n="heroBadge">CITY PROM · Shell HERCULES Tanger</span>
             </div>
-            
+
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
               CITY PROM.<br>
               <span class="text-shell-red" data-i18n="heroTitleSub">Votre étape idéale à Tanger.</span>
             </h1>
-            
+
             <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed" data-i18n="heroDesc">
               Faites le plein avec les carburants de qualité Shell V-Power & FuelSave, profitez d'une pause au restaurant Relais de l’Aéroport, découvrez notre boutique et bénéficiez de nos services de vidange et gonflage.
             </p>
@@ -172,7 +174,6 @@
               </a>
             </div>
 
-            <!-- Key Quick Facts -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-xl mx-auto lg:mx-0">
               <div class="bg-white/80 backdrop-blur p-3 rounded-xl border border-slate-200 text-center lg:text-left">
                 <div class="text-xs font-bold text-slate-500 uppercase" data-i18n="stat1Title">Ouverture</div>
@@ -189,15 +190,14 @@
             </div>
           </div>
 
-          <!-- Right Column: Interactive Real Location & Maps Card -->
           <div class="lg:col-span-5">
             <div class="relative bg-slate-900 rounded-3xl p-3 shadow-2xl overflow-hidden border border-slate-800">
               <div class="relative w-full h-[360px] rounded-2xl overflow-hidden bg-slate-800">
-                <iframe 
+                <iframe
                   title="Carte Google Maps Shell Hercules Tanger"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.387994328509!2d-5.896235923588965!3d35.72540832734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b862b632d2d39%3A0x7e44ed7f53a42a87!2sStation%20service%20SHELL!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.387994328509!2d-5.896235923588965!3d35.72540832734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b862b632d2d39%3A0x7e44ed7f53a42a87!2sStation%20service%20SHELL!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma"
                   class="w-full h-full border-0 filter opacity-90 hover:opacity-100 transition-opacity"
-                  loading="lazy" 
+                  loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
@@ -208,10 +208,10 @@
                     </div>
                     <div>
                       <div class="text-xs font-black text-white">Station Shell HERCULES</div>
-                      <div class="text-[11px] text-slate-300">Route de Rabat, Boukhalef, Tanger</div>
+                      <div class="text-[11px] text-slate-300" data-i18n="mapAddressShort">Route de Rabat, Boukhalef, Tanger</div>
                     </div>
                   </div>
-                  <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="bg-shell-red hover:bg-shell-redDark text-white p-2 rounded-lg transition-colors" title="Ouvrir dans Google Maps">
+                  <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="bg-shell-red hover:bg-shell-redDark text-white p-2 rounded-lg transition-colors" title="Google Maps" aria-label="Google Maps">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                   </a>
                 </div>
@@ -219,10 +219,10 @@
                 <div class="absolute bottom-3 inset-x-3">
                   <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900/95 hover:bg-slate-900 text-white font-bold text-xs py-2.5 px-4 rounded-xl border border-slate-700/80 flex items-center justify-between shadow-lg backdrop-blur-md transition-all">
                     <span class="flex items-center gap-2">
-                      <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 002-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                      <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                       <span data-i18n="gmapsPhotoBtn">Consulter les photos réelles sur Google Maps</span>
                     </span>
-                    <span class="text-amber-400 font-extrabold">Voir ↗</span>
+                    <span class="text-amber-400 font-extrabold" data-i18n="seeLink">Voir ↗</span>
                   </a>
                 </div>
               </div>
@@ -241,7 +241,7 @@
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
           <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
-              <span class="text-shell-yellow text-xs font-black uppercase tracking-widest">Shell HERCULES · Tanger</span>
+              <span class="text-shell-yellow text-xs font-black uppercase tracking-widest" data-i18n="photoKicker">Shell HERCULES · Tanger</span>
               <h2 class="text-2xl md:text-4xl font-black text-white tracking-tight mt-1" data-i18n="photoBandTitle">Une station qui vous accueille 24h/24</h2>
             </div>
             <a href="#services" class="self-start sm:self-auto bg-shell-yellow hover:bg-shell-yellowDark text-slate-900 font-bold text-sm px-5 py-3 rounded-xl shadow-md transition-all" data-i18n="photoBandBtn">Nos services</a>
@@ -250,10 +250,10 @@
       </div>
     </section>
 
-    <!-- RESTAURANT SECTION -->
+    <!-- RESTAURANT -->
     <section id="restaurant" class="py-16 md:py-24 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="restKicker">Espace Restauration</span>
           <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4 tracking-tight" data-i18n="restTitle">Relais de l’Aéroport</h2>
@@ -261,14 +261,14 @@
         </div>
 
         <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
+
           <div class="lg:col-span-7 space-y-6">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs uppercase tracking-wider">
-              <span>☕ Cafe & Restaurant</span>
+              <span data-i18n="restBadge">☕ Café & Restaurant</span>
             </div>
-            
+
             <h3 class="text-2xl sm:text-3xl font-black tracking-tight" data-i18n="restCardHeading">Menu & Restauration du Relais</h3>
-            
+
             <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="restCardDesc">
               Profitez d’un espace moderne et confortable pour prendre un café, un petit-déjeuner ou un repas complet avant de reprendre la route.
             </p>
@@ -324,14 +324,13 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
-    <!-- SHOP SECTION -->
+    <!-- SHOP -->
     <section id="boutique" class="py-16 md:py-24 bg-slate-50 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="shopKicker">Boutique Shell Select</span>
           <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4 tracking-tight" data-i18n="shopTitle">Tout le nécessaire pour la route</h2>
@@ -387,10 +386,10 @@
       </div>
     </section>
 
-    <!-- SERVICES SECTION -->
+    <!-- SERVICES -->
     <section id="services" class="py-16 md:py-24 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-14">
           <span class="text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="servicesKicker">Prestations sur place</span>
           <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-4 tracking-tight" data-i18n="servicesTitle">Services Shell HERCULES</h2>
@@ -441,106 +440,100 @@
       </div>
     </section>
 
-    <!-- REVIEWS & RATINGS SECTION (MIDDLE OF THE PAGE) -->
+    <!-- REVIEWS -->
     <section id="avis" class="py-16 md:py-24 bg-slate-900 text-white border-b border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="text-amber-400 text-xs font-black uppercase tracking-widest" data-i18n="revKicker">Avis & Évaluations Clients</span>
           <h2 class="text-3xl md:text-4xl font-black text-white mt-2 mb-4 tracking-tight" data-i18n="revTitle">Votre opinion compte pour nous</h2>
-          <p class="text-slate-300 text-base" data-i18n="revSub">Consultez les évalutations ou enregistrez-vous avec votre e-mail pour laisser votre avis.</p>
+          <p class="text-slate-300 text-base" data-i18n="revSub">Consultez les évaluations ou laissez votre avis avec votre adresse e-mail.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          <!-- LEFT: RATING OVERVIEW & SUMMARY -->
+
+          <!-- Summary -->
           <div class="lg:col-span-4 bg-slate-800/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 space-y-6">
             <div class="text-center pb-6 border-b border-slate-700/80">
-              <div class="text-5xl font-black text-amber-400 tracking-tight" id="calcAvgRating">4.8</div>
-              <div class="flex items-center justify-center gap-1 text-amber-400 my-2 text-xl" id="calcAvgStars">
-                ★★★★★
-              </div>
+              <div class="text-5xl font-black text-amber-400 tracking-tight" id="calcAvgRating">–</div>
+              <div class="flex items-center justify-center gap-1 text-amber-400 my-2 text-xl" id="calcAvgStars" aria-hidden="true">☆☆☆☆☆</div>
               <div class="text-xs text-slate-400 font-semibold">
                 <span data-i18n="basedOn">Basé sur</span> <strong id="calcTotalReviews" class="text-white">0</strong> <span data-i18n="clientReviews">avis clients</span>
               </div>
             </div>
-
-            <!-- Breakdown Bars -->
-            <div class="space-y-2 text-xs font-medium text-slate-300" id="starBreakdown">
-              <!-- Dynamically rendered bars -->
-            </div>
+            <div class="space-y-2 text-xs font-medium text-slate-300" id="starBreakdown"></div>
           </div>
 
-          <!-- RIGHT: REVIEW FORM + FEED -->
+          <!-- Form + feed -->
           <div class="lg:col-span-8 space-y-8">
-            
-            <!-- FORM CARD -->
+
             <div class="bg-slate-800/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-xl">
               <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-700">
                 <h3 class="text-lg font-bold text-white flex items-center gap-2">
                   <span>✍️</span> <span data-i18n="leaveReviewTitle">Laisser un avis</span>
                 </h3>
-                <span class="text-[11px] font-semibold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20" data-i18n="emailAuthBadge">Inscription par e-mail requise</span>
+                <span class="text-[11px] font-semibold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20" data-i18n="emailAuthBadge">E-mail requis</span>
               </div>
 
-              <form id="reviewForm" class="space-y-4">
+              <form id="reviewForm" class="space-y-4" novalidate>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1" data-i18n="lblFullName">Nom complet *</label>
-                    <input type="text" id="revName" required placeholder="Ex: Mohamed Amine" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-shell-red">
+                    <label for="revName" class="block text-xs font-semibold text-slate-300 mb-1" data-i18n="lblFullName">Nom complet *</label>
+                    <input type="text" id="revName" required maxlength="80" autocomplete="name" data-i18n-placeholder="phName" placeholder="Ex: Mohamed Amine" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-shell-red">
                   </div>
                   <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1" data-i18n="lblEmail">Adresse E-mail (Inscription) *</label>
-                    <input type="email" id="revEmail" required placeholder="client@example.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-shell-red">
+                    <label for="revEmail" class="block text-xs font-semibold text-slate-300 mb-1" data-i18n="lblEmail">Adresse e-mail *</label>
+                    <input type="email" id="revEmail" required maxlength="120" autocomplete="email" placeholder="client@example.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-shell-red">
                   </div>
                 </div>
 
-                <!-- Star Rating Selector -->
+                <!-- Star rating -->
                 <div>
-                  <label class="block text-xs font-semibold text-slate-300 mb-2" data-i18n="lblRating">Votre note *</label>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2" id="ratingLabel" data-i18n="lblRating">Votre note *</label>
                   <div class="flex items-center gap-2">
-                    <div id="starInput" class="flex gap-1 text-2xl cursor-pointer text-slate-600 select-none">
-                      <span data-star="1" class="hover:text-amber-400 transition-colors">★</span>
-                      <span data-star="2" class="hover:text-amber-400 transition-colors">★</span>
-                      <span data-star="3" class="hover:text-amber-400 transition-colors">★</span>
-                      <span data-star="4" class="hover:text-amber-400 transition-colors">★</span>
-                      <span data-star="5" class="hover:text-amber-400 transition-colors">★</span>
+                    <div id="starInput" class="flex" role="radiogroup" aria-labelledby="ratingLabel">
+                      <button type="button" class="star-btn" data-star="1" role="radio" aria-checked="false" aria-label="1">★</button>
+                      <button type="button" class="star-btn" data-star="2" role="radio" aria-checked="false" aria-label="2">★</button>
+                      <button type="button" class="star-btn" data-star="3" role="radio" aria-checked="false" aria-label="3">★</button>
+                      <button type="button" class="star-btn" data-star="4" role="radio" aria-checked="false" aria-label="4">★</button>
+                      <button type="button" class="star-btn" data-star="5" role="radio" aria-checked="false" aria-label="5">★</button>
                     </div>
-                    <span id="starRatingText" class="text-xs font-bold text-amber-400 ml-2">5/5 - Excellent</span>
+                    <span id="starRatingText" class="text-xs font-bold text-amber-400 ml-2"></span>
                   </div>
                 </div>
 
-                <!-- Comment -->
                 <div>
-                  <label class="block text-xs font-semibold text-slate-300 mb-1" data-i18n="lblComment">Votre expérience *</label>
-                  <textarea id="revComment" rows="3" required placeholder="Ex: Excellent accueil, carburant V-Power au top et café très agréable..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-shell-red"></textarea>
+                  <label for="revComment" class="block text-xs font-semibold text-slate-300 mb-1" data-i18n="lblComment">Votre expérience *</label>
+                  <textarea id="revComment" rows="3" required maxlength="1000" data-i18n-placeholder="phComment" placeholder="Ex: Excellent accueil, carburant V-Power au top et café très agréable..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-shell-red"></textarea>
                 </div>
 
-                <button type="submit" id="submitReviewBtn" class="w-full bg-shell-red hover:bg-shell-redDark text-white font-bold text-xs sm:text-sm py-3 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
-                  <span data-i18n="btnSubmitReview">S'inscrire & Publier l'Avis</span>
+                <!-- Honeypot anti-spam (hidden) -->
+                <input type="text" id="revHoney" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+
+                <p class="text-[11px] text-slate-400 leading-relaxed" data-i18n="privacyNote">Votre avis, votre nom et votre e-mail sont transmis à la station. Seuls votre nom et un e-mail partiellement masqué sont affichés publiquement.</p>
+
+                <button type="submit" id="submitReviewBtn" class="w-full bg-shell-red hover:bg-shell-redDark disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold text-xs sm:text-sm py-3 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+                  <span id="submitBtnLabel" data-i18n="btnSubmitReview">Publier l'avis</span>
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
+
+                <div id="formStatus" role="status" aria-live="polite" class="hidden text-xs font-semibold rounded-xl px-4 py-3"></div>
               </form>
             </div>
 
-            <!-- REVIEWS LIST FEED -->
-            <div class="space-y-4" id="reviewsFeed">
-              <!-- Dynamically populated reviews -->
-            </div>
+            <div class="space-y-4" id="reviewsFeed"></div>
 
           </div>
-
         </div>
-
       </div>
     </section>
 
-    <!-- LOCATION & CONTACT SECTION -->
+    <!-- LOCATION -->
     <section id="localisation" class="py-16 md:py-24 bg-slate-950 text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           <div class="lg:col-span-6 space-y-6">
             <div>
               <span class="text-amber-400 text-xs font-black uppercase tracking-widest" data-i18n="locKicker">Localisation & Accès</span>
@@ -555,7 +548,7 @@
                 <div class="w-9 h-9 rounded-xl bg-shell-red/20 text-shell-red flex items-center justify-center font-bold flex-shrink-0">📍</div>
                 <div>
                   <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="addressLabel">Adresse Officielle</div>
-                  <div class="text-sm font-semibold text-white mt-0.5">Route de Rabat, Boukhalef, Tanger, Maroc</div>
+                  <div class="text-sm font-semibold text-white mt-0.5" data-i18n="addressValue">Route de Rabat, Boukhalef, Tanger, Maroc</div>
                 </div>
               </div>
 
@@ -570,9 +563,9 @@
               <div class="flex items-start gap-3.5 bg-slate-900 p-4 rounded-2xl border border-slate-800">
                 <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold flex-shrink-0">📞</div>
                 <div>
-                  <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="phoneLabel">Téléphones</div>
+                  <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="phoneLabel">Téléphone</div>
                   <div class="text-sm font-semibold text-white mt-0.5 flex flex-wrap gap-4">
-                    <a href="tel:+212539393939">+212 5 39 39 39 39</a>
+                    <a href="tel:+212539393939" dir="ltr">+212 5 39 39 39 39</a>
                   </div>
                 </div>
               </div>
@@ -591,9 +584,9 @@
           <div class="lg:col-span-6">
             <div class="bg-slate-900 rounded-3xl p-3 border border-slate-800 shadow-2xl">
               <div class="w-full h-[380px] rounded-2xl overflow-hidden relative">
-                <iframe 
+                <iframe
                   title="Google Maps Shell HERCULES Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.387994328509!2d-5.896235923588965!3d35.72540832734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b862b632d2d39%3A0x7e44ed7f53a42a87!2sStation%20service%20SHELL!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.387994328509!2d-5.896235923588965!3d35.72540832734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b862b632d2d39%3A0x7e44ed7f53a42a87!2sStation%20service%20SHELL!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma"
                   class="w-full h-full border-0 filter opacity-95"
                   loading="lazy">
                 </iframe>
@@ -602,7 +595,6 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -618,7 +610,7 @@
           </div>
           <div>
             <div class="font-black text-base text-white">CITY PROM · Shell HERCULES</div>
-            <div class="text-[11px] text-slate-400">Station-Service & Restauration Relais de l’Aéroport · Tanger</div>
+            <div class="text-[11px] text-slate-400" data-i18n="footerTag">Station-Service & Restauration Relais de l’Aéroport · Tanger</div>
           </div>
         </div>
 
@@ -633,16 +625,22 @@
       </div>
 
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
-        <div>© <span id="copyrightYear"></span> CITY PROM Tanger · Station Shell HERCULES. Tous droits réservés.</div>
-        <div class="text-slate-600 text-[11px]">Route de Rabat, Boukhalef, Tanger, Maroc</div>
+        <div>© <span id="copyrightYear"></span> CITY PROM <span data-i18n="cityName">Tanger</span> · Station Shell HERCULES. <span data-i18n="rights">Tous droits réservés.</span></div>
+        <div class="text-slate-600 text-[11px]" data-i18n="addressValue">Route de Rabat, Boukhalef, Tanger, Maroc</div>
       </div>
     </div>
   </footer>
 
-  <!-- MULTILINGUAL & REVIEWS ENGINE SCRIPT -->
   <script>
+    /* ============================================================
+       TRANSLATIONS
+       ============================================================ */
     const translations = {
       fr: {
+        pageTitle: "CITY PROM Shell HERCULES Tanger | Relais de l’Aéroport",
+        cityName: "Tanger",
+        topService: "Service 24h/24 & 7j/7",
+        brandSub: "Shell HERCULES Tanger",
         navRestaurant: "Restaurant",
         navBoutique: "Boutique",
         navServices: "Services",
@@ -651,6 +649,7 @@
         btnItinerary: "Itinéraire",
         btnOpenGmaps: "Ouvrir sur Google Maps ↗",
         btnShellSheet: "Fiche Officielle Shell ↗",
+        shellSheetShort: "Fiche Shell ↗",
         ribbonText: "Station-service officielle Shell HERCULES · Tanger Boukhalef",
         heroBadge: "CITY PROM · Shell HERCULES Tanger",
         heroTitleSub: "Votre étape idéale à Tanger.",
@@ -663,12 +662,16 @@
         stat2Value: "Shell V-Power",
         stat3Title: "Restauration",
         stat3Value: "Relais Aéroport",
+        mapAddressShort: "Route de Rabat, Boukhalef, Tanger",
         gmapsPhotoBtn: "Consulter les photos réelles sur Google Maps",
+        seeLink: "Voir ↗",
+        photoKicker: "Shell HERCULES · Tanger",
         photoBandTitle: "Une station qui vous accueille 24h/24",
         photoBandBtn: "Nos services",
         restKicker: "Espace Restauration",
         restTitle: "Relais de l’Aéroport",
         restSub: "Une pause gourmande et conviviale lors de vos déplacements à Tanger.",
+        restBadge: "☕ Café & Restaurant",
         restCardHeading: "Menu & Restauration du Relais",
         restCardDesc: "Profitez d’un espace moderne et confortable pour prendre un café, un petit-déjeuner ou un repas complet avant de reprendre la route.",
         statusRestTitle: "Menu bientôt disponible",
@@ -677,9 +680,9 @@
         restFeat2: "Salle climatisée",
         restFeat3: "Accès PMR",
         badgeMenuPending: "À venir",
-        menuItem1: "Petit-Déjeuner & Boissons Chaudes",
-        menuItem2: "Plats Chauds & Sandwichs",
-        menuItem3: "Jus Frais & Rafraîchissements",
+        menuItem1: "Petit-déjeuner & boissons chaudes",
+        menuItem2: "Plats chauds & sandwichs",
+        menuItem3: "Jus frais & rafraîchissements",
         menuItemPending: "À venir",
         menuNote: "Catalogue et tarifs en cours de finalisation",
         shopKicker: "Boutique Shell Select",
@@ -687,11 +690,11 @@
         shopSub: "Snacks, boissons fraîches, huiles Shell Helix et accessoires auto disponibles dans notre boutique.",
         shopNoticeTitle: "Catalogue boutique bientôt disponible",
         shopNoticeBody: "L'établissement travaille actuellement à la préparation de la liste complète des articles et produits en magasin.",
-        shopCat1Title: "Snacks & Rafraîchissements",
+        shopCat1Title: "Snacks & rafraîchissements",
         shopCat1Desc: "Boissons fraîches, cafés, confiseries, biscuits et en-cas rapides.",
-        shopCat2Title: "Huiles & Lubrifiants Shell",
+        shopCat2Title: "Huiles & lubrifiants Shell",
         shopCat2Desc: "Gamme complète d'huiles moteurs Shell Helix, Advance et liquides d'entretien.",
-        shopCat3Title: "Accessoires Voyage & Auto",
+        shopCat3Title: "Accessoires voyage & auto",
         shopCat3Desc: "Produits de lavage, essuie-glaces, chargeurs et essentiels de route.",
         toBeAddedSoon: "À venir très prochainement",
         servicesKicker: "Prestations sur place",
@@ -699,213 +702,803 @@
         servicesSub: "Découvrez les équipements et services disponibles dans notre station de Tanger Boukhalef.",
         serv1Title: "Carburants Shell",
         serv1Desc: "Shell V-Power Diesel, Shell FuelSave Sans Plomb et Shell FuelSave Diesel.",
-        serv2Title: "Air & Eau / Gonflage",
+        serv2Title: "Air & eau / gonflage",
         serv2Desc: "Borne de contrôle de pression des pneus et appoint d'eau gratuit.",
-        serv3Title: "Vidange & Lubrifiants",
+        serv3Title: "Vidange & lubrifiants",
         serv3Desc: "Service de vidange express et conseils en huiles moteur Shell Helix.",
-        serv4Title: "Toilettes & Confort",
+        serv4Title: "Toilettes & confort",
         serv4Desc: "Sanitaires propres et entretenus accessibles 24h/24 aux clients.",
         extraServTitle: "Équipements répertoriés Shell HERCULES :",
-        feat1: "💳 Cartes Carburant & Bancaires",
-        feat2: "⛽ Service en Piste",
-        feat3: "🚚 Accès Poids Lourds",
+        feat1: "💳 Cartes carburant & bancaires",
+        feat2: "⛽ Service en piste",
+        feat3: "🚚 Accès poids lourds",
         feat4: "🎁 Programme My Shell",
-        revKicker: "Avis & Évaluations Clients",
+        revKicker: "Avis & évaluations clients",
         revTitle: "Votre opinion compte pour nous",
-        revSub: "Consultez les évalutations ou enregistrez-vous avec votre e-mail pour laisser votre avis.",
+        revSub: "Consultez les évaluations ou laissez votre avis avec votre adresse e-mail.",
         basedOn: "Basé sur",
         clientReviews: "avis clients",
         leaveReviewTitle: "Laisser un avis",
-        emailAuthBadge: "Inscription par e-mail requise",
+        emailAuthBadge: "E-mail requis",
         lblFullName: "Nom complet *",
-        lblEmail: "Adresse E-mail (Inscription) *",
+        lblEmail: "Adresse e-mail *",
         lblRating: "Votre note *",
         lblComment: "Votre expérience *",
-        btnSubmitReview: "S'inscrire & Publier l'Avis",
-        locKicker: "Localisation & Accès",
+        phName: "Ex : Mohamed Amine",
+        phComment: "Ex : Excellent accueil, carburant V-Power au top et café très agréable...",
+        privacyNote: "Votre avis, votre nom et votre e-mail sont transmis à la station. Seuls votre nom et un e-mail partiellement masqué sont affichés publiquement.",
+        btnSubmitReview: "Publier l'avis",
+        btnSending: "Envoi en cours…",
+        star1: "1/5 - Mauvais",
+        star2: "2/5 - Passable",
+        star3: "3/5 - Moyen",
+        star4: "4/5 - Très bien",
+        star5: "5/5 - Excellent",
+        msgSent: "Merci ! Votre avis a été envoyé à la station et publié.",
+        msgFailed: "L'envoi a échoué. Vérifiez votre connexion et réessayez.",
+        msgInvalid: "Veuillez remplir tous les champs avec un e-mail valide.",
+        noReviews: "Aucun avis pour le moment. Soyez le premier à donner votre avis !",
+        locKicker: "Localisation & accès",
         locTitle: "Station Shell HERCULES Tanger",
         locSub: "Idéalement située à Boukhalef sur la Route de Rabat, à proximité immédiate de l'Aéroport de Tanger Ibn Battouta.",
-        addressLabel: "Adresse Officielle",
-        hoursLabel: "Horaires de la Station",
+        addressLabel: "Adresse officielle",
+        addressValue: "Route de Rabat, Boukhalef, Tanger, Maroc",
+        hoursLabel: "Horaires de la station",
         hoursValue: "Ouvert 24h / 24, 7j / 7 (Carburants & Piste)",
-        phoneLabel: "Téléphones"
+        phoneLabel: "Téléphone",
+        footerTag: "Station-service & restauration Relais de l’Aéroport · Tanger",
+        rights: "Tous droits réservés."
       },
       ar: {
+        pageTitle: "سيتي بروم شل هيركوليس طنجة | Relais de l’Aéroport",
+        cityName: "طنجة",
+        topService: "خدمة على مدار الساعة 24/24 و7/7",
+        brandSub: "شل هيركوليس طنجة",
         navRestaurant: "المطعم",
         navBoutique: "المتجر",
         navServices: "الخدمات",
         navReviews: "آراء الزبناء",
         navLocation: "الموقع",
         btnItinerary: "الاتجاهات",
-        btnOpenGmaps: "فتح على خرائط Google ↗",
+        btnOpenGmaps: "فتح في خرائط Google ↗",
         btnShellSheet: "صفحة شل الرسمية ↗",
+        shellSheetShort: "صفحة شل ↗",
         ribbonText: "محطة الخدمة الرسمية شل هيركوليس · طنجة بوخالف",
         heroBadge: "CITY PROM · شل هيركوليس طنجة",
         heroTitleSub: "محطتك المثالية في طنجة.",
-        heroDesc: "تزود بوقود شل عالي الجودة Shell V-Power & FuelSave، واستمتع باستراحة في مطعم Relais de l’Aéroport، واكتشف متجرنا واستفد من خدمات تغيير الزيت ونفخ العجلات.",
+        heroDesc: "تزوّد بوقود شل عالي الجودة Shell V-Power وFuelSave، واستمتع باستراحة في مطعم Relais de l’Aéroport، واكتشف متجرنا واستفد من خدمات تغيير الزيت ومراقبة ضغط العجلات.",
         btnRestaurant: "المطعم والمقهى",
-        btnMap: "عرض على خرائط Google",
+        btnMap: "عرض في خرائط Google",
         stat1Title: "أوقات العمل",
         stat1Value: "24 ساعة / 24 - 7 أيام / 7",
-        stat2Title: "أنواع الوقود",
+        stat2Title: "الوقود",
         stat2Value: "Shell V-Power",
         stat3Title: "المطعم",
         stat3Value: "Relais Aéroport",
+        mapAddressShort: "طريق الرباط، بوخالف، طنجة",
         gmapsPhotoBtn: "تصفح الصور الحقيقية على خرائط Google",
-        photoBandTitle: "محطة ترحب بكم على مدار 24 ساعة",
+        seeLink: "عرض ↗",
+        photoKicker: "شل هيركوليس · طنجة",
+        photoBandTitle: "محطة ترحب بكم على مدار الساعة",
         photoBandBtn: "خدماتنا",
         restKicker: "فضاء المطعم",
         restTitle: "Relais de l’Aéroport",
-        restSub: "استراحة مريحة وشهية خلال تنقلاتكم بمدينة طنجة.",
+        restSub: "استراحة شهية ومريحة خلال تنقلاتكم في طنجة.",
+        restBadge: "☕ مقهى ومطعم",
         restCardHeading: "قائمة الطعام والمشروبات",
-        restCardDesc: "استمتع بفضاء حديث ومريح لتناول القهوة أو الفطور أو وجبة كاملة قبل مواصلة طريقك.",
-        statusRestTitle: "قائمة الطعام ستتاح قريبًا",
-        statusRestBody: "تشتغل إدارة المحطة حالياً على إعداد وتحديث قائمة المأكولات والمشروبات بالكامل. ستضاف الأطباق والأسعار قريباً جداً.",
-        restFeat1: "بطاقات البنك مقبولة",
-        restFeat2: "قاعة مكيفة",
-        restFeat3: "ولوجيات لذوي الاحتياجات",
-        badgeMenuPending: "قريباً",
+        restCardDesc: "استمتع بفضاء عصري ومريح لتناول القهوة أو وجبة الفطور أو وجبة كاملة قبل مواصلة طريقك.",
+        statusRestTitle: "القائمة ستتوفر قريبًا",
+        statusRestBody: "تعمل إدارة المحطة حاليًا على إعداد قائمة المأكولات والمشروبات وتحديثها بالكامل. ستتم إضافة الأطباق والأسعار قريبًا جدًا.",
+        restFeat1: "الأداء بالبطاقات البنكية مقبول",
+        restFeat2: "قاعة مكيّفة",
+        restFeat3: "ولوج مهيأ لذوي الإعاقة",
+        badgeMenuPending: "قريبًا",
         menuItem1: "الفطور والمشروبات الساخنة",
-        menuItem2: "الأطباق الساخنة والشطائر",
-        menuItem3: "العصائر الطازجة والمشروبات المنعشة",
-        menuItemPending: "قريباً",
-        menuNote: "جاري إعداد وتأكيد اللائحة والأسعار",
+        menuItem2: "أطباق ساخنة وسندويشات",
+        menuItem3: "عصائر طازجة ومشروبات منعشة",
+        menuItemPending: "قريبًا",
+        menuNote: "جارٍ إعداد القائمة والأسعار",
         shopKicker: "متجر Shell Select",
         shopTitle: "كل ما تحتاجه للطريق",
-        shopSub: "وجبات خفيفة، مشروبات باردة، زيوت Shell Helix ومستلزمات السيارات متوفرة بمتجرنا.",
-        shopNoticeTitle: "كتالوج المتجر سيتاح قريبًا",
-        shopNoticeBody: "تشتغل إدارة المحطة حالياً على إعداد القائمة الكاملة للمنتجات والسلع المتوفرة بالمتجر.",
-        shopCat1Title: "المشروبات والوجبات الخفيفة",
-        shopCat1Desc: "مشروبات باردة، قهوة، حلويات، بسكويت ووجبات سريعة.",
-        shopCat2Title: "زيوت ومحركات شل",
+        shopSub: "وجبات خفيفة، مشروبات باردة، زيوت Shell Helix ومستلزمات السيارة متوفرة في متجرنا.",
+        shopNoticeTitle: "لائحة منتجات المتجر ستتوفر قريبًا",
+        shopNoticeBody: "تعمل إدارة المحطة حاليًا على إعداد اللائحة الكاملة للمنتجات المتوفرة في المتجر.",
+        shopCat1Title: "وجبات خفيفة ومشروبات",
+        shopCat1Desc: "مشروبات باردة، قهوة، حلويات، بسكويت ووجبات خفيفة سريعة.",
+        shopCat2Title: "زيوت ومزلّقات شل",
         shopCat2Desc: "تشكيلة كاملة من زيوت المحركات Shell Helix وAdvance وسوائل الصيانة.",
         shopCat3Title: "مستلزمات السفر والسيارة",
-        shopCat3Desc: "منتجات التنظيف، مساحات الزجاج، الشواحن والضروريات.",
-        toBeAddedSoon: "سيضاف قريباً جداً",
-        servicesKicker: "الخدمات بالموقع",
+        shopCat3Desc: "منتجات التنظيف، مساحات الزجاج، الشواحن وضروريات الطريق.",
+        toBeAddedSoon: "ستتوفر قريبًا جدًا",
+        servicesKicker: "الخدمات المتوفرة بعين المكان",
         servicesTitle: "خدمات شل هيركوليس",
-        servicesSub: "اكتشف التجهيزات والخدمات المتوفرة بمحطتنا ببوخالف طنجة.",
+        servicesSub: "اكتشف التجهيزات والخدمات المتوفرة في محطتنا ببوخالف، طنجة.",
         serv1Title: "وقود شل",
-        serv1Desc: "Shell V-Power Diesel وShell FuelSave Sans Plomb وShell FuelSave Diesel.",
-        serv2Title: "الهواء والماء / مراقبة الضغط",
-        serv2Desc: "جهاز مراقبة ضغط الإطارات وتزويد الماء مجاناً.",
-        serv3Title: "تغيير الزيت والصيانة",
-        serv3Desc: "خدمة تغيير الزيت السريعة واستشارات زيوت المحركات Shell Helix.",
-        serv4Title: "دورات المياه والراحة",
-        serv4Desc: "مرافق صحية نظيفة ومجهزة متوفرة على مدار 24 ساعة للزبناء.",
-        extraServTitle: "التجهيزات المعتمدة بمحطة شل هيركوليس:",
-        feat1: "💳 بطاقات الأداء والوقود",
-        feat2: "⛽ خدمة المضخة والمسار",
-        feat3: "🚚 وصول الشاحنات الكبيرة",
+        serv1Desc: "Shell V-Power Diesel وShell FuelSave بدون رصاص وShell FuelSave Diesel.",
+        serv2Title: "الهواء والماء / نفخ العجلات",
+        serv2Desc: "جهاز لمراقبة ضغط العجلات وتزويد مجاني بالماء.",
+        serv3Title: "تغيير الزيت والمزلّقات",
+        serv3Desc: "خدمة تغيير الزيت السريعة ونصائح حول زيوت المحركات Shell Helix.",
+        serv4Title: "المرافق الصحية والراحة",
+        serv4Desc: "مرافق صحية نظيفة ومُعتنى بها، متاحة للزبناء على مدار الساعة.",
+        extraServTitle: "التجهيزات المتوفرة في شل هيركوليس:",
+        feat1: "💳 بطاقات الوقود والبطاقات البنكية",
+        feat2: "⛽ خدمة عند المضخة",
+        feat3: "🚚 ولوج الشاحنات",
         feat4: "🎁 برنامج My Shell",
-        revKicker: "آراء وتقييمات الزبناء",
-        revTitle: "رأيكم يهمنا كثيراً",
-        revSub: "تصفح التقييمات أو سجل بريدك الإلكتروني لإضافة تقييمك.",
+        revKicker: "آراء الزبناء وتقييماتهم",
+        revTitle: "رأيكم يهمنا",
+        revSub: "اطلع على التقييمات أو اترك رأيك باستعمال بريدك الإلكتروني.",
         basedOn: "بناءً على",
-        clientReviews: "تقييمات الزبناء",
-        leaveReviewTitle: "إضافة تقييم",
-        emailAuthBadge: "التسجيل بالبريد الإلكتروني مطلوب",
+        clientReviews: "تقييم",
+        leaveReviewTitle: "أضف تقييمك",
+        emailAuthBadge: "البريد الإلكتروني مطلوب",
         lblFullName: "الاسم الكامل *",
-        lblEmail: "البريد الإلكتروني (التسجيل) *",
+        lblEmail: "البريد الإلكتروني *",
         lblRating: "تقييمك *",
-        lblComment: "تجرِبتك *",
-        btnSubmitReview: "التسجيل ونشر التقييم",
+        lblComment: "تجربتك *",
+        phName: "مثال: محمد أمين",
+        phComment: "مثال: استقبال ممتاز، وقود V-Power رائع وقهوة لذيذة...",
+        privacyNote: "يتم إرسال تقييمك واسمك وبريدك الإلكتروني إلى إدارة المحطة. يظهر للعموم فقط اسمك وبريد إلكتروني مُخفى جزئيًا.",
+        btnSubmitReview: "نشر التقييم",
+        btnSending: "جارٍ الإرسال…",
+        star1: "1/5 - سيئ",
+        star2: "2/5 - مقبول",
+        star3: "3/5 - متوسط",
+        star4: "4/5 - جيد جدًا",
+        star5: "5/5 - ممتاز",
+        msgSent: "شكرًا لك! تم إرسال تقييمك إلى المحطة ونشره.",
+        msgFailed: "فشل الإرسال. تحقق من اتصالك بالإنترنت وأعد المحاولة.",
+        msgInvalid: "المرجو ملء جميع الحقول وإدخال بريد إلكتروني صحيح.",
+        noReviews: "لا توجد تقييمات بعد. كن أول من يترك رأيه!",
         locKicker: "الموقع والوصول",
         locTitle: "محطة شل هيركوليس طنجة",
-        locSub: "موقع متميز ببوخالف على طريق الرباط، بالقرب من مطار طنجة ابن بطوطة.",
+        locSub: "موقع متميز ببوخالف على طريق الرباط، قرب مطار طنجة ابن بطوطة.",
         addressLabel: "العنوان الرسمي",
+        addressValue: "طريق الرباط، بوخالف، طنجة، المغرب",
         hoursLabel: "أوقات عمل المحطة",
-        hoursValue: "مفتوح 24/24 ساعة، 7/7 أيام (الوقود والخدمات)",
-        phoneLabel: "الهاتف"
+        hoursValue: "مفتوحة 24/24 ساعة، 7/7 أيام (الوقود والخدمات)",
+        phoneLabel: "الهاتف",
+        footerTag: "محطة خدمة ومطعم Relais de l’Aéroport · طنجة",
+        rights: "جميع الحقوق محفوظة."
       },
       en: {
+        pageTitle: "CITY PROM Shell HERCULES Tangier | Relais de l’Aéroport",
+        cityName: "Tangier",
+        topService: "Service 24/7",
+        brandSub: "Shell HERCULES Tangier",
         navRestaurant: "Restaurant",
         navBoutique: "Shop",
         navServices: "Services",
         navReviews: "Reviews",
         navLocation: "Location",
         btnItinerary: "Directions",
-        btnOpenGmaps: "Open Google Maps ↗",
+        btnOpenGmaps: "Open in Google Maps ↗",
         btnShellSheet: "Official Shell Page ↗",
+        shellSheetShort: "Shell page ↗",
         ribbonText: "Official Shell HERCULES Station · Tangier Boukhalef",
         heroBadge: "CITY PROM · Shell HERCULES Tangier",
         heroTitleSub: "Your ideal stop in Tangier.",
-        heroDesc: "Fuel up with high-quality Shell V-Power & FuelSave fuels, enjoy a break at the Relais de l’Aéroport restaurant, explore our shop, and benefit from our oil change & tyre pressure services.",
+        heroDesc: "Fuel up with high-quality Shell V-Power & FuelSave fuels, enjoy a break at the Relais de l’Aéroport restaurant, explore our shop, and benefit from our oil change and tyre pressure services.",
         btnRestaurant: "Restaurant & Café",
         btnMap: "View on Google Maps",
-        stat1Title: "Opening Hours",
-        stat1Value: "24/7 Service",
+        stat1Title: "Opening hours",
+        stat1Value: "24/7",
         stat2Title: "Fuels",
         stat2Value: "Shell V-Power",
         stat3Title: "Dining",
         stat3Value: "Relais Aéroport",
+        mapAddressShort: "Route de Rabat, Boukhalef, Tangier",
         gmapsPhotoBtn: "View real station photos on Google Maps",
+        seeLink: "View ↗",
+        photoKicker: "Shell HERCULES · Tangier",
         photoBandTitle: "A station welcoming you 24/7",
-        photoBandBtn: "Our Services",
-        restKicker: "Dining & Refreshments",
+        photoBandBtn: "Our services",
+        restKicker: "Dining & refreshments",
         restTitle: "Relais de l’Aéroport",
-        restSub: "A welcoming food break during your travel around Tangier.",
-        restCardHeading: "Restaurant Menu & Cafe",
-        restCardDesc: "Enjoy a modern, comfortable space for coffee, breakfast, or a meal before taking the road.",
-        statusRestTitle: "Menu to be added soon",
-        statusRestBody: "The establishment is currently finalizing the full food and drink menu. Dishes and pricing will be updated very soon.",
+        restSub: "A welcoming food break during your travels around Tangier.",
+        restBadge: "☕ Café & Restaurant",
+        restCardHeading: "Restaurant & Café Menu",
+        restCardDesc: "Enjoy a modern, comfortable space for coffee, breakfast or a full meal before getting back on the road.",
+        statusRestTitle: "Menu coming soon",
+        statusRestBody: "The establishment is currently finalising and fully updating the food and drink menu. Dishes and prices will be added very soon.",
         restFeat1: "Bank cards accepted",
-        restFeat2: "Air-conditioned dining",
-        restFeat3: "Disabled access",
-        badgeMenuPending: "Coming Soon",
-        menuItem1: "Breakfast & Hot Drinks",
-        menuItem2: "Hot Meals & Sandwiches",
-        menuItem3: "Fresh Juices & Refreshments",
-        menuItemPending: "Pending",
-        menuNote: "Catalog and prices currently being finalized",
+        restFeat2: "Air-conditioned dining room",
+        restFeat3: "Wheelchair accessible",
+        badgeMenuPending: "Coming soon",
+        menuItem1: "Breakfast & hot drinks",
+        menuItem2: "Hot meals & sandwiches",
+        menuItem3: "Fresh juices & refreshments",
+        menuItemPending: "Coming soon",
+        menuNote: "Menu and prices are being finalised",
         shopKicker: "Shell Select Shop",
-        shopTitle: "Everything for your journey",
-        shopSub: "Snacks, cold drinks, Shell Helix oils, and travel accessories available at our shop.",
-        shopNoticeTitle: "Shop catalog coming soon",
-        shopNoticeBody: "The establishment is currently preparing the full product list for the shop catalog.",
-        shopCat1Title: "Snacks & Refreshments",
-        shopCat1Desc: "Cold drinks, coffees, snacks, biscuits, and quick bites.",
-        shopCat2Title: "Shell Oils & Lubricants",
-        shopCat2Desc: "Full range of Shell Helix motor oils, Advance oils, and maintenance fluids.",
-        shopCat3Title: "Travel & Car Accessories",
-        shopCat3Desc: "Cleaning supplies, wiper blades, chargers, and road essentials.",
-        toBeAddedSoon: "To be added soon",
-        servicesKicker: "On-site Amenities",
+        shopTitle: "Everything you need for the road",
+        shopSub: "Snacks, cold drinks, Shell Helix oils and car accessories available in our shop.",
+        shopNoticeTitle: "Shop catalogue coming soon",
+        shopNoticeBody: "The establishment is currently preparing the full list of items and products in store.",
+        shopCat1Title: "Snacks & refreshments",
+        shopCat1Desc: "Cold drinks, coffee, sweets, biscuits and quick bites.",
+        shopCat2Title: "Shell oils & lubricants",
+        shopCat2Desc: "Full range of Shell Helix and Advance motor oils and maintenance fluids.",
+        shopCat3Title: "Travel & car accessories",
+        shopCat3Desc: "Cleaning products, wiper blades, chargers and road essentials.",
+        toBeAddedSoon: "Coming very soon",
+        servicesKicker: "On-site amenities",
         servicesTitle: "Shell HERCULES Services",
-        servicesSub: "Explore the facilities and services available at our station in Tangier Boukhalef.",
-        serv1Title: "Shell Fuels",
-        serv1Desc: "Shell V-Power Diesel, Shell FuelSave Unleaded, and Shell FuelSave Diesel.",
-        serv2Title: "Air & Water / Tyre Check",
-        serv2Desc: "Tyre pressure checking unit and free water refills.",
-        serv3Title: "Oil Change & Lubricants",
-        serv3Desc: "Express oil change service and Shell Helix motor oil advice.",
-        serv4Title: "Restrooms & Amenities",
-        serv4Desc: "Clean, maintained restrooms accessible 24/7 for customers.",
-        extraServTitle: "Shell HERCULES Features:",
-        feat1: "💳 Fuel & Bank Cards",
-        feat2: "⛽ Forecourt Service",
-        feat3: "🚚 Heavy Vehicle Access",
-        feat4: "🎁 My Shell Rewards",
-        revKicker: "Customer Reviews & Ratings",
-        revTitle: "Your Feedback Matters",
-        revSub: "Read reviews from our customers or register your email to submit your own rating.",
+        servicesSub: "Discover the facilities and services available at our station in Tangier Boukhalef.",
+        serv1Title: "Shell fuels",
+        serv1Desc: "Shell V-Power Diesel, Shell FuelSave Unleaded and Shell FuelSave Diesel.",
+        serv2Title: "Air & water / tyre check",
+        serv2Desc: "Tyre pressure checking unit and free water top-up.",
+        serv3Title: "Oil change & lubricants",
+        serv3Desc: "Express oil change service and advice on Shell Helix motor oils.",
+        serv4Title: "Restrooms & comfort",
+        serv4Desc: "Clean, well-maintained restrooms available to customers 24/7.",
+        extraServTitle: "Shell HERCULES facilities:",
+        feat1: "💳 Fuel & bank cards",
+        feat2: "⛽ Forecourt service",
+        feat3: "🚚 Heavy vehicle access",
+        feat4: "🎁 My Shell rewards",
+        revKicker: "Customer reviews & ratings",
+        revTitle: "Your feedback matters",
+        revSub: "Read customer reviews or leave your own using your email address.",
         basedOn: "Based on",
         clientReviews: "customer reviews",
-        leaveReviewTitle: "Leave a Review",
-        emailAuthBadge: "Email registration required",
-        lblFullName: "Full Name *",
-        lblEmail: "Email Address (Register) *",
-        lblRating: "Your Rating *",
-        lblComment: "Your Experience *",
-        btnSubmitReview: "Register & Post Review",
-        locKicker: "Location & Access",
+        leaveReviewTitle: "Leave a review",
+        emailAuthBadge: "Email required",
+        lblFullName: "Full name *",
+        lblEmail: "Email address *",
+        lblRating: "Your rating *",
+        lblComment: "Your experience *",
+        phName: "e.g. Mohamed Amine",
+        phComment: "e.g. Great service, V-Power fuel is excellent and the coffee is lovely...",
+        privacyNote: "Your review, name and email are sent to the station. Only your name and a partially masked email are shown publicly.",
+        btnSubmitReview: "Post review",
+        btnSending: "Sending…",
+        star1: "1/5 - Poor",
+        star2: "2/5 - Fair",
+        star3: "3/5 - Average",
+        star4: "4/5 - Very good",
+        star5: "5/5 - Excellent",
+        msgSent: "Thank you! Your review was sent to the station and published.",
+        msgFailed: "Sending failed. Please check your connection and try again.",
+        msgInvalid: "Please fill in every field with a valid email address.",
+        noReviews: "No reviews yet. Be the first to leave one!",
+        locKicker: "Location & access",
         locTitle: "Shell HERCULES Station Tangier",
-        locSub: "Conveniently located at Boukhalef on Route de Rabat, near Tangier Ibn Battouta Airport.",
-        addressLabel: "Official Address",
-        hoursLabel: "Station Hours",
-        hoursValue: "Open 24/7 (Fuels & Forecourt)",
-        phoneLabel: "Phone Numbers"
+        locSub: "Conveniently located in Boukhalef on Route de Rabat, right next to Tangier Ibn Battouta Airport.",
+        addressLabel: "Official address",
+        addressValue: "Route de Rabat, Boukhalef, Tangier, Morocco",
+        hoursLabel: "Station hours",
+        hoursValue: "Open 24/7 (Fuels & forecourt)",
+        phoneLabel: "Phone",
+        footerTag: "Service station & Relais de l’Aéroport restaurant · Tangier",
+        rights: "All rights reserved."
       },
       es: {
+        pageTitle: "CITY PROM Shell HERCULES Tánger | Relais de l’Aéroport",
+        cityName: "Tánger",
+        topService: "Servicio 24h/24 y 7d/7",
+        brandSub: "Shell HERCULES Tánger",
         navRestaurant: "Restaurante",
-        nav
+        navBoutique: "Tienda",
+        navServices: "Servicios",
+        navReviews: "Opiniones",
+        navLocation: "Ubicación",
+        btnItinerary: "Cómo llegar",
+        btnOpenGmaps: "Abrir en Google Maps ↗",
+        btnShellSheet: "Ficha oficial Shell ↗",
+        shellSheetShort: "Ficha Shell ↗",
+        ribbonText: "Estación de servicio oficial Shell HERCULES · Tánger Boukhalef",
+        heroBadge: "CITY PROM · Shell HERCULES Tánger",
+        heroTitleSub: "Su parada ideal en Tánger.",
+        heroDesc: "Reposte con los carburantes de calidad Shell V-Power y FuelSave, disfrute de una pausa en el restaurante Relais de l’Aéroport, descubra nuestra tienda y aproveche nuestros servicios de cambio de aceite y control de presión de neumáticos.",
+        btnRestaurant: "Restaurante y café",
+        btnMap: "Ver en Google Maps",
+        stat1Title: "Horario",
+        stat1Value: "Abierto 24h / 7d",
+        stat2Title: "Carburantes",
+        stat2Value: "Shell V-Power",
+        stat3Title: "Restauración",
+        stat3Value: "Relais Aeropuerto",
+        mapAddressShort: "Route de Rabat, Boukhalef, Tánger",
+        gmapsPhotoBtn: "Ver fotos reales en Google Maps",
+        seeLink: "Ver ↗",
+        photoKicker: "Shell HERCULES · Tánger",
+        photoBandTitle: "Una estación que le recibe 24h al día",
+        photoBandBtn: "Nuestros servicios",
+        restKicker: "Espacio de restauración",
+        restTitle: "Relais de l’Aéroport",
+        restSub: "Una pausa gastronómica y acogedora durante sus desplazamientos por Tánger.",
+        restBadge: "☕ Café y restaurante",
+        restCardHeading: "Menú y restauración del Relais",
+        restCardDesc: "Disfrute de un espacio moderno y cómodo para tomar un café, un desayuno o una comida completa antes de volver a la carretera.",
+        statusRestTitle: "Menú disponible próximamente",
+        statusRestBody: "El establecimiento está ultimando la actualización completa de la carta de comidas y bebidas. Los platos y precios se añadirán muy pronto.",
+        restFeat1: "Se aceptan tarjetas bancarias",
+        restFeat2: "Sala climatizada",
+        restFeat3: "Acceso para personas con movilidad reducida",
+        badgeMenuPending: "Próximamente",
+        menuItem1: "Desayuno y bebidas calientes",
+        menuItem2: "Platos calientes y bocadillos",
+        menuItem3: "Zumos frescos y refrescos",
+        menuItemPending: "Próximamente",
+        menuNote: "Carta y precios en proceso de finalización",
+        shopKicker: "Tienda Shell Select",
+        shopTitle: "Todo lo necesario para la carretera",
+        shopSub: "Aperitivos, bebidas frías, aceites Shell Helix y accesorios para el automóvil disponibles en nuestra tienda.",
+        shopNoticeTitle: "Catálogo de la tienda disponible próximamente",
+        shopNoticeBody: "El establecimiento está preparando la lista completa de artículos y productos de la tienda.",
+        shopCat1Title: "Aperitivos y refrescos",
+        shopCat1Desc: "Bebidas frías, café, golosinas, galletas y bocados rápidos.",
+        shopCat2Title: "Aceites y lubricantes Shell",
+        shopCat2Desc: "Gama completa de aceites de motor Shell Helix y Advance y líquidos de mantenimiento.",
+        shopCat3Title: "Accesorios de viaje y automóvil",
+        shopCat3Desc: "Productos de limpieza, escobillas limpiaparabrisas, cargadores y esenciales de carretera.",
+        toBeAddedSoon: "Disponible muy pronto",
+        servicesKicker: "Servicios en el lugar",
+        servicesTitle: "Servicios Shell HERCULES",
+        servicesSub: "Descubra las instalaciones y servicios disponibles en nuestra estación de Tánger Boukhalef.",
+        serv1Title: "Carburantes Shell",
+        serv1Desc: "Shell V-Power Diésel, Shell FuelSave Sin Plomo y Shell FuelSave Diésel.",
+        serv2Title: "Aire y agua / inflado",
+        serv2Desc: "Punto de control de presión de neumáticos y recarga de agua gratuita.",
+        serv3Title: "Cambio de aceite y lubricantes",
+        serv3Desc: "Servicio exprés de cambio de aceite y asesoramiento sobre aceites de motor Shell Helix.",
+        serv4Title: "Aseos y confort",
+        serv4Desc: "Aseos limpios y bien cuidados, accesibles las 24 horas para los clientes.",
+        extraServTitle: "Equipamiento Shell HERCULES:",
+        feat1: "💳 Tarjetas de carburante y bancarias",
+        feat2: "⛽ Servicio en pista",
+        feat3: "🚚 Acceso para camiones",
+        feat4: "🎁 Programa My Shell",
+        revKicker: "Opiniones y valoraciones de clientes",
+        revTitle: "Su opinión es importante para nosotros",
+        revSub: "Consulte las valoraciones o deje su opinión con su correo electrónico.",
+        basedOn: "Basado en",
+        clientReviews: "opiniones de clientes",
+        leaveReviewTitle: "Dejar una opinión",
+        emailAuthBadge: "Correo electrónico obligatorio",
+        lblFullName: "Nombre completo *",
+        lblEmail: "Correo electrónico *",
+        lblRating: "Su valoración *",
+        lblComment: "Su experiencia *",
+        phName: "Ej.: Mohamed Amine",
+        phComment: "Ej.: Excelente atención, el carburante V-Power es genial y el café muy agradable...",
+        privacyNote: "Su opinión, su nombre y su correo se envían a la estación. Públicamente solo se muestran su nombre y un correo parcialmente oculto.",
+        btnSubmitReview: "Publicar opinión",
+        btnSending: "Enviando…",
+        star1: "1/5 - Malo",
+        star2: "2/5 - Aceptable",
+        star3: "3/5 - Regular",
+        star4: "4/5 - Muy bueno",
+        star5: "5/5 - Excelente",
+        msgSent: "¡Gracias! Su opinión se ha enviado a la estación y publicado.",
+        msgFailed: "No se pudo enviar. Compruebe su conexión e inténtelo de nuevo.",
+        msgInvalid: "Rellene todos los campos con un correo electrónico válido.",
+        noReviews: "Aún no hay opiniones. ¡Sea el primero en dejar una!",
+        locKicker: "Ubicación y acceso",
+        locTitle: "Estación Shell HERCULES Tánger",
+        locSub: "Ubicada en Boukhalef, en la Route de Rabat, junto al Aeropuerto de Tánger Ibn Battouta.",
+        addressLabel: "Dirección oficial",
+        addressValue: "Route de Rabat, Boukhalef, Tánger, Marruecos",
+        hoursLabel: "Horario de la estación",
+        hoursValue: "Abierto 24h / 24, 7d / 7 (Carburantes y pista)",
+        phoneLabel: "Teléfono",
+        footerTag: "Estación de servicio y restaurante Relais de l’Aéroport · Tánger",
+        rights: "Todos los derechos reservados."
+      },
+      pt: {
+        pageTitle: "CITY PROM Shell HERCULES Tânger | Relais de l’Aéroport",
+        cityName: "Tânger",
+        topService: "Serviço 24h/24 e 7d/7",
+        brandSub: "Shell HERCULES Tânger",
+        navRestaurant: "Restaurante",
+        navBoutique: "Loja",
+        navServices: "Serviços",
+        navReviews: "Avaliações",
+        navLocation: "Localização",
+        btnItinerary: "Como chegar",
+        btnOpenGmaps: "Abrir no Google Maps ↗",
+        btnShellSheet: "Ficha oficial Shell ↗",
+        shellSheetShort: "Ficha Shell ↗",
+        ribbonText: "Posto de combustível oficial Shell HERCULES · Tânger Boukhalef",
+        heroBadge: "CITY PROM · Shell HERCULES Tânger",
+        heroTitleSub: "A sua paragem ideal em Tânger.",
+        heroDesc: "Abasteça com os combustíveis de qualidade Shell V-Power e FuelSave, desfrute de uma pausa no restaurante Relais de l’Aéroport, descubra a nossa loja e aproveite os nossos serviços de troca de óleo e verificação da pressão dos pneus.",
+        btnRestaurant: "Restaurante e café",
+        btnMap: "Ver no Google Maps",
+        stat1Title: "Horário",
+        stat1Value: "Aberto 24h / 7d",
+        stat2Title: "Combustíveis",
+        stat2Value: "Shell V-Power",
+        stat3Title: "Restauração",
+        stat3Value: "Relais Aeroporto",
+        mapAddressShort: "Route de Rabat, Boukhalef, Tânger",
+        gmapsPhotoBtn: "Ver fotos reais no Google Maps",
+        seeLink: "Ver ↗",
+        photoKicker: "Shell HERCULES · Tânger",
+        photoBandTitle: "Um posto que o recebe 24h por dia",
+        photoBandBtn: "Os nossos serviços",
+        restKicker: "Espaço de restauração",
+        restTitle: "Relais de l’Aéroport",
+        restSub: "Uma pausa saborosa e acolhedora durante as suas deslocações em Tânger.",
+        restBadge: "☕ Café e restaurante",
+        restCardHeading: "Menu e restauração do Relais",
+        restCardDesc: "Aproveite um espaço moderno e confortável para tomar um café, o pequeno-almoço ou uma refeição completa antes de voltar à estrada.",
+        statusRestTitle: "Menu disponível em breve",
+        statusRestBody: "O estabelecimento está a finalizar a atualização completa do menu de refeições e bebidas. Os pratos e preços serão adicionados muito em breve.",
+        restFeat1: "Cartões bancários aceites",
+        restFeat2: "Sala climatizada",
+        restFeat3: "Acesso para mobilidade reduzida",
+        badgeMenuPending: "Em breve",
+        menuItem1: "Pequeno-almoço e bebidas quentes",
+        menuItem2: "Pratos quentes e sanduíches",
+        menuItem3: "Sumos frescos e refrescos",
+        menuItemPending: "Em breve",
+        menuNote: "Menu e preços em fase de finalização",
+        shopKicker: "Loja Shell Select",
+        shopTitle: "Tudo o que precisa para a estrada",
+        shopSub: "Snacks, bebidas frescas, óleos Shell Helix e acessórios para automóvel disponíveis na nossa loja.",
+        shopNoticeTitle: "Catálogo da loja disponível em breve",
+        shopNoticeBody: "O estabelecimento está a preparar a lista completa de artigos e produtos da loja.",
+        shopCat1Title: "Snacks e refrescos",
+        shopCat1Desc: "Bebidas frescas, cafés, doces, bolachas e lanches rápidos.",
+        shopCat2Title: "Óleos e lubrificantes Shell",
+        shopCat2Desc: "Gama completa de óleos de motor Shell Helix e Advance e fluidos de manutenção.",
+        shopCat3Title: "Acessórios de viagem e automóvel",
+        shopCat3Desc: "Produtos de limpeza, escovas limpa-para-brisas, carregadores e essenciais de estrada.",
+        toBeAddedSoon: "Disponível muito em breve",
+        servicesKicker: "Serviços no local",
+        servicesTitle: "Serviços Shell HERCULES",
+        servicesSub: "Descubra as instalações e serviços disponíveis no nosso posto em Tânger Boukhalef.",
+        serv1Title: "Combustíveis Shell",
+        serv1Desc: "Shell V-Power Diesel, Shell FuelSave Sem Chumbo e Shell FuelSave Diesel.",
+        serv2Title: "Ar e água / calibragem",
+        serv2Desc: "Posto de controlo da pressão dos pneus e reposição gratuita de água.",
+        serv3Title: "Troca de óleo e lubrificantes",
+        serv3Desc: "Serviço expresso de troca de óleo e aconselhamento sobre óleos de motor Shell Helix.",
+        serv4Title: "Casas de banho e conforto",
+        serv4Desc: "Instalações sanitárias limpas e bem cuidadas, acessíveis 24h por dia aos clientes.",
+        extraServTitle: "Equipamentos Shell HERCULES:",
+        feat1: "💳 Cartões de combustível e bancários",
+        feat2: "⛽ Serviço de pista",
+        feat3: "🚚 Acesso a veículos pesados",
+        feat4: "🎁 Programa My Shell",
+        revKicker: "Avaliações e opiniões dos clientes",
+        revTitle: "A sua opinião é importante para nós",
+        revSub: "Consulte as avaliações ou deixe a sua opinião com o seu e-mail.",
+        basedOn: "Baseado em",
+        clientReviews: "avaliações de clientes",
+        leaveReviewTitle: "Deixar uma avaliação",
+        emailAuthBadge: "E-mail obrigatório",
+        lblFullName: "Nome completo *",
+        lblEmail: "Endereço de e-mail *",
+        lblRating: "A sua classificação *",
+        lblComment: "A sua experiência *",
+        phName: "Ex.: Mohamed Amine",
+        phComment: "Ex.: Excelente atendimento, o combustível V-Power é ótimo e o café muito agradável...",
+        privacyNote: "A sua avaliação, nome e e-mail são enviados ao posto. Apenas o seu nome e um e-mail parcialmente ocultado são apresentados publicamente.",
+        btnSubmitReview: "Publicar avaliação",
+        btnSending: "A enviar…",
+        star1: "1/5 - Mau",
+        star2: "2/5 - Razoável",
+        star3: "3/5 - Médio",
+        star4: "4/5 - Muito bom",
+        star5: "5/5 - Excelente",
+        msgSent: "Obrigado! A sua avaliação foi enviada ao posto e publicada.",
+        msgFailed: "Falha no envio. Verifique a ligação e tente novamente.",
+        msgInvalid: "Preencha todos os campos com um e-mail válido.",
+        noReviews: "Ainda não há avaliações. Seja o primeiro a deixar uma!",
+        locKicker: "Localização e acesso",
+        locTitle: "Posto Shell HERCULES Tânger",
+        locSub: "Bem localizado em Boukhalef, na Route de Rabat, junto ao Aeroporto de Tânger Ibn Battouta.",
+        addressLabel: "Morada oficial",
+        addressValue: "Route de Rabat, Boukhalef, Tânger, Marrocos",
+        hoursLabel: "Horário do posto",
+        hoursValue: "Aberto 24h / 24, 7d / 7 (Combustíveis e pista)",
+        phoneLabel: "Telefone",
+        footerTag: "Posto de abastecimento e restaurante Relais de l’Aéroport · Tânger",
+        rights: "Todos os direitos reservados."
+      }
+    };
+
+    /* ============================================================
+       SETTINGS
+       ============================================================ */
+    const REVIEW_EMAIL = "anasarouss633@gmail.com";
+    const STORAGE_KEY_REVIEWS = "shell_hercules_reviews_v2";
+    const STORAGE_KEY_LANG = "shell_hercules_lang";
+
+    let currentLang = "fr";
+    let currentSelectedStars = 0;   // 0 = nothing chosen yet
+    let statusState = null;         // remembers last status message key so it can be re-translated
+
+    const t = (key) => (translations[currentLang] && translations[currentLang][key]) || translations.fr[key] || key;
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    /* ============================================================
+       LANGUAGE SWITCHER
+       ============================================================ */
+    const langSelect = document.getElementById("langSelect");
+
+    function updateLanguage(locale) {
+      if (!translations[locale]) locale = "fr";
+      currentLang = locale;
+      const dict = translations[locale];
+
+      document.documentElement.lang = locale;
+      document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+      document.title = dict.pageTitle;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key] !== undefined) el.textContent = dict[key];
+      });
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (dict[key] !== undefined) el.setAttribute("placeholder", dict[key]);
+      });
+
+      langSelect.value = locale;
+      try { localStorage.setItem(STORAGE_KEY_LANG, locale); } catch (e) {}
+
+      refreshStarLabel();
+      renderReviewsSystem();
+      if (statusState) showStatus(statusState.key, statusState.type);
+    }
+
+    langSelect.addEventListener("change", (e) => updateLanguage(e.target.value));
+
+    function detectInitialLanguage() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY_LANG);
+        if (saved && translations[saved]) return saved;
+      } catch (e) {}
+      const nav = (navigator.language || "fr").slice(0, 2).toLowerCase();
+      return translations[nav] ? nav : "fr";
+    }
+
+    /* ============================================================
+       MISC UI
+       ============================================================ */
+    document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+
+    const mobileBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileBtn.addEventListener("click", () => {
+      const nowHidden = mobileMenu.classList.toggle("hidden");
+      mobileBtn.setAttribute("aria-expanded", nowHidden ? "false" : "true");
+    });
+    mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      mobileBtn.setAttribute("aria-expanded", "false");
+    }));
+
+    /* ============================================================
+       REVIEWS STORAGE (starts empty: only real reviews are shown)
+       ============================================================ */
+    function getStoredReviews() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY_REVIEWS);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) return parsed;
+        }
+      } catch (e) {}
+      return [];
+    }
+
+    function saveReviews(reviews) {
+      try { localStorage.setItem(STORAGE_KEY_REVIEWS, JSON.stringify(reviews)); } catch (e) {}
+    }
+
+    /* ============================================================
+       STAR SELECTOR
+       ============================================================ */
+    const starButtons = Array.from(document.querySelectorAll("#starInput .star-btn"));
+    const starRatingText = document.getElementById("starRatingText");
+
+    function paintStars(value) {
+      starButtons.forEach(btn => {
+        const v = parseInt(btn.dataset.star, 10);
+        btn.classList.toggle("on", v <= value);
+      });
+    }
+
+    function refreshStarLabel(hoverValue) {
+      const v = hoverValue || currentSelectedStars;
+      starRatingText.textContent = v ? t("star" + v) : "";
+    }
+
+    function setRating(value) {
+      currentSelectedStars = value;
+      starButtons.forEach(btn => {
+        const v = parseInt(btn.dataset.star, 10);
+        btn.setAttribute("aria-checked", v === value ? "true" : "false");
+      });
+      paintStars(value);
+      refreshStarLabel();
+    }
+
+    starButtons.forEach(btn => {
+      const v = parseInt(btn.dataset.star, 10);
+      btn.addEventListener("mouseenter", () => { paintStars(v); refreshStarLabel(v); });
+      btn.addEventListener("focus", () => { paintStars(v); refreshStarLabel(v); });
+      btn.addEventListener("click", () => setRating(v));
+    });
+    const starInputEl = document.getElementById("starInput");
+    starInputEl.addEventListener("mouseleave", () => { paintStars(currentSelectedStars); refreshStarLabel(); });
+    starInputEl.addEventListener("focusout", () => { paintStars(currentSelectedStars); refreshStarLabel(); });
+
+    /* ============================================================
+       RATING SUMMARY + FEED
+       ============================================================ */
+    function renderReviewsSystem() {
+      const reviews = getStoredReviews();
+      const total = reviews.length;
+
+      const counts = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
+      let sum = 0;
+      reviews.forEach(r => {
+        const rating = Math.min(5, Math.max(1, Math.round(Number(r.rating) || 0)));
+        counts[rating]++;
+        sum += rating;
+      });
+
+      const avg = total > 0 ? sum / total : 0;
+
+      document.getElementById("calcAvgRating").textContent = total > 0 ? avg.toFixed(1) : "–";
+      document.getElementById("calcTotalReviews").textContent = total;
+
+      const rounded = Math.round(avg);
+      let avgStars = "";
+      for (let i = 1; i <= 5; i++) avgStars += i <= rounded ? "★" : "☆";
+      document.getElementById("calcAvgStars").textContent = avgStars;
+
+      // Breakdown bars
+      const breakdownEl = document.getElementById("starBreakdown");
+      breakdownEl.innerHTML = [5, 4, 3, 2, 1].map(star => {
+        const count = counts[star];
+        const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+        return `
+          <div class="flex items-center gap-2" dir="ltr">
+            <span class="w-12 font-semibold text-right text-slate-400">${star} ★</span>
+            <div class="flex-grow bg-slate-700 h-2 rounded-full overflow-hidden">
+              <div class="bg-amber-400 h-full transition-all duration-500" style="width:${pct}%"></div>
+            </div>
+            <span class="w-8 text-slate-400 text-right">${count}</span>
+          </div>`;
+      }).join("");
+
+      // Feed (newest first)
+      const feedEl = document.getElementById("reviewsFeed");
+      if (total === 0) {
+        feedEl.innerHTML = `<div class="bg-slate-800/60 border border-dashed border-slate-700 rounded-2xl p-6 text-center text-sm text-slate-400">${escapeHtml(t("noReviews"))}</div>`;
+        return;
+      }
+
+      feedEl.innerHTML = reviews.slice().reverse().map(r => {
+        const rating = Math.min(5, Math.max(1, Math.round(Number(r.rating) || 0)));
+        let starsStr = "";
+        for (let i = 1; i <= 5; i++) starsStr += i <= rating ? "★" : "☆";
+
+        const parts = String(r.email || "").split("@");
+        const maskedEmail = parts.length === 2 ? (parts[0].substring(0, 2) + "***@" + parts[1]) : "";
+        const initials = escapeHtml(String(r.name || "?").trim().substring(0, 2));
+
+        return `
+          <div class="bg-slate-800/90 border border-slate-700/80 rounded-2xl p-5 shadow-sm space-y-2">
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-8 h-8 rounded-full bg-shell-red/20 text-shell-red font-bold text-xs flex items-center justify-center uppercase flex-shrink-0">${initials}</div>
+                <div class="min-w-0">
+                  <div class="text-xs font-bold text-white truncate">${escapeHtml(r.name)}</div>
+                  <div class="text-[10px] text-slate-400 truncate" dir="ltr">${escapeHtml(maskedEmail)}</div>
+                </div>
+              </div>
+              <div class="text-amber-400 font-bold text-sm tracking-wider flex-shrink-0" dir="ltr" aria-label="${rating}/5">${starsStr}</div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-normal whitespace-pre-line">${escapeHtml(r.comment)}</p>
+            <div class="text-[10px] text-slate-500 font-medium pt-1" dir="ltr">${escapeHtml(r.date)}</div>
+          </div>`;
+      }).join("");
+    }
+
+    /* ============================================================
+       FORM: validation, e-mail dispatch, publication
+       ============================================================ */
+    const formEl = document.getElementById("reviewForm");
+    const statusEl = document.getElementById("formStatus");
+    const submitBtn = document.getElementById("submitReviewBtn");
+    const submitLabel = document.getElementById("submitBtnLabel");
+
+    function showStatus(key, type) {
+      statusState = { key, type };
+      statusEl.textContent = t(key);
+      statusEl.className = "text-xs font-semibold rounded-xl px-4 py-3 border " + (type === "ok"
+        ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-300"
+        : "bg-red-500/10 border-red-500/30 text-red-300");
+    }
+    function clearStatus() {
+      statusState = null;
+      statusEl.className = "hidden";
+      statusEl.textContent = "";
+    }
+
+    formEl.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      clearStatus();
+
+      // Spam honeypot: silently ignore bots
+      if (document.getElementById("revHoney").value) return;
+
+      const name = document.getElementById("revName").value.trim();
+      const email = document.getElementById("revEmail").value.trim();
+      const comment = document.getElementById("revComment").value.trim();
+      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      if (!name || !comment || !emailOk || currentSelectedStars < 1) {
+        showStatus("msgInvalid", "error");
+        if (currentSelectedStars < 1) starButtons[0].focus();
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitLabel.textContent = t("btnSending");
+
+      const rating = currentSelectedStars;
+
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/" + REVIEW_EMAIL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({
+            _subject: `Nouvel avis Shell HERCULES (${rating}★) de ${name}`,
+            _template: "table",
+            _captcha: "false",
+            Nom: name,
+            Email: email,
+            Note: `${rating} / 5`,
+            Avis: comment,
+            Langue: currentLang,
+            Date: new Date().toLocaleString("fr-FR")
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        const ok = res.ok && (data.success === true || data.success === "true");
+        if (!ok) throw new Error(data.message || "send failed");
+
+        // Email delivered -> publish locally
+        const reviews = getStoredReviews();
+        reviews.push({
+          id: Date.now(),
+          name, email, rating, comment,
+          date: new Date().toISOString().split("T")[0]
+        });
+        saveReviews(reviews);
+
+        formEl.reset();
+        setRating(0);
+        renderReviewsSystem();
+        showStatus("msgSent", "ok");
+      } catch (err) {
+        console.warn("Review email failed:", err);
+        showStatus("msgFailed", "error");   // form content is kept so the user can retry
+      } finally {
+        submitBtn.disabled = false;
+        submitLabel.textContent = t("btnSubmitReview");
+      }
+    });
+
+    /* ============================================================
+       INIT
+       ============================================================ */
+    setRating(0);
+    updateLanguage(detectInitialLanguage());
+  </script>
+</body>
+</html>
