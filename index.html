@@ -273,15 +273,10 @@
               Profitez d’un espace moderne et confortable pour prendre un café, un petit-déjeuner ou un repas complet avant de reprendre la route.
             </p>
 
-            <div class="bg-amber-500/10 border border-amber-500/40 rounded-2xl p-5 text-amber-200 space-y-2">
-              <div class="flex items-center gap-2 font-bold text-amber-400 text-sm">
-                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                <span data-i18n="statusRestTitle">Menu bientôt disponible</span>
-              </div>
-              <p class="text-xs text-amber-200/90 leading-normal" data-i18n="statusRestBody">
-                L'établissement travaille actuellement à la finalisation et à la mise à jour complète de la carte du restaurant et des boissons. Les plats et tarifs seront ajoutés très prochainement.
-              </p>
-            </div>
+            <a href="menu.html" class="inline-flex items-center gap-2 bg-shell-yellow hover:bg-shell-yellowDark text-slate-900 font-black text-sm px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <span data-i18n="btnViewMenu">Voir le menu</span>
+              <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
 
             <div class="pt-2 flex flex-wrap gap-4 text-xs font-semibold text-slate-400">
               <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span data-i18n="restFeat1">Cartes bancaires acceptées</span></span>
@@ -291,7 +286,7 @@
           </div>
 
           <div class="lg:col-span-5 flex justify-center">
-            <div class="w-full max-w-sm bg-white text-slate-900 rounded-2xl p-6 shadow-2xl border-4 border-amber-400 transform lg:rotate-2">
+            <a href="menu.html" class="block w-full max-w-sm bg-white text-slate-900 rounded-2xl p-6 shadow-2xl border-4 border-amber-400 transform lg:rotate-2 hover:rotate-0 hover:scale-[1.02] transition-transform duration-300">
               <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
                 <div class="flex items-center gap-2">
                   <div class="w-7 h-7 p-0.5">
@@ -299,28 +294,28 @@
                   </div>
                   <span class="font-black text-xs uppercase tracking-wider text-slate-800">Relais de l’Aéroport</span>
                 </div>
-                <span class="bg-red-100 text-shell-red font-bold text-[10px] px-2 py-0.5 rounded-md uppercase" data-i18n="badgeMenuPending">À venir</span>
               </div>
 
               <div class="space-y-3.5">
-                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-500">
-                  <span data-i18n="menuItem1">Petit-Déjeuner & Boissons Chaudes</span>
-                  <span class="text-slate-400" data-i18n="menuItemPending">À venir</span>
+                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-600">
+                  <span data-i18n="menuItem1">Petit-déjeuner & boissons chaudes</span>
+                  <span class="text-shell-red font-black">→</span>
                 </div>
-                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-500">
-                  <span data-i18n="menuItem2">Plats Chauds & Sandwichs</span>
-                  <span class="text-slate-400" data-i18n="menuItemPending">À venir</span>
+                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-600">
+                  <span data-i18n="menuItem2">Plats chauds & sandwichs</span>
+                  <span class="text-shell-red font-black">→</span>
                 </div>
-                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-500">
-                  <span data-i18n="menuItem3">Jus Frais & Rafraîchissements</span>
-                  <span class="text-slate-400" data-i18n="menuItemPending">À venir</span>
+                <div class="flex justify-between items-center py-2 border-b border-dashed border-slate-200 text-xs font-semibold text-slate-600">
+                  <span data-i18n="menuItem3">Jus frais & rafraîchissements</span>
+                  <span class="text-shell-red font-black">→</span>
                 </div>
               </div>
 
-              <div class="mt-6 p-3 bg-slate-50 rounded-xl text-center border border-slate-200">
-                <span class="text-[11px] font-bold text-slate-500 block" data-i18n="menuNote">Catalogue et tarifs en cours de finalisation</span>
+              <div class="mt-6 p-3 bg-shell-red text-white rounded-xl text-center font-bold text-sm flex items-center justify-center gap-2">
+                <span data-i18n="btnViewMenu">Voir le menu</span>
+                <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </div>
-            </div>
+            </a>
           </div>
 
         </div>
@@ -337,50 +332,42 @@
           <p class="text-slate-600 text-base" data-i18n="shopSub">Snacks, boissons fraîches, huiles Shell Helix et accessoires auto disponibles dans notre boutique.</p>
         </div>
 
-        <div class="max-w-3xl mx-auto mb-10 bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center text-amber-900 text-xs md:text-sm shadow-sm">
-          <p class="font-bold flex items-center justify-center gap-2 text-amber-800">
-            <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <span data-i18n="shopNoticeTitle">Catalogue boutique bientôt disponible</span>
-          </p>
-          <p class="text-amber-700/90 mt-1" data-i18n="shopNoticeBody">L'établissement travaille actuellement à la préparation de la liste complète des articles et produits en magasin.</p>
-        </div>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
+          <a href="snacks.html" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-4">🥤</div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat1Title">Snacks & Rafraîchissements</h3>
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat1Title">Snacks & rafraîchissements</h3>
               <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat1Desc">Boissons fraîches, cafés, confiseries, biscuits et en-cas rapides.</p>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
-              <span data-i18n="toBeAddedSoon">À venir très prochainement</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-shell-red">
+              <span data-i18n="btnViewCatalogue">Voir le catalogue</span>
+              <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </div>
-          </div>
+          </a>
 
-          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
+          <a href="lubrifiants.html" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-red-100 text-shell-red flex items-center justify-center font-bold text-2xl mb-4">🛢️</div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat2Title">Huiles & Lubrifiants Shell</h3>
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat2Title">Huiles & lubrifiants Shell</h3>
               <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat2Desc">Gamme complète d'huiles moteurs Shell Helix, Advance et liquides d'entretien.</p>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
-              <span data-i18n="toBeAddedSoon">À venir très prochainement</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-shell-red">
+              <span data-i18n="btnViewCatalogue">Voir le catalogue</span>
+              <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </div>
-          </div>
+          </a>
 
-          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
+          <a href="accessoires.html" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-2xl mb-4">🚗</div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat3Title">Accessoires Voyage & Auto</h3>
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat3Title">Accessoires voyage & auto</h3>
               <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat3Desc">Produits de lavage, essuie-glaces, chargeurs et essentiels de route.</p>
             </div>
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
-              <span data-i18n="toBeAddedSoon">À venir très prochainement</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-shell-red">
+              <span data-i18n="btnViewCatalogue">Voir le catalogue</span>
+              <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </div>
-          </div>
+          </a>
         </div>
 
       </div>
@@ -565,8 +552,7 @@
                 <div>
                   <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="phoneLabel">Téléphone</div>
                   <div class="text-sm font-semibold text-white mt-0.5 flex flex-wrap gap-4">
-                    <a href="tel:+212XXXXXXXXX" dir="ltr">+212 X XX XX XX XX</a>
-                    <a href="tel:+212XXXXXXXXX" dir="ltr">+212 X XX XX XX XX</a>
+                    <a href="tel:+212539393939" dir="ltr">+212 5 39 39 39 39</a>
                   </div>
                 </div>
               </div>
@@ -698,6 +684,8 @@
         shopCat3Title: "Accessoires voyage & auto",
         shopCat3Desc: "Produits de lavage, essuie-glaces, chargeurs et essentiels de route.",
         toBeAddedSoon: "À venir très prochainement",
+        btnViewMenu: "Voir le menu",
+        btnViewCatalogue: "Voir le catalogue",
         servicesKicker: "Prestations sur place",
         servicesTitle: "Services Shell HERCULES",
         servicesSub: "Découvrez les équipements et services disponibles dans notre station de Tanger Boukhalef.",
@@ -812,6 +800,8 @@
         shopCat3Title: "مستلزمات السفر والسيارة",
         shopCat3Desc: "منتجات التنظيف، مساحات الزجاج، الشواحن وضروريات الطريق.",
         toBeAddedSoon: "ستتوفر قريبًا جدًا",
+        btnViewMenu: "عرض القائمة",
+        btnViewCatalogue: "عرض لائحة المنتجات",
         servicesKicker: "الخدمات المتوفرة بعين المكان",
         servicesTitle: "خدمات شل هيركوليس",
         servicesSub: "اكتشف التجهيزات والخدمات المتوفرة في محطتنا ببوخالف، طنجة.",
@@ -926,6 +916,8 @@
         shopCat3Title: "Travel & car accessories",
         shopCat3Desc: "Cleaning products, wiper blades, chargers and road essentials.",
         toBeAddedSoon: "Coming very soon",
+        btnViewMenu: "View the menu",
+        btnViewCatalogue: "View the catalogue",
         servicesKicker: "On-site amenities",
         servicesTitle: "Shell HERCULES Services",
         servicesSub: "Discover the facilities and services available at our station in Tangier Boukhalef.",
@@ -1040,6 +1032,8 @@
         shopCat3Title: "Accesorios de viaje y automóvil",
         shopCat3Desc: "Productos de limpieza, escobillas limpiaparabrisas, cargadores y esenciales de carretera.",
         toBeAddedSoon: "Disponible muy pronto",
+        btnViewMenu: "Ver el menú",
+        btnViewCatalogue: "Ver el catálogo",
         servicesKicker: "Servicios en el lugar",
         servicesTitle: "Servicios Shell HERCULES",
         servicesSub: "Descubra las instalaciones y servicios disponibles en nuestra estación de Tánger Boukhalef.",
@@ -1154,6 +1148,8 @@
         shopCat3Title: "Acessórios de viagem e automóvel",
         shopCat3Desc: "Produtos de limpeza, escovas limpa-para-brisas, carregadores e essenciais de estrada.",
         toBeAddedSoon: "Disponível muito em breve",
+        btnViewMenu: "Ver o menu",
+        btnViewCatalogue: "Ver o catálogo",
         servicesKicker: "Serviços no local",
         servicesTitle: "Serviços Shell HERCULES",
         servicesSub: "Descubra as instalações e serviços disponíveis no nosso posto em Tânger Boukhalef.",
