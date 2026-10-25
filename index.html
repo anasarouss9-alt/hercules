@@ -1520,6 +1520,8 @@
       } catch (err) {
         console.warn("Review email failed:", err);
         showStatus("msgFailed", "error");   // form content is kept so the user can retry
+        // Technical detail (temporary, helps diagnose setup problems)
+        statusEl.textContent += " [" + (REVIEWS_API ? "Sheets" : "FormSubmit") + ": " + (err && err.message ? err.message : err) + "]";
       } finally {
         submitBtn.disabled = false;
         submitLabel.textContent = t("btnSubmitReview");
