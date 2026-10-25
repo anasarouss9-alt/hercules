@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dd1d21">
+  <title>Snacks & rafraîchissements | CITY PROM Shell HERCULES</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            shell: { red: '#dd1d21', redDark: '#ad0b0f', yellow: '#ffd500', yellowDark: '#e6c000' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    .shell-gradient-bg {
+      background: radial-gradient(circle at 85% 15%, rgba(255, 213, 0, 0.15), transparent 45%),
+                  linear-gradient(135deg, #ffffff 0%, #fdfbf7 50%, #fff8e1 100%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/80 border border-amber-300/60 p-2 shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform">
+            <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-black text-xl tracking-tight text-slate-900 group-hover:text-shell-red transition-colors">CITY PROM</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider" data-i18n="brandSub">Shell HERCULES Tanger</span>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-3">
+          <select id="langSelect" aria-label="Langue / Language" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-lg px-2.5 py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-shell-red">
+            <option value="fr">FR 🇫🇷</option>
+            <option value="ar">العربية 🇲🇦</option>
+            <option value="en">EN 🇬🇧</option>
+            <option value="es">ES 🇪🇸</option>
+            <option value="pt">PT 🇵🇹</option>
+          </select>
+          <a href="index.html" class="hidden sm:inline-flex items-center gap-2 bg-shell-red hover:bg-shell-redDark text-white text-xs md:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition-all hover:shadow-md">
+            <span data-i18n="btnHome">Retour à l'accueil</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow shell-gradient-bg flex items-center py-16 md:py-24">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center space-y-6">
+      <div class="w-20 h-20 mx-auto rounded-2xl bg-amber-100 border border-amber-200 flex items-center justify-center text-4xl shadow-sm">🥤</div>
+
+      <span class="block text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="kicker">Boutique Shell Select</span>
+      <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight" data-i18n="title">Snacks & rafraîchissements</h1>
+
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-300 text-amber-900 font-extrabold text-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span data-i18n="soon">Bientôt disponible</span>
+      </div>
+
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto" data-i18n="body">La liste des produits de cette catégorie est en cours de préparation. Elle sera disponible très prochainement.</p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="index.html" class="bg-shell-red hover:bg-shell-redDark text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all" data-i18n="btnHome">Retour à l'accueil</a>
+        <a href="index.html#localisation" class="bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-bold text-sm px-6 py-3.5 rounded-xl shadow-sm transition-all" data-i18n="btnLocation">Voir la localisation</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-500 text-xs border-t border-slate-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      © <span id="copyrightYear"></span> CITY PROM <span data-i18n="city">Tanger</span> · Station Shell HERCULES. <span data-i18n="rights">Tous droits réservés.</span>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      "fr": {
+            "brandSub": "Shell HERCULES Tanger",
+            "btnHome": "Retour à l'accueil",
+            "btnLocation": "Voir la localisation",
+            "rights": "Tous droits réservés.",
+            "soon": "Bientôt disponible",
+            "city": "Tanger",
+            "kicker": "Boutique Shell Select",
+            "title": "Snacks & rafraîchissements",
+            "body": "La liste des produits de cette catégorie est en cours de préparation. Elle sera disponible très prochainement.",
+            "pageTitle": "Snacks & rafraîchissements | CITY PROM Shell HERCULES"
+      },
+      "ar": {
+            "brandSub": "شل هيركوليس طنجة",
+            "btnHome": "العودة إلى الرئيسية",
+            "btnLocation": "عرض الموقع",
+            "rights": "جميع الحقوق محفوظة.",
+            "soon": "قريبًا",
+            "city": "طنجة",
+            "kicker": "متجر Shell Select",
+            "title": "وجبات خفيفة ومشروبات",
+            "body": "نعمل حاليًا على إعداد لائحة منتجات هذا الصنف. ستتوفر قريبًا جدًا.",
+            "pageTitle": "وجبات خفيفة ومشروبات | CITY PROM Shell HERCULES"
+      },
+      "en": {
+            "brandSub": "Shell HERCULES Tangier",
+            "btnHome": "Back to home",
+            "btnLocation": "View location",
+            "rights": "All rights reserved.",
+            "soon": "Coming soon",
+            "city": "Tangier",
+            "kicker": "Shell Select Shop",
+            "title": "Snacks & refreshments",
+            "body": "The product list for this category is being prepared. It will be available very soon.",
+            "pageTitle": "Snacks & refreshments | CITY PROM Shell HERCULES"
+      },
+      "es": {
+            "brandSub": "Shell HERCULES Tánger",
+            "btnHome": "Volver al inicio",
+            "btnLocation": "Ver ubicación",
+            "rights": "Todos los derechos reservados.",
+            "soon": "Disponible próximamente",
+            "city": "Tánger",
+            "kicker": "Tienda Shell Select",
+            "title": "Aperitivos y refrescos",
+            "body": "Estamos preparando la lista de productos de esta categoría. Estará disponible muy pronto.",
+            "pageTitle": "Aperitivos y refrescos | CITY PROM Shell HERCULES"
+      },
+      "pt": {
+            "brandSub": "Shell HERCULES Tânger",
+            "btnHome": "Voltar ao início",
+            "btnLocation": "Ver localização",
+            "rights": "Todos os direitos reservados.",
+            "soon": "Disponível em breve",
+            "city": "Tânger",
+            "kicker": "Loja Shell Select",
+            "title": "Snacks e refrescos",
+            "body": "Estamos a preparar a lista de produtos desta categoria. Estará disponível muito em breve.",
+            "pageTitle": "Snacks e refrescos | CITY PROM Shell HERCULES"
+      }
+};
+    const STORAGE_KEY_LANG = "shell_hercules_lang";
+    const langSelect = document.getElementById("langSelect");
+
+    function updateLanguage(locale) {
+      if (!translations[locale]) locale = "fr";
+      const dict = translations[locale];
+      document.documentElement.lang = locale;
+      document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+      document.title = dict.pageTitle;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key] !== undefined) el.textContent = dict[key];
+      });
+      langSelect.value = locale;
+      try { localStorage.setItem(STORAGE_KEY_LANG, locale); } catch (e) {}
+    }
+
+    function detectInitialLanguage() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY_LANG);
+        if (saved && translations[saved]) return saved;
+      } catch (e) {}
+      const nav = (navigator.language || "fr").slice(0, 2).toLowerCase();
+      return translations[nav] ? nav : "fr";
+    }
+
+    langSelect.addEventListener("change", e => updateLanguage(e.target.value));
+    document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+    updateLanguage(detectInitialLanguage());
+  </script>
+</body>
+</html>
