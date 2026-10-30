@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#dd1d21">
+  <meta name="theme-color" content="#e11d2e">
   <meta name="description" content="CITY PROM / Station Shell HERCULES à Tanger : carburants Shell V-Power & FuelSave, boutique, sanitaires, air/eau, lubrifiants et restaurant Relais de l’Aéroport.">
   <title>CITY PROM Shell HERCULES Tanger | Relais de l’Aéroport</title>
 
@@ -20,13 +20,19 @@
         extend: {
           colors: {
             shell: {
-              red: '#dd1d21',
-              redDark: '#ad0b0f',
-              yellow: '#ffd500',
-              yellowDark: '#e6c000',
-              bgLight: '#f8f9fa',
-              cardDark: '#1a1d21',
-              ink: '#0f172a'
+              red: '#e11d2e',
+              redDark: '#b3101e',
+              yellow: '#ffcc00',
+              yellowDark: '#f0b800',
+              bgLight: '#f6f8fc',
+              cardDark: '#0f1b3d',
+              ink: '#0a1230'
+            },
+            slate: {
+              700: '#2b3a6b',
+              800: '#16255a',
+              900: '#0f1b45',
+              950: '#08102e'
             }
           },
           fontFamily: {
@@ -39,9 +45,44 @@
 
   <style>
     .shell-gradient-bg {
-      background: radial-gradient(circle at 85% 15%, rgba(255, 213, 0, 0.15), transparent 45%),
-                  linear-gradient(135deg, #ffffff 0%, #fdfbf7 50%, #fff8e1 100%);
+      background: radial-gradient(circle at 88% 12%, rgba(255, 204, 0, 0.38), transparent 42%),
+                  radial-gradient(circle at 8% 90%, rgba(225, 29, 46, 0.16), transparent 45%),
+                  linear-gradient(135deg, #ffffff 0%, #fff7f2 50%, #fff1c9 100%);
     }
+    /* Vibrant accent line under the header */
+    header { border-bottom: 3px solid transparent !important; border-image: linear-gradient(90deg, #e11d2e, #ff7a1a, #ffcc00, #ff7a1a, #e11d2e) 1; }
+    /* Announcement bar */
+    body > div.bg-slate-950 { background-image: linear-gradient(90deg, #08102e, #16255a 50%, #08102e); }
+    /* Gradient primary buttons */
+    a.bg-shell-red, button.bg-shell-red {
+      background-image: linear-gradient(135deg, #e11d2e 0%, #ff4d2e 100%);
+      box-shadow: 0 8px 20px -8px rgba(225, 29, 46, 0.55);
+    }
+    a.bg-shell-red:hover, button.bg-shell-red:hover { filter: brightness(1.08) saturate(1.1); }
+    a.bg-shell-yellow, .bg-shell-yellow {
+      background-image: linear-gradient(135deg, #ffd500 0%, #ffa800 100%);
+    }
+    a.bg-shell-yellow:hover { filter: brightness(1.06); }
+    /* Hero headline accent */
+    h1 span.text-shell-red {
+      background: linear-gradient(90deg, #e11d2e, #ff6a1a);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+    }
+    /* Section backgrounds */
+    #boutique { background-image: linear-gradient(180deg, #f6f8fc 0%, #eef2fb 100%); }
+    #services { background-image: linear-gradient(180deg, #ffffff 0%, #fff8e6 100%); }
+    #avis { background-image: radial-gradient(circle at 90% 0%, rgba(225,29,46,0.25), transparent 40%), linear-gradient(160deg, #0f1b45 0%, #08102e 100%); }
+    #localisation { background-image: radial-gradient(circle at 5% 100%, rgba(255,204,0,0.14), transparent 40%), linear-gradient(160deg, #08102e 0%, #0f1b45 100%); }
+    #restaurant .bg-gradient-to-br { background-image: linear-gradient(135deg, #0f1b45 0%, #16255a 55%, #3a1226 100%); }
+    /* Colourful top borders on service cards */
+    #services .grid > div { border-top: 4px solid #e11d2e; background: #fff; }
+    #services .grid > div:nth-child(2) { border-top-color: #ffcc00; }
+    #services .grid > div:nth-child(3) { border-top-color: #2563eb; }
+    #services .grid > div:nth-child(4) { border-top-color: #10b981; }
+    #boutique a.shell-card-hover { border-bottom: 4px solid #e11d2e; }
+    #boutique a.shell-card-hover:nth-child(2) { border-bottom-color: #ffcc00; }
+    #boutique a.shell-card-hover:nth-child(3) { border-bottom-color: #2563eb; }
     .shell-card-hover {
       transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -140,7 +181,6 @@
     <div class="bg-amber-100 border-y border-amber-300/80 py-2.5 text-center text-xs md:text-sm font-bold text-amber-950 flex items-center justify-center gap-2 px-4">
       <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-4 h-4 flex-shrink-0 object-contain">
       <span data-i18n="ribbonText">Station-service Shell HERCULES · Tanger Boukhalef</span>
-      <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="underline hover:text-shell-red text-xs" data-i18n="shellSheetShort">Fiche Shell ↗</a>
     </div>
 
     <!-- HERO -->
@@ -553,7 +593,6 @@
                   <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="phoneLabel">Téléphone</div>
                   <div class="text-sm font-semibold text-white mt-0.5 flex flex-wrap gap-4">
                     <span dir="ltr">+212 5 XX XX XX XX</span>
-                    <span dir="ltr">+212 6 XX XX XX XX</span>
                   </div>
                 </div>
               </div>
@@ -562,9 +601,6 @@
             <div class="pt-4 flex flex-wrap gap-4">
               <a href="https://maps.app.goo.gl/vUyMNkSaCj3bEy4s9" target="_blank" rel="noopener noreferrer" class="bg-shell-red hover:bg-shell-redDark text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all flex items-center gap-2">
                 <span data-i18n="btnOpenGmaps">Ouvrir sur Google Maps ↗</span>
-              </a>
-              <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-sm px-6 py-3 rounded-xl transition-all">
-                <span data-i18n="btnShellSheet">Fiche Officielle Shell ↗</span>
               </a>
             </div>
           </div>
@@ -608,7 +644,6 @@
           <a href="#services" class="hover:text-shell-yellow transition-colors" data-i18n="navServices">Services</a>
           <a href="#avis" class="hover:text-shell-yellow transition-colors" data-i18n="navReviews">Avis Clients</a>
           <a href="#localisation" class="hover:text-shell-yellow transition-colors" data-i18n="navLocation">Localisation</a>
-          <a href="https://find.shell.com/ma/fuel/10125308-hercules/fr_MA" target="_blank" rel="noopener noreferrer" class="hover:text-shell-yellow transition-colors">Shell.com ↗</a>
         </div>
       </div>
 
