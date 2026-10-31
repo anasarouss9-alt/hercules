@@ -697,15 +697,12 @@
           <p class="text-slate-600 text-base" data-i18n="restSub">Une pause gourmande et conviviale lors de vos déplacements à Tanger.</p>
         </div>
 
-        <figure class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 mb-8">
-          <img src="menu-facade.jpg" alt="Façade du restaurant Relais de l’Aéroport" class="w-full h-64 sm:h-80 md:h-[420px] object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
-          <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-8 text-white font-black text-xl md:text-3xl tracking-tight">Relais de l’Aéroport</figcaption>
-        </figure>
+        <div class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <img src="menu-facade.jpg" alt="Façade du restaurant Relais de l’Aéroport" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-slate-950/75"></div>
 
-        <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 
-          <div class="lg:col-span-7 space-y-6">
+          <div class="relative lg:col-span-7 space-y-6">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs uppercase tracking-wider">
               <span data-i18n="restBadge">☕ Café & Restaurant</span>
             </div>
@@ -728,7 +725,7 @@
             </div>
           </div>
 
-          <div class="lg:col-span-5 flex justify-center">
+          <div class="relative lg:col-span-5 flex justify-center">
             <a href="menu" class="block w-full max-w-sm bg-white text-slate-900 rounded-2xl p-6 shadow-2xl border-4 border-amber-400 transform lg:rotate-2 hover:rotate-0 hover:scale-[1.02] transition-transform duration-300">
               <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
                 <div class="flex items-center gap-2">
@@ -775,16 +772,10 @@
           <p class="text-slate-600 text-base" data-i18n="shopSub">Snacks, boissons fraîches, huiles Shell Helix et accessoires auto disponibles dans notre boutique.</p>
         </div>
 
-        <figure class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 mb-10">
-          <img src="boutique-shop.jpg" alt="Boissons fraîches et glaces de la boutique Shell Select" class="w-full h-64 sm:h-80 md:h-[420px] object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
-          <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-8 text-white font-black text-xl md:text-3xl tracking-tight">Boutique Shell Select</figcaption>
-        </figure>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <a href="snacks" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm shell-card-hover flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-4">🥤</div>
+              <img src="boutique-shop.jpg" alt="Boissons fraîches et glaces de la boutique Shell Select" class="w-full h-24 rounded-xl object-cover mb-4" loading="lazy">
               <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="shopCat1Title">Snacks & rafraîchissements</h3>
               <p class="text-xs text-slate-500 mb-4" data-i18n="shopCat1Desc">Boissons fraîches, cafés, confiseries, biscuits et en-cas rapides.</p>
             </div>
