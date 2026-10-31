@@ -48,9 +48,12 @@ const PRICE_NOTE = {
 window.CATALOG = {
   currency: "DH",
 
-  /* Snacks & rafraîchissements */
-  snacks: {
-    categories: [],
+  /* Boutique Shell Select : snacks, boissons & accessoires voyage/auto */
+  boutique: {
+    categories: [
+      { id: "snacks", icon: "🥤", name: { fr: "Snacks & rafraîchissements", ar: "وجبات خفيفة ومشروبات", en: "Snacks & refreshments", es: "Aperitivos y refrescos", pt: "Snacks e refrescos" } },
+      { id: "accessoires", icon: "🚗", name: { fr: "Accessoires voyage & auto", ar: "مستلزمات السفر والسيارة", en: "Travel & car accessories", es: "Accesorios de viaje y automóvil", pt: "Acessórios de viagem e automóvel" } }
+    ],
     products: []
   },
 
@@ -1291,12 +1294,6 @@ window.CATALOG = {
         "description": PRICE_NOTE
       }
     ]
-  },
-
-  /* Accessoires voyage & auto */
-  accessoires: {
-    categories: [],
-    products: []
   },
 
   /* Menu & Restauration (Relais de l'Aéroport) */
