@@ -1432,7 +1432,7 @@ window.CATALOG = {
                   "ar": "معالج متكامل يعالج الوقود قبل وأثناء وبعد الاحتراق. · 500 مل · المرجع W33092 W33093",
                   "en": "All-in-one treatment that cleans and protects before, during and after combustion. · 500 ml · Ref. W33092 W33093"
               },
-              "image": "images/entretien/diesel-total-action.webp",
+              "image": "images/entertien/diesel-total-action.webp",
               "sku": "W33092 W33093",
               "available": true
           },
@@ -1460,7 +1460,7 @@ window.CATALOG = {
                   "ar": "علاج سريع المفعول لاجتياز اختبار الانبعاثات. · 500 مل · المرجع W35392 W35393",
                   "en": "Fast-acting treatment to help your car pass the emissions test. · 500 ml · Ref. W35392 W35393"
               },
-              "image": "images/entretien/diesel-pre-emission.webp",
+              "image": "images/entertien/diesel-pre-emission.webp",
               "sku": "W35392 W35393",
               "available": true
           },
@@ -1488,7 +1488,7 @@ window.CATALOG = {
                   "ar": "ينظف المرشحات والفلاتر المسدودة ويقلل من انبعاثات السخام. · 500 مل · المرجع W28392 W28393 W28395",
                   "en": "Cleans clogged particulate filters and reduces smoke emissions. · 500 ml · Ref. W28392 W28393 W28395"
               },
-              "image": "images/entretien/diesel-dpf-regenerator.webp",
+              "image": "images/entertien/diesel-dpf-regenerator.webp",
               "sku": "W28392 W28393 W28395",
               "available": true
           },
@@ -1516,7 +1516,7 @@ window.CATALOG = {
                   "ar": "تنظيف كامل وسريع لنظام الوقود من التعبئة الأولى. · 500 مل · المرجع W12292 W12293 W12295",
                   "en": "Complete, fast cleaning of the fuel system from the first tank. · 500 ml · Ref. W12292 W12293 W12295"
               },
-              "image": "images/entretien/diesel-extreme-injector-cleaner.webp",
+              "image": "images/entertien/diesel-extreme-injector-cleaner.webp",
               "sku": "W12292 W12293 W12295",
               "available": true
           },
@@ -1544,7 +1544,7 @@ window.CATALOG = {
                   "ar": "يقلل انبعاثات العادم ويحسن أداء المحرك ويوفر الوقود. · 500 مل · المرجع W50392 W50393",
                   "en": "Reduces exhaust emissions, improves engine performance and saves fuel. · 500 ml · Ref. W50392 W50393"
               },
-              "image": "images/entretien/diesel-emission-reducer.webp",
+              "image": "images/entertien/diesel-emission-reducer.webp",
               "sku": "W50392 W50393",
               "available": true
           },
@@ -1572,7 +1572,7 @@ window.CATALOG = {
                   "ar": "يعمل على تنظيف شواحن التيربو المسدودة. · 500 مل · المرجع W32092 W32093",
                   "en": "Cleans sticking turbo vanes to restore power and response. · 500 ml · Ref. W32092 W32093"
               },
-              "image": "images/entretien/diesel-turbo-cleaner.webp",
+              "image": "images/entertien/diesel-turbo-cleaner.webp",
               "sku": "W32092 W32093",
               "available": true
           },
@@ -1600,7 +1600,7 @@ window.CATALOG = {
                   "ar": "ينظف ويزيّت المضخات والمحاقن والرشاشات. · 325 مل · المرجع W46751 W46754",
                   "en": "Cleans and lubricates pumps, injectors and the whole diesel circuit. · 325 ml · Ref. W46751 W46754"
               },
-              "image": "images/entretien/diesel-system-cleaner.webp",
+              "image": "images/entertien/diesel-system-cleaner.webp",
               "sku": "W46751 W46754",
               "available": true
           },
@@ -1628,7 +1628,7 @@ window.CATALOG = {
                   "ar": "ينظف نظام الوقود ويساعد في تجديد الفلتر ويحسن الاستهلاك. · 1 لتر · المرجع W76411",
                   "en": "Cleans the fuel system, helps DPF regeneration and cuts consumption. · 1 L · Ref. W76411"
               },
-              "image": "images/entretien/diesel-power-7.webp",
+              "image": "images/entertien/diesel-power-7.webp",
               "sku": "W76411",
               "available": true
           },
@@ -1656,7 +1656,7 @@ window.CATALOG = {
                   "ar": "منتج مركز للاستخدام المباشر عبر فلتر الديزل. · 325 مل · المرجع W25241",
                   "en": "Concentrated product applied directly through the diesel filter. · 325 ml · Ref. W25241"
               },
-              "image": "images/entretien/diesel-clean-up.webp",
+              "image": "images/entertien/diesel-clean-up.webp",
               "sku": "W25241",
               "available": true
           },
@@ -1684,7 +1684,7 @@ window.CATALOG = {
                   "ar": "علاج وقائي ونهائي ضد نمو الكائنات الدقيقة في خزانات الديزل. · 250 مل · المرجع W10601",
                   "en": "Preventive and curative treatment against microbes in diesel and biodiesel tanks. · 250 ml · Ref. W10601"
               },
-              "image": "images/entretien/fuel-biocide-250.webp",
+              "image": "images/entertien/fuel-biocide-250.webp",
               "sku": "W10601",
               "available": true
           },
@@ -1712,7 +1712,7 @@ window.CATALOG = {
                   "ar": "لامتصاص الرطوبة والتخلص من المياه في دورة الوقود (بنزين وديزل). · 325 مل · المرجع W71851",
                   "en": "Absorbs water and moisture in the fuel system (petrol and diesel). · 325 ml · Ref. W71851"
               },
-              "image": "images/entretien/dry-fuel-325.webp",
+              "image": "images/entertien/dry-fuel-325.webp",
               "sku": "W71851",
               "available": true
           },
@@ -1740,7 +1740,7 @@ window.CATALOG = {
                   "ar": "تقنية PEA لتنظيف وحماية المحرك قبل وأثناء وبعد الاحتراق. · 500 مل · المرجع W33692 W33693",
                   "en": "PEA technology: cleans and protects the engine before, during and after combustion. · 500 ml · Ref. W33692 W33693"
               },
-              "image": "images/entretien/petrol-total-action.webp",
+              "image": "images/entertien/petrol-total-action.webp",
               "sku": "W33692 W33693",
               "available": true
           },
@@ -1768,7 +1768,7 @@ window.CATALOG = {
                   "ar": "منظف سريع المفعول لتقليل العادم قبل الفحص. · 500 مل · المرجع W35792 W35793",
                   "en": "Fast-acting cleaner designed to reduce exhaust emissions before the test. · 500 ml · Ref. W35792 W35793"
               },
-              "image": "images/entretien/petrol-pre-emission.webp",
+              "image": "images/entertien/petrol-pre-emission.webp",
               "sku": "W35792 W35793",
               "available": true
           },
@@ -1796,7 +1796,7 @@ window.CATALOG = {
                   "ar": "تنظيف سريع وإزالة شاملة للرواسب والكربون في الحقن المباشر. · 500 مل · المرجع W37593",
                   "en": "Quick, thorough removal of deposits and carbon in direct-injection engines. · 500 ml · Ref. W37593"
               },
-              "image": "images/entretien/petrol-gdi-restorer.webp",
+              "image": "images/entertien/petrol-gdi-restorer.webp",
               "sku": "W37593",
               "available": true
           },
@@ -1824,7 +1824,7 @@ window.CATALOG = {
                   "ar": "يحافظ على نظافة دورة الوقود ويقلل الحاجة لرفع رقم الأوكتان. · 325 مل · المرجع W61351 W61354",
                   "en": "Keeps the fuel system clean and reduces the need for higher octane. · 325 ml · Ref. W61351 W61354"
               },
-              "image": "images/entretien/petrol-fuel-system-cleaner.webp",
+              "image": "images/entertien/petrol-fuel-system-cleaner.webp",
               "sku": "W61351 W61354",
               "available": true
           },
@@ -1852,7 +1852,7 @@ window.CATALOG = {
                   "ar": "يمنح المحرك حماية وتحسين مثالي في استهلاك الوقود. · 1 لتر · المرجع W70711",
                   "en": "Protects the engine and optimises fuel consumption. · 1 L · Ref. W70711"
               },
-              "image": "images/entretien/petrol-power-7.webp",
+              "image": "images/entertien/petrol-power-7.webp",
               "sku": "W70711",
               "available": true
           },
@@ -1880,7 +1880,7 @@ window.CATALOG = {
                   "ar": "تنظيف شامل وقوي لنظام وقود البنزين في تفويلة واحدة. · 500 مل · المرجع W29792 W29793",
                   "en": "Powerful, complete clean of the petrol fuel system in a single tank. · 500 ml · Ref. W29792 W29793"
               },
-              "image": "images/entretien/petrol-extreme-injector-cleaner.webp",
+              "image": "images/entertien/petrol-extreme-injector-cleaner.webp",
               "sku": "W29792 W29793",
               "available": true
           },
@@ -1908,7 +1908,7 @@ window.CATALOG = {
                   "ar": "يقلل الانبعاثات الضارة ويحسن الاحتراق ويوفر الوقود. · 500 مل · المرجع W29392 W29393",
                   "en": "Reduces harmful emissions, improves combustion and saves fuel. · 500 ml · Ref. W29392 W29393"
               },
-              "image": "images/entretien/petrol-emission-reducer.webp",
+              "image": "images/entertien/petrol-emission-reducer.webp",
               "sku": "W29392 W29393",
               "available": true
           },
@@ -1936,7 +1936,7 @@ window.CATALOG = {
                   "ar": "يرفع كفاءة المحول الحفاز ويضمن الأداء المثالي لحساسات الأكسجين. · 325 مل · المرجع W25692 W25693",
                   "en": "Boosts catalytic converter efficiency and keeps oxygen sensors working properly. · 325 ml · Ref. W25692 W25693"
               },
-              "image": "images/entretien/catalytic-oxygen-cleaner.webp",
+              "image": "images/entertien/catalytic-oxygen-cleaner.webp",
               "sku": "W25692 W25693",
               "available": true
           },
@@ -1964,7 +1964,7 @@ window.CATALOG = {
                   "ar": "يمنع التبلور ويحافظ على نظافة نظام SCR. · 125 مل · المرجع W21001 W21002",
                   "en": "Prevents crystallisation and keeps the SCR / AdBlue system clean. · 125 ml · Ref. W21001 W21002"
               },
-              "image": "images/entretien/adblue-crystal-125.webp",
+              "image": "images/entertien/adblue-crystal-125.webp",
               "sku": "W21001 W21002",
               "available": true
           },
@@ -1992,7 +1992,7 @@ window.CATALOG = {
                   "ar": "يمنع تبلور الأدبلو ويحافظ على نظافة نظام SCR. · 500 مل · المرجع W21090",
                   "en": "Prevents AdBlue crystals and protects SCR components on trucks and vans. · 500 ml · Ref. W21090"
               },
-              "image": "images/entretien/adblue-crystal-500.webp",
+              "image": "images/entertien/adblue-crystal-500.webp",
               "sku": "W21090",
               "available": true
           },
@@ -2020,7 +2020,7 @@ window.CATALOG = {
                   "ar": "حماية شاملة ضد تبلور سائل الأدبلو في الخزانات الكبيرة. · 4 لتر · المرجع W21011",
                   "en": "Full protection against AdBlue crystallisation in large storage tanks (2 L treats 1000 L). · 4 L · Ref. W21011"
               },
-              "image": "images/entretien/adblue-ibc-protector.webp",
+              "image": "images/entertien/adblue-ibc-protector.webp",
               "sku": "W21011",
               "available": true
           },
@@ -2048,7 +2048,7 @@ window.CATALOG = {
                   "ar": "يطيل عمر المحرك من خلال ضمان أفضل أداء للزيت. · 325 مل · المرجع W51841 W51844",
                   "en": "Helps oil perform at its best and extends engine life. · 325 ml · Ref. W51841 W51844"
               },
-              "image": "images/entretien/pro-super-charge.webp",
+              "image": "images/entertien/pro-super-charge.webp",
               "sku": "W51841 W51844",
               "available": true,
               "badge": "new"
@@ -2077,7 +2077,7 @@ window.CATALOG = {
                   "ar": "يوقف ويمنع تسريب الزيت بدون الحاجة لفك المحرك. · 325 مل · المرجع W48041 W48044",
                   "en": "Stops and prevents oil leaks without dismantling; suitable for Low SAPS oils. · 325 ml · Ref. W48041 W48044"
               },
-              "image": "images/entretien/pro-engine-protector.webp",
+              "image": "images/entertien/pro-engine-protector.webp",
               "sku": "W48041 W48044",
               "available": true,
               "badge": "new"
@@ -2106,7 +2106,7 @@ window.CATALOG = {
                   "ar": "يعمل على تنظيف وحماية نظام دورة الزيت بالكامل. · 325 مل · المرجع W47244",
                   "en": "Cleans and protects the whole oil circuit before an oil change. · 325 ml · Ref. W47244"
               },
-              "image": "images/entretien/oil-system-cleaner-325.webp",
+              "image": "images/entertien/oil-system-cleaner-325.webp",
               "sku": "W47244",
               "available": true,
               "badge": "new"
@@ -2135,7 +2135,7 @@ window.CATALOG = {
                   "ar": "يعيد الكفاءة لرافعات الصمامات الهيدروليكية ويزيل صوت التكتكة. · 325 مل · المرجع W76844",
                   "en": "Restores normal operation of hydraulic lifters and removes valve tapping noise. · 325 ml · Ref. W76844"
               },
-              "image": "images/entretien/hydraulic-lifter-concentrate.webp",
+              "image": "images/entertien/hydraulic-lifter-concentrate.webp",
               "sku": "W76844",
               "available": true
           },
@@ -2163,7 +2163,7 @@ window.CATALOG = {
                   "ar": "يوقف التسرب ويسهل تبديل الغيارات. · 325 مل · المرجع W64544",
                   "en": "Stops leaks and makes gear changes smoother. · 325 ml · Ref. W64544"
               },
-              "image": "images/entretien/automatic-transmission-treatment.webp",
+              "image": "images/entertien/automatic-transmission-treatment.webp",
               "sku": "W64544",
               "available": true
           },
@@ -2191,7 +2191,7 @@ window.CATALOG = {
                   "ar": "ينظف القير الأوتوماتيك بالكامل قبل تغيير الزيت. · 325 مل · المرجع W64401",
                   "en": "Cleans the automatic gearbox before an ATF change. · 325 ml · Ref. W64401"
               },
-              "image": "images/entretien/automatic-transmission-flush.webp",
+              "image": "images/entertien/automatic-transmission-flush.webp",
               "sku": "W64401",
               "available": true
           },
@@ -2219,7 +2219,7 @@ window.CATALOG = {
                   "ar": "يحسن تعشيق التروس ويقلل ضجيج الجير ويوقف تهريب الزيت. · 125 مل · المرجع W59405 W59406",
                   "en": "Improves gear engagement, reduces gearbox noise and stops oil leaks. · 125 ml · Ref. W59405 W59406"
               },
-              "image": "images/entretien/hpls-transmission.webp",
+              "image": "images/entertien/hpls-transmission.webp",
               "sku": "W59405 W59406",
               "available": true
           },
@@ -2247,7 +2247,7 @@ window.CATALOG = {
                   "ar": "يوقف ويمنع التسرب في نظام التوجيه المعزز. · 125 مل · المرجع W64503 W64505",
                   "en": "Stops and prevents leaks in the power steering system. · 125 ml · Ref. W64503 W64505"
               },
-              "image": "images/entretien/power-steering-stop-leak.webp",
+              "image": "images/entertien/power-steering-stop-leak.webp",
               "sku": "W64503 W64505",
               "available": true
           },
@@ -2275,7 +2275,7 @@ window.CATALOG = {
                   "ar": "يوقف التسريبات الصغيرة في الراديتر ودورة التبريد. · 325 مل · المرجع W45644",
                   "en": "Stops small leaks in the radiator and cooling circuit, with rust protection. · 325 ml · Ref. W45644"
               },
-              "image": "images/entretien/cooling-stop-leak.webp",
+              "image": "images/entertien/cooling-stop-leak.webp",
               "sku": "W45644",
               "available": true
           },
@@ -2303,7 +2303,7 @@ window.CATALOG = {
                   "ar": "ينظف جميع عناصر نظام التبريد بعمق وكفاءة. · 325 مل · المرجع W45944",
                   "en": "Deep-cleans every part of the cooling system. · 325 ml · Ref. W45944"
               },
-              "image": "images/entretien/cooling-flush.webp",
+              "image": "images/entertien/cooling-flush.webp",
               "sku": "W45944",
               "available": true
           },
@@ -2331,7 +2331,7 @@ window.CATALOG = {
                   "ar": "يصلح الشروخ في كتلة المحرك بدون الحاجة لفك. · 325 مل · المرجع W72250",
                   "en": "Repairs cracks in the engine block without dismantling the engine. · 325 ml · Ref. W72250"
               },
-              "image": "images/entretien/cylinder-block-seal.webp",
+              "image": "images/entertien/cylinder-block-seal.webp",
               "sku": "W72250",
               "available": true
           },
@@ -2359,7 +2359,7 @@ window.CATALOG = {
                   "ar": "يعمل على إزالة الزيوت والرواسب الطينية من دورة التبريد. · 325 مل · المرجع W25541",
                   "en": "Removes oil and sludge from the cooling circuit. · 325 ml · Ref. W25541"
               },
-              "image": "images/entretien/cooling-degreaser.webp",
+              "image": "images/entertien/cooling-degreaser.webp",
               "sku": "W25541",
               "available": true
           },
@@ -2387,7 +2387,7 @@ window.CATALOG = {
                   "ar": "ينظف ويعالج انسداد فلتر دبة التلوث في سيارات الديزل. · 1 لتر · المرجع W28090",
                   "en": "Cleans and regenerates clogged DPF filters on diesel vehicles and reduces emissions. · 1 L · Ref. W28090"
               },
-              "image": "images/entretien/cv-dpf-nox.webp",
+              "image": "images/entertien/cv-dpf-nox.webp",
               "sku": "W28090",
               "available": true
           },
@@ -2415,7 +2415,7 @@ window.CATALOG = {
                   "ar": "منتج متعدد الوظائف يحسن الحرق ويقلل الدخان والسخام. · 1 لتر · المرجع W62190",
                   "en": "Multi-function product: improves combustion, cuts smoke and soot, lowers fuel use. · 1 L · Ref. W62190"
               },
-              "image": "images/entretien/cv-diesel-emission-reducer.webp",
+              "image": "images/entertien/cv-diesel-emission-reducer.webp",
               "sku": "W62190",
               "available": true
           },
@@ -2443,7 +2443,7 @@ window.CATALOG = {
                   "ar": "لضبط أداء الرشاشات وتنظيف دورة الوقود وتجهيز فلتر الديزل. · 1 لتر · المرجع W25290",
                   "en": "Cleans the fuel circuit and primes the diesel filter for heavy-duty vehicles. · 1 L · Ref. W25290"
               },
-              "image": "images/entretien/cv-injector-fuel-filter-primer.webp",
+              "image": "images/entertien/cv-injector-fuel-filter-primer.webp",
               "sku": "W25290",
               "available": true
           },
@@ -2471,7 +2471,7 @@ window.CATALOG = {
                   "ar": "منتج يحول الديزل العادي إلى ديزل سوبر عالي الجودة. · 200 لتر (برميل) · المرجع W25399",
                   "en": "Turns ordinary diesel into premium diesel: higher cetane, cleaner injectors, lower consumption. · 200 L (drum) · Ref. W25399"
               },
-              "image": "images/entretien/cv-supremium-diesel.webp",
+              "image": "images/entertien/cv-supremium-diesel.webp",
               "sku": "W25399",
               "available": true
           },
@@ -2499,7 +2499,7 @@ window.CATALOG = {
                   "ar": "محسّن أداء وقود الديزل يقلل الاستهلاك والانبعاثات (توفير 3.1%). · 30 لتر · 200 لتر · 1000 لتر · المرجع W39497 W39499 W39410",
                   "en": "Fuel-saving diesel additive (3.1% saving tested by UTAC) that also cuts emissions. · 30 L · 200 L · 1000 L · Ref. W39497 W39499 W39410"
               },
-              "image": "images/entretien/cv-rco-31.webp",
+              "image": "images/entertien/cv-rco-31.webp",
               "sku": "W39497 W39499 W39410",
               "available": true
           },
@@ -2527,7 +2527,7 @@ window.CATALOG = {
                   "ar": "الحل الجذري لمنع تجمد السولار وتكون الشمع في الأجواء الباردة. · 1 لتر · 5 لتر · 60 لتر · 200 لتر · المرجع W22790 W22796 W22798 W22799",
                   "en": "Prevents diesel waxing and freezing in cold weather (down to −30 °C CFPP). · 1 L · 5 L · 60 L · 200 L · Ref. W22790 W22796 W22798 W22799"
               },
-              "image": "images/entretien/cv-ice-proof.webp",
+              "image": "images/entertien/cv-ice-proof.webp",
               "sku": "W22790 W22796 W22798 W22799",
               "available": true
           },
@@ -2555,7 +2555,7 @@ window.CATALOG = {
                   "ar": "منتج مخصص للقضاء على الميكروبات والبكتيريا في الديزل. · 5 لتر · المرجع W22790",
                   "en": "Kills microbes and bacteria in diesel and biodiesel storage tanks. · 5 L · Ref. W22790"
               },
-              "image": "images/entretien/cv-fuel-biocide.webp",
+              "image": "images/entertien/cv-fuel-biocide.webp",
               "sku": "W22790",
               "available": true
           },
@@ -2583,7 +2583,7 @@ window.CATALOG = {
                   "ar": "منتج مخصص لتنظيف وتزييت الطلمبات والرشاشات. · 5 لتر · 60 لتر · 200 لتر · المرجع W46796 W46798 W46799",
                   "en": "Cleans and lubricates pumps and injectors. · 5 L · 60 L · 200 L · Ref. W46796 W46798 W46799"
               },
-              "image": "images/entretien/cv-diesel-fuel-system-cleaner-plus.webp",
+              "image": "images/entertien/cv-diesel-fuel-system-cleaner-plus.webp",
               "sku": "W46796 W46798 W46799",
               "available": true
           },
@@ -2611,7 +2611,7 @@ window.CATALOG = {
                   "ar": "الحل الاحترافي للتخلص من الرطوبة والمياه داخل دورة الوقود. · 5 لتر · 60 لتر · المرجع W71896 W71898",
                   "en": "Professional solution to remove water and moisture from the fuel system. · 5 L · 60 L · Ref. W71896 W71898"
               },
-              "image": "images/entretien/cv-dry-fuel.webp",
+              "image": "images/entertien/cv-dry-fuel.webp",
               "sku": "W71896 W71898",
               "available": true
           },
@@ -2639,7 +2639,7 @@ window.CATALOG = {
                   "ar": "منتج مركز لتحسين أداء زيت المحرك ورفع كفاءة التشغيل. · 1 لتر · المرجع W51390",
                   "en": "Concentrated treatment that boosts oil performance and engine efficiency. · 1 L · Ref. W51390"
               },
-              "image": "images/entretien/cv-super-charge-concentrate.webp",
+              "image": "images/entertien/cv-super-charge-concentrate.webp",
               "sku": "W51390",
               "available": true
           },
@@ -2667,7 +2667,7 @@ window.CATALOG = {
                   "ar": "تنظيف داخلي كامل لدورة الزيت قبل تغيير الزيت. · 1 لتر · المرجع W47290",
                   "en": "Full internal cleaning of the oil circuit before changing the oil. · 1 L · Ref. W47290"
               },
-              "image": "images/entretien/cv-oil-system-flush.webp",
+              "image": "images/entertien/cv-oil-system-flush.webp",
               "sku": "W47290",
               "available": true
           },
@@ -2695,7 +2695,7 @@ window.CATALOG = {
                   "ar": "حل فعال لتنظيف وتقليل صوت التكايات. · 1 لتر · المرجع W76890",
                   "en": "Cleans and quiets hydraulic lifters and ensures proper lubrication. · 1 L · Ref. W76890"
               },
-              "image": "images/entretien/cv-hydraulic-lifter-cleaner.webp",
+              "image": "images/entertien/cv-hydraulic-lifter-cleaner.webp",
               "sku": "W76890",
               "available": true
           },
@@ -2723,7 +2723,7 @@ window.CATALOG = {
                   "ar": "الحل السريع والفعال لإيقاف التسريبات الدقيقة وحماية دورة التبريد. · 1 لتر · المرجع W45690",
                   "en": "Fast, effective fix for small leaks, with protection of the cooling circuit. · 1 L · Ref. W45690"
               },
-              "image": "images/entretien/cv-cooling-treatment-stop-leak.webp",
+              "image": "images/entertien/cv-cooling-treatment-stop-leak.webp",
               "sku": "W45690",
               "available": true
           },
@@ -2751,7 +2751,7 @@ window.CATALOG = {
                   "ar": "ينظف ويعيد كفاءة نظام التبريد كما كانت. · 1 لتر · المرجع W45990",
                   "en": "Cleans and restores cooling system efficiency (treats 10–25 L). · 1 L · Ref. W45990"
               },
-              "image": "images/entretien/cv-cooling-flush.webp",
+              "image": "images/entertien/cv-cooling-flush.webp",
               "sku": "W45990",
               "available": true
           },
@@ -2779,7 +2779,7 @@ window.CATALOG = {
                   "ar": "زيت تنظيف متعدد الاستخدامات يقهر الصدأ للتشحيم والفك. · 500 مل · المرجع W56479",
                   "en": "Multi-purpose penetrating oil that frees rusted parts and lubricates. · 500 ml · Ref. W56479"
               },
-              "image": "images/entretien/super-rust-penetrant.webp",
+              "image": "images/entertien/super-rust-penetrant.webp",
               "sku": "W56479",
               "available": true
           },
@@ -2807,7 +2807,7 @@ window.CATALOG = {
                   "ar": "مزيت لاصق قوي مقاوم للماء بقدرة اختراق عالية. · 500 مل · المرجع W66479",
                   "en": "Strong, water-resistant adhesive lubricant with high penetration. · 500 ml · Ref. W66479"
               },
-              "image": "images/entretien/chain-lube.webp",
+              "image": "images/entertien/chain-lube.webp",
               "sku": "W66479",
               "available": true
           },
@@ -2862,7 +2862,7 @@ window.CATALOG = {
                   "ar": "للتشحيم الجاف والنظيف لمختلف المواد. · 500 مل · المرجع W52579",
                   "en": "Clean, dry lubrication for many materials; leaves no oily film. · 500 ml · Ref. W52579"
               },
-              "image": "images/entretien/silicone-lubricant.webp",
+              "image": "images/entertien/silicone-lubricant.webp",
               "sku": "W52579",
               "available": true
           },
@@ -2890,7 +2890,7 @@ window.CATALOG = {
                   "ar": "منظف قوي لتنظيف وإزالة الزيوت والشحوم. · 500 مل · المرجع W61479",
                   "en": "Strong cleaner that removes oil and grease from mechanical parts. · 500 ml · Ref. W61479"
               },
-              "image": "images/entretien/brake-clutch-cleaner.webp",
+              "image": "images/entertien/brake-clutch-cleaner.webp",
               "sku": "W61479",
               "available": true
           },
@@ -2918,7 +2918,7 @@ window.CATALOG = {
                   "ar": "يفتت الرواسب الكربونية المتراكمة حول الرشاشات وأجزاء المحرك. · 500 مل · المرجع W14355",
                   "en": "Breaks down carbon deposits around injectors and engine parts. · 500 ml · Ref. W14355"
               },
-              "image": "images/entretien/injector-decarbonizer.webp",
+              "image": "images/entertien/injector-decarbonizer.webp",
               "sku": "W14355",
               "available": true
           },
@@ -2946,7 +2946,7 @@ window.CATALOG = {
                   "ar": "بكج غسيل وتنظيف فلتر الكربون بعد فكه من السيارة. · 500 مل · 5 لتر · المرجع W28779 W18985",
                   "en": "Wash-and-clean product for a DPF removed from the vehicle. · 500 ml · 5 L · Ref. W28779 W18985"
               },
-              "image": "images/entretien/dpf-off-car.webp",
+              "image": "images/entertien/dpf-off-car.webp",
               "sku": "W28779 W18985",
               "available": true
           },
@@ -2974,7 +2974,7 @@ window.CATALOG = {
                   "ar": "يعيد كفاءة فلاتر الجسيمات دون الحاجة لفكها. · 500 مل · المرجع W29079",
                   "en": "Restores particulate filter efficiency without removing it. · 500 ml · Ref. W29079"
               },
-              "image": "images/entretien/dpf-gpf-on-car.webp",
+              "image": "images/entertien/dpf-gpf-on-car.webp",
               "sku": "W29079",
               "available": true
           },
@@ -3002,7 +3002,7 @@ window.CATALOG = {
                   "ar": "يزيل الكربون الصلب والملوثات الأخرى بسرعة فائقة. · 500 مل · المرجع W28879",
                   "en": "Removes hard carbon and other deposits very quickly. · 500 ml · Ref. W28879"
               },
-              "image": "images/entretien/direct-injection-valve-cleaner.webp",
+              "image": "images/entertien/direct-injection-valve-cleaner.webp",
               "sku": "W28879",
               "available": true
           },
@@ -3030,7 +3030,7 @@ window.CATALOG = {
                   "ar": "ينظف مجاري الهواء وصمامات السحب وصمام EGR. · 200 مل · المرجع W29879",
                   "en": "Cleans air passages, valves, air-flow sensor and EGR valve on petrol engines. · 200 ml · Ref. W29879"
               },
-              "image": "images/entretien/petrol-egr-cleaner.webp",
+              "image": "images/entertien/petrol-egr-cleaner.webp",
               "sku": "W29879",
               "available": true
           },
@@ -3058,7 +3058,7 @@ window.CATALOG = {
                   "ar": "ينظف نظام سحب الهواء والصمامات والتيربو ونظام EGR. · 200 مل · المرجع W23379",
                   "en": "Cleans air intake, valves, sensor, turbo and EGR on diesel engines. · 200 ml · Ref. W23379"
               },
-              "image": "images/entretien/diesel-egr-cleaner.webp",
+              "image": "images/entertien/diesel-egr-cleaner.webp",
               "sku": "W23379",
               "available": true
           },
@@ -3086,7 +3086,7 @@ window.CATALOG = {
                   "ar": "ينظف ويزيل انسداد التوربو المتسخ مع تأثير طويل الأمد. · 200 مل · المرجع W28679",
                   "en": "Cleans and unclogs dirty turbos with a long-lasting effect. · 200 ml · Ref. W28679"
               },
-              "image": "images/entretien/turbo-cleaner-spray.webp",
+              "image": "images/entertien/turbo-cleaner-spray.webp",
               "sku": "W28679",
               "available": true
           },
@@ -3114,7 +3114,7 @@ window.CATALOG = {
                   "ar": "يزيل الرواسب في مجرى سحب الهواء وعلى صمام الخانق. · 200 مل · المرجع W54179",
                   "en": "Removes deposits from the air intake, throttle body and carburettor. · 200 ml · Ref. W54179"
               },
-              "image": "images/entretien/air-intake-carburettor-cleaner.webp",
+              "image": "images/entertien/air-intake-carburettor-cleaner.webp",
               "sku": "W54179",
               "available": true
           },
@@ -3142,7 +3142,7 @@ window.CATALOG = {
                   "ar": "سيليكون سهل الاستخدام لعلبة زيت المحرك وأغطية الصمامات. · 80 مل · المرجع W36144",
                   "en": "Easy RTV silicone gasket for oil sumps and valve covers (−50 to +260 °C). · 80 ml · Ref. W36144"
               },
-              "image": "images/entretien/black-gasket-maker.webp",
+              "image": "images/entertien/black-gasket-maker.webp",
               "sku": "W36144",
               "available": true,
               "badge": "new"
@@ -3171,7 +3171,7 @@ window.CATALOG = {
                   "ar": "موصى به لمشاعب السحب والتوربينات، مقاومة حرارة عالية. · 80 مل · المرجع W36134",
                   "en": "High-temperature silicone gasket for intake manifolds and turbos (−50 to +300 °C). · 80 ml · Ref. W36134"
               },
-              "image": "images/entretien/red-gasket-maker.webp",
+              "image": "images/entertien/red-gasket-maker.webp",
               "sku": "W36134",
               "available": true,
               "badge": "new"
@@ -3200,7 +3200,7 @@ window.CATALOG = {
                   "ar": "مثالي لمضخات المياه وعلب التروس. · 80 مل",
                   "en": "Ideal for water pumps and gearboxes; resists coolant and vibration. · 80 ml"
               },
-              "image": "images/entretien/grey-gasket-maker-80.webp",
+              "image": "images/entertien/grey-gasket-maker-80.webp",
               "available": true,
               "badge": "new"
           },
@@ -3228,7 +3228,7 @@ window.CATALOG = {
                   "ar": "عبوة أكبر (200 مل) لاستخدامات واسعة وشاملة. · 200 مل · المرجع W57680",
                   "en": "Larger 200 ml tube for wide use; not for cylinder-head gaskets. · 200 ml · Ref. W57680"
               },
-              "image": "images/entretien/gasket-maker-200-black.webp",
+              "image": "images/entertien/gasket-maker-200-black.webp",
               "sku": "W57680",
               "available": true
           },
@@ -3256,7 +3256,7 @@ window.CATALOG = {
                   "ar": "عبوة أكبر (200 مل) لاستخدامات واسعة وشاملة. · 200 مل · المرجع W10807",
                   "en": "Larger 200 ml tube for wide use; not for cylinder-head gaskets. · 200 ml · Ref. W10807"
               },
-              "image": "images/entretien/gasket-maker-200-red.webp",
+              "image": "images/entertien/gasket-maker-200-red.webp",
               "sku": "W10807",
               "available": true
           },
@@ -3284,7 +3284,7 @@ window.CATALOG = {
                   "ar": "منظف يدين قابل للتحلل الحيوي وخال من المذيبات الضارة. · 3.78 لتر · المرجع W35405",
                   "en": "Biodegradable, solvent-free hand cleaner that removes oil, grease and grime. · 3.78 L · Ref. W35405"
               },
-              "image": "images/entretien/fast-orange.webp",
+              "image": "images/entertien/fast-orange.webp",
               "sku": "W35405",
               "available": true
           },
@@ -3312,7 +3312,7 @@ window.CATALOG = {
                   "ar": "جهاز واحد بـ 4 وظائف: الحقن - مدخل الهواء - التيربو - مرشح الديزل. · المرجع W68433",
                   "en": "One machine, 4 functions: injection, air intake, turbo and DPF cleaning. · Ref. W68433"
               },
-              "image": "images/entretien/multiserve.webp",
+              "image": "images/entertien/multiserve.webp",
               "sku": "W68433",
               "available": true
           },
@@ -3340,7 +3340,7 @@ window.CATALOG = {
                   "ar": "سائل تنظيف نظام حقن البنزين لجهاز MultiSERVE. · 1 لتر · المرجع W76695",
                   "en": "Cleaning fluid for the petrol injection system, for use with MultiSERVE. · 1 L · Ref. W76695"
               },
-              "image": "images/entretien/multiserve-injection-purge.webp",
+              "image": "images/entertien/multiserve-injection-purge.webp",
               "sku": "W76695",
               "available": true
           },
@@ -3368,7 +3368,7 @@ window.CATALOG = {
                   "ar": "سائل تنظيف نظام حقن الديزل لجهاز MultiSERVE. · 1 لتر · المرجع W89195",
                   "en": "Cleaning fluid for the diesel injection system, for use with MultiSERVE. · 1 L · Ref. W89195"
               },
-              "image": "images/entretien/multiserve-diesel-purge.webp",
+              "image": "images/entertien/multiserve-diesel-purge.webp",
               "sku": "W89195",
               "available": true
           },
@@ -3396,7 +3396,7 @@ window.CATALOG = {
                   "ar": "سائل تنظيف مدخل الهواء لجهاز MultiSERVE. · 1 لتر · المرجع W11495",
                   "en": "Air-intake cleaning fluid for diesel and petrol engines, for MultiSERVE. · 1 L · Ref. W11495"
               },
-              "image": "images/entretien/multiserve-air-intake.webp",
+              "image": "images/entertien/multiserve-air-intake.webp",
               "sku": "W11495",
               "available": true
           },
@@ -3424,7 +3424,7 @@ window.CATALOG = {
                   "ar": "سائل تنظيف التيربو لجهاز MultiSERVE. · 1 لتر · المرجع W38295",
                   "en": "Turbo cleaning fluid for diesel engines, for MultiSERVE. · 1 L · Ref. W38295"
               },
-              "image": "images/entretien/multiserve-turbo.webp",
+              "image": "images/entertien/multiserve-turbo.webp",
               "sku": "W38295",
               "available": true
           },
@@ -3452,7 +3452,7 @@ window.CATALOG = {
                   "ar": "طقم منظف ومغسل مرشح الديزل. · المرجع W18784",
                   "en": "DPF cleaner and flush kit for MultiSERVE. · Ref. W18784"
               },
-              "image": "images/entretien/multiserve-dpf-kit.webp",
+              "image": "images/entertien/multiserve-dpf-kit.webp",
               "sku": "W18784",
               "available": true
           },
@@ -3480,7 +3480,7 @@ window.CATALOG = {
                   "ar": "الحل المهني المتكامل لتنظيف التكييف وإزالة الروائح. · المرجع W68485",
                   "en": "Professional machine to clean A/C systems and remove odours (12 V, 15–45 min). · Ref. W68485"
               },
-              "image": "images/entretien/aircomatic-iii.webp",
+              "image": "images/entertien/aircomatic-iii.webp",
               "sku": "W68485",
               "available": true
           },
@@ -3508,7 +3508,7 @@ window.CATALOG = {
                   "ar": "سائل لتنظيف وتطهير وتعقيم نظام تكييف الهواء. · 100 مل · المرجع W20201",
                   "en": "Cleans, disinfects and sanitises the A/C system (for use with Aircomatic). · 100 ml · Ref. W20201"
               },
-              "image": "images/entretien/airco-clean-disinfectant.webp",
+              "image": "images/entertien/airco-clean-disinfectant.webp",
               "sku": "W20201",
               "available": true,
               "badge": "new"
@@ -3537,7 +3537,7 @@ window.CATALOG = {
                   "ar": "تقنية حيوية لتنظيف عميق ومستدام. · 100 مل · المرجع W30905",
                   "en": "Probiotic technology for deep, lasting A/C cleaning (for use with Aircomatic). · 100 ml · Ref. W30905"
               },
-              "image": "images/entretien/airco-clean-probiotic.webp",
+              "image": "images/entertien/airco-clean-probiotic.webp",
               "sku": "W30905",
               "available": true,
               "badge": "new"
@@ -3566,7 +3566,7 @@ window.CATALOG = {
                   "ar": "للتخلص الفوري من الروائح الصعبة داخل مقصورة السيارة. · 100 مل · المرجع W38501",
                   "en": "Instantly eliminates tough odours inside the vehicle cabin. · 100 ml · Ref. W38501"
               },
-              "image": "images/entretien/air-purifier.webp",
+              "image": "images/entertien/air-purifier.webp",
               "sku": "W38501",
               "available": true,
               "badge": "new"
@@ -3595,7 +3595,7 @@ window.CATALOG = {
                   "ar": "منظف مكيف بلمسة فخامة شرقية. · 150 مل · المرجع W38501",
                   "en": "A/C cleaner with an oriental oud fragrance; removes odours and microbes. · 150 ml · Ref. W38501"
               },
-              "image": "images/entretien/airco-pure.webp",
+              "image": "images/entertien/airco-pure.webp",
               "sku": "W38501",
               "available": true,
               "badge": "new"
@@ -3624,7 +3624,7 @@ window.CATALOG = {
                   "ar": "الحل الأمثل لتنظيف وتجديد فلاتر الكربون. · 325 مل · المرجع W28263",
                   "en": "Cleans and renews a clogged DPF filter. · 325 ml · Ref. W28263"
               },
-              "image": "images/entretien/c-dpf-cleaner.webp",
+              "image": "images/entertien/c-dpf-cleaner.webp",
               "sku": "W28263",
               "available": true
           },
@@ -3652,7 +3652,7 @@ window.CATALOG = {
                   "ar": "محسن قوي لرفع كفاءة الديزل وحماية المحرك. · 350 مل · المرجع W28510",
                   "en": "Boosts diesel quality, prevents wax in cold weather and cleans the injectors. · 350 ml · Ref. W28510"
               },
-              "image": "images/entretien/c-wda.webp",
+              "image": "images/entertien/c-wda.webp",
               "sku": "W28510",
               "available": true
           },
@@ -3680,7 +3680,7 @@ window.CATALOG = {
                   "ar": "الحل الأمثل لاستعادة عزم السيارة وحماية التيربو. · 325 مل · المرجع W31563",
                   "en": "Restores engine torque and protects the turbo from clogging. · 325 ml · Ref. W31563"
               },
-              "image": "images/entretien/c-diesel-turbo-cleaner.webp",
+              "image": "images/entertien/c-diesel-turbo-cleaner.webp",
               "sku": "W31563",
               "available": true
           },
@@ -3708,7 +3708,7 @@ window.CATALOG = {
                   "ar": "منتج مخصص للحماية القصوى من التجمد. · 350 مل · المرجع W22710",
                   "en": "Protects diesel from freezing in cold weather. · 350 ml · Ref. W22710"
               },
-              "image": "images/entretien/c-ice-proof.webp",
+              "image": "images/entertien/c-ice-proof.webp",
               "sku": "W22710",
               "available": true
           },
@@ -3736,7 +3736,7 @@ window.CATALOG = {
                   "ar": "ثلاث فوائد في عبوة واحدة: تنظيف، حماية، وتحسين أداء المحرك. · 325 مل · المرجع W76459",
                   "en": "Three benefits in one: cleans, protects and improves engine performance. · 325 ml · Ref. W76459"
               },
-              "image": "images/entretien/c-3xa-triple-action.webp",
+              "image": "images/entertien/c-3xa-triple-action.webp",
               "sku": "W76459",
               "available": true
           },
@@ -3764,7 +3764,7 @@ window.CATALOG = {
                   "ar": "الحل المثالي لتخطي فحص انبعاثات العادم والسموم. · 325 مل · المرجع W67969",
                   "en": "Helps you pass the emissions inspection and cuts black smoke. · 325 ml · Ref. W67969"
               },
-              "image": "images/entretien/c-xtreme-diesel-emission-reducer.webp",
+              "image": "images/entertien/c-xtreme-diesel-emission-reducer.webp",
               "sku": "W67969",
               "available": true
           },
@@ -3792,7 +3792,7 @@ window.CATALOG = {
                   "ar": "الرفيق المثالي لكل تفويلة لقطع مسافات أطول وأداء أقوى. · 250 مل · المرجع W22910 W22911",
                   "en": "Raises cetane, restores power and protects pump and injectors. · 250 ml · Ref. W22910 W22911"
               },
-              "image": "images/entretien/c-supremium-diesel.webp",
+              "image": "images/entertien/c-supremium-diesel.webp",
               "sku": "W22910 W22911",
               "available": true
           },
@@ -3820,7 +3820,7 @@ window.CATALOG = {
                   "ar": "للعناية الكاملة بنظام الوقود والقضاء على الدخان. · 325 مل · المرجع W51668 W51672",
                   "en": "Complete care of the diesel fuel system; reduces smoke. · 325 ml · Ref. W51668 W51672"
               },
-              "image": "images/entretien/c-injector-cleaner-diesel.webp",
+              "image": "images/entertien/c-injector-cleaner-diesel.webp",
               "sku": "W51668 W51672",
               "available": true
           },
@@ -3848,7 +3848,7 @@ window.CATALOG = {
                   "ar": "مخصص لتنظيف وحماية أجزاء المحرك الدقيقة. · 325 مل · المرجع W13960",
                   "en": "Cleans and protects pump, rail and injectors of modern diesels. · 325 ml · Ref. W13960"
               },
-              "image": "images/entretien/c-high-pressure-injector-protection.webp",
+              "image": "images/entertien/c-high-pressure-injector-protection.webp",
               "sku": "W13960",
               "available": true
           },
@@ -3876,7 +3876,7 @@ window.CATALOG = {
                   "ar": "معالج قوي وشامل مخصص لمحركات الديزل فقط. · 500 مل · المرجع W76401",
                   "en": "Powerful, comprehensive treatment for diesel engines only. · 500 ml · Ref. W76401"
               },
-              "image": "images/entretien/c-formula-gold-diesel.webp",
+              "image": "images/entertien/c-formula-gold-diesel.webp",
               "sku": "W76401",
               "available": true
           },
@@ -3904,7 +3904,7 @@ window.CATALOG = {
                   "ar": "مخصص لامتصاص الماء من خزان الوقود. · 500 مل · المرجع W71867",
                   "en": "Absorbs water in the fuel tank to prevent rust and corrosion. · 500 ml · Ref. W71867"
               },
-              "image": "images/entretien/c-dry-fuel.webp",
+              "image": "images/entertien/c-dry-fuel.webp",
               "sku": "W71867",
               "available": true
           },
@@ -3932,7 +3932,7 @@ window.CATALOG = {
                   "ar": "منظف عام وشامل للبخاخات. · 325 مل · المرجع W71867",
                   "en": "All-round cleaner for petrol and diesel injectors. · 325 ml · Ref. W71867"
               },
-              "image": "images/entretien/c-injector-cleaner-general.webp",
+              "image": "images/entertien/c-injector-cleaner-general.webp",
               "sku": "W71867",
               "available": true
           },
@@ -3960,7 +3960,7 @@ window.CATALOG = {
                   "ar": "لاستعادة كفاءة أداء البخاخات وإعادة نظام الرش. · 325 مل · المرجع W55964 W55972",
                   "en": "Restores injector efficiency and the ideal spray pattern. · 325 ml · Ref. W55964 W55972"
               },
-              "image": "images/entretien/c-injector-cleaner-petrol.webp",
+              "image": "images/entertien/c-injector-cleaner-petrol.webp",
               "sku": "W55964 W55972",
               "available": true
           },
@@ -3988,7 +3988,7 @@ window.CATALOG = {
                   "ar": "الحل السريع لاجتياز اختبارات الانبعاثات وتحسين الأداء. · 325 مل · المرجع W67264",
                   "en": "Quick fix for passing emission tests and improving performance. · 325 ml · Ref. W67264"
               },
-              "image": "images/entretien/c-xtreme-petrol-emission-reducer.webp",
+              "image": "images/entertien/c-xtreme-petrol-emission-reducer.webp",
               "sku": "W67264",
               "available": true
           },
@@ -4016,7 +4016,7 @@ window.CATALOG = {
                   "ar": "مصمم خصيصاً لتحديات المحركات الهجينة. · 325 مل · المرجع W16020",
                   "en": "Designed specifically for the challenges of hybrid engines. · 325 ml · Ref. W16020"
               },
-              "image": "images/entretien/c-hybrid-cleaner.webp",
+              "image": "images/entertien/c-hybrid-cleaner.webp",
               "sku": "W16020",
               "available": true,
               "badge": "new"
@@ -4045,7 +4045,7 @@ window.CATALOG = {
                   "ar": "منتج الصيانة الشاملة لنظام الوقود التقليدي. · 325 مل · المرجع W65263",
                   "en": "Complete maintenance product for conventional fuel systems. · 325 ml · Ref. W65263"
               },
-              "image": "images/entretien/c-petrol-treatment.webp",
+              "image": "images/entertien/c-petrol-treatment.webp",
               "sku": "W65263",
               "available": true
           },
@@ -4073,7 +4073,7 @@ window.CATALOG = {
                   "ar": "يعمل على تحسين كفاءة المحول الحفاز. · 325 مل · المرجع W24463",
                   "en": "Improves catalytic converter efficiency and lambda sensor performance. · 325 ml · Ref. W24463"
               },
-              "image": "images/entretien/c-catalytic-lambda-cleaner.webp",
+              "image": "images/entertien/c-catalytic-lambda-cleaner.webp",
               "sku": "W24463",
               "available": true
           },
@@ -4101,7 +4101,7 @@ window.CATALOG = {
                   "ar": "يعمل على تحسين الأداء العام للمحرك. · 325 مل · المرجع W70759",
                   "en": "Improves overall engine performance and helps lower fuel consumption. · 325 ml · Ref. W70759"
               },
-              "image": "images/entretien/c-3xa-complete-fuel-system.webp",
+              "image": "images/entertien/c-3xa-complete-fuel-system.webp",
               "sku": "W70759",
               "available": true
           },
@@ -4129,7 +4129,7 @@ window.CATALOG = {
                   "ar": "يرفع رقم الأوكتان ويحمي مقاعد الصمامات. · 325 مل · المرجع W43873",
                   "en": "Raises octane, protects valve seats and reduces engine knock. · 325 ml · Ref. W43873"
               },
-              "image": "images/entretien/c-octane-booster.webp",
+              "image": "images/entertien/c-octane-booster.webp",
               "sku": "W43873",
               "available": true
           },
@@ -4157,7 +4157,7 @@ window.CATALOG = {
                   "ar": "تنظيف وحماية شاملة لنظام الحقن. · 500 مل · المرجع W70701",
                   "en": "Complete cleaning and protection of the injection system. · 500 ml · Ref. W70701"
               },
-              "image": "images/entretien/c-formula-gold-fuel.webp",
+              "image": "images/entertien/c-formula-gold-fuel.webp",
               "sku": "W70701",
               "available": true
           },
@@ -4185,7 +4185,7 @@ window.CATALOG = {
                   "ar": "يحسن كفاءة الوقود وينظف البخاخات. · 250 مل · المرجع W22810",
                   "en": "Improves fuel efficiency, cleans injectors and protects the fuel system. · 250 ml · Ref. W22810"
               },
-              "image": "images/entretien/c-supremium-petrol.webp",
+              "image": "images/entertien/c-supremium-petrol.webp",
               "sku": "W22810",
               "available": true
           },
@@ -4213,7 +4213,7 @@ window.CATALOG = {
                   "ar": "يحمي مقاعد الصمامات اللينة في المحركات القديمة. · 250 مل · المرجع W70611 W70612",
                   "en": "Protects soft valve seats of older engines running on unleaded petrol. · 250 ml · Ref. W70611 W70612"
               },
-              "image": "images/entretien/c-lead-substitute.webp",
+              "image": "images/entertien/c-lead-substitute.webp",
               "sku": "W70611 W70612",
               "available": true
           },
@@ -4241,7 +4241,7 @@ window.CATALOG = {
                   "ar": "يحمي الوقود من التحلل بعد فترات التوقف الطويلة. · 250 مل · المرجع W23912",
                   "en": "Keeps petrol from degrading during long periods of storage or inactivity. · 250 ml · Ref. W23912"
               },
-              "image": "images/entretien/c-fuel-stabilizer.webp",
+              "image": "images/entertien/c-fuel-stabilizer.webp",
               "sku": "W23912",
               "available": true
           },
@@ -4269,7 +4269,7 @@ window.CATALOG = {
                   "ar": "يعيد قوة ضغط المحرك ويقلل استهلاك الزيت. · 325 مل · المرجع W51420",
                   "en": "Restores compression, cuts oil consumption and blue smoke. · 325 ml · Ref. W51420"
               },
-              "image": "images/entretien/c-super-charge-compression.webp",
+              "image": "images/entertien/c-super-charge-compression.webp",
               "sku": "W51420",
               "available": true,
               "badge": "new"
@@ -4298,7 +4298,7 @@ window.CATALOG = {
                   "ar": "يمتاز بتقنية السيراميك لتقليل الاحتكاك والتآكل. · 325 مل · المرجع W66920",
                   "en": "Ceramic technology that reduces friction and wear for lasting protection. · 325 ml · Ref. W66920"
               },
-              "image": "images/entretien/c-ceramic-engine-protector.webp",
+              "image": "images/entertien/c-ceramic-engine-protector.webp",
               "sku": "W66920",
               "available": true,
               "badge": "new"
@@ -4327,7 +4327,7 @@ window.CATALOG = {
                   "ar": "يوقف ويمنع تسرب زيت المحرك دون الحاجة لفك المحرك. · 325 مل · المرجع W50664 W50672 W50624",
                   "en": "Stops and prevents engine oil leaks without dismantling. · 325 ml · Ref. W50664 W50672 W50624"
               },
-              "image": "images/entretien/c-engine-stop-leak.webp",
+              "image": "images/entertien/c-engine-stop-leak.webp",
               "sku": "W50664 W50672 W50624",
               "available": true
           },
@@ -4355,7 +4355,7 @@ window.CATALOG = {
                   "ar": "يعيد كفاءة عمل التكايات ويقلل الضجيج. · 325 مل · المرجع W76858",
                   "en": "Restores hydraulic lifter operation and quiets the valve train. · 325 ml · Ref. W76858"
               },
-              "image": "images/entretien/c-hydraulic-lifter-treatment.webp",
+              "image": "images/entertien/c-hydraulic-lifter-treatment.webp",
               "sku": "W76858",
               "available": true
           },
@@ -4383,7 +4383,7 @@ window.CATALOG = {
                   "ar": "ينظف نظام الزيت داخل المحرك من الداخل بعمق. · 325 مل · المرجع W51265 W51272",
                   "en": "Deep-cleans the oil system from the inside before an oil change. · 325 ml · Ref. W51265 W51272"
               },
-              "image": "images/entretien/c-motor-cleaner-engine-flush.webp",
+              "image": "images/entertien/c-motor-cleaner-engine-flush.webp",
               "sku": "W51265 W51272",
               "available": true
           },
@@ -4411,7 +4411,7 @@ window.CATALOG = {
                   "ar": "يقلل من دخان العادم الناتج عن احتراق الزيت. · 325 مل · المرجع W76858",
                   "en": "Reduces exhaust smoke caused by burning oil and quiets the engine. · 325 ml · Ref. W76858"
               },
-              "image": "images/entretien/c-stop-smoke.webp",
+              "image": "images/entertien/c-stop-smoke.webp",
               "sku": "W76858",
               "available": true
           },
@@ -4439,7 +4439,7 @@ window.CATALOG = {
                   "ar": "يساعد في إطالة عمر المحرك عبر تقليل الاحتكاك والتآكل. · 500 مل · المرجع W77101",
                   "en": "Reduces oxidation, friction and wear to extend engine life. · 500 ml · Ref. W77101"
               },
-              "image": "images/entretien/c-formula-gold-engine.webp",
+              "image": "images/entertien/c-formula-gold-engine.webp",
               "sku": "W77101",
               "available": true
           },
@@ -4467,7 +4467,7 @@ window.CATALOG = {
                   "ar": "منظف قوي وخال من الأحماض لنظام التبريد. · 325 مل · المرجع W56064",
                   "en": "Strong, acid-free radiator cleaner for the cooling system. · 325 ml · Ref. W56064"
               },
-              "image": "images/entretien/c-radiator-flush.webp",
+              "image": "images/entertien/c-radiator-flush.webp",
               "sku": "W56064",
               "available": true
           },
@@ -4495,7 +4495,7 @@ window.CATALOG = {
                   "ar": "يوقف ويمنع التسربات في نظام التبريد. · 325 مل · المرجع W55864 W55872",
                   "en": "Stops and prevents leaks in the radiator and cooling system. · 325 ml · Ref. W55864 W55872"
               },
-              "image": "images/entretien/c-radiator-stop-leak.webp",
+              "image": "images/entertien/c-radiator-stop-leak.webp",
               "sku": "W55864 W55872",
               "available": true
           },
@@ -4523,7 +4523,7 @@ window.CATALOG = {
                   "ar": "منظف عالي الفعالية لنظام التكييف برائحة نعناع. · 150 مل · المرجع W38701",
                   "en": "High-efficiency A/C cleaner with probiotics for a fresh mint scent. · 150 ml · Ref. W38701"
               },
-              "image": "images/entretien/c-probiotic-ac-cleaner.webp",
+              "image": "images/entertien/c-probiotic-ac-cleaner.webp",
               "sku": "W38701",
               "available": true,
               "badge": "new"
@@ -4552,7 +4552,7 @@ window.CATALOG = {
                   "ar": "يعالج الروائح الكريهة من خلال تفاعل كيميائي جزيئي. · 100 مل · المرجع W29601",
                   "en": "Neutralises odours from smoke, sweat, food, mould and damp. · 100 ml · Ref. W29601"
               },
-              "image": "images/entretien/c-clean-air.webp",
+              "image": "images/entertien/c-clean-air.webp",
               "sku": "W29601",
               "available": true
           },
@@ -4580,7 +4580,7 @@ window.CATALOG = {
                   "ar": "يستخدم لإصلاح الثقوب والشقوق في أنظمة العادم. · 250 غ · المرجع W10804",
                   "en": "Permanently repairs holes and cracks in exhaust systems (up to 1000 °C). · 250 g · Ref. W10804"
               },
-              "image": "images/entretien/c-exhaust-repair-putty.webp",
+              "image": "images/entertien/c-exhaust-repair-putty.webp",
               "sku": "W10804",
               "available": true
           },
@@ -4608,7 +4608,7 @@ window.CATALOG = {
                   "ar": "يشغّل المحرك فوراً ويساعد في الطقس البارد جداً. · 200 مل · المرجع W58055",
                   "en": "Starts engines fast in very cold weather and protects the battery. · 200 ml · Ref. W58055"
               },
-              "image": "images/entretien/c-starting-fluid.webp",
+              "image": "images/entertien/c-starting-fluid.webp",
               "sku": "W58055",
               "available": true
           },
@@ -4636,7 +4636,7 @@ window.CATALOG = {
                   "ar": "منتج مركز قوي لإزالة الحشرات والأوساخ. · 250 مل · 1000 مل · المرجع W45201 W45202",
                   "en": "Concentrated screen-wash that removes insects and dirt from the windscreen. · 250 ml · 1000 ml · Ref. W45201 W45202"
               },
-              "image": "images/entretien/c-anti-insect-screen-wash.webp",
+              "image": "images/entertien/c-anti-insect-screen-wash.webp",
               "sku": "W45201 W45202",
               "available": true
           },
@@ -4664,7 +4664,7 @@ window.CATALOG = {
                   "ar": "منتج مركز جداً لتنظيف الزجاج مع حماية من التجمد. · 1 لتر · 5 لتر · المرجع W45101 W77395 W77396",
                   "en": "Super-concentrated screen-wash with frost protection down to −58 °C. · 1 L · 5 L · Ref. W45101 W77395 W77396"
               },
-              "image": "images/entretien/c-super-screen-wash.webp",
+              "image": "images/entertien/c-super-screen-wash.webp",
               "sku": "W45101 W77395 W77396",
               "available": true
           }
