@@ -288,7 +288,7 @@ img { max-width: 100%; }
       brandSub: "Shell HERCULES Tanger", btnHome: "Retour à l'accueil", btnLocation: "Voir la localisation",
       rights: "Tous droits réservés.", city: "Tanger",
       searchPh: "Rechercher un produit, une marque…", searchLabel: "Rechercher", clear: "Effacer",
-      sort: "Trier", sFeatured: "Pertinence", sPriceAsc: "Prix croissant", sPriceDesc: "Prix décroissant", sNameAsc: "Nom A–Z",
+      sort: "Trier", sFeatured: "Pertinence", sPriceAsc: "Prix croissant", sPriceDesc: "Prix décroissant", sNameAsc: "Nom A–Z", sNameDesc: "Nom Z–A", sNewest: "Nouveautés", sDiscount: "Plus grosse remise",
       filters: "Filtres", categories: "Catégories", brands: "Marques", tags: "Étiquettes", price: "Prix",
       min: "Min", max: "Max", availability: "Disponibilité", inStock: "En stock uniquement", promo: "En promotion",
       resetAll: "Tout réinitialiser", showResults: "Voir les résultats",
@@ -304,7 +304,7 @@ img { max-width: 100%; }
       brandSub: "شل هيركوليس طنجة", btnHome: "العودة إلى الرئيسية", btnLocation: "عرض الموقع",
       rights: "جميع الحقوق محفوظة.", city: "طنجة",
       searchPh: "ابحث عن منتج أو علامة تجارية…", searchLabel: "بحث", clear: "مسح",
-      sort: "ترتيب", sFeatured: "الأكثر صلة", sPriceAsc: "السعر: من الأقل", sPriceDesc: "السعر: من الأعلى", sNameAsc: "الاسم أ–ي",
+      sort: "ترتيب", sFeatured: "الأكثر صلة", sPriceAsc: "السعر: من الأقل", sPriceDesc: "السعر: من الأعلى", sNameAsc: "الاسم أ–ي", sNameDesc: "الاسم ي–أ", sNewest: "الأحدث", sDiscount: "أكبر تخفيض",
       filters: "التصفية", categories: "الفئات", brands: "العلامات التجارية", tags: "الوسوم", price: "السعر",
       min: "الأدنى", max: "الأقصى", availability: "التوفر", inStock: "المتوفر فقط", promo: "العروض",
       resetAll: "إعادة تعيين الكل", showResults: "عرض النتائج",
@@ -320,7 +320,7 @@ img { max-width: 100%; }
       brandSub: "Shell HERCULES Tangier", btnHome: "Back to home", btnLocation: "View location",
       rights: "All rights reserved.", city: "Tangier",
       searchPh: "Search for a product or brand…", searchLabel: "Search", clear: "Clear",
-      sort: "Sort", sFeatured: "Relevance", sPriceAsc: "Price: low to high", sPriceDesc: "Price: high to low", sNameAsc: "Name A–Z",
+      sort: "Sort", sFeatured: "Relevance", sPriceAsc: "Price: low to high", sPriceDesc: "Price: high to low", sNameAsc: "Name A–Z", sNameDesc: "Name Z–A", sNewest: "Newest", sDiscount: "Biggest discount",
       filters: "Filters", categories: "Categories", brands: "Brands", tags: "Tags", price: "Price",
       min: "Min", max: "Max", availability: "Availability", inStock: "In stock only", promo: "On promotion",
       resetAll: "Reset all", showResults: "Show results",
@@ -336,7 +336,7 @@ img { max-width: 100%; }
       brandSub: "Shell HERCULES Tánger", btnHome: "Volver al inicio", btnLocation: "Ver ubicación",
       rights: "Todos los derechos reservados.", city: "Tánger",
       searchPh: "Buscar un producto o una marca…", searchLabel: "Buscar", clear: "Borrar",
-      sort: "Ordenar", sFeatured: "Relevancia", sPriceAsc: "Precio: de menor a mayor", sPriceDesc: "Precio: de mayor a menor", sNameAsc: "Nombre A–Z",
+      sort: "Ordenar", sFeatured: "Relevancia", sPriceAsc: "Precio: de menor a mayor", sPriceDesc: "Precio: de mayor a menor", sNameAsc: "Nombre A–Z", sNameDesc: "Nombre Z–A", sNewest: "Novedades", sDiscount: "Mayor descuento",
       filters: "Filtros", categories: "Categorías", brands: "Marcas", tags: "Etiquetas", price: "Precio",
       min: "Mín", max: "Máx", availability: "Disponibilidad", inStock: "Solo en stock", promo: "En oferta",
       resetAll: "Restablecer todo", showResults: "Ver resultados",
@@ -352,7 +352,7 @@ img { max-width: 100%; }
       brandSub: "Shell HERCULES Tânger", btnHome: "Voltar ao início", btnLocation: "Ver localização",
       rights: "Todos os direitos reservados.", city: "Tânger",
       searchPh: "Pesquisar um produto ou uma marca…", searchLabel: "Pesquisar", clear: "Limpar",
-      sort: "Ordenar", sFeatured: "Relevância", sPriceAsc: "Preço: do menor para o maior", sPriceDesc: "Preço: do maior para o menor", sNameAsc: "Nome A–Z",
+      sort: "Ordenar", sFeatured: "Relevância", sPriceAsc: "Preço: do menor para o maior", sPriceDesc: "Preço: do maior para o menor", sNameAsc: "Nome A–Z", sNameDesc: "Nome Z–A", sNewest: "Novidades", sDiscount: "Maior desconto",
       filters: "Filtros", categories: "Categorias", brands: "Marcas", tags: "Etiquetas", price: "Preço",
       min: "Mín", max: "Máx", availability: "Disponibilidade", inStock: "Apenas em stock", promo: "Em promoção",
       resetAll: "Repor tudo", showResults: "Ver resultados",
@@ -441,7 +441,7 @@ img { max-width: 100%; }
 
   /* ---------------- state ---------------- */
   const state = { q: "", cats: new Set(), brands: new Set(), tags: new Set(), min: null, max: null, inStock: false, promo: false, sort: "featured", view: "grid" };
-  const SORTS = ["featured", "priceAsc", "priceDesc", "nameAsc"];
+  const SORTS = ["featured", "newest", "priceAsc", "priceDesc", "nameAsc", "nameDesc", "discount"];
 
   function readURL() {
     try {
@@ -509,6 +509,15 @@ img { max-width: 100%; }
       else r = state.sort === "priceAsc" ? pa - pb : pb - pa;
     } else if (state.sort === "nameAsc") {
       r = tr(a.name).localeCompare(tr(b.name), lang);
+    } else if (state.sort === "nameDesc") {
+      r = tr(b.name).localeCompare(tr(a.name), lang);
+    } else if (state.sort === "newest") {
+      r = (isNew(b) ? 1 : 0) - (isNew(a) ? 1 : 0);
+      if (!r) return b._i - a._i; // most recently added first
+    } else if (state.sort === "discount") {
+      const da = isPromo(a) && a.oldPrice ? 1 - Number(a.price) / Number(a.oldPrice) : 0;
+      const db = isPromo(b) && b.oldPrice ? 1 - Number(b.price) / Number(b.oldPrice) : 0;
+      r = db - da;
     } else {
       r = (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
     }
@@ -533,7 +542,7 @@ img { max-width: 100%; }
 
   function facetData() {
     const catIds = [];
-    catDefs.forEach((d, id) => { if (products.some((p) => String(p.category) === id)) catIds.push(id); });
+    catDefs.forEach((d, id) => catIds.push(id)); // every category you define is shown, even before it has products
     products.forEach((p) => { const id = String(p.category || ""); if (id && !catIds.includes(id)) catIds.push(id); });
     const brands = [...new Set(products.map((p) => String(p.brand || "")).filter(Boolean))].sort((a, b) => a.localeCompare(b, lang));
     const tagMap = new Map();
@@ -551,25 +560,23 @@ img { max-width: 100%; }
 
   function sidebarHTML(fd) {
     let h = "";
-    if (fd.catIds.length > 1) h += `<div class="fgroup"><h3>${esc(t("categories"))}</h3>${fd.catIds.map((id) => opt("cats", id, catLabel(id))).join("")}</div>`;
+    if (fd.catIds.length) h += `<div class="fgroup"><h3>${esc(t("categories"))}</h3>${fd.catIds.map((id) => opt("cats", id, catLabel(id))).join("")}</div>`;
     if (fd.brands.length) h += `<div class="fgroup"><h3>${esc(t("brands"))}</h3>${fd.brands.map((b) => opt("brands", b, b)).join("")}</div>`;
     if (fd.tags.length) h += `<div class="fgroup"><h3>${esc(t("tags"))}</h3>${fd.tags.map((e) => opt("tags", e[0], tr(e[1]))).join("")}</div>`;
-    if (fd.minP != null && fd.maxP > fd.minP) {
-      h += `<div class="fgroup"><h3>${esc(t("price"))} (${esc(CURRENCY)})</h3><div class="prange">
-        <input id="pMin" type="number" inputmode="decimal" min="0" placeholder="${esc(t("min"))} ${fd.minP}" aria-label="${esc(t("min"))}">
+    const hint = (v) => (v != null ? " " + v : "");
+    h += `<div class="fgroup"><h3>${esc(t("price"))} (${esc(CURRENCY)})</h3><div class="prange">
+        <input id="pMin" type="number" inputmode="decimal" min="0" placeholder="${esc(t("min"))}${hint(fd.minP)}" aria-label="${esc(t("min"))}">
         <span>–</span>
-        <input id="pMax" type="number" inputmode="decimal" min="0" placeholder="${esc(t("max"))} ${fd.maxP}" aria-label="${esc(t("max"))}"></div></div>`;
-    }
-    let av = "";
-    if (fd.anyOut) av += `<label class="opt"><input type="checkbox" data-f="inStock"><span class="box"></span><span class="opt-t">${esc(t("inStock"))}</span></label>`;
-    if (fd.anyPromo) av += `<label class="opt"><input type="checkbox" data-f="promo"><span class="box"></span><span class="opt-t">${esc(t("promo"))}</span></label>`;
-    if (av) h += `<div class="fgroup"><h3>${esc(t("availability"))}</h3>${av}</div>`;
+        <input id="pMax" type="number" inputmode="decimal" min="0" placeholder="${esc(t("max"))}${hint(fd.maxP)}" aria-label="${esc(t("max"))}"></div></div>`;
+    h += `<div class="fgroup"><h3>${esc(t("availability"))}</h3>
+        <label class="opt"><input type="checkbox" data-f="inStock"><span class="box"></span><span class="opt-t">${esc(t("inStock"))}</span></label>
+        <label class="opt"><input type="checkbox" data-f="promo"><span class="box"></span><span class="opt-t">${esc(t("promo"))}</span></label></div>`;
     h += `<button type="button" class="reset" id="resetAll">${esc(t("resetAll"))}</button>`;
     return h;
   }
 
   function mainHTML() {
-    const has = products.length > 0;
+    const has = true; // search, sort and filters are always visible, even before products are added
     const fd = facetData();
     const controls = has ? `
       <button type="button" class="btn btn-soft only-m" id="openFilters">${ICON.filter} ${esc(t("filters"))} <span class="fbadge" id="fBadge"></span></button>
@@ -641,7 +648,7 @@ img { max-width: 100%; }
   /* ---------------- render / sync ---------------- */
   function renderResults() {
     const grid = $("#grid"), st = $("#state"), cnt = $("#count"), act = $("#active");
-    if (!products.length) { grid.innerHTML = ""; cnt.textContent = ""; act.innerHTML = ""; st.innerHTML = stateHTML("empty"); return; }
+    if (!products.length) { grid.innerHTML = ""; cnt.textContent = ""; act.innerHTML = ""; st.innerHTML = ""; return; } // no products yet: blank results area
     const list = products.filter((p) => match(p)).sort(compare);
     cnt.textContent = list.length === 1 ? t("results1", { n: list.length }) : t("resultsN", { n: list.length });
     grid.className = "grid" + (state.view === "list" ? " list" : "");
