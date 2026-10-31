@@ -238,11 +238,108 @@ img { max-width: 100%; }
   .sortbox select { width: 100%; }
 }
 
+/* ---------- Hero with picture ---------- */
+.hero.hero-img { background: none; padding: 28px 20px 8px; }
+.hero-banner { position: relative; max-width: 1200px; margin: 0 auto; border-radius: var(--radius); overflow: hidden; box-shadow: 0 18px 40px -24px rgba(0,0,0,.5); background: #f0b800; }
+.hero-banner img { display: block; width: 100%; height: clamp(170px, 26vw, 270px); object-fit: cover; }
+.hero-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,16,46,.05) 0%, rgba(8,16,46,.68) 100%); }
+.hero-banner .hb-t { position: absolute; z-index: 1; inset-inline: 0; bottom: 0; padding: 22px 24px; text-align: center; color: #fff; }
+.hero-banner .kick { color: var(--yellow); }
+.hero-banner h1 { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+.hero-logo { display: block; width: min(300px, 70vw); height: auto; margin: 0 auto 18px; }
+
+/* ---------- Certificates ---------- */
+.certs { background: var(--gray); border-top: 1px solid var(--line); padding: 56px 20px 64px; }
+.certs-in { max-width: 1200px; margin: 0 auto; }
+.certs h2 { text-align: center; margin: 0 0 8px; font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 600; letter-spacing: -.03em; }
+.certs-sub { text-align: center; color: var(--sub); max-width: 680px; margin: 0 auto 32px; line-height: 1.55; }
+.certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.cert { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--red); border-radius: var(--radius); padding: 22px; }
+.cert:nth-child(2) { border-top-color: var(--yellow); }
+.cert:nth-child(3) { border-top-color: #2563eb; }
+.cert:nth-child(4) { border-top-color: #10b981; }
+.cert-ic { width: 46px; height: 46px; border-radius: 14px; background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 12px; }
+.cert h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; }
+.cert p { margin: 0; color: var(--sub); font-size: .9rem; line-height: 1.55; }
+.certs-src { text-align: center; margin-top: 26px; font-size: .85rem; }
+.certs-src a { color: var(--red); font-weight: 600; text-decoration: none; }
+.certs-src a:hover { text-decoration: underline; }
+
   </style>
   <script>
     /* Page settings. Products are added in products.js, not here. */
     window.PAGE = {
           "key": "lubrifiants",
+          "heroBanner": "lubrifiants-banner.png",
+          "certs": {
+            "title": {
+              "fr": "Qualité & certifications Shell",
+              "en": "Shell quality & certifications",
+              "ar": "الجودة وشهادات Shell",
+              "es": "Calidad y certificaciones Shell",
+              "pt": "Qualidade e certificações Shell"
+            },
+            "intro": {
+              "fr": "Les huiles et lubrifiants Shell sont soumis à des standards de qualité exigeants, de l’usine jusqu’au distributeur.",
+              "en": "Shell oils and lubricants follow demanding quality standards, from the plant to the distributor.",
+              "ar": "تخضع زيوت ومزلّقات Shell لمعايير جودة صارمة، من المصنع حتى الموزّع.",
+              "es": "Los aceites y lubricantes Shell cumplen exigentes estándares de calidad, desde la fábrica hasta el distribuidor.",
+              "pt": "Os óleos e lubrificantes Shell seguem padrões de qualidade exigentes, da fábrica ao distribuidor."
+            },
+            "items": [
+              {
+                "icon": "🛡️",
+                "title": {
+                  "fr": "Distributeur autorisé Shell",
+                  "en": "Authorized Shell distributor",
+                  "ar": "موزّع معتمد لدى Shell",
+                  "es": "Distribuidor autorizado Shell",
+                  "pt": "Distribuidor autorizado Shell"
+                },
+                "text": {
+                  "fr": "La distribution des produits Shell est encadrée par des exigences contractuelles et une licence de marque.",
+                  "en": "Distribution of Shell products is governed by contractual requirements and a trademark licence.",
+                  "ar": "يخضع توزيع منتجات Shell لمتطلبات تعاقدية وترخيص للعلامة التجارية.",
+                  "es": "La distribución de productos Shell se rige por requisitos contractuales y una licencia de marca.",
+                  "pt": "A distribuição de produtos Shell é regida por requisitos contratuais e licença de marca."
+                }
+              },
+              {
+                "icon": "✅",
+                "title": {
+                  "fr": "Programme qualité D.P.Q.A.",
+                  "en": "D.P.Q.A. quality programme",
+                  "ar": "برنامج الجودة D.P.Q.A.",
+                  "es": "Programa de calidad D.P.Q.A.",
+                  "pt": "Programa de qualidade D.P.Q.A."
+                },
+                "text": {
+                  "fr": "Le programme impose une inspection qualité complète et un engagement actif sur la qualité à long terme.",
+                  "en": "The programme requires a comprehensive quality assurance inspection and an active long-term quality commitment.",
+                  "ar": "يتطلب البرنامج فحصاً شاملاً لضمان الجودة والتزاماً فعلياً بالجودة على المدى الطويل.",
+                  "es": "El programa exige una inspección integral de calidad y un compromiso activo de calidad a largo plazo.",
+                  "pt": "O programa exige uma inspeção de qualidade completa e um compromisso ativo de qualidade a longo prazo."
+                }
+              },
+              {
+                "icon": "🔗",
+                "title": {
+                  "fr": "Traçabilité du produit",
+                  "en": "Product chain of custody",
+                  "ar": "تتبّع المنتج",
+                  "es": "Trazabilidad del producto",
+                  "pt": "Rastreabilidade do produto"
+                },
+                "text": {
+                  "fr": "La qualité commence dans les usines Shell et se poursuit chez les distributeurs agréés, qui doivent maintenir la chaîne de traçabilité.",
+                  "en": "Quality starts in Shell plants and extends to authorized distributors, who must maintain the proper chain of custody.",
+                  "ar": "تبدأ الجودة في مصانع Shell وتمتد إلى الموزّعين المعتمدين الذين يجب أن يحافظوا على سلسلة التتبّع.",
+                  "es": "La calidad empieza en las plantas Shell y se extiende a los distribuidores autorizados, que deben mantener la cadena de trazabilidad.",
+                  "pt": "A qualidade começa nas fábricas Shell e estende-se aos distribuidores autorizados, que devem manter a cadeia de rastreabilidade."
+                }
+              }
+            ]
+          },
           "icon": "🛢️",
           "kicker": {
                 "fr": "Boutique Shell Select",
@@ -536,8 +633,18 @@ img { max-width: 100%; }
         <a href="/" class="btn btn-red hide-s">${esc(t("btnHome"))}</a></div></div></header>`;
   }
   function heroHTML() {
+    const kick = `<span class="kick">${esc(tr(PAGE.kicker))}</span>`, h1 = `<h1>${esc(tr(PAGE.title))}</h1>`;
+    if (PAGE.heroBanner) return `<section class="hero hero-img"><div class="hero-banner"><img src="${esc(PAGE.heroBanner)}" alt="">
+      <div class="hb-t">${kick}${h1}</div></div></section>`;
+    if (PAGE.heroLogo) return `<section class="hero hero-img"><img class="hero-logo" src="${esc(PAGE.heroLogo.src)}" alt="${esc(PAGE.heroLogo.alt || "")}">${kick}${h1}</section>`;
     return `<section class="hero"><div class="hero-ic">${PAGE.icon || "🛍️"}</div>
-      <span class="kick">${esc(tr(PAGE.kicker))}</span><h1>${esc(tr(PAGE.title))}</h1></section>`;
+      ${kick}${h1}</section>`;
+  }
+  function certsHTML() {
+    const c = PAGE.certs;
+    if (!c) return "";
+    return `<section class="certs"><div class="certs-in"><h2>${esc(tr(c.title))}</h2><p class="certs-sub">${esc(tr(c.intro))}</p>
+      <div class="certs-grid">${c.items.map((i) => `<div class="cert"><div class="cert-ic">${i.icon}</div><h3>${esc(tr(i.title))}</h3><p>${esc(tr(i.text))}</p></div>`).join("")}</div></div></section>`;
   }
 
   function facetData() {
@@ -740,7 +847,7 @@ img { max-width: 100%; }
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     document.title = PAGE.pageTitle ? tr(PAGE.pageTitle) : tr(PAGE.title) + " | CITY PROM Shell HERCULES";
-    app.innerHTML = headerHTML() + heroHTML() + mainHTML() + footerHTML();
+    app.innerHTML = headerHTML() + heroHTML() + mainHTML() + certsHTML() + footerHTML();
     apply();
   }
   function detectLang() {

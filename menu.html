@@ -243,7 +243,9 @@ img { max-width: 100%; }
 .gallery figure { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--gray); aspect-ratio: 4 / 3; box-shadow: 0 10px 28px -16px rgba(0,0,0,.35); }
 .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
 .gallery figure:hover img { transform: scale(1.05); }
-@media (max-width: 720px) { .gallery { grid-template-columns: 1fr; } }
+.gallery.one { grid-template-columns: 1fr; }
+.gallery.one figure { aspect-ratio: 16 / 7; }
+@media (max-width: 720px) { .gallery { grid-template-columns: 1fr; } .gallery.one figure { aspect-ratio: 4 / 3; } }
 
   </style>
   <script>
@@ -251,8 +253,7 @@ img { max-width: 100%; }
     window.PAGE = {
           "key": "menu",
           "gallery": [
-                { "src": "menu-vitrine.jpg", "alt": "Vitrine de viennoiseries, pâtisseries et fruits frais du Relais de l’Aéroport" },
-                { "src": "menu-facade.jpg", "alt": "Façade du restaurant Relais de l’Aéroport" }
+                { "src": "menu-vitrine.jpg", "alt": "Vitrine de viennoiseries, pâtisseries et fruits frais du Relais de l’Aéroport" }
           ],
           "icon": "🍽️",
           "kicker": {
@@ -575,7 +576,7 @@ img { max-width: 100%; }
   function galleryHTML() {
     const g = PAGE.gallery || [];
     if (!g.length) return "";
-    return `<div class="gallery">${g.map((i) => `<figure><img src="${esc(i.src)}" alt="${esc(i.alt || "")}" loading="lazy"></figure>`).join("")}</div>`;
+    return `<div class="gallery${g.length === 1 ? " one" : ""}">${g.map((i) => `<figure><img src="${esc(i.src)}" alt="${esc(i.alt || "")}" loading="lazy"></figure>`).join("")}</div>`;
   }
 
   function facetData() {

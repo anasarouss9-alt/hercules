@@ -238,11 +238,128 @@ img { max-width: 100%; }
   .sortbox select { width: 100%; }
 }
 
+/* ---------- Hero with picture ---------- */
+.hero.hero-img { background: none; padding: 28px 20px 8px; }
+.hero-banner { position: relative; max-width: 1200px; margin: 0 auto; border-radius: var(--radius); overflow: hidden; box-shadow: 0 18px 40px -24px rgba(0,0,0,.5); background: #f0b800; }
+.hero-banner img { display: block; width: 100%; height: clamp(170px, 26vw, 270px); object-fit: cover; }
+.hero-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,16,46,.05) 0%, rgba(8,16,46,.68) 100%); }
+.hero-banner .hb-t { position: absolute; z-index: 1; inset-inline: 0; bottom: 0; padding: 22px 24px; text-align: center; color: #fff; }
+.hero-banner .kick { color: var(--yellow); }
+.hero-banner h1 { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+.hero-logo { display: block; width: min(300px, 70vw); height: auto; margin: 0 auto 18px; }
+
+/* ---------- Certificates ---------- */
+.certs { background: var(--gray); border-top: 1px solid var(--line); padding: 56px 20px 64px; }
+.certs-in { max-width: 1200px; margin: 0 auto; }
+.certs h2 { text-align: center; margin: 0 0 8px; font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 600; letter-spacing: -.03em; }
+.certs-sub { text-align: center; color: var(--sub); max-width: 680px; margin: 0 auto 32px; line-height: 1.55; }
+.certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.cert { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--red); border-radius: var(--radius); padding: 22px; }
+.cert:nth-child(2) { border-top-color: var(--yellow); }
+.cert:nth-child(3) { border-top-color: #2563eb; }
+.cert:nth-child(4) { border-top-color: #10b981; }
+.cert-ic { width: 46px; height: 46px; border-radius: 14px; background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 12px; }
+.cert h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; }
+.cert p { margin: 0; color: var(--sub); font-size: .9rem; line-height: 1.55; }
+.certs-src { text-align: center; margin-top: 26px; font-size: .85rem; }
+.certs-src a { color: var(--red); font-weight: 600; text-decoration: none; }
+.certs-src a:hover { text-decoration: underline; }
+
   </style>
   <script>
     /* Page settings. Products are added in products.js, not here. */
     window.PAGE = {
           "key": "entretien",
+          "heroLogo": {
+            "src": "wynns-logo.png",
+            "alt": "Wynn’s"
+          },
+          "certs": {
+            "title": {
+              "fr": "Qualité & certifications Wynn’s",
+              "en": "Wynn’s quality & certifications",
+              "ar": "جودة وشهادات Wynn’s",
+              "es": "Calidad y certificaciones Wynn’s",
+              "pt": "Qualidade e certificações Wynn’s"
+            },
+            "intro": {
+              "fr": "Wynn’s, une marque ITW, est un spécialiste des additifs depuis plus de 80 ans.",
+              "en": "Wynn’s, an ITW brand, has been an additives specialist for over 80 years.",
+              "ar": "Wynn’s، علامة تابعة لـ ITW، متخصصة في الإضافات منذ أكثر من 80 عاماً.",
+              "es": "Wynn’s, una marca de ITW, es especialista en aditivos desde hace más de 80 años.",
+              "pt": "A Wynn’s, uma marca ITW, é especialista em aditivos há mais de 80 anos."
+            },
+            "items": [
+              {
+                "icon": "🏅",
+                "title": {
+                  "fr": "Certifié ISO 9001",
+                  "en": "ISO 9001 certified",
+                  "ar": "حاصلة على شهادة ISO 9001",
+                  "es": "Certificado ISO 9001",
+                  "pt": "Certificado ISO 9001"
+                },
+                "text": {
+                  "fr": "Wynn’s Belgium est certifiée ISO 9001 depuis 1995, pour un niveau de qualité maîtrisé des produits et des processus.",
+                  "en": "Wynn’s Belgium has held the ISO 9001 certificate since 1995, keeping product and process quality under control.",
+                  "ar": "حصلت Wynn’s بلجيكا على شهادة ISO 9001 منذ عام 1995 لضمان جودة المنتجات والعمليات.",
+                  "es": "Wynn’s Bélgica cuenta con la certificación ISO 9001 desde 1995, con control de la calidad de productos y procesos.",
+                  "pt": "A Wynn’s Bélgica possui a certificação ISO 9001 desde 1995, mantendo o controlo da qualidade de produtos e processos."
+                }
+              },
+              {
+                "icon": "🏆",
+                "title": {
+                  "fr": "Oscar de l’Export 1997",
+                  "en": "Oscar for Export 1997",
+                  "ar": "جائزة أوسكار التصدير 1997",
+                  "es": "Óscar a la Exportación 1997",
+                  "pt": "Óscar de Exportação 1997"
+                },
+                "text": {
+                  "fr": "Une reconnaissance officielle de la politique d’exportation dynamique de Wynn’s Belgium.",
+                  "en": "An official recognition of Wynn’s Belgium’s dynamic export policy.",
+                  "ar": "اعتراف رسمي بسياسة التصدير النشطة لدى Wynn’s بلجيكا.",
+                  "es": "Un reconocimiento oficial a la dinámica política de exportación de Wynn’s Bélgica.",
+                  "pt": "Um reconhecimento oficial da dinâmica política de exportação da Wynn’s Bélgica."
+                }
+              },
+              {
+                "icon": "🇧🇪",
+                "title": {
+                  "fr": "Fabriqué en Belgique",
+                  "en": "Made in Belgium",
+                  "ar": "صُنع في بلجيكا",
+                  "es": "Fabricado en Bélgica",
+                  "pt": "Fabricado na Bélgica"
+                },
+                "text": {
+                  "fr": "Pour le marché européen, les produits sont fabriqués en Belgique, avec un laboratoire R&D intégré.",
+                  "en": "For the European market, products are manufactured in Belgium, with an in-house R&D lab.",
+                  "ar": "للسوق الأوروبية، تُصنَّع المنتجات في بلجيكا مع مختبر بحث وتطوير داخلي.",
+                  "es": "Para el mercado europeo, los productos se fabrican en Bélgica, con laboratorio de I+D propio.",
+                  "pt": "Para o mercado europeu, os produtos são fabricados na Bélgica, com laboratório de I&D próprio."
+                }
+              },
+              {
+                "icon": "🔧",
+                "title": {
+                  "fr": "Depuis 1939",
+                  "en": "Since 1939",
+                  "ar": "منذ عام 1939",
+                  "es": "Desde 1939",
+                  "pt": "Desde 1939"
+                },
+                "text": {
+                  "fr": "Des solutions simples et efficaces pour restaurer, protéger et entretenir votre moteur.",
+                  "en": "Simple, effective solutions to restore, protect and maintain your engine.",
+                  "ar": "حلول بسيطة وفعّالة لاستعادة محرّكك وحمايته وصيانته.",
+                  "es": "Soluciones sencillas y eficaces para restaurar, proteger y mantener su motor.",
+                  "pt": "Soluções simples e eficazes para restaurar, proteger e manter o seu motor."
+                }
+              }
+            ]
+          },
           "icon": "🔧",
           "kicker": {
                 "fr": "Boutique Shell Select",
@@ -536,8 +653,18 @@ img { max-width: 100%; }
         <a href="/" class="btn btn-red hide-s">${esc(t("btnHome"))}</a></div></div></header>`;
   }
   function heroHTML() {
+    const kick = `<span class="kick">${esc(tr(PAGE.kicker))}</span>`, h1 = `<h1>${esc(tr(PAGE.title))}</h1>`;
+    if (PAGE.heroBanner) return `<section class="hero hero-img"><div class="hero-banner"><img src="${esc(PAGE.heroBanner)}" alt="">
+      <div class="hb-t">${kick}${h1}</div></div></section>`;
+    if (PAGE.heroLogo) return `<section class="hero hero-img"><img class="hero-logo" src="${esc(PAGE.heroLogo.src)}" alt="${esc(PAGE.heroLogo.alt || "")}">${kick}${h1}</section>`;
     return `<section class="hero"><div class="hero-ic">${PAGE.icon || "🛍️"}</div>
-      <span class="kick">${esc(tr(PAGE.kicker))}</span><h1>${esc(tr(PAGE.title))}</h1></section>`;
+      ${kick}${h1}</section>`;
+  }
+  function certsHTML() {
+    const c = PAGE.certs;
+    if (!c) return "";
+    return `<section class="certs"><div class="certs-in"><h2>${esc(tr(c.title))}</h2><p class="certs-sub">${esc(tr(c.intro))}</p>
+      <div class="certs-grid">${c.items.map((i) => `<div class="cert"><div class="cert-ic">${i.icon}</div><h3>${esc(tr(i.title))}</h3><p>${esc(tr(i.text))}</p></div>`).join("")}</div></div></section>`;
   }
 
   function facetData() {
@@ -740,7 +867,7 @@ img { max-width: 100%; }
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     document.title = PAGE.pageTitle ? tr(PAGE.pageTitle) : tr(PAGE.title) + " | CITY PROM Shell HERCULES";
-    app.innerHTML = headerHTML() + heroHTML() + mainHTML() + footerHTML();
+    app.innerHTML = headerHTML() + heroHTML() + mainHTML() + certsHTML() + footerHTML();
     apply();
   }
   function detectLang() {
