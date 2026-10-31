@@ -138,6 +138,7 @@ window.CATALOG = {
     "products": [
       {
         "id": "shell-helix-hybrid-sp-0w-20",
+        "image": "images/lubrifiants/shell-helix-hybrid-sp-0w-20.webp",
         "name": "Shell Helix Hybrid SP 0W-20",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -159,6 +160,7 @@ window.CATALOG = {
       },
       {
         "id": "helix-ultra-ect-c6-0w-20",
+        "image": "images/lubrifiants/helix-ultra-ect-c6-0w-20.webp",
         "name": "Helix Ultra ECT C6 0W-20",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -180,6 +182,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-ultra-ect-c2-c3-c3-sp-0w-30",
+        "image": "images/lubrifiants/shell-helix-ultra-ect-c2-c3-c3-sp-0w-30.webp",
         "name": "Shell Helix Ultra ECT C2/C3 & C3 SP 0W-30",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -205,6 +208,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-ultra-ect-c3-5w-30",
+        "image": "images/lubrifiants/shell-helix-ultra-ect-c3-5w-30.webp",
         "name": "Shell Helix Ultra ECT C3 5W-30",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -230,6 +234,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-ultra-pro-ag-5w-30",
+        "image": "images/lubrifiants/shell-helix-ultra-pro-ag-5w-30.webp",
         "name": "Shell Helix Ultra Pro AG 5W-30",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -255,6 +260,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-ultra-pro-arl-5w-30",
+        "image": "images/lubrifiants/shell-helix-ultra-pro-arl-5w-30.webp",
         "name": "Shell Helix Ultra Pro ARL 5W-30",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -280,6 +286,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-ultra-5w-40-sn-plus",
+        "image": "images/lubrifiants/shell-helix-ultra-5w-40-sn-plus.webp",
         "name": "Shell Helix Ultra 5W-40 SN Plus",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -309,6 +316,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx8-ect-5w-30-c3",
+        "image": "images/lubrifiants/shell-helix-hx8-ect-5w-30-c3.webp",
         "name": "Shell Helix HX8 ECT 5W-30 C3",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -330,6 +338,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx8-ect-5w-40-c3",
+        "image": "images/lubrifiants/shell-helix-hx8-ect-5w-40-c3.webp",
         "name": "Shell Helix HX8 ECT 5W-40 C3",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -351,6 +360,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx8-5w-40-sn-plus",
+        "image": "images/lubrifiants/shell-helix-hx8-5w-40-sn-plus.webp",
         "name": "Shell Helix HX8 5W-40 SN Plus",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -376,6 +386,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx7-10w-40-sn-plus",
+        "image": "images/lubrifiants/shell-helix-hx7-10w-40-sn-plus.webp",
         "name": "Shell Helix HX7 10W-40 SN Plus",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -405,6 +416,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx6-10w-40-sn-cf",
+        "image": "images/lubrifiants/shell-helix-hx6-10w-40-sn-cf.webp",
         "name": "Shell Helix HX6 10W-40 SN CF",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -430,6 +442,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx5-15w-40-sl-cf-mf",
+        "image": "images/lubrifiants/shell-helix-hx5-15w-40-sl-cf-mf.webp",
         "name": "Shell Helix HX5 15W-40 SL/CF MF",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -463,6 +476,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx3-20w-50-sl-cf",
+        "image": "images/lubrifiants/shell-helix-hx3-20w-50-sl-cf.webp",
         "name": "Shell Helix HX3 20W-50 SL CF",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -484,6 +498,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-helix-hx3-40-sg-cd-mf",
+        "image": "images/lubrifiants/shell-helix-hx3-40-sg-cd-mf.webp",
         "name": "Shell Helix HX3 40 SG/CD MF",
         "category": "moteur-legers",
         "brand": "Shell Helix",
@@ -503,6 +518,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r6-lme-plus-5w-30",
+        "image": "images/lubrifiants/shell-rimula-r6-lme-plus-5w-30.webp",
         "name": "Shell Rimula R6 LME Plus 5W-30",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -520,6 +536,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r6-lm-10w-40-cj4",
+        "image": "images/lubrifiants/shell-rimula-r6-lm-10w-40-cj4.webp",
         "name": "Shell Rimula R6 LM 10W-40 CJ4",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -537,6 +554,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r5-le-10w-40-ci4",
+        "image": "images/lubrifiants/shell-rimula-r5-le-10w-40-ci4.webp",
         "name": "Shell Rimula R5 LE 10W-40 CI4",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -558,6 +576,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r5-e-10w-40-ci4",
+        "image": "images/lubrifiants/shell-rimula-r5-e-10w-40-ci4.webp",
         "name": "Shell Rimula R5 E 10W-40 CI4",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -583,6 +602,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r4-x-15w-40-ci4",
+        "image": "images/lubrifiants/shell-rimula-r4-x-15w-40-ci4.webp",
         "name": "Shell Rimula R4 X 15W-40 CI4",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -612,6 +632,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r3-t-15w-40-ch4",
+        "image": "images/lubrifiants/shell-rimula-r3-t-15w-40-ch4.webp",
         "name": "Shell Rimula R3 T 15W-40 CH4",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -641,6 +662,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r2-extra-15w-40-cf4",
+        "image": "images/lubrifiants/shell-rimula-r2-extra-15w-40-cf4.webp",
         "name": "Shell Rimula R2 Extra 15W-40 CF4",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -662,6 +684,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r2-40-r2-50-cf",
+        "image": "images/lubrifiants/shell-rimula-r2-40-r2-50-cf.webp",
         "name": "Shell Rimula R2 40 / R2 50 CF",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -689,6 +712,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-rimula-r1-50-cf",
+        "image": "images/lubrifiants/shell-rimula-r1-50-cf.webp",
         "name": "Shell Rimula R1 50 CF",
         "category": "moteur-diesel",
         "brand": "Shell Rimula",
@@ -708,6 +732,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-spirax-s2-atf-d2",
+        "image": "images/lubrifiants/shell-spirax-s2-atf-d2.webp",
         "name": "Shell Spirax S2 ATF D2",
         "category": "transmission",
         "brand": "Shell Spirax",
@@ -731,6 +756,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-spirax-s2-a-80w-90",
+        "image": "images/lubrifiants/shell-spirax-s2-a-80w-90.webp",
         "name": "Shell Spirax S2 A 80W-90",
         "category": "transmission",
         "brand": "Shell Spirax",
@@ -752,6 +778,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-spirax-s2-a-85w-140",
+        "image": "images/lubrifiants/shell-spirax-s2-a-85w-140.webp",
         "name": "Shell Spirax S2 A 85W-140",
         "category": "transmission",
         "brand": "Shell Spirax",
@@ -777,6 +804,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-spirax-s2-g-90",
+        "image": "images/lubrifiants/shell-spirax-s2-g-90.webp",
         "name": "Shell Spirax S2 G 90",
         "category": "transmission",
         "brand": "Shell Spirax",
@@ -800,6 +828,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-spirax-s2-g-140",
+        "image": "images/lubrifiants/shell-spirax-s2-g-140.webp",
         "name": "Shell Spirax S2 G 140",
         "category": "transmission",
         "brand": "Shell Spirax",
@@ -823,6 +852,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-spirax-s2-g-80w-90",
+        "image": "images/lubrifiants/shell-spirax-s2-g-80w-90.webp",
         "name": "Shell Spirax S2 G 80W-90",
         "category": "transmission",
         "brand": "Shell Spirax",
@@ -848,6 +878,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-4t-ultra-15w-50",
+        "image": "images/lubrifiants/shell-advance-4t-ultra-15w-50.webp",
         "name": "Shell Advance 4T Ultra 15W-50",
         "category": "moto",
         "brand": "Shell Advance",
@@ -865,6 +896,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-4t-ultra-10w-40-sp",
+        "image": "images/lubrifiants/shell-advance-4t-ultra-10w-40-sp.webp",
         "name": "Shell Advance 4T Ultra 10W-40 SP",
         "category": "moto",
         "brand": "Shell Advance",
@@ -882,6 +914,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-4t-ax7-10w-40",
+        "image": "images/lubrifiants/shell-advance-4t-ax7-10w-40.webp",
         "name": "Shell Advance 4T AX7 10W-40",
         "category": "moto",
         "brand": "Shell Advance",
@@ -899,6 +932,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-4t-ax5-15w-40",
+        "image": "images/lubrifiants/shell-advance-4t-ax5-15w-40.webp",
         "name": "Shell Advance 4T AX5 15W-40",
         "category": "moto",
         "brand": "Shell Advance",
@@ -916,6 +950,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-4t-ax3-20w-50",
+        "image": "images/lubrifiants/shell-advance-4t-ax3-20w-50.webp",
         "name": "Shell Advance 4T AX3 20W-50",
         "category": "moto",
         "brand": "Shell Advance",
@@ -933,6 +968,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-4t-ax2-sae-40",
+        "image": "images/lubrifiants/shell-advance-4t-ax2-sae-40.webp",
         "name": "Shell Advance 4T AX2 SAE 40",
         "category": "moto",
         "brand": "Shell Advance",
@@ -948,6 +984,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-advance-sx2-fb-egb",
+        "image": "images/lubrifiants/shell-advance-sx2-fb-egb.webp",
         "name": "Shell Advance SX2 FB EGB",
         "category": "moto",
         "brand": "Shell Advance",
@@ -971,6 +1008,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-tellus-s2-m-68",
+        "image": "images/lubrifiants/shell-tellus-s2-m-68.webp",
         "name": "Shell Tellus S2 M 68",
         "category": "industrie",
         "brand": "Shell Tellus",
@@ -990,6 +1028,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-tellus-s2-m-46",
+        "image": "images/lubrifiants/shell-tellus-s2-m-46.webp",
         "name": "Shell Tellus S2 M 46",
         "category": "industrie",
         "brand": "Shell Tellus",
@@ -1009,6 +1048,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-tellus-s2-m-32",
+        "image": "images/lubrifiants/shell-tellus-s2-m-32.webp",
         "name": "Shell Tellus S2 M 32",
         "category": "industrie",
         "brand": "Shell Tellus",
@@ -1028,6 +1068,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-omala-s2-gx-680",
+        "image": "images/lubrifiants/shell-omala-s2-gx-680.webp",
         "name": "Shell Omala S2 GX 680",
         "category": "industrie",
         "brand": "Shell Omala",
@@ -1043,6 +1084,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-omala-s2-gx-460",
+        "image": "images/lubrifiants/shell-omala-s2-gx-460.webp",
         "name": "Shell Omala S2 GX 460",
         "category": "industrie",
         "brand": "Shell Omala",
@@ -1062,6 +1104,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-omala-s2-gx-320",
+        "image": "images/lubrifiants/shell-omala-s2-gx-320.webp",
         "name": "Shell Omala S2 GX 320",
         "category": "industrie",
         "brand": "Shell Omala",
@@ -1081,6 +1124,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-omala-s2-gx-220",
+        "image": "images/lubrifiants/shell-omala-s2-gx-220.webp",
         "name": "Shell Omala S2 GX 220",
         "category": "industrie",
         "brand": "Shell Omala",
@@ -1100,6 +1144,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-omala-s2-gx-150",
+        "image": "images/lubrifiants/shell-omala-s2-gx-150.webp",
         "name": "Shell Omala S2 GX 150",
         "category": "industrie",
         "brand": "Shell Omala",
@@ -1119,6 +1164,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-gadus-s2-v-220-2",
+        "image": "images/lubrifiants/shell-gadus-s2-v-220-2.webp",
         "name": "Shell Gadus S2 V 220 2",
         "category": "graisses",
         "brand": "Shell Gadus",
@@ -1134,6 +1180,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-gadus-s1-v-160-2",
+        "image": "images/lubrifiants/shell-gadus-s1-v-160-2.webp",
         "name": "Shell Gadus S1 V 160 2",
         "category": "graisses",
         "brand": "Shell Gadus",
@@ -1153,6 +1200,7 @@ window.CATALOG = {
       },
       {
         "id": "adblue",
+        "image": "images/lubrifiants/adblue.webp",
         "name": "AdBlue",
         "category": "entretien",
         "brand": "Shell",
@@ -1176,6 +1224,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-long-life-coolants",
+        "image": "images/lubrifiants/shell-long-life-coolants.webp",
         "name": "Shell Long-Life Coolants",
         "category": "entretien",
         "brand": "Shell",
@@ -1203,6 +1252,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-summer-screenwash",
+        "image": "images/lubrifiants/shell-summer-screenwash.webp",
         "name": "Shell Summer Screenwash",
         "category": "entretien",
         "brand": "Shell",
@@ -1222,6 +1272,7 @@ window.CATALOG = {
       },
       {
         "id": "shell-brake-clutch-fluid-dot-4",
+        "image": "images/lubrifiants/shell-brake-clutch-fluid-dot-4.webp",
         "name": "Shell Brake & Clutch Fluid DOT 4",
         "category": "entretien",
         "brand": "Shell",
