@@ -3,183 +3,820 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#dd1d21">
+  <meta name="theme-color" content="#e11d2e">
   <title>Accessoires voyage & auto | CITY PROM Shell HERCULES</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            shell: { red: '#dd1d21', redDark: '#ad0b0f', yellow: '#ffd500', yellowDark: '#e6c000' }
-          },
-          fontFamily: { sans: ['Inter', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
+  <link rel="icon" href="shell-logo.png">
   <style>
-    .shell-gradient-bg {
-      background: radial-gradient(circle at 85% 15%, rgba(255, 213, 0, 0.15), transparent 45%),
-                  linear-gradient(135deg, #ffffff 0%, #fdfbf7 50%, #fff8e1 100%);
-    }
+/* ============================================================
+   CITY PROM · Shell HERCULES — shared catalog styles
+   Used by snacks.html, lubrifiants.html, accessoires.html, menu.html
+   ============================================================ */
+:root {
+  --red: #e11d2e; --red-d: #b3101e; --yellow: #ffcc00; --yellow-d: #f0b800; --cream: #fff6cc;
+  --text: #1d1d1f; --sub: #6e6e73; --gray: #f5f5f7; --line: #e5e5ea; --radius: 20px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body {
+  margin: 0; color: var(--text); background: #fff; min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Inter, Arial, sans-serif;
+}
+body.lock { overflow: hidden; }
+a { color: inherit; text-decoration: none; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+img { max-width: 100%; }
+::selection { background: #ffe680; }
+#app { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* ---------- Header ---------- */
+.hdr {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,.75);
+  -webkit-backdrop-filter: saturate(180%) blur(22px); backdrop-filter: saturate(180%) blur(22px);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, var(--red), #ff7a1a 50%, var(--yellow)) 1;
+}
+.hdr-in { max-width: 1200px; margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-logo { width: 36px; height: 36px; border-radius: 10px; background: #fff; border: 1px solid var(--line); padding: 4px; display: flex; }
+.brand-logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 6px; }
+.brand-t { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-t b { font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em; }
+.brand-t span { font-size: 10.5px; color: var(--sub); }
+.hdr-r { display: flex; align-items: center; gap: 10px; }
+.sel { background: var(--gray); border: 0; border-radius: 999px; padding: 8px 14px; font-weight: 500; font-size: .8rem; cursor: pointer; }
+.sel:focus { outline: 3px solid rgba(225,29,46,.3); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border: 0; border-radius: 999px; padding: 10px 20px; font-weight: 500; font-size: .9rem;
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: scale(.98); }
+.btn-red { background: var(--red); color: #fff; box-shadow: 0 6px 16px -8px rgba(225,29,46,.55); }
+.btn-red:hover { background: var(--red-d); box-shadow: 0 10px 20px -10px rgba(179,16,30,.6); }
+.btn-soft { background: var(--cream); color: var(--red-d); }
+.btn-soft:hover { background: #ffec99; }
+.btn:focus-visible, .card:focus-visible, .chip:focus-visible, .tab:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+
+/* ---------- Hero ---------- */
+.hero { text-align: center; padding: 56px 20px 36px; background: linear-gradient(180deg, #fff 0%, var(--gray) 100%); animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) both; }
+.hero-ic { width: 76px; height: 76px; margin: 0 auto 18px; border-radius: 22px; background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 2.4rem; box-shadow: 0 10px 24px -14px rgba(240,184,0,.9); }
+.kick { display: block; color: var(--red); font-weight: 600; font-size: .95rem; margin-bottom: 8px; }
+.hero h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.06; }
+
+/* ---------- Layout ---------- */
+.wrap { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 28px 20px 72px; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.search { position: relative; flex: 1 1 280px; min-width: 0; }
+.search svg.s-ic { position: absolute; inset-inline-start: 16px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--sub); pointer-events: none; }
+.search input {
+  width: 100%; height: 48px; border: 0; border-radius: 999px; background: var(--gray);
+  padding-inline: 46px 46px; font-size: 1rem; transition: box-shadow .2s ease, background-color .2s ease;
+}
+.search input::placeholder { color: #86868b; }
+.search input:focus { outline: none; background: #fff; box-shadow: 0 0 0 4px rgba(225,29,46,.25), 0 0 0 1px var(--red) inset; }
+.search input::-webkit-search-cancel-button { display: none; }
+.q-clear { position: absolute; inset-inline-end: 10px; top: 50%; transform: translateY(-50%) scale(.8); width: 28px; height: 28px; border: 0; border-radius: 50%; background: #d2d2d7; color: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; }
+.q-clear.show { opacity: 1; pointer-events: auto; transform: translateY(-50%) scale(1); }
+.q-clear svg { width: 12px; height: 12px; }
+.sortbox select { height: 48px; border: 0; border-radius: 999px; background: var(--gray); padding: 0 18px; font-weight: 500; cursor: pointer; }
+.seg { display: inline-flex; background: var(--gray); border-radius: 999px; padding: 4px; }
+.seg button { width: 40px; height: 40px; border: 0; background: transparent; border-radius: 999px; display: flex; align-items: center; justify-content: center; color: var(--sub); transition: background-color .2s, color .2s; }
+.seg button svg { width: 18px; height: 18px; }
+.seg button.on { background: #fff; color: var(--red); box-shadow: 0 2px 8px -2px rgba(0,0,0,.18); }
+.only-m { display: none; }
+.fbadge { display: none; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--red); color: #fff; font-size: .72rem; font-weight: 700; align-items: center; justify-content: center; }
+.fbadge.show { display: inline-flex; }
+
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 18px 2px 4px; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex: 0 0 auto; border: 0; background: var(--gray); border-radius: 999px; padding: 9px 18px; font-weight: 500; font-size: .9rem; transition: background-color .2s, color .2s, transform .2s; }
+.tab:hover { transform: translateY(-1px); background: #ececf0; }
+.tab.on { background: var(--red); color: #fff; }
+
+.layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 32px; margin-top: 24px; align-items: start; }
+.layout.nofilters { grid-template-columns: minmax(0, 1fr); }
+
+/* ---------- Sidebar filters ---------- */
+.sidebar { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow-y: auto; padding-inline-end: 6px; }
+.sb-head { display: none; align-items: center; justify-content: space-between; padding: 18px 20px; border-bottom: 1px solid var(--line); font-weight: 600; font-size: 1.1rem; }
+.sb-body { padding: 0; }
+.fgroup { border-bottom: 1px solid var(--line); padding: 18px 0; }
+.fgroup:first-child { padding-top: 4px; }
+.fgroup h3 { margin: 0 0 12px; font-size: .95rem; font-weight: 600; }
+.opt { display: flex; align-items: center; gap: 10px; padding: 7px 0; cursor: pointer; font-size: .92rem; transition: opacity .2s; }
+.opt input { position: absolute; opacity: 0; pointer-events: none; }
+.opt .box { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid #c7c7cc; background: #fff; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; transition: background-color .2s, border-color .2s; }
+.opt .box::after { content: ""; width: 10px; height: 6px; border-inline-start: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) scale(0); margin-top: -2px; transition: transform .2s; }
+.opt input:checked + .box { background: var(--red); border-color: var(--red); }
+.opt input:checked + .box::after { transform: rotate(-45deg) scale(1); }
+.opt input:focus-visible + .box { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.opt .opt-t { flex: 1; min-width: 0; }
+.opt .opt-n { color: #86868b; font-size: .8rem; }
+.opt.dim { opacity: .4; }
+.prange { display: flex; align-items: center; gap: 8px; }
+.prange input { width: 100%; height: 42px; border: 0; border-radius: 12px; background: var(--gray); padding: 0 12px; }
+.prange input:focus { outline: none; box-shadow: 0 0 0 3px rgba(225,29,46,.3); background: #fff; }
+.prange span { color: var(--sub); }
+.sb-foot { display: none; gap: 10px; padding: 14px 20px; border-top: 1px solid var(--line); background: #fff; }
+.sb-foot .btn { flex: 1; }
+.reset { margin-top: 14px; border: 0; background: none; color: var(--red); font-weight: 500; padding: 4px 0; }
+.reset:hover { text-decoration: underline; }
+.overlay { display: none; }
+
+/* ---------- Results ---------- */
+.res-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 18px; min-height: 34px; }
+.count { font-weight: 600; font-size: 1.05rem; }
+.active { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 0; background: var(--cream); color: #5c4300; border-radius: 999px; padding: 6px 12px; font-size: .82rem; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; transition: background-color .2s; }
+.chip:hover { background: #ffec99; }
+.chip svg { width: 10px; height: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+.grid.list { grid-template-columns: 1fr; gap: 14px; }
+
+.card {
+  position: relative; display: flex; flex-direction: column; overflow: hidden; background: #fff;
+  border: 1px solid var(--line); border-radius: var(--radius); cursor: pointer;
+  transition: transform .3s ease, box-shadow .3s ease;
+  animation: cardIn .6s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i, 0) * 45ms);
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 22px 40px -22px rgba(0,0,0,.3); }
+.card-img { position: relative; aspect-ratio: 4 / 3; background: linear-gradient(135deg, var(--gray), #fff); display: flex; align-items: center; justify-content: center; font-size: 3.2rem; overflow: hidden; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.card:hover .card-img img { transform: scale(1.06); }
+.card.sold .card-img { filter: grayscale(.8); opacity: .7; }
+.badges { position: absolute; top: 10px; inset-inline-start: 10px; display: flex; gap: 6px; flex-wrap: wrap; z-index: 1; }
+.badge { font-size: .7rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; color: #fff; background: var(--red); }
+.badge.new { background: var(--yellow); color: var(--text); }
+.card-b { display: flex; flex-direction: column; gap: 6px; padding: 16px; flex: 1; }
+.card-meta { font-size: .75rem; color: var(--sub); font-weight: 500; }
+.card-t { margin: 0; font-size: 1.02rem; font-weight: 600; letter-spacing: -.01em; line-height: 1.3; }
+.card-d { margin: 0; font-size: .86rem; color: var(--sub); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card-f { margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.price { font-weight: 700; font-size: 1.1rem; color: var(--red); }
+.price small { font-weight: 500; font-size: .75rem; color: var(--sub); }
+.old { color: var(--sub); text-decoration: line-through; font-size: .85rem; font-weight: 400; margin-inline-start: 6px; }
+.stock { font-size: .72rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
+.stock.in { background: #e7f8ee; color: #127a3d; }
+.stock.out { background: #fdecec; color: var(--red-d); }
+.list .card { flex-direction: row; }
+.list .card-img { width: 170px; aspect-ratio: auto; min-height: 130px; flex: 0 0 auto; }
+
+/* ---------- Empty / no-results ---------- */
+.empty { text-align: center; max-width: 34rem; margin: 40px auto; padding: 24px 12px; animation: fadeUp .7s cubic-bezier(.2,.7,.2,1) both; }
+.empty-ic { width: 84px; height: 84px; margin: 0 auto 18px; border-radius: 24px; background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 2.6rem; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 999px; background: var(--cream); color: #5c4300; font-weight: 600; font-size: .9rem; }
+.empty h2 { margin: 14px 0 6px; font-size: 1.5rem; font-weight: 600; letter-spacing: -.02em; }
+.empty p { margin: 12px 0 0; color: var(--sub); font-size: 1.05rem; line-height: 1.55; }
+.empty .btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
+
+/* ---------- Product modal ---------- */
+.modal { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; background: rgba(0,0,0,.45); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.modal.open { display: flex; animation: fadeIn .25s ease both; }
+.m-box { position: relative; width: 100%; max-width: 820px; max-height: 90vh; overflow: auto; background: #fff; border-radius: 28px; display: grid; grid-template-columns: 1fr 1fr; animation: popIn .4s cubic-bezier(.2,.8,.2,1) both; }
+.m-close { position: absolute; top: 14px; inset-inline-end: 14px; z-index: 3; width: 36px; height: 36px; border: 0; border-radius: 50%; background: rgba(29,29,31,.7); color: #fff; display: flex; align-items: center; justify-content: center; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.m-close svg { width: 14px; height: 14px; }
+.m-media { background: var(--gray); display: flex; flex-direction: column; min-height: 280px; }
+.m-main { flex: 1; display: flex; align-items: center; justify-content: center; font-size: 5rem; min-height: 260px; overflow: hidden; }
+.m-main img { width: 100%; height: 100%; object-fit: cover; }
+.m-thumbs { display: flex; gap: 8px; padding: 10px; overflow-x: auto; }
+.m-thumbs button { width: 56px; height: 56px; padding: 0; border: 2px solid transparent; border-radius: 12px; overflow: hidden; background: #fff; flex: 0 0 auto; opacity: .75; }
+.m-thumbs button.on { border-color: var(--red); opacity: 1; }
+.m-thumbs img { width: 100%; height: 100%; object-fit: cover; }
+.m-info { padding: 32px 28px; display: flex; flex-direction: column; gap: 12px; }
+.m-info h2 { margin: 0; font-size: 1.7rem; font-weight: 600; letter-spacing: -.025em; line-height: 1.15; }
+.m-meta { color: var(--sub); font-size: .88rem; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.m-price { font-size: 1.7rem; font-weight: 700; color: var(--red); }
+.m-desc { margin: 0; color: #424245; line-height: 1.6; }
+.m-opts { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.m-opts li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+.m-opts li b { color: var(--red); }
+.m-h { font-size: .8rem; font-weight: 600; color: var(--sub); margin: 6px 0 -4px; }
+.m-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.m-tags span { background: var(--gray); border-radius: 999px; padding: 4px 12px; font-size: .8rem; font-weight: 500; }
+
+/* ---------- Footer ---------- */
+.ftr { background: var(--gray); border-top: 1px solid #d2d2d7; color: var(--sub); font-size: .8rem; text-align: center; padding: 24px 20px; }
+
+/* ---------- Animations ---------- */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cardIn { from { opacity: 0; transform: translateY(22px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes popIn { from { opacity: 0; transform: translateY(24px) scale(.96); } to { opacity: 1; transform: none; } }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .only-m { display: inline-flex; }
+  .sidebar {
+    position: fixed; top: 0; bottom: 0; inset-inline-start: 0; z-index: 90; width: min(88vw, 360px); max-height: none;
+    background: #fff; padding: 0; display: flex; flex-direction: column; overflow: hidden;
+    transform: translateX(-102%); transition: transform .35s cubic-bezier(.2,.8,.2,1); box-shadow: 0 0 60px rgba(0,0,0,.25);
+  }
+  [dir="rtl"] .sidebar { transform: translateX(102%); }
+  .sidebar.open { transform: none !important; }
+  .sb-head, .sb-foot { display: flex; }
+  .sb-body { flex: 1; overflow-y: auto; padding: 4px 20px 20px; }
+  .overlay { display: block; position: fixed; inset: 0; z-index: 80; background: rgba(0,0,0,.4); opacity: 0; pointer-events: none; transition: opacity .3s; }
+  .overlay.open { opacity: 1; pointer-events: auto; }
+  .m-box { grid-template-columns: 1fr; }
+  .m-main { min-height: 220px; }
+}
+@media (max-width: 640px) {
+  .hide-s { display: none !important; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .list .card { flex-direction: column; }
+  .list .card-img { width: 100%; }
+  .card-b { padding: 12px; }
+  .hero { padding: 40px 20px 28px; }
+  .sortbox { flex: 1 1 auto; }
+  .sortbox select { width: 100%; }
+}
+
   </style>
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
-
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="/" class="flex items-center gap-3 group">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/80 border border-amber-300/60 p-2 shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform">
-            <img src="shell-logo.png" alt="Shell" class="bg-white rounded-md w-full h-full object-contain">
-          </div>
-          <div class="flex flex-col">
-            <span class="font-black text-xl tracking-tight text-slate-900 group-hover:text-shell-red transition-colors">CITY PROM</span>
-            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider" data-i18n="brandSub">Shell HERCULES Tanger</span>
-          </div>
-        </a>
-
-        <div class="flex items-center gap-3">
-          <select id="langSelect" aria-label="Langue / Language" class="bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold rounded-lg px-2.5 py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-shell-red">
-            <option value="fr">FR 🇫🇷</option>
-            <option value="ar">العربية 🇲🇦</option>
-            <option value="en">EN 🇬🇧</option>
-            <option value="es">ES 🇪🇸</option>
-            <option value="pt">PT 🇵🇹</option>
-          </select>
-          <a href="/" class="hidden sm:inline-flex items-center gap-2 bg-shell-red hover:bg-shell-redDark text-white text-xs md:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition-all hover:shadow-md">
-            <span data-i18n="btnHome">Retour à l'accueil</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="flex-grow shell-gradient-bg flex items-center py-16 md:py-24">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center space-y-6">
-      <div class="w-20 h-20 mx-auto rounded-2xl bg-amber-100 border border-amber-200 flex items-center justify-center text-4xl shadow-sm">🚗</div>
-
-      <span class="block text-shell-red text-xs font-black uppercase tracking-widest" data-i18n="kicker">Boutique Shell Select</span>
-      <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight" data-i18n="title">Accessoires voyage & auto</h1>
-
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-300 text-amber-900 font-extrabold text-sm">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <span data-i18n="soon">Bientôt disponible</span>
-      </div>
-
-      <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto" data-i18n="body">La liste des produits de cette catégorie est en cours de préparation. Elle sera disponible très prochainement.</p>
-
-      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-        <a href="/" class="bg-shell-red hover:bg-shell-redDark text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all" data-i18n="btnHome">Retour à l'accueil</a>
-        <a href="/#localisation" class="bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-bold text-sm px-6 py-3.5 rounded-xl shadow-sm transition-all" data-i18n="btnLocation">Voir la localisation</a>
-      </div>
-    </div>
-  </main>
-
-  <footer class="bg-slate-950 text-slate-500 text-xs border-t border-slate-800 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      © <span id="copyrightYear"></span> CITY PROM <span data-i18n="city">Tanger</span> · Station Shell HERCULES. <span data-i18n="rights">Tous droits réservés.</span>
-    </div>
-  </footer>
-
   <script>
-    const translations = {
-      "fr": {
-            "brandSub": "Shell HERCULES Tanger",
-            "btnHome": "Retour à l'accueil",
-            "btnLocation": "Voir la localisation",
-            "rights": "Tous droits réservés.",
-            "soon": "Bientôt disponible",
-            "city": "Tanger",
-            "kicker": "Boutique Shell Select",
-            "title": "Accessoires voyage & auto",
-            "body": "La liste des produits de cette catégorie est en cours de préparation. Elle sera disponible très prochainement.",
-            "pageTitle": "Accessoires voyage & auto | CITY PROM Shell HERCULES"
-      },
-      "ar": {
-            "brandSub": "شل هيركوليس طنجة",
-            "btnHome": "العودة إلى الرئيسية",
-            "btnLocation": "عرض الموقع",
-            "rights": "جميع الحقوق محفوظة.",
-            "soon": "قريبًا",
-            "city": "طنجة",
-            "kicker": "متجر Shell Select",
-            "title": "مستلزمات السفر والسيارة",
-            "body": "نعمل حاليًا على إعداد لائحة منتجات هذا الصنف. ستتوفر قريبًا جدًا.",
-            "pageTitle": "مستلزمات السفر والسيارة | CITY PROM Shell HERCULES"
-      },
-      "en": {
-            "brandSub": "Shell HERCULES Tangier",
-            "btnHome": "Back to home",
-            "btnLocation": "View location",
-            "rights": "All rights reserved.",
-            "soon": "Coming soon",
-            "city": "Tangier",
-            "kicker": "Shell Select Shop",
-            "title": "Travel & car accessories",
-            "body": "The product list for this category is being prepared. It will be available very soon.",
-            "pageTitle": "Travel & car accessories | CITY PROM Shell HERCULES"
-      },
-      "es": {
-            "brandSub": "Shell HERCULES Tánger",
-            "btnHome": "Volver al inicio",
-            "btnLocation": "Ver ubicación",
-            "rights": "Todos los derechos reservados.",
-            "soon": "Disponible próximamente",
-            "city": "Tánger",
-            "kicker": "Tienda Shell Select",
-            "title": "Accesorios de viaje y automóvil",
-            "body": "Estamos preparando la lista de productos de esta categoría. Estará disponible muy pronto.",
-            "pageTitle": "Accesorios de viaje y automóvil | CITY PROM Shell HERCULES"
-      },
-      "pt": {
-            "brandSub": "Shell HERCULES Tânger",
-            "btnHome": "Voltar ao início",
-            "btnLocation": "Ver localização",
-            "rights": "Todos os direitos reservados.",
-            "soon": "Disponível em breve",
-            "city": "Tânger",
-            "kicker": "Loja Shell Select",
-            "title": "Acessórios de viagem e automóvel",
-            "body": "Estamos a preparar a lista de produtos desta categoria. Estará disponível muito em breve.",
-            "pageTitle": "Acessórios de viagem e automóvel | CITY PROM Shell HERCULES"
-      }
-};
-    const STORAGE_KEY_LANG = "shell_hercules_lang";
-    const langSelect = document.getElementById("langSelect");
+    /* Page settings. Products are added in products.js, not here. */
+    window.PAGE = {
+          "key": "accessoires",
+          "icon": "🚗",
+          "kicker": {
+                "fr": "Boutique Shell Select",
+                "ar": "متجر Shell Select",
+                "en": "Shell Select Shop",
+                "es": "Tienda Shell Select",
+                "pt": "Loja Shell Select"
+          },
+          "title": {
+                "fr": "Accessoires voyage & auto",
+                "ar": "مستلزمات السفر والسيارة",
+                "en": "Travel & car accessories",
+                "es": "Accesorios de viaje y automóvil",
+                "pt": "Acessórios de viagem e automóvel"
+          }
+    };
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><p style="padding:40px;text-align:center">Please enable JavaScript to view this page.</p></noscript>
+  <script src="products.js"></script>
+  <script>
+/* ============================================================
+   CITY PROM · Shell HERCULES — shared catalog engine
+   Renders the page, search, filters, sorting and product details.
+   Product data lives in products.js (this file never needs editing
+   to add or change products).
+   ============================================================ */
+(function () {
+  "use strict";
 
-    function updateLanguage(locale) {
-      if (!translations[locale]) locale = "fr";
-      const dict = translations[locale];
-      document.documentElement.lang = locale;
-      document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
-      document.title = dict.pageTitle;
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (dict[key] !== undefined) el.textContent = dict[key];
-      });
-      langSelect.value = locale;
-      try { localStorage.setItem(STORAGE_KEY_LANG, locale); } catch (e) {}
+  const PAGE = window.PAGE || {};
+  const ROOT = window.CATALOG || {};
+  const DATA = ROOT[PAGE.key] || {};
+  const CURRENCY = ROOT.currency || "DH";
+  const LANG_KEY = "shell_hercules_lang";
+  const LOCALES = { fr: "fr-FR", ar: "ar-MA", en: "en-GB", es: "es-ES", pt: "pt-PT" };
+
+  /* ---------------- UI translations ---------------- */
+  const UI = {
+    fr: {
+      brandSub: "Shell HERCULES Tanger", btnHome: "Retour à l'accueil", btnLocation: "Voir la localisation",
+      rights: "Tous droits réservés.", city: "Tanger",
+      searchPh: "Rechercher un produit, une marque…", searchLabel: "Rechercher", clear: "Effacer",
+      sort: "Trier", sFeatured: "Pertinence", sPriceAsc: "Prix croissant", sPriceDesc: "Prix décroissant", sNameAsc: "Nom A–Z",
+      filters: "Filtres", categories: "Catégories", brands: "Marques", tags: "Étiquettes", price: "Prix",
+      min: "Min", max: "Max", availability: "Disponibilité", inStock: "En stock uniquement", promo: "En promotion",
+      resetAll: "Tout réinitialiser", showResults: "Voir les résultats",
+      results1: "{n} produit", resultsN: "{n} produits",
+      noResTitle: "Aucun produit trouvé", noResBody: "Essayez d'autres mots-clés ou retirez certains filtres.",
+      emptyTitle: "Bientôt disponible",
+      emptyBody: "La liste des produits de cette catégorie est en cours de préparation. Elle sera disponible très prochainement.",
+      available: "Disponible", outOfStock: "Épuisé", badgePromo: "Promo", badgeNew: "Nouveau",
+      viewGrid: "Affichage en grille", viewList: "Affichage en liste", close: "Fermer",
+      options: "Options", from: "À partir de", category: "Catégorie", brand: "Marque", all: "Tous"
+    },
+    ar: {
+      brandSub: "شل هيركوليس طنجة", btnHome: "العودة إلى الرئيسية", btnLocation: "عرض الموقع",
+      rights: "جميع الحقوق محفوظة.", city: "طنجة",
+      searchPh: "ابحث عن منتج أو علامة تجارية…", searchLabel: "بحث", clear: "مسح",
+      sort: "ترتيب", sFeatured: "الأكثر صلة", sPriceAsc: "السعر: من الأقل", sPriceDesc: "السعر: من الأعلى", sNameAsc: "الاسم أ–ي",
+      filters: "التصفية", categories: "الفئات", brands: "العلامات التجارية", tags: "الوسوم", price: "السعر",
+      min: "الأدنى", max: "الأقصى", availability: "التوفر", inStock: "المتوفر فقط", promo: "العروض",
+      resetAll: "إعادة تعيين الكل", showResults: "عرض النتائج",
+      results1: "{n} منتج", resultsN: "{n} منتجات",
+      noResTitle: "لم يتم العثور على منتجات", noResBody: "جرّب كلمات أخرى أو أزل بعض عوامل التصفية.",
+      emptyTitle: "قريبًا",
+      emptyBody: "نعمل حاليًا على إعداد لائحة منتجات هذا الصنف. ستتوفر قريبًا جدًا.",
+      available: "متوفر", outOfStock: "نفد المخزون", badgePromo: "عرض", badgeNew: "جديد",
+      viewGrid: "عرض شبكي", viewList: "عرض قائمة", close: "إغلاق",
+      options: "الخيارات", from: "ابتداءً من", category: "الفئة", brand: "العلامة", all: "الكل"
+    },
+    en: {
+      brandSub: "Shell HERCULES Tangier", btnHome: "Back to home", btnLocation: "View location",
+      rights: "All rights reserved.", city: "Tangier",
+      searchPh: "Search for a product or brand…", searchLabel: "Search", clear: "Clear",
+      sort: "Sort", sFeatured: "Relevance", sPriceAsc: "Price: low to high", sPriceDesc: "Price: high to low", sNameAsc: "Name A–Z",
+      filters: "Filters", categories: "Categories", brands: "Brands", tags: "Tags", price: "Price",
+      min: "Min", max: "Max", availability: "Availability", inStock: "In stock only", promo: "On promotion",
+      resetAll: "Reset all", showResults: "Show results",
+      results1: "{n} product", resultsN: "{n} products",
+      noResTitle: "No products found", noResBody: "Try different keywords or remove some filters.",
+      emptyTitle: "Coming soon",
+      emptyBody: "The product list for this category is being prepared. It will be available very soon.",
+      available: "Available", outOfStock: "Out of stock", badgePromo: "Sale", badgeNew: "New",
+      viewGrid: "Grid view", viewList: "List view", close: "Close",
+      options: "Options", from: "From", category: "Category", brand: "Brand", all: "All"
+    },
+    es: {
+      brandSub: "Shell HERCULES Tánger", btnHome: "Volver al inicio", btnLocation: "Ver ubicación",
+      rights: "Todos los derechos reservados.", city: "Tánger",
+      searchPh: "Buscar un producto o una marca…", searchLabel: "Buscar", clear: "Borrar",
+      sort: "Ordenar", sFeatured: "Relevancia", sPriceAsc: "Precio: de menor a mayor", sPriceDesc: "Precio: de mayor a menor", sNameAsc: "Nombre A–Z",
+      filters: "Filtros", categories: "Categorías", brands: "Marcas", tags: "Etiquetas", price: "Precio",
+      min: "Mín", max: "Máx", availability: "Disponibilidad", inStock: "Solo en stock", promo: "En oferta",
+      resetAll: "Restablecer todo", showResults: "Ver resultados",
+      results1: "{n} producto", resultsN: "{n} productos",
+      noResTitle: "No se encontraron productos", noResBody: "Pruebe con otras palabras o quite algunos filtros.",
+      emptyTitle: "Disponible próximamente",
+      emptyBody: "Estamos preparando la lista de productos de esta categoría. Estará disponible muy pronto.",
+      available: "Disponible", outOfStock: "Agotado", badgePromo: "Oferta", badgeNew: "Nuevo",
+      viewGrid: "Vista en cuadrícula", viewList: "Vista en lista", close: "Cerrar",
+      options: "Opciones", from: "Desde", category: "Categoría", brand: "Marca", all: "Todos"
+    },
+    pt: {
+      brandSub: "Shell HERCULES Tânger", btnHome: "Voltar ao início", btnLocation: "Ver localização",
+      rights: "Todos os direitos reservados.", city: "Tânger",
+      searchPh: "Pesquisar um produto ou uma marca…", searchLabel: "Pesquisar", clear: "Limpar",
+      sort: "Ordenar", sFeatured: "Relevância", sPriceAsc: "Preço: do menor para o maior", sPriceDesc: "Preço: do maior para o menor", sNameAsc: "Nome A–Z",
+      filters: "Filtros", categories: "Categorias", brands: "Marcas", tags: "Etiquetas", price: "Preço",
+      min: "Mín", max: "Máx", availability: "Disponibilidade", inStock: "Apenas em stock", promo: "Em promoção",
+      resetAll: "Repor tudo", showResults: "Ver resultados",
+      results1: "{n} produto", resultsN: "{n} produtos",
+      noResTitle: "Nenhum produto encontrado", noResBody: "Experimente outras palavras ou remova alguns filtros.",
+      emptyTitle: "Disponível em breve",
+      emptyBody: "Estamos a preparar a lista de produtos desta categoria. Estará disponível muito em breve.",
+      available: "Disponível", outOfStock: "Esgotado", badgePromo: "Promoção", badgeNew: "Novo",
+      viewGrid: "Vista em grelha", viewList: "Vista em lista", close: "Fechar",
+      options: "Opções", from: "A partir de", category: "Categoria", brand: "Marca", all: "Todos"
     }
+  };
 
-    function detectInitialLanguage() {
-      try {
-        const saved = localStorage.getItem(STORAGE_KEY_LANG);
-        if (saved && translations[saved]) return saved;
-      } catch (e) {}
-      const nav = (navigator.language || "fr").slice(0, 2).toLowerCase();
-      return translations[nav] ? nav : "fr";
+  /* ---------------- helpers ---------------- */
+  let lang = "fr";
+  const app = document.getElementById("app");
+  const $ = (s) => app.querySelector(s);
+
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const norm = (s) => String(s == null ? "" : s).toLowerCase().normalize("NFD").replace(/[̀-ًͯ-ٟـ]/g, "");
+  const allText = (v) => (v == null ? "" : typeof v === "object" ? Object.values(v).join(" ") : String(v));
+  const tr = (v) => {
+    if (v == null) return "";
+    if (typeof v !== "object") return String(v);
+    return v[lang] || v.fr || v.en || v.ar || Object.values(v)[0] || "";
+  };
+  const t = (key, vars) => {
+    const ovr = (PAGE.ui && PAGE.ui[lang]) || {};
+    let s = ovr[key] != null ? ovr[key] : UI[lang][key] != null ? UI[lang][key] : UI.fr[key] != null ? UI.fr[key] : key;
+    if (vars) for (const k in vars) s = s.replace("{" + k + "}", vars[k]);
+    return s;
+  };
+  const num = (v) => {
+    const s = String(v == null ? "" : v).replace(",", ".").trim();
+    if (s === "") return null;
+    const n = Number(s);
+    return isFinite(n) && n >= 0 ? n : null;
+  };
+  const fmt = (n) => {
+    let s;
+    try { s = new Intl.NumberFormat(LOCALES[lang] || "fr-FR", { minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(n); }
+    catch (e) { s = String(n); }
+    return s + " " + CURRENCY;
+  };
+
+  const ICON = {
+    search: '<svg class="s-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>',
+    x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
+    list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',
+    filter: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>'
+  };
+
+  /* ---------------- data ---------------- */
+  const products = (Array.isArray(DATA.products) ? DATA.products : [])
+    .filter((p) => p && p.id != null && p.name)
+    .map((p, i) => Object.assign({ _i: i }, p));
+  const catDefs = new Map((Array.isArray(DATA.categories) ? DATA.categories : []).map((c) => [String(c.id), c]));
+
+  const catLabel = (id) => {
+    const d = catDefs.get(String(id));
+    if (d) return tr(d.name);
+    const s = String(id || "");
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
+  const catIcon = (id) => (catDefs.get(String(id)) && catDefs.get(String(id)).icon) || PAGE.icon || "🛍️";
+  const tagKey = (tg) => (typeof tg === "object" && tg ? tg.id || tg.en || tg.fr || Object.values(tg)[0] : String(tg));
+  const optList = (p) => (Array.isArray(p.options) ? p.options : []).filter((o) => o && o.price != null && isFinite(Number(o.price)));
+  const basePrice = (p) => {
+    if (p.price != null && isFinite(Number(p.price))) return Number(p.price);
+    const o = optList(p);
+    return o.length ? Math.min.apply(null, o.map((x) => Number(x.price))) : null;
+  };
+  const fromPrice = (p) => !(p.price != null && isFinite(Number(p.price))) && optList(p).length > 1;
+  const isPromo = (p) => p.badge === "promo" || (p.oldPrice != null && p.price != null && Number(p.oldPrice) > Number(p.price));
+  const isNew = (p) => p.badge === "new";
+  const images = (p) => [].concat(p.images || [], p.image || []).filter(Boolean);
+
+  products.forEach((p) => {
+    p._s = norm([allText(p.name), allText(p.description), allText(p.brand), (p.tags || []).map(allText).join(" "), allText(catLabelAll(p.category)), p.sku || "", p.id].join(" "));
+  });
+  function catLabelAll(id) {
+    const d = catDefs.get(String(id));
+    return d ? d.name : String(id || "");
+  }
+
+  /* ---------------- state ---------------- */
+  const state = { q: "", cats: new Set(), brands: new Set(), tags: new Set(), min: null, max: null, inStock: false, promo: false, sort: "featured", view: "grid" };
+  const SORTS = ["featured", "priceAsc", "priceDesc", "nameAsc"];
+
+  function readURL() {
+    try {
+      const p = new URLSearchParams(location.search);
+      state.q = p.get("q") || "";
+      p.getAll("cat").forEach((v) => state.cats.add(v));
+      p.getAll("brand").forEach((v) => state.brands.add(v));
+      p.getAll("tag").forEach((v) => state.tags.add(v));
+      state.min = num(p.get("min"));
+      state.max = num(p.get("max"));
+      state.inStock = p.get("stock") === "1";
+      state.promo = p.get("promo") === "1";
+      if (SORTS.includes(p.get("sort"))) state.sort = p.get("sort");
+      if (p.get("view") === "list") state.view = "list";
+    } catch (e) {}
+  }
+  function writeURL() {
+    try {
+      const p = new URLSearchParams();
+      if (state.q) p.set("q", state.q);
+      state.cats.forEach((v) => p.append("cat", v));
+      state.brands.forEach((v) => p.append("brand", v));
+      state.tags.forEach((v) => p.append("tag", v));
+      if (state.min != null) p.set("min", state.min);
+      if (state.max != null) p.set("max", state.max);
+      if (state.inStock) p.set("stock", "1");
+      if (state.promo) p.set("promo", "1");
+      if (state.sort !== "featured") p.set("sort", state.sort);
+      if (state.view === "list") p.set("view", "list");
+      const qs = p.toString();
+      history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
+    } catch (e) {}
+  }
+
+  /* ---------------- filtering ---------------- */
+  function match(p, skip) {
+    if (skip !== "q" && state.q) {
+      const toks = norm(state.q).split(/\s+/).filter(Boolean);
+      if (!toks.every((tk) => p._s.includes(tk))) return false;
     }
+    if (skip !== "cats" && state.cats.size && !state.cats.has(String(p.category))) return false;
+    if (skip !== "brands" && state.brands.size && !state.brands.has(String(p.brand || ""))) return false;
+    if (skip !== "tags" && state.tags.size && !(p.tags || []).some((tg) => state.tags.has(tagKey(tg)))) return false;
+    if (skip !== "price") {
+      const pr = basePrice(p);
+      if (state.min != null && (pr == null || pr < state.min)) return false;
+      if (state.max != null && (pr == null || pr > state.max)) return false;
+    }
+    if (skip !== "inStock" && state.inStock && p.available === false) return false;
+    if (skip !== "promo" && state.promo && !isPromo(p)) return false;
+    return true;
+  }
+  function belongs(p, f, v) {
+    if (f === "cats") return String(p.category) === v;
+    if (f === "brands") return String(p.brand || "") === v;
+    return (p.tags || []).some((tg) => tagKey(tg) === v);
+  }
+  function compare(a, b) {
+    let r = 0;
+    if (state.sort === "priceAsc" || state.sort === "priceDesc") {
+      const pa = basePrice(a), pb = basePrice(b);
+      if (pa == null && pb == null) r = 0;
+      else if (pa == null) return 1;
+      else if (pb == null) return -1;
+      else r = state.sort === "priceAsc" ? pa - pb : pb - pa;
+    } else if (state.sort === "nameAsc") {
+      r = tr(a.name).localeCompare(tr(b.name), lang);
+    } else {
+      r = (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
+    }
+    return r || a._i - b._i;
+  }
+  const activeCount = () => state.cats.size + state.brands.size + state.tags.size + (state.min != null || state.max != null ? 1 : 0) + (state.inStock ? 1 : 0) + (state.promo ? 1 : 0);
 
-    langSelect.addEventListener("change", e => updateLanguage(e.target.value));
-    document.getElementById("copyrightYear").textContent = new Date().getFullYear();
-    updateLanguage(detectInitialLanguage());
+  /* ---------------- markup ---------------- */
+  function headerHTML() {
+    const opts = [["fr", "FR 🇫🇷"], ["ar", "العربية 🇲🇦"], ["en", "EN 🇬🇧"], ["es", "ES 🇪🇸"], ["pt", "PT 🇵🇹"]]
+      .map((o) => `<option value="${o[0]}"${o[0] === lang ? " selected" : ""}>${o[1]}</option>`).join("");
+    return `<header class="hdr"><div class="hdr-in">
+      <a href="/" class="brand"><span class="brand-logo"><img src="shell-logo.png" alt="Shell"></span>
+        <span class="brand-t"><b>CITY PROM</b><span>${esc(t("brandSub"))}</span></span></a>
+      <div class="hdr-r"><select id="langSelect" class="sel" aria-label="Langue / Language">${opts}</select>
+        <a href="/" class="btn btn-red hide-s">${esc(t("btnHome"))}</a></div></div></header>`;
+  }
+  function heroHTML() {
+    return `<section class="hero"><div class="hero-ic">${PAGE.icon || "🛍️"}</div>
+      <span class="kick">${esc(tr(PAGE.kicker))}</span><h1>${esc(tr(PAGE.title))}</h1></section>`;
+  }
+
+  function facetData() {
+    const catIds = [];
+    catDefs.forEach((d, id) => { if (products.some((p) => String(p.category) === id)) catIds.push(id); });
+    products.forEach((p) => { const id = String(p.category || ""); if (id && !catIds.includes(id)) catIds.push(id); });
+    const brands = [...new Set(products.map((p) => String(p.brand || "")).filter(Boolean))].sort((a, b) => a.localeCompare(b, lang));
+    const tagMap = new Map();
+    products.forEach((p) => (p.tags || []).forEach((tg) => { const k = tagKey(tg); if (!tagMap.has(k)) tagMap.set(k, tg); }));
+    const prices = products.map(basePrice).filter((x) => x != null);
+    return {
+      catIds, brands, tags: [...tagMap.entries()],
+      minP: prices.length ? Math.floor(Math.min.apply(null, prices)) : null,
+      maxP: prices.length ? Math.ceil(Math.max.apply(null, prices)) : null,
+      anyPromo: products.some(isPromo), anyOut: products.some((p) => p.available === false)
+    };
+  }
+  const opt = (f, val, label) =>
+    `<label class="opt"><input type="checkbox" data-f="${f}" value="${esc(val)}"><span class="box"></span><span class="opt-t">${esc(label)}</span><span class="opt-n" data-n="${f}" data-v="${esc(val)}"></span></label>`;
+
+  function sidebarHTML(fd) {
+    let h = "";
+    if (fd.catIds.length > 1) h += `<div class="fgroup"><h3>${esc(t("categories"))}</h3>${fd.catIds.map((id) => opt("cats", id, catLabel(id))).join("")}</div>`;
+    if (fd.brands.length) h += `<div class="fgroup"><h3>${esc(t("brands"))}</h3>${fd.brands.map((b) => opt("brands", b, b)).join("")}</div>`;
+    if (fd.tags.length) h += `<div class="fgroup"><h3>${esc(t("tags"))}</h3>${fd.tags.map((e) => opt("tags", e[0], tr(e[1]))).join("")}</div>`;
+    if (fd.minP != null && fd.maxP > fd.minP) {
+      h += `<div class="fgroup"><h3>${esc(t("price"))} (${esc(CURRENCY)})</h3><div class="prange">
+        <input id="pMin" type="number" inputmode="decimal" min="0" placeholder="${esc(t("min"))} ${fd.minP}" aria-label="${esc(t("min"))}">
+        <span>–</span>
+        <input id="pMax" type="number" inputmode="decimal" min="0" placeholder="${esc(t("max"))} ${fd.maxP}" aria-label="${esc(t("max"))}"></div></div>`;
+    }
+    let av = "";
+    if (fd.anyOut) av += `<label class="opt"><input type="checkbox" data-f="inStock"><span class="box"></span><span class="opt-t">${esc(t("inStock"))}</span></label>`;
+    if (fd.anyPromo) av += `<label class="opt"><input type="checkbox" data-f="promo"><span class="box"></span><span class="opt-t">${esc(t("promo"))}</span></label>`;
+    if (av) h += `<div class="fgroup"><h3>${esc(t("availability"))}</h3>${av}</div>`;
+    h += `<button type="button" class="reset" id="resetAll">${esc(t("resetAll"))}</button>`;
+    return h;
+  }
+
+  function mainHTML() {
+    const has = products.length > 0;
+    const fd = facetData();
+    const controls = has ? `
+      <button type="button" class="btn btn-soft only-m" id="openFilters">${ICON.filter} ${esc(t("filters"))} <span class="fbadge" id="fBadge"></span></button>
+      <label class="sortbox"><select id="sort" class="sel" aria-label="${esc(t("sort"))}" style="height:48px;padding:0 18px">
+        ${SORTS.map((s) => `<option value="${s}">${esc(t("s" + s.charAt(0).toUpperCase() + s.slice(1)))}</option>`).join("")}</select></label>
+      <div class="seg" role="group">
+        <button type="button" data-view="grid" aria-label="${esc(t("viewGrid"))}">${ICON.grid}</button>
+        <button type="button" data-view="list" aria-label="${esc(t("viewList"))}">${ICON.list}</button></div>` : "";
+    const tabs = has && fd.catIds.length > 1
+      ? `<div class="tabs" id="catChips"><button type="button" class="tab" data-cat="">${esc(t("all"))}</button>${fd.catIds.map((id) => `<button type="button" class="tab" data-cat="${esc(id)}">${esc(catLabel(id))}</button>`).join("")}</div>` : "";
+    const side = has ? `<div class="overlay" id="overlay"></div>
+      <aside class="sidebar" id="sidebar"><div class="sb-head"><span>${esc(t("filters"))}</span>
+        <button type="button" class="q-clear show" id="closeFilters" aria-label="${esc(t("close"))}" style="position:static;transform:none">${ICON.x}</button></div>
+        <div class="sb-body">${sidebarHTML(fd)}</div>
+        <div class="sb-foot"><button type="button" class="btn btn-red" id="applyFilters">${esc(t("showResults"))}</button></div></aside>` : "";
+    return `<main class="wrap">
+      <div class="toolbar">
+        <div class="search" role="search">${ICON.search}
+          <input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="${esc(t("searchPh"))}" aria-label="${esc(t("searchLabel"))}">
+          <button type="button" class="q-clear" id="qClear" aria-label="${esc(t("clear"))}">${ICON.x}</button></div>
+        ${controls}
+      </div>
+      ${tabs}
+      <div class="layout${has ? "" : " nofilters"}">
+        ${side}
+        <section class="results">
+          <div class="res-head"><div class="count" id="count" aria-live="polite"></div><div class="active" id="active"></div></div>
+          <div class="grid" id="grid"></div>
+          <div id="state"></div>
+        </section></div></main>`;
+  }
+  function footerHTML() {
+    return `<footer class="ftr">© ${new Date().getFullYear()} CITY PROM ${esc(t("city"))} · Station Shell HERCULES. ${esc(t("rights"))}</footer>`;
+  }
+
+  function priceHTML(p, big) {
+    const b = basePrice(p);
+    if (b == null) return "";
+    const old = isPromo(p) && p.oldPrice != null ? `<span class="old">${esc(fmt(Number(p.oldPrice)))}</span>` : "";
+    const from = fromPrice(p) ? `<small>${esc(t("from"))}</small> ` : "";
+    return `<span class="${big ? "m-price" : "price"}">${from}${esc(fmt(b))}${old}</span>`;
+  }
+  function stockHTML(p) {
+    return p.available === false ? `<span class="stock out">${esc(t("outOfStock"))}</span>` : `<span class="stock in">${esc(t("available"))}</span>`;
+  }
+  function cardHTML(p, i) {
+    const imgs = images(p);
+    const media = imgs.length ? `<img src="${esc(imgs[0])}" alt="${esc(tr(p.name))}" loading="lazy" data-ic="${esc(catIcon(p.category))}">` : esc(catIcon(p.category));
+    const badges = (isPromo(p) ? `<span class="badge">${esc(t("badgePromo"))}</span>` : "") + (isNew(p) ? `<span class="badge new">${esc(t("badgeNew"))}</span>` : "");
+    const meta = [p.brand, p.category ? catLabel(p.category) : ""].filter(Boolean).join(" · ");
+    return `<article class="card${p.available === false ? " sold" : ""}" tabindex="0" role="button" data-id="${esc(p.id)}" style="--i:${Math.min(i, 14)}">
+      <div class="card-img">${badges ? `<div class="badges">${badges}</div>` : ""}${media}</div>
+      <div class="card-b">${meta ? `<span class="card-meta">${esc(meta)}</span>` : ""}
+        <h3 class="card-t">${esc(tr(p.name))}</h3>
+        ${p.description ? `<p class="card-d">${esc(tr(p.description))}</p>` : ""}
+        <div class="card-f">${priceHTML(p)}${stockHTML(p)}</div></div></article>`;
+  }
+  function stateHTML(kind) {
+    const home = `<a href="/" class="btn btn-red">${esc(t("btnHome"))}</a><a href="/#localisation" class="btn btn-soft">${esc(t("btnLocation"))}</a>`;
+    if (kind === "empty") {
+      return `<div class="empty"><div class="empty-ic">${PAGE.icon || "🛍️"}</div>
+        <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>${esc(t("emptyTitle"))}</span>
+        <p>${esc(t("emptyBody"))}</p><div class="btns">${home}</div></div>`;
+    }
+    return `<div class="empty"><div class="empty-ic">🔍</div><h2>${esc(t("noResTitle"))}</h2><p>${esc(t("noResBody"))}</p>
+      <div class="btns"><button type="button" class="btn btn-red" id="emptyReset">${esc(t("resetAll"))}</button></div></div>`;
+  }
+
+  /* ---------------- render / sync ---------------- */
+  function renderResults() {
+    const grid = $("#grid"), st = $("#state"), cnt = $("#count"), act = $("#active");
+    if (!products.length) { grid.innerHTML = ""; cnt.textContent = ""; act.innerHTML = ""; st.innerHTML = stateHTML("empty"); return; }
+    const list = products.filter((p) => match(p)).sort(compare);
+    cnt.textContent = list.length === 1 ? t("results1", { n: list.length }) : t("resultsN", { n: list.length });
+    grid.className = "grid" + (state.view === "list" ? " list" : "");
+    grid.innerHTML = list.map(cardHTML).join("");
+    st.innerHTML = list.length ? "" : stateHTML("none");
+
+    const chips = [];
+    state.cats.forEach((v) => chips.push(["cats", v, catLabel(v)]));
+    state.brands.forEach((v) => chips.push(["brands", v, v]));
+    state.tags.forEach((v) => { const tg = products.flatMap((p) => p.tags || []).find((x) => tagKey(x) === v); chips.push(["tags", v, tg ? tr(tg) : v]); });
+    if (state.min != null || state.max != null) chips.push(["price", "", `${state.min != null ? fmt(state.min) : "…"} – ${state.max != null ? fmt(state.max) : "…"}`]);
+    if (state.inStock) chips.push(["inStock", "", t("inStock")]);
+    if (state.promo) chips.push(["promo", "", t("promo")]);
+    act.innerHTML = chips.map((c) => `<button type="button" class="chip" data-rm="${c[0]}" data-v="${esc(c[1])}">${esc(c[2])} ${ICON.x}</button>`).join("");
+  }
+  function updateCounts() {
+    app.querySelectorAll(".opt-n").forEach((el) => {
+      const f = el.dataset.n, v = el.dataset.v;
+      const n = products.filter((p) => match(p, f) && belongs(p, f, v)).length;
+      el.textContent = n;
+      el.closest(".opt").classList.toggle("dim", n === 0 && !state[f].has(v));
+    });
+  }
+  function sync() {
+    app.querySelectorAll("input[data-f]").forEach((inp) => {
+      const f = inp.dataset.f;
+      inp.checked = f === "inStock" || f === "promo" ? state[f] : state[f].has(inp.value);
+    });
+    const pMin = $("#pMin"), pMax = $("#pMax"), q = $("#q"), sortEl = $("#sort");
+    if (pMin && document.activeElement !== pMin) pMin.value = state.min == null ? "" : state.min;
+    if (pMax && document.activeElement !== pMax) pMax.value = state.max == null ? "" : state.max;
+    if (q && document.activeElement !== q) q.value = state.q;
+    if (sortEl) sortEl.value = state.sort;
+    const qc = $("#qClear"); if (qc) qc.classList.toggle("show", !!state.q);
+    app.querySelectorAll("[data-view]").forEach((b) => b.classList.toggle("on", b.dataset.view === state.view));
+    app.querySelectorAll("[data-cat]").forEach((b) => {
+      const c = b.dataset.cat;
+      b.classList.toggle("on", c === "" ? state.cats.size === 0 : state.cats.size === 1 && state.cats.has(c));
+    });
+    const fb = $("#fBadge"); if (fb) { const n = activeCount(); fb.textContent = n; fb.classList.toggle("show", n > 0); }
+  }
+  function apply() { sync(); renderResults(); updateCounts(); writeURL(); }
+  function resetAll() {
+    state.q = ""; state.cats.clear(); state.brands.clear(); state.tags.clear();
+    state.min = state.max = null; state.inStock = state.promo = false; apply();
+  }
+
+  /* ---------------- drawer ---------------- */
+  function setDrawer(open) {
+    const sb = $("#sidebar"), ov = $("#overlay");
+    if (!sb) return;
+    sb.classList.toggle("open", open); ov.classList.toggle("open", open);
+    document.body.classList.toggle("lock", open);
+  }
+
+  /* ---------------- product modal ---------------- */
+  let modal, lastFocus = null;
+  function openModal(id) {
+    const p = products.find((x) => String(x.id) === String(id));
+    if (!p) return;
+    lastFocus = document.activeElement;
+    const imgs = images(p), ic = catIcon(p.category);
+    const meta = [p.brand ? `${t("brand")}: ${p.brand}` : "", p.category ? `${t("category")}: ${catLabel(p.category)}` : ""].filter(Boolean).map((x) => `<span>${esc(x)}</span>`).join("");
+    const opts = optList(p);
+    modal.innerHTML = `<div class="m-box" role="dialog" aria-modal="true" aria-label="${esc(tr(p.name))}">
+      <button type="button" class="m-close" data-close aria-label="${esc(t("close"))}">${ICON.x}</button>
+      <div class="m-media"><div class="m-main" id="mMain">${imgs.length ? `<img src="${esc(imgs[0])}" alt="${esc(tr(p.name))}" data-ic="${esc(ic)}">` : esc(ic)}</div>
+        ${imgs.length > 1 ? `<div class="m-thumbs">${imgs.map((s, i) => `<button type="button" data-thumb="${esc(s)}" class="${i ? "" : "on"}"><img src="${esc(s)}" alt=""></button>`).join("")}</div>` : ""}</div>
+      <div class="m-info"><h2>${esc(tr(p.name))}</h2>
+        ${meta ? `<div class="m-meta">${meta}</div>` : ""}
+        <div>${priceHTML(p, true)} ${stockHTML(p)}</div>
+        ${p.description ? `<p class="m-desc">${esc(tr(p.description))}</p>` : ""}
+        ${opts.length ? `<div class="m-h">${esc(t("options"))}</div><ul class="m-opts">${opts.map((o) => `<li><span>${esc(tr(o.label))}</span><b>${esc(fmt(Number(o.price)))}</b></li>`).join("")}</ul>` : ""}
+        ${(p.tags || []).length ? `<div class="m-tags">${p.tags.map((tg) => `<span>${esc(tr(tg))}</span>`).join("")}</div>` : ""}
+      </div></div>`;
+    modal.classList.add("open");
+    document.body.classList.add("lock");
+    const c = modal.querySelector(".m-close"); if (c) c.focus();
+  }
+  function closeModal() {
+    if (!modal.classList.contains("open")) return;
+    modal.classList.remove("open"); modal.innerHTML = "";
+    if (!$("#sidebar") || !$("#sidebar").classList.contains("open")) document.body.classList.remove("lock");
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  /* ---------------- init & events ---------------- */
+  function renderAll() {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.title = PAGE.pageTitle ? tr(PAGE.pageTitle) : tr(PAGE.title) + " | CITY PROM Shell HERCULES";
+    app.innerHTML = headerHTML() + heroHTML() + mainHTML() + footerHTML();
+    apply();
+  }
+  function detectLang() {
+    try { const s = localStorage.getItem(LANG_KEY); if (s && UI[s]) return s; } catch (e) {}
+    const n = (navigator.language || "fr").slice(0, 2).toLowerCase();
+    return UI[n] ? n : "fr";
+  }
+
+  let timer;
+  const debounce = (fn, ms) => (...a) => { clearTimeout(timer); timer = setTimeout(() => fn(...a), ms); };
+  const onSearch = debounce((v) => { state.q = v.trim(); apply(); }, 120);
+  const onPrice = debounce(() => { state.min = num($("#pMin").value); state.max = num($("#pMax").value); apply(); }, 250);
+
+  app.addEventListener("input", (e) => {
+    if (e.target.id === "q") { $("#qClear").classList.toggle("show", !!e.target.value); onSearch(e.target.value); }
+    else if (e.target.id === "pMin" || e.target.id === "pMax") onPrice();
+  });
+  app.addEventListener("change", (e) => {
+    const el = e.target;
+    if (el.id === "langSelect") {
+      lang = UI[el.value] ? el.value : "fr";
+      try { localStorage.setItem(LANG_KEY, lang); } catch (x) {}
+      closeModal(); renderAll();
+    } else if (el.id === "sort") { state.sort = el.value; apply(); }
+    else if (el.dataset && el.dataset.f) {
+      const f = el.dataset.f;
+      if (f === "inStock" || f === "promo") state[f] = el.checked;
+      else if (el.checked) state[f].add(el.value); else state[f].delete(el.value);
+      apply();
+    }
+  });
+  app.addEventListener("click", (e) => {
+    const c = e.target.closest("button, .card, .overlay, [data-id]");
+    if (!c) return;
+    if (c.id === "qClear") { state.q = ""; $("#q").value = ""; $("#q").focus(); apply(); }
+    else if (c.dataset.view) { state.view = c.dataset.view; apply(); }
+    else if (c.dataset.cat !== undefined && c.classList.contains("tab")) { state.cats.clear(); if (c.dataset.cat) state.cats.add(c.dataset.cat); apply(); }
+    else if (c.dataset.rm) {
+      const k = c.dataset.rm;
+      if (k === "price") state.min = state.max = null;
+      else if (k === "inStock" || k === "promo") state[k] = false;
+      else state[k].delete(c.dataset.v);
+      apply();
+    }
+    else if (c.id === "resetAll" || c.id === "emptyReset") resetAll();
+    else if (c.id === "openFilters") setDrawer(true);
+    else if (c.id === "closeFilters" || c.id === "applyFilters" || c.id === "overlay") setDrawer(false);
+    else if (c.classList.contains("card")) openModal(c.dataset.id);
+  });
+  app.addEventListener("keydown", (e) => {
+    if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("card")) { e.preventDefault(); openModal(e.target.dataset.id); }
+  });
+  // Broken images fall back to the category icon
+  document.addEventListener("error", (e) => {
+    const im = e.target;
+    if (im && im.tagName === "IMG" && im.dataset && im.dataset.ic !== undefined) {
+      const holder = im.parentElement; im.remove();
+      if (holder && !holder.textContent.trim()) holder.append(document.createTextNode(im.dataset.ic));
+    }
+  }, true);
+
+  document.addEventListener("DOMContentLoaded", () => {});
+  modal = document.createElement("div");
+  modal.className = "modal";
+  document.body.appendChild(modal);
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal || e.target.closest("[data-close]")) return closeModal();
+    const th = e.target.closest("[data-thumb]");
+    if (th) {
+      const main = modal.querySelector("#mMain img");
+      if (main) main.src = th.dataset.thumb;
+      modal.querySelectorAll("[data-thumb]").forEach((b) => b.classList.toggle("on", b === th));
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { if (modal.classList.contains("open")) closeModal(); else setDrawer(false); }
+  });
+
+  lang = detectLang();
+  readURL();
+  renderAll();
+})();
+
   </script>
 </body>
 </html>
