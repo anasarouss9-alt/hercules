@@ -996,7 +996,7 @@
                 <svg class="contact-arrow w-4 h-4 ms-auto flex-shrink-0 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </a>
 
-              <a href="mailto:XXXXXXXX@hmail.com" class="contact-link flex items-center gap-3.5 bg-slate-900 p-4 rounded-2xl border border-slate-800">
+              <a id="emailLink" href="mailto:shellrelaisaeroport@gmail.com" class="contact-link flex items-center gap-3.5 bg-slate-900 p-4 rounded-2xl border border-slate-800">
                 <div class="w-9 h-9 rounded-xl bg-shell-red/20 text-shell-red flex items-center justify-center font-bold flex-shrink-0">✉️</div>
                 <div class="min-w-0">
                   <div class="text-xs font-bold text-slate-400 uppercase" data-i18n="emailLabel">E-mail</div>
@@ -2087,5 +2087,18 @@
       toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     })();
   </script>
+<script>
+  // E-mail: phones open their mail app (mailto); on a computer without a mail program mailto does nothing, so open Gmail in a new tab instead.
+  (function () {
+    var a = document.getElementById("emailLink");
+    if (!a) return;
+    var mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+    if (!mobile) {
+      a.href = "https://mail.google.com/mail/?view=cm&fs=1&to=shellrelaisaeroport%40gmail.com";
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    }
+  })();
+</script>
 </body>
 </html>
