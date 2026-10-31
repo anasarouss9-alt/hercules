@@ -481,14 +481,16 @@
     .contact-link:active { transform: scale(.985) !important; }
     .contact-link:focus-visible { outline: 3px solid #ffcc00; outline-offset: 2px; }
 
-    /* Station photo slideshow: slow cross-fade */
-    .ss-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.0); transition: opacity 1.8s ease-in-out; will-change: opacity, transform; }
-    .ss-slide.is-on { opacity: 1; animation: ssZoom 9s ease-out forwards; }
-    @keyframes ssZoom { from { transform: scale(1.0); } to { transform: scale(1.06); } }
-    .ss-dots { position: absolute; top: 16px; inset-inline-end: 18px; display: flex; gap: 6px; z-index: 2; }
+    /* Station photo slideshow: slow cross-fade (GPU-friendly: only opacity + transform) */
+    #stationSlider { isolation: isolate; transform: translateZ(0); }
+    .ss-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale3d(1,1,1); transition: opacity 2s ease-in-out; will-change: opacity, transform; backface-visibility: hidden; }
+    .ss-slide.is-on { opacity: 1; transform: scale3d(1.06,1.06,1); transition: opacity 2s ease-in-out, transform 9s linear; z-index: 1; }
+    .ss-slide.is-prev { opacity: 0; transform: scale3d(1.06,1.06,1); z-index: 0; }
+    .ss-dots { position: absolute; top: 16px; inset-inline-end: 18px; display: flex; gap: 6px; z-index: 3; }
     .ss-dots span { width: 8px; height: 8px; border-radius: 999px; background: rgba(255,255,255,.45); transition: background-color .6s ease, width .6s ease; }
     .ss-dots span.is-on { background: #ffcc00; width: 22px; }
-    @media (prefers-reduced-motion: reduce) { .ss-slide.is-on { animation: none; } .ss-slide { transition-duration: .01s; } }
+    #stationSlider figcaption, #stationSlider > div.absolute { z-index: 2; }
+    @media (prefers-reduced-motion: reduce) { .ss-slide.is-on { transform: none; transition: opacity .01s; } .ss-slide.is-prev { transform: none; } }
   </style>
   <script>
     // Enable reveal animations (always on)
@@ -678,8 +680,8 @@
     <section class="bg-slate-50 py-10 md:py-14 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <figure id="stationSlider" class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 h-72 sm:h-96 md:h-[460px] bg-slate-900">
-          <img src="station-aerial.jpg" alt="Vue aérienne de la station Shell HERCULES à Tanger" class="ss-slide is-on" loading="eager">
-          <img src="station-front.jpg" alt="Façade de la station Shell HERCULES, prix Shell V-Power et FuelSave" class="ss-slide" loading="lazy">
+          <img src="station-aerial.jpg" alt="Vue aérienne de la station Shell HERCULES à Tanger" class="ss-slide is-on" loading="eager" decoding="async">
+          <img src="station-front.jpg" alt="Façade de la station Shell HERCULES, prix Shell V-Power et FuelSave" class="ss-slide" loading="eager" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent pointer-events-none"></div>
           <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
@@ -2111,16 +2113,21 @@
   (function () {
     var box = document.getElementById("stationSlider");
     if (!box) return;
-    var slides = box.querySelectorAll(".ss-slide"), dots = box.querySelectorAll(".ss-dots span"), i = 0, timer;
+    var slides = box.querySelectorAll(".ss-slide"), dots = box.querySelectorAll(".ss-dots span"), i = 0, timer, ready = false;
     if (slides.length < 2) return;
     function show(n) {
-      slides[i].classList.remove("is-on"); dots[i].classList.remove("is-on");
+      var prev = slides[i];
+      prev.classList.remove("is-on"); prev.classList.add("is-prev"); dots[i].classList.remove("is-on");
       i = n % slides.length;
-      slides[i].classList.add("is-on"); dots[i].classList.add("is-on");
+      slides[i].classList.remove("is-prev"); slides[i].classList.add("is-on"); dots[i].classList.add("is-on");
+      setTimeout(function () { if (prev !== slides[i]) prev.classList.remove("is-prev"); }, 2200);
     }
-    function start() { timer = setInterval(function () { show(i + 1); }, 6000); }
+    function start() { stop(); timer = setInterval(function () { if (ready) show(i + 1); }, 7000); }
     function stop() { clearInterval(timer); }
-    document.addEventListener("visibilitychange", function () { document.hidden ? stop() : (stop(), start()); });
+    // wait until every picture is decoded so the first fade never stutters
+    Promise.all([].map.call(slides, function (im) { return im.decode ? im.decode().catch(function () {}) : Promise.resolve(); }))
+      .then(function () { ready = true; });
+    document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
     start();
   })();
 </script>
