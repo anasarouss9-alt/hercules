@@ -480,6 +480,15 @@
     [dir="rtl"] .contact-link:hover .contact-arrow { transform: translateX(-4px) rotate(180deg); }
     .contact-link:active { transform: scale(.985) !important; }
     .contact-link:focus-visible { outline: 3px solid #ffcc00; outline-offset: 2px; }
+
+    /* Station photo slideshow: slow cross-fade */
+    .ss-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.0); transition: opacity 1.8s ease-in-out; will-change: opacity, transform; }
+    .ss-slide.is-on { opacity: 1; animation: ssZoom 9s ease-out forwards; }
+    @keyframes ssZoom { from { transform: scale(1.0); } to { transform: scale(1.06); } }
+    .ss-dots { position: absolute; top: 16px; inset-inline-end: 18px; display: flex; gap: 6px; z-index: 2; }
+    .ss-dots span { width: 8px; height: 8px; border-radius: 999px; background: rgba(255,255,255,.45); transition: background-color .6s ease, width .6s ease; }
+    .ss-dots span.is-on { background: #ffcc00; width: 22px; }
+    @media (prefers-reduced-motion: reduce) { .ss-slide.is-on { animation: none; } .ss-slide { transition-duration: .01s; } }
   </style>
   <script>
     // Enable reveal animations (always on)
@@ -668,22 +677,19 @@
     <!-- STATION PHOTO BAND -->
     <section class="bg-slate-50 py-10 md:py-14 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6">
-          <figure class="lg:col-span-7 relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-            <img src="station-aerial.jpg" alt="Vue aérienne de la station Shell HERCULES à Tanger" class="w-full h-64 sm:h-80 md:h-[420px] object-cover" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
-            <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-              <div>
-                <span class="text-shell-yellow text-xs font-black uppercase tracking-widest" data-i18n="photoKicker">Shell HERCULES · Tanger</span>
-                <h2 class="text-2xl md:text-4xl font-black text-white tracking-tight mt-1" data-i18n="photoBandTitle">Une station qui vous accueille 24h/24</h2>
-              </div>
-              <a href="#services" class="self-start sm:self-auto bg-shell-yellow hover:bg-shell-yellowDark text-slate-900 font-bold text-sm px-5 py-3 rounded-xl shadow-md transition-all" data-i18n="photoBandBtn">Nos services</a>
-            </figcaption>
-          </figure>
-          <figure class="lg:col-span-5 relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-            <img src="station-front.jpg" alt="Façade de la station Shell HERCULES, prix Shell V-Power et FuelSave" class="w-full h-64 sm:h-80 md:h-[420px] object-cover" loading="lazy">
-          </figure>
-        </div>
+        <figure id="stationSlider" class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 h-72 sm:h-96 md:h-[460px] bg-slate-900">
+          <img src="station-aerial.jpg" alt="Vue aérienne de la station Shell HERCULES à Tanger" class="ss-slide is-on" loading="eager">
+          <img src="station-front.jpg" alt="Façade de la station Shell HERCULES, prix Shell V-Power et FuelSave" class="ss-slide" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent pointer-events-none"></div>
+          <figcaption class="absolute bottom-0 inset-x-0 p-6 md:p-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <span class="text-shell-yellow text-xs font-black uppercase tracking-widest" data-i18n="photoKicker">Shell HERCULES · Tanger</span>
+              <h2 class="text-2xl md:text-4xl font-black text-white tracking-tight mt-1" data-i18n="photoBandTitle">Une station qui vous accueille 24h/24</h2>
+            </div>
+            <a href="#services" class="self-start sm:self-auto bg-shell-yellow hover:bg-shell-yellowDark text-slate-900 font-bold text-sm px-5 py-3 rounded-xl shadow-md transition-all whitespace-nowrap" data-i18n="photoBandBtn">Nos services</a>
+          </figcaption>
+          <div class="ss-dots" aria-hidden="true"><span class="is-on"></span><span></span></div>
+        </figure>
       </div>
     </section>
 
@@ -2098,6 +2104,24 @@
       a.target = "_blank";
       a.rel = "noopener noreferrer";
     }
+  })();
+</script>
+<script>
+  // Station photo slideshow
+  (function () {
+    var box = document.getElementById("stationSlider");
+    if (!box) return;
+    var slides = box.querySelectorAll(".ss-slide"), dots = box.querySelectorAll(".ss-dots span"), i = 0, timer;
+    if (slides.length < 2) return;
+    function show(n) {
+      slides[i].classList.remove("is-on"); dots[i].classList.remove("is-on");
+      i = n % slides.length;
+      slides[i].classList.add("is-on"); dots[i].classList.add("is-on");
+    }
+    function start() { timer = setInterval(function () { show(i + 1); }, 6000); }
+    function stop() { clearInterval(timer); }
+    document.addEventListener("visibilitychange", function () { document.hidden ? stop() : (stop(), start()); });
+    start();
   })();
 </script>
 </body>
