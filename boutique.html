@@ -245,14 +245,120 @@ img { max-width: 100%; }
 .gallery figure:hover img { transform: scale(1.05); }
 @media (max-width: 720px) { .gallery { grid-template-columns: 1fr; } }
 
+/* ---------- Photo slideshow (enabled with PAGE.slideshow) ---------- */
+.slider { --dur: 5000ms; --fade: 1200ms; --ps: running; flex: 0 0 auto; width: 100%; max-width: 1200px; margin: 0 auto; padding: 8px 20px 0; }
+.slider.stopped, .slider.away, .slider:not(.ready) { --ps: paused; }
+.sl-frame {
+  position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: min(62vh, 580px); overflow: hidden; isolation: isolate;
+  transform: translateZ(0); border-radius: var(--radius); background: var(--gray);
+  box-shadow: 0 18px 44px -22px rgba(0,0,0,.45); touch-action: pan-y; -webkit-user-select: none; user-select: none;
+}
+.sl-frame.hold { --ps: paused; }
+@media (hover: hover) { .sl-frame:hover { --ps: paused; } }
+.sl-frame:has(:focus-visible) { --ps: paused; }
+.sl-frame::after { content: ""; position: absolute; inset: auto 0 0 0; height: 96px; z-index: 3; pointer-events: none; background: linear-gradient(to top, rgba(0,0,0,.34), transparent); }
+
+/* Slides: the new photo fades in on top while the previous one stays underneath, so there is never a gap */
+.sl-slide { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; }
+.sl-slide.out { opacity: 1; visibility: visible; z-index: 1; }
+.sl-slide.on { opacity: 1; visibility: visible; z-index: 2; transition: opacity var(--fade) ease-in-out; }
+.sl-slide.bad { display: none; }
+.sl-slide img { width: 100%; height: 100%; display: block; object-fit: cover; transform-origin: 50% 50%; }
+/* slow zoom (Ken Burns), a different focal point for each photo */
+.sl-slide.on img, .sl-slide.out img { animation: slZoom calc(var(--dur) + var(--fade)) linear both; animation-play-state: var(--ps, running); }
+.sl-slide:nth-of-type(4n+1) img { transform-origin: 32% 62%; }
+.sl-slide:nth-of-type(4n+2) img { transform-origin: 70% 40%; }
+.sl-slide:nth-of-type(4n+3) img { transform-origin: 50% 72%; }
+.sl-slide:nth-of-type(4n+4) img { transform-origin: 62% 30%; }
+
+/* Controls */
+.sl-btn, .sl-pp {
+  position: absolute; z-index: 5; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 50%;
+  color: var(--text); background: rgba(255,255,255,.84); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px -8px rgba(0,0,0,.55); transition: opacity .3s ease, transform .25s ease, background-color .2s ease;
+}
+.sl-btn:hover, .sl-pp:hover { background: #fff; }
+.sl-btn { top: 50%; width: 46px; height: 46px; margin-top: -23px; opacity: 0; }
+.sl-btn:hover { transform: scale(1.08); }
+.sl-btn:active, .sl-pp:active { transform: scale(.94); }
+.sl-prev { inset-inline-start: 14px; }
+.sl-next { inset-inline-end: 14px; }
+.sl-frame:hover .sl-btn, .sl-btn:focus-visible { opacity: 1; }
+@media (hover: none) { .sl-btn { opacity: .92; } }
+[dir="rtl"] .sl-btn svg { transform: scaleX(-1); }
+.sl-pp { top: 14px; inset-inline-end: 14px; width: 36px; height: 36px; opacity: .92; }
+.sl-pp svg { width: 16px; height: 16px; }
+.slider.stopped .ic-pause, .slider:not(.stopped) .ic-play { display: none; }
+.sl-btn:focus-visible, .sl-pp:focus-visible, .sl-dot:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+
+/* Dots: the current one stretches into a progress bar that fills until the next photo */
+.sl-dots { position: absolute; z-index: 5; inset-inline: 0; bottom: 14px; display: flex; justify-content: center; pointer-events: none; }
+.sl-dots-in { pointer-events: auto; display: flex; align-items: center; padding: 0 10px; border-radius: 999px; background: rgba(0,0,0,.34); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.sl-dot { display: flex; padding: 10px 3px; border: 0; background: none; }
+.sl-pip { position: relative; display: block; width: 8px; height: 8px; border-radius: 999px; background: rgba(255,255,255,.5); overflow: hidden; transition: width .45s cubic-bezier(.2,.8,.2,1); }
+.sl-dot.on .sl-pip { width: 32px; }
+.sl-pip i { position: absolute; inset: 0; background: #fff; transform: scaleX(0); transform-origin: 0 50%; }
+[dir="rtl"] .sl-pip i { transform-origin: 100% 50%; }
+.sl-dot.on .sl-pip i { animation: slFill var(--dur) linear forwards; animation-play-state: var(--ps, running); }
+.slider.single .sl-btn, .slider.single .sl-dots, .slider.single .sl-pp { display: none; }
+
+@keyframes slFill { to { transform: scaleX(1); } }
+@keyframes slZoom { from { transform: scale(1); } to { transform: scale(1.09); } }
+@media (max-width: 720px) {
+  .sl-frame { aspect-ratio: 4 / 3; max-height: none; }
+  .sl-btn { width: 38px; height: 38px; margin-top: -19px; }
+  .sl-prev { inset-inline-start: 8px; } .sl-next { inset-inline-end: 8px; }
+  .sl-pp { top: 10px; inset-inline-end: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sl-slide img { animation: none !important; }
+  .sl-slide.on { transition-duration: .25s; }
+}
+
   </style>
   <script>
     /* Page settings. Products are added in products.js, not here. */
+    var ALT_BOISSONS = {
+          "fr": "Réfrigérateurs de boissons fraîches de la boutique Shell Select",
+          "ar": "ثلاجات المشروبات الباردة في متجر Shell Select",
+          "en": "Cold drinks fridges in the Shell Select shop",
+          "es": "Neveras de bebidas frías de la tienda Shell Select",
+          "pt": "Frigoríficos de bebidas frescas da loja Shell Select"
+    };
+    var ALT_CHIPS = {
+          "fr": "Rayon de chips et de snacks de la boutique Shell Select",
+          "ar": "رف رقائق البطاطس والوجبات الخفيفة في متجر Shell Select",
+          "en": "Crisps and snacks shelf in the Shell Select shop",
+          "es": "Estantería de patatas fritas y snacks de la tienda Shell Select",
+          "pt": "Prateleira de batatas fritas e snacks da loja Shell Select"
+    };
+    var ALT_CAFE = {
+          "fr": "Espace café avec vitrine de viennoiseries et de fruits frais",
+          "ar": "ركن القهوة مع واجهة عرض المعجنات والفواكه الطازجة",
+          "en": "Coffee corner with a display of pastries and fresh fruit",
+          "es": "Rincón de café con vitrina de bollería y fruta fresca",
+          "pt": "Espaço de café com vitrine de pastelaria e fruta fresca"
+    };
+    var ALT_SHOP = {
+          "fr": "Vue d’ensemble de la boutique Shell Select : snacks, biscuits et boissons",
+          "ar": "نظرة عامة على متجر Shell Select: وجبات خفيفة وبسكويت ومشروبات",
+          "en": "Overview of the Shell Select shop: snacks, biscuits and drinks",
+          "es": "Vista general de la tienda Shell Select: snacks, galletas y bebidas",
+          "pt": "Vista geral da loja Shell Select: snacks, bolachas e bebidas"
+    };
     window.PAGE = {
           "key": "boutique",
+          /* Photos are shown one after another (smooth crossfade). Set "slideshow" to false for a static grid.
+             Optional "pos" on a photo = the part to keep in view when it is cropped, e.g. "50% 0%" = top centre. */
+          "slideshow": true,
+          "slideshowMs": 5000,
           "gallery": [
                 { "src": "boutique-snacks.jpg", "alt": "Rayon snacks et chips de la boutique Shell Select" },
-                { "src": "boutique-fresh.jpg", "alt": "Rayons biscuits et confiseries, coin restauration" }
+                { "src": "boutique-fresh.jpg", "alt": "Rayons biscuits et confiseries, coin restauration" },
+                { "src": "boutique-boissons.jpg", "pos": "50% 0%", "alt": ALT_BOISSONS },
+                { "src": "boutique-chips.jpg", "pos": "50% 55%", "alt": ALT_CHIPS },
+                { "src": "boutique-cafe.jpg", "alt": ALT_CAFE },
+                { "src": "boutique-magasin.jpg", "pos": "50% 35%", "alt": ALT_SHOP }
           ],
           "icon": "🛍️",
           "kicker": {
@@ -553,7 +659,106 @@ img { max-width: 100%; }
   function galleryHTML() {
     const g = PAGE.gallery || [];
     if (!g.length) return "";
-    return `<div class="gallery">${g.map((i) => `<figure><img src="${esc(i.src)}" alt="${esc(i.alt || "")}" loading="lazy"></figure>`).join("")}</div>`;
+    if (PAGE.slideshow && g.length > 1) return sliderHTML(g);
+    return `<div class="gallery">${g.map((i) => `<figure><img src="${esc(i.src)}" alt="${esc(tr(i.alt))}" loading="lazy"></figure>`).join("")}</div>`;
+  }
+
+  /* ---------------- photo slideshow (opt-in: PAGE.slideshow = true) ---------------- */
+  const SLT = {
+    fr: { label: "Diaporama photos", prev: "Photo précédente", next: "Photo suivante", pause: "Mettre le diaporama en pause", play: "Lancer le diaporama", go: "Aller à la photo {n}" },
+    ar: { label: "عرض الصور", prev: "الصورة السابقة", next: "الصورة التالية", pause: "إيقاف العرض مؤقتًا", play: "تشغيل العرض", go: "الانتقال إلى الصورة {n}" },
+    en: { label: "Photo slideshow", prev: "Previous photo", next: "Next photo", pause: "Pause slideshow", play: "Play slideshow", go: "Go to photo {n}" },
+    es: { label: "Presentación de fotos", prev: "Foto anterior", next: "Foto siguiente", pause: "Pausar la presentación", play: "Reproducir la presentación", go: "Ir a la foto {n}" },
+    pt: { label: "Apresentação de fotos", prev: "Foto anterior", next: "Foto seguinte", pause: "Pausar a apresentação", play: "Iniciar a apresentação", go: "Ir para a foto {n}" }
+  };
+  const slt = (k, n) => String(((SLT[lang] || SLT.fr)[k] || SLT.fr[k] || "")).replace("{n}", n == null ? "" : n);
+  const SL_FADE = 1200; // crossfade length in ms (also sent to the CSS as --fade)
+  const sl = {
+    i: 0,
+    // people who ask their device for reduced motion get the slideshow paused (they can still press play or use the arrows)
+    stopped: !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+  };
+  const slides = () => Array.from(app.querySelectorAll(".sl-slide"));
+
+  function sliderHTML(g) {
+    const ms = Number(PAGE.slideshowMs) >= 2000 ? Number(PAGE.slideshowMs) : 5000;
+    const svg = (cls, inner) => `<svg class="${cls}" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+    // Photos load on demand (the current one and the next one), so visitors on mobile data are not hit with all of them at once
+    const figs = g.map((x, n) => `<figure class="sl-slide${n === sl.i ? " on" : ""}" data-n="${n}" role="group" aria-roledescription="slide" aria-label="${n + 1} / ${g.length}"><img data-src="${esc(x.src)}" alt="${esc(tr(x.alt))}"${x.pos ? ` style="object-position:${esc(x.pos)};transform-origin:${esc(x.pos)}"` : ""} decoding="async" draggable="false"></figure>`).join("");
+    const dots = g.map((x, n) => `<button type="button" class="sl-dot${n === sl.i ? " on" : ""}" data-go="${n}" aria-label="${esc(slt("go", n + 1))}"${n === sl.i ? ' aria-current="true"' : ""}><span class="sl-pip"><i></i></span></button>`).join("");
+    return `<section class="slider${sl.stopped ? " stopped" : ""}" style="--dur:${ms}ms;--fade:${SL_FADE}ms" aria-roledescription="carousel" aria-label="${esc(slt("label"))}">
+      <div class="sl-frame">${figs}
+        <button type="button" class="sl-btn sl-prev" data-sl="prev" aria-label="${esc(slt("prev"))}">${svg("", '<path d="M15 5l-7 7 7 7"/>')}</button>
+        <button type="button" class="sl-btn sl-next" data-sl="next" aria-label="${esc(slt("next"))}">${svg("", '<path d="M9 5l7 7-7 7"/>')}</button>
+        <button type="button" class="sl-pp" data-sl="pp" aria-label="${esc(slt(sl.stopped ? "play" : "pause"))}">${svg("ic-pause", '<path d="M8 5v14M16 5v14"/>')}${svg("ic-play", '<path d="M8 5l11 7-11 7z" fill="currentColor"/>')}</button>
+        <div class="sl-dots"><div class="sl-dots-in">${dots}</div></div>
+      </div></section>`;
+  }
+  function slLoad(k) {
+    const list = slides();
+    if (!list.length) return;
+    const im = list[(k % list.length + list.length) % list.length].querySelector("img[data-src]");
+    if (im) { im.src = im.dataset.src; im.removeAttribute("data-src"); }
+  }
+  function slShow(n) {
+    const list = slides();
+    const nx = list[n], cur = list.findIndex((s) => s.classList.contains("on"));
+    if (!nx || n === cur) return;
+    slLoad(n); slLoad(n + 1); slLoad(n - 1);
+    if (cur > -1) { // the old photo stays visible underneath while the new one fades in on top
+      const prev = list[cur];
+      prev.classList.remove("on"); prev.classList.add("out");
+      clearTimeout(prev._t); prev._t = setTimeout(() => prev.classList.remove("out"), SL_FADE + 150);
+    }
+    clearTimeout(nx._t);
+    nx.classList.remove("out");
+    const im = nx.querySelector("img");
+    if (im) { im.style.animation = "none"; void im.offsetWidth; im.style.animation = ""; } // restart the slow zoom
+    void nx.offsetWidth;
+    nx.classList.add("on");
+    sl.i = n;
+    app.querySelectorAll(".sl-dot").forEach((d, k) => {
+      d.classList.toggle("on", k === n);
+      if (k === n) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current");
+    });
+  }
+  function slStep(dir) { // next / previous, skipping photos that failed to load
+    const list = slides(), N = list.length;
+    if (N < 2) return;
+    let n = sl.i;
+    for (let k = 0; k < N; k++) {
+      n = (n + dir + N) % N;
+      if (!list[n].classList.contains("bad")) { if (n !== sl.i) slShow(n); return; }
+    }
+  }
+  function slBad(s) { // a photo file is missing: drop it from the rotation
+    s.classList.add("bad");
+    const dot = app.querySelector('.sl-dot[data-go="' + s.dataset.n + '"]');
+    if (dot) dot.hidden = true;
+    if (s.classList.contains("on")) slStep(1);
+    if (slides().filter((x) => !x.classList.contains("bad")).length < 2) { const fr = $(".slider"); if (fr) fr.classList.add("single"); }
+  }
+  function slAction(a) {
+    if (a === "next") slStep(1);
+    else if (a === "prev") slStep(-1);
+    else if (a === "pp") {
+      sl.stopped = !sl.stopped;
+      const fr = $(".slider"), b = $(".sl-pp");
+      if (fr) fr.classList.toggle("stopped", sl.stopped);
+      if (b) b.setAttribute("aria-label", slt(sl.stopped ? "play" : "pause"));
+    }
+  }
+  function slInit() {
+    const fr = $(".slider");
+    if (!fr) return;
+    slLoad(sl.i); slLoad(sl.i + 1);
+    const first = fr.querySelector(".sl-slide.on img");
+    const go = () => fr.classList.add("ready"); // the timer only starts once the first photo is on screen
+    if (!first || first.complete) go();
+    else { first.addEventListener("load", go, { once: true }); first.addEventListener("error", go, { once: true }); setTimeout(go, 2500); }
+    if ("IntersectionObserver" in window) { // no need to keep rotating while the slideshow is scrolled out of view
+      new IntersectionObserver((es) => fr.classList.toggle("away", !es[0].isIntersecting), { threshold: 0.15 }).observe(fr);
+    }
   }
 
   function facetData() {
@@ -758,6 +963,7 @@ img { max-width: 100%; }
     document.title = PAGE.pageTitle ? tr(PAGE.pageTitle) : tr(PAGE.title) + " | CITY PROM Shell HERCULES";
     app.innerHTML = headerHTML() + heroHTML() + mainHTML() + footerHTML();
     apply();
+    slInit();
   }
   function detectLang() {
     try { const s = localStorage.getItem(LANG_KEY); if (s && UI[s]) return s; } catch (e) {}
@@ -791,7 +997,9 @@ img { max-width: 100%; }
   app.addEventListener("click", (e) => {
     const c = e.target.closest("button, .card, .overlay, [data-id]");
     if (!c) return;
-    if (c.id === "qClear") { state.q = ""; $("#q").value = ""; $("#q").focus(); apply(); }
+    if (c.dataset.sl) slAction(c.dataset.sl);
+    else if (c.dataset.go !== undefined) slShow(Number(c.dataset.go));
+    else if (c.id === "qClear") { state.q = ""; $("#q").value = ""; $("#q").focus(); apply(); }
     else if (c.dataset.view) { state.view = c.dataset.view; apply(); }
     else if (c.dataset.cat !== undefined && c.classList.contains("tab")) { state.cats.clear(); if (c.dataset.cat) state.cats.add(c.dataset.cat); apply(); }
     else if (c.dataset.rm) {
@@ -812,6 +1020,8 @@ img { max-width: 100%; }
   // Broken images fall back to the category icon
   document.addEventListener("error", (e) => {
     const im = e.target;
+    const slide = im && im.tagName === "IMG" && im.closest ? im.closest(".sl-slide") : null;
+    if (slide) { slBad(slide); return; }
     if (im && im.tagName === "IMG" && im.dataset && im.dataset.ic !== undefined) {
       const holder = im.parentElement; im.remove();
       if (holder && !holder.textContent.trim()) holder.append(document.createTextNode(im.dataset.ic));
@@ -834,6 +1044,25 @@ img { max-width: 100%; }
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") { if (modal.classList.contains("open")) closeModal(); else setDrawer(false); }
   });
+
+  /* slideshow: the progress bar of the current dot is the timer, so when it finishes we move to the next photo */
+  app.addEventListener("animationend", (e) => { if (e.animationName === "slFill") slStep(1); });
+  let tx = 0, ty = 0, tracking = false;
+  app.addEventListener("touchstart", (e) => {
+    const fr = e.target.closest ? e.target.closest(".sl-frame") : null;
+    tracking = !!fr && e.touches.length === 1;
+    if (tracking) { tx = e.touches[0].clientX; ty = e.touches[0].clientY; fr.classList.add("hold"); }
+  }, { passive: true });
+  const endTouch = (e, cancelled) => {
+    const fr = $(".sl-frame"); if (fr) fr.classList.remove("hold");
+    if (!tracking) return;
+    tracking = false;
+    if (cancelled || !e.changedTouches.length) return;
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.3) slStep((dx < 0) !== (document.documentElement.dir === "rtl") ? 1 : -1); // swipe to change photo
+  };
+  app.addEventListener("touchend", (e) => endTouch(e, false), { passive: true });
+  app.addEventListener("touchcancel", (e) => endTouch(e, true), { passive: true });
 
   lang = detectLang();
   readURL();
