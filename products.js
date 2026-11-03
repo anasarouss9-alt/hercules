@@ -6062,7 +6062,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/panini-panini-au-fromage.jpg"
+        "image": "images/menu/fast-food-fromage.jpg"
       },
       {
         "id": "panini-panini-a-la-dinde-fumee",
@@ -6083,7 +6083,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/panini-panini-a-la-dinde-fumee.jpg"
+        "image": "images/menu/fast-food-dinde-fumee.jpg"
       },
       {
         "id": "panini-panini-au-thon",
@@ -6104,7 +6104,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/panini-panini-au-thon.jpg"
+        "image": "images/menu/fast-food-thon.jpg"
       },
       {
         "id": "panini-panini-mixte",
@@ -6125,7 +6125,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/panini-panini-mixte.jpg"
+        "image": "images/menu/fast-food-mixte.jpg"
       },
       {
         "id": "panini-panini-au-poulet",
@@ -6146,7 +6146,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/panini-panini-au-poulet.jpg"
+        "image": "images/menu/fast-food-poulet.jpg"
       },
       {
         "id": "panini-panini-aux-crevettes",
@@ -6167,7 +6167,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/panini-panini-aux-crevettes.jpg"
+        "image": "images/menu/fast-food-crevette.jpg"
       },
       {
         "id": "pasticcio-poulet",
