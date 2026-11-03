@@ -4785,14 +4785,14 @@ window.CATALOG = {
         }
       },
       {
-        "id": "fast-food",
+        "id": "panini",
         "icon": "🥖",
         "name": {
-          "fr": "Fast food",
-          "en": "Fast food",
-          "ar": "وجبات سريعة",
-          "es": "Comida rápida",
-          "pt": "Fast food"
+          "fr": "Panini",
+          "en": "Panini",
+          "ar": "بانيني",
+          "es": "Panini",
+          "pt": "Panini"
         }
       },
       {
@@ -6044,15 +6044,15 @@ window.CATALOG = {
         "image": "images/menu/burgers-chicken-burger.jpg"
       },
       {
-        "id": "fast-food-fromage",
+        "id": "panini-panini-au-fromage",
         "name": {
-          "fr": "Fromage",
-          "en": "Cheese",
-          "ar": "جبن",
-          "es": "Queso",
-          "pt": "Queijo"
+          "fr": "Panini au fromage",
+          "en": "Cheese panini",
+          "ar": "بانيني بالجبن",
+          "es": "Panini de queso",
+          "pt": "Panini de queijo"
         },
-        "category": "fast-food",
+        "category": "panini",
         "price": 35,
         "description": {
           "fr": "Servi avec frites.",
@@ -6062,18 +6062,18 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/fast-food-fromage.jpg"
+        "image": "images/menu/panini-panini-au-fromage.jpg"
       },
       {
-        "id": "fast-food-dinde-fumee",
+        "id": "panini-panini-a-la-dinde-fumee",
         "name": {
-          "fr": "Dinde fumée",
-          "en": "Smoked turkey",
-          "ar": "ديك رومي مدخن",
-          "es": "Pavo ahumado",
-          "pt": "Peru fumado"
+          "fr": "Panini à la dinde fumée",
+          "en": "Smoked turkey panini",
+          "ar": "بانيني بالديك الرومي المدخن",
+          "es": "Panini de pavo ahumado",
+          "pt": "Panini de peru fumado"
         },
-        "category": "fast-food",
+        "category": "panini",
         "price": 40,
         "description": {
           "fr": "Servi avec frites.",
@@ -6083,18 +6083,18 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/fast-food-dinde-fumee.jpg"
+        "image": "images/menu/panini-panini-a-la-dinde-fumee.jpg"
       },
       {
-        "id": "fast-food-thon",
+        "id": "panini-panini-au-thon",
         "name": {
-          "fr": "Thon",
-          "en": "Tuna",
-          "ar": "تونة",
-          "es": "Atún",
-          "pt": "Atum"
+          "fr": "Panini au thon",
+          "en": "Tuna panini",
+          "ar": "بانيني بالتونة",
+          "es": "Panini de atún",
+          "pt": "Panini de atum"
         },
-        "category": "fast-food",
+        "category": "panini",
         "price": 40,
         "description": {
           "fr": "Servi avec frites.",
@@ -6104,18 +6104,18 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/fast-food-thon.jpg"
+        "image": "images/menu/panini-panini-au-thon.jpg"
       },
       {
-        "id": "fast-food-mixte",
+        "id": "panini-panini-mixte",
         "name": {
-          "fr": "Mixte",
-          "en": "Mixed",
-          "ar": "مشكل",
-          "es": "Mixto",
-          "pt": "Misto"
+          "fr": "Panini mixte",
+          "en": "Mixed panini",
+          "ar": "بانيني مشكل",
+          "es": "Panini mixto",
+          "pt": "Panini misto"
         },
-        "category": "fast-food",
+        "category": "panini",
         "price": 60,
         "description": {
           "fr": "Servi avec frites.",
@@ -6125,18 +6125,18 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/fast-food-mixte.jpg"
+        "image": "images/menu/panini-panini-mixte.jpg"
       },
       {
-        "id": "fast-food-poulet",
+        "id": "panini-panini-au-poulet",
         "name": {
-          "fr": "Poulet",
-          "en": "Chicken",
-          "ar": "دجاج",
-          "es": "Pollo",
-          "pt": "Frango"
+          "fr": "Panini au poulet",
+          "en": "Chicken panini",
+          "ar": "بانيني بالدجاج",
+          "es": "Panini de pollo",
+          "pt": "Panini de frango"
         },
-        "category": "fast-food",
+        "category": "panini",
         "price": 50,
         "description": {
           "fr": "Servi avec frites.",
@@ -6146,18 +6146,18 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/fast-food-poulet.jpg"
+        "image": "images/menu/panini-panini-au-poulet.jpg"
       },
       {
-        "id": "fast-food-crevette",
+        "id": "panini-panini-aux-crevettes",
         "name": {
-          "fr": "Crevette",
-          "en": "Shrimp",
-          "ar": "جمبري",
-          "es": "Gambas",
-          "pt": "Camarão"
+          "fr": "Panini aux crevettes",
+          "en": "Shrimp panini",
+          "ar": "بانيني بالجمبري",
+          "es": "Panini de gambas",
+          "pt": "Panini de camarão"
         },
-        "category": "fast-food",
+        "category": "panini",
         "price": 65,
         "description": {
           "fr": "Servi avec frites.",
@@ -6167,7 +6167,7 @@ window.CATALOG = {
           "pt": "Servido com batatas fritas."
         },
         "available": true,
-        "image": "images/menu/fast-food-crevette.jpg"
+        "image": "images/menu/panini-panini-aux-crevettes.jpg"
       },
       {
         "id": "pasticcio-poulet",
