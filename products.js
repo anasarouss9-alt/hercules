@@ -4816,6 +4816,50 @@ window.CATALOG = {
           "es": "Postres",
           "pt": "Sobremesas"
         }
+      },
+      {
+        "id": "petit-dejeuner",
+        "icon": "🍳",
+        "name": {
+          "fr": "Petit-déjeuner",
+          "en": "Breakfast",
+          "ar": "فطور الصباح",
+          "es": "Desayuno",
+          "pt": "Pequeno-almoço"
+        }
+      },
+      {
+        "id": "a-la-carte",
+        "icon": "🥐",
+        "name": {
+          "fr": "À la carte",
+          "en": "À la carte",
+          "ar": "حسب الطلب",
+          "es": "A la carta",
+          "pt": "À la carte"
+        }
+      },
+      {
+        "id": "supplements",
+        "icon": "➕",
+        "name": {
+          "fr": "Suppléments",
+          "en": "Extras",
+          "ar": "إضافات",
+          "es": "Extras",
+          "pt": "Extras"
+        }
+      },
+      {
+        "id": "boissons",
+        "icon": "☕",
+        "name": {
+          "fr": "Boissons",
+          "en": "Drinks",
+          "ar": "مشروبات",
+          "es": "Bebidas",
+          "pt": "Bebidas"
+        }
       }
     ],
     "products": [
@@ -6553,6 +6597,1182 @@ window.CATALOG = {
         "price": 40,
         "available": true,
         "image": "images/menu/desserts-salade-de-fruits.jpg"
+      },
+      {
+        "id": "petit-dejeuner-marocain",
+        "name": {
+          "fr": "Marocain",
+          "en": "Moroccan",
+          "ar": "مغربي",
+          "es": "Marroquí",
+          "pt": "Marroquino"
+        },
+        "category": "petit-dejeuner",
+        "price": 47,
+        "description": {
+          "fr": "Boisson chaude, Harcha, Baghrir, Reghayaf, Pain grillé, 5 accompagnements (Jben beldi, Beurre, Miel, Amlou, Confiture), Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, Harcha, Baghrir, Reghayaf, Toasted bread, 5 sides (Jben beldi cheese, Butter, Honey, Amlou, Jam), Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-chamali",
+        "name": {
+          "fr": "Chamali",
+          "en": "Chamali",
+          "ar": "شمالي",
+          "es": "Chamali",
+          "pt": "Chamali"
+        },
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": {
+          "fr": "Boisson chaude, Pain, 2 Œufs plat, Jben beldi, La vache qui rit, Luncheon, Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, Bread, 2 Fried eggs, Jben beldi cheese, La vache qui rit, Luncheon meat, Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-fassi",
+        "name": {
+          "fr": "Fassi",
+          "en": "Fassi",
+          "ar": "فاسي",
+          "es": "Fassi",
+          "pt": "Fassi"
+        },
+        "category": "petit-dejeuner",
+        "price": 50,
+        "description": {
+          "fr": "Boisson chaude, Pain, Tajine de khlie aux 2 Œufs, Jus d'orange, Eau minérale, Hssoua. · Servi jusqu'à 14h",
+          "en": "Hot drink, Bread, Khlie tajine with 2 eggs, Orange juice, Mineral water, Hssoua soup. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-francais",
+        "name": {
+          "fr": "Français",
+          "en": "French",
+          "ar": "فرنسي",
+          "es": "Francés",
+          "pt": "Francês"
+        },
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": {
+          "fr": "Boisson chaude, (Chenik, Petit pain, Croissant / deux choix), 3 accompagnements (La vache qui rit, Confiture, Nutella), Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, (Chenik, Bread roll, Croissant / choose two), 3 sides (La vache qui rit, Jam, Nutella), Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-light",
+        "name": {
+          "fr": "Light",
+          "en": "Light",
+          "ar": "لايت",
+          "es": "Light",
+          "pt": "Light"
+        },
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": {
+          "fr": "Boisson chaude, Pain grillé, Fromage edam, 3 accompagnements (Jben beldi, La vache qui rit light, Confiture light), Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, Toasted bread, Edam cheese, 3 sides (Jben beldi cheese, La vache qui rit light, Light jam), Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-hollandais",
+        "name": {
+          "fr": "Hollandais",
+          "en": "Dutch",
+          "ar": "هولندي",
+          "es": "Holandés",
+          "pt": "Holandês"
+        },
+        "category": "petit-dejeuner",
+        "price": 50,
+        "description": {
+          "fr": "Boisson chaude, Toast, 2 Œufs, Dinde fumée, Fromage edam, Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, Toast, 2 Eggs, Smoked turkey, Edam cheese, Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-espagnol",
+        "name": {
+          "fr": "Espagnol",
+          "en": "Spanish",
+          "ar": "إسباني",
+          "es": "Español",
+          "pt": "Espanhol"
+        },
+        "category": "petit-dejeuner",
+        "price": 55,
+        "description": {
+          "fr": "Boisson chaude, Pain grillé, Purée tomate, Fromage manchego, Huile d'olive, Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, Toasted bread, Tomato purée, Manchego cheese, Olive oil, Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-classic",
+        "name": {
+          "fr": "Classic",
+          "en": "Classic",
+          "ar": "كلاسيك",
+          "es": "Clásico",
+          "pt": "Clássico"
+        },
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": {
+          "fr": "Boisson chaude, Pain, Omelette Fromage, Jben beldi, Olive, Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot drink, Bread, Cheese omelette, Jben beldi cheese, Olives, Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-dejeuner-enfants",
+        "name": {
+          "fr": "Déjeuner enfants",
+          "en": "Kids' breakfast",
+          "ar": "فطور الأطفال",
+          "es": "Desayuno infantil",
+          "pt": "Pequeno-almoço infantil"
+        },
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": {
+          "fr": "Chocolat chaud, Corn-flakes, Pain au chocolat, Jus d'orange, Eau minérale. · Servi jusqu'à 14h",
+          "en": "Hot chocolate, Corn flakes, Pain au chocolat, Orange juice, Mineral water. · Served until 2 pm"
+        },
+        "available": true
+      },
+      {
+        "id": "a-la-carte-toast-fromage",
+        "name": {
+          "fr": "Toast au fromage",
+          "en": "Cheese toast",
+          "ar": "توست بالجبن",
+          "es": "Tostada de queso",
+          "pt": "Torrada de queijo"
+        },
+        "category": "a-la-carte",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-toast-fromage-dinde",
+        "name": {
+          "fr": "Toast au fromage dinde",
+          "en": "Turkey & cheese toast",
+          "ar": "توست بالجبن والديك الرومي",
+          "es": "Tostada de queso y pavo",
+          "pt": "Torrada de queijo e peru"
+        },
+        "category": "a-la-carte",
+        "price": 24,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-toast-maison",
+        "name": {
+          "fr": "Toast maison, œufs, fromage edam, dinde fumée",
+          "en": "House toast, eggs, edam cheese, smoked turkey",
+          "ar": "توست البيت: بيض، جبن إيدام، ديك رومي مدخن",
+          "es": "Tostada de la casa, huevos, queso edam, pavo ahumado",
+          "pt": "Torrada da casa, ovos, queijo edam, peru fumado"
+        },
+        "category": "a-la-carte",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-croque-fromage",
+        "name": {
+          "fr": "Croque au fromage",
+          "en": "Cheese croque",
+          "ar": "كروك بالجبن",
+          "es": "Croque de queso",
+          "pt": "Croque de queijo"
+        },
+        "category": "a-la-carte",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-croque-fromage-dinde",
+        "name": {
+          "fr": "Croque au fromage dinde",
+          "en": "Turkey & cheese croque",
+          "ar": "كروك بالجبن والديك الرومي",
+          "es": "Croque de queso y pavo",
+          "pt": "Croque de queijo e peru"
+        },
+        "category": "a-la-carte",
+        "price": 32,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-tajine-khlie-1-oeuf",
+        "name": {
+          "fr": "Tajine aux khlie avec 1 œuf",
+          "en": "Khlie tajine with 1 egg",
+          "ar": "طاجين بالخليع مع بيضة",
+          "es": "Tajín de khlie con 1 huevo",
+          "pt": "Tajine de khlie com 1 ovo"
+        },
+        "category": "a-la-carte",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-tajine-khlie-2-oeufs",
+        "name": {
+          "fr": "Tajine aux khlie avec 2 œufs",
+          "en": "Khlie tajine with 2 eggs",
+          "ar": "طاجين بالخليع مع بيضتين",
+          "es": "Tajín de khlie con 2 huevos",
+          "pt": "Tajine de khlie com 2 ovos"
+        },
+        "category": "a-la-carte",
+        "price": 40,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-baghrir-miel",
+        "name": {
+          "fr": "Baghrir avec miel",
+          "en": "Baghrir with honey",
+          "ar": "بغرير بالعسل",
+          "es": "Baghrir con miel",
+          "pt": "Baghrir com mel"
+        },
+        "category": "a-la-carte",
+        "price": 20,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-baghrir-amlou-banane",
+        "name": {
+          "fr": "Baghrir avec amlou, banane",
+          "en": "Baghrir with amlou, banana",
+          "ar": "بغرير بأملو وموز",
+          "es": "Baghrir con amlou y plátano",
+          "pt": "Baghrir com amlou e banana"
+        },
+        "category": "a-la-carte",
+        "price": 26,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-1-oeuf-plat",
+        "name": {
+          "fr": "1 œuf au plat",
+          "en": "1 fried egg",
+          "ar": "بيضة مقلية",
+          "es": "1 huevo frito",
+          "pt": "1 ovo estrelado"
+        },
+        "category": "a-la-carte",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-2-oeufs-plat",
+        "name": {
+          "fr": "2 œufs au plat",
+          "en": "2 fried eggs",
+          "ar": "بيضتان مقليتان",
+          "es": "2 huevos fritos",
+          "pt": "2 ovos estrelados"
+        },
+        "category": "a-la-carte",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-omelette-nature",
+        "name": {
+          "fr": "Omelette nature",
+          "en": "Plain omelette",
+          "ar": "أومليت عادي",
+          "es": "Tortilla natural",
+          "pt": "Omelete simples"
+        },
+        "category": "a-la-carte",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-omelette-fromage",
+        "name": {
+          "fr": "Omelette aux fromage",
+          "en": "Cheese omelette",
+          "ar": "أومليت بالجبن",
+          "es": "Tortilla de queso",
+          "pt": "Omelete de queijo"
+        },
+        "category": "a-la-carte",
+        "price": 22,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-omelette-fromage-dinde",
+        "name": {
+          "fr": "Omelette aux fromage dinde",
+          "en": "Turkey & cheese omelette",
+          "ar": "أومليت بالجبن والديك الرومي",
+          "es": "Tortilla de queso y pavo",
+          "pt": "Omelete de queijo e peru"
+        },
+        "category": "a-la-carte",
+        "price": 34,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-omelette-fromage-champignons",
+        "name": {
+          "fr": "Omelette aux fromage champignons",
+          "en": "Cheese & mushroom omelette",
+          "ar": "أومليت بالجبن والفطر",
+          "es": "Tortilla de queso y champiñones",
+          "pt": "Omelete de queijo e cogumelos"
+        },
+        "category": "a-la-carte",
+        "price": 40,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-omelette-legumes",
+        "name": {
+          "fr": "Omelette légumes",
+          "en": "Vegetable omelette",
+          "ar": "أومليت بالخضر",
+          "es": "Tortilla de verduras",
+          "pt": "Omelete de legumes"
+        },
+        "category": "a-la-carte",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "a-la-carte-omelette-ail-persil",
+        "name": {
+          "fr": "Omelette à l'ail et au persil",
+          "en": "Garlic & parsley omelette",
+          "ar": "أومليت بالثوم والمعدنوس",
+          "es": "Tortilla de ajo y perejil",
+          "pt": "Omelete de alho e salsa"
+        },
+        "category": "a-la-carte",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "supplements-amlou",
+        "name": {
+          "fr": "Amlou",
+          "en": "Amlou",
+          "ar": "أملو",
+          "es": "Amlou",
+          "pt": "Amlou"
+        },
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-confiture",
+        "name": {
+          "fr": "Confiture",
+          "en": "Jam",
+          "ar": "مربى",
+          "es": "Mermelada",
+          "pt": "Doce"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-miel",
+        "name": {
+          "fr": "Miel",
+          "en": "Honey",
+          "ar": "عسل",
+          "es": "Miel",
+          "pt": "Mel"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-beurre",
+        "name": {
+          "fr": "Beurre",
+          "en": "Butter",
+          "ar": "زبدة",
+          "es": "Mantequilla",
+          "pt": "Manteiga"
+        },
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-jben-arabi",
+        "name": {
+          "fr": "Jben arabi",
+          "en": "Jben arabi cheese",
+          "ar": "جبن عربي",
+          "es": "Queso jben arabi",
+          "pt": "Queijo jben arabi"
+        },
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-nutella",
+        "name": {
+          "fr": "Nutella",
+          "en": "Nutella",
+          "ar": "نوتيلا",
+          "es": "Nutella",
+          "pt": "Nutella"
+        },
+        "category": "supplements",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "supplements-vache-qui-rit",
+        "name": {
+          "fr": "La vache qui rit",
+          "en": "La vache qui rit",
+          "ar": "البقرة الضاحكة",
+          "es": "La vache qui rit",
+          "pt": "La vache qui rit"
+        },
+        "category": "supplements",
+        "price": 3,
+        "available": true
+      },
+      {
+        "id": "supplements-kiri",
+        "name": {
+          "fr": "Kiri",
+          "en": "Kiri",
+          "ar": "كيري",
+          "es": "Kiri",
+          "pt": "Kiri"
+        },
+        "category": "supplements",
+        "price": 4,
+        "available": true
+      },
+      {
+        "id": "supplements-huile-olive",
+        "name": {
+          "fr": "Huile d'olive",
+          "en": "Olive oil",
+          "ar": "زيت الزيتون",
+          "es": "Aceite de oliva",
+          "pt": "Azeite"
+        },
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-luncheon",
+        "name": {
+          "fr": "Luncheon (chef)",
+          "en": "Luncheon meat (chef)",
+          "ar": "لانشون (الشيف)",
+          "es": "Fiambre luncheon (chef)",
+          "pt": "Fiambre luncheon (chef)"
+        },
+        "category": "supplements",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "supplements-dinde-fumee",
+        "name": {
+          "fr": "Dinde fumée",
+          "en": "Smoked turkey",
+          "ar": "ديك رومي مدخن",
+          "es": "Pavo ahumado",
+          "pt": "Peru fumado"
+        },
+        "category": "supplements",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "supplements-oeuf",
+        "name": {
+          "fr": "Œuf",
+          "en": "Egg",
+          "ar": "بيضة",
+          "es": "Huevo",
+          "pt": "Ovo"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-fromage-edam",
+        "name": {
+          "fr": "Fromage edam",
+          "en": "Edam cheese",
+          "ar": "جبن إيدام",
+          "es": "Queso edam",
+          "pt": "Queijo edam"
+        },
+        "category": "supplements",
+        "price": 9,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-normal",
+        "name": {
+          "fr": "Pain normal",
+          "en": "Regular bread",
+          "ar": "خبز عادي",
+          "es": "Pan normal",
+          "pt": "Pão normal"
+        },
+        "category": "supplements",
+        "price": 3,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-complet",
+        "name": {
+          "fr": "Pain complet",
+          "en": "Wholemeal bread",
+          "ar": "خبز كامل",
+          "es": "Pan integral",
+          "pt": "Pão integral"
+        },
+        "category": "supplements",
+        "price": 4,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-cereales",
+        "name": {
+          "fr": "Pain céréales",
+          "en": "Multigrain bread",
+          "ar": "خبز الحبوب",
+          "es": "Pan de cereales",
+          "pt": "Pão de cereais"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-makla",
+        "name": {
+          "fr": "Pain makla",
+          "en": "Makla bread",
+          "ar": "خبز المقلة",
+          "es": "Pan makla",
+          "pt": "Pão makla"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-toast",
+        "name": {
+          "fr": "Toast",
+          "en": "Toast",
+          "ar": "توست",
+          "es": "Tostada",
+          "pt": "Torrada"
+        },
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-harcha",
+        "name": {
+          "fr": "Harcha",
+          "en": "Harcha",
+          "ar": "حرشة",
+          "es": "Harcha",
+          "pt": "Harcha"
+        },
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-rghaif",
+        "name": {
+          "fr": "Rghaïf",
+          "en": "Rghaif",
+          "ar": "رغايف",
+          "es": "Rghaif",
+          "pt": "Rghaif"
+        },
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-baghrir",
+        "name": {
+          "fr": "Baghrir",
+          "en": "Baghrir",
+          "ar": "بغرير",
+          "es": "Baghrir",
+          "pt": "Baghrir"
+        },
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-thon",
+        "name": {
+          "fr": "Thon",
+          "en": "Tuna",
+          "ar": "طون",
+          "es": "Atún",
+          "pt": "Atum"
+        },
+        "category": "supplements",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "supplements-avocat",
+        "name": {
+          "fr": "Avocat",
+          "en": "Avocado",
+          "ar": "أفوكادو",
+          "es": "Aguacate",
+          "pt": "Abacate"
+        },
+        "category": "supplements",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "supplements-leban",
+        "name": {
+          "fr": "Leban",
+          "en": "Leben (buttermilk)",
+          "ar": "لبن",
+          "es": "Leben (suero de leche)",
+          "pt": "Leben (leitelho)"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-dattes",
+        "name": {
+          "fr": "Dattes (3)",
+          "en": "Dates (3)",
+          "ar": "تمر (3)",
+          "es": "Dátiles (3)",
+          "pt": "Tâmaras (3)"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-chebakia",
+        "name": {
+          "fr": "Chebakia (2)",
+          "en": "Chebakia (2)",
+          "ar": "شباكية (2)",
+          "es": "Chebakia (2)",
+          "pt": "Chebakia (2)"
+        },
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boissons-cafe-noir",
+        "name": {
+          "fr": "Café noir",
+          "en": "Black coffee",
+          "ar": "قهوة سوداء",
+          "es": "Café solo",
+          "pt": "Café preto"
+        },
+        "category": "boissons",
+        "price": 15,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-nespresso",
+        "name": {
+          "fr": "Nespresso",
+          "en": "Nespresso",
+          "ar": "نسبريسو",
+          "es": "Nespresso",
+          "pt": "Nespresso"
+        },
+        "category": "boissons",
+        "price": 18,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-cafe-au-lait",
+        "name": {
+          "fr": "Café au lait",
+          "en": "Coffee with milk",
+          "ar": "قهوة بالحليب",
+          "es": "Café con leche",
+          "pt": "Café com leite"
+        },
+        "category": "boissons",
+        "price": 16,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-nescafe",
+        "name": {
+          "fr": "Nescafé",
+          "en": "Nescafé",
+          "ar": "نسكافي",
+          "es": "Nescafé",
+          "pt": "Nescafé"
+        },
+        "category": "boissons",
+        "price": 16,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-nespresso-au-lait",
+        "name": {
+          "fr": "Nespresso au lait",
+          "en": "Nespresso with milk",
+          "ar": "نسبريسو بالحليب",
+          "es": "Nespresso con leche",
+          "pt": "Nespresso com leite"
+        },
+        "category": "boissons",
+        "price": 20,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-double-expresso",
+        "name": {
+          "fr": "Double expresso",
+          "en": "Double espresso",
+          "ar": "إسبريسو مزدوج",
+          "es": "Espresso doble",
+          "pt": "Espresso duplo"
+        },
+        "category": "boissons",
+        "price": 24,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-latte-macchiato",
+        "name": {
+          "fr": "Latte macchiato",
+          "en": "Latte macchiato",
+          "ar": "لاتيه ماكياتو",
+          "es": "Latte macchiato",
+          "pt": "Latte macchiato"
+        },
+        "category": "boissons",
+        "price": 22,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-cappuccino-italien",
+        "name": {
+          "fr": "Cappuccino italien",
+          "en": "Italian cappuccino",
+          "ar": "كابتشينو إيطالي",
+          "es": "Capuchino italiano",
+          "pt": "Cappuccino italiano"
+        },
+        "category": "boissons",
+        "price": 18,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-lait-chaud-froid",
+        "name": {
+          "fr": "Lait chaud/froid",
+          "en": "Hot/cold milk",
+          "ar": "حليب ساخن/بارد",
+          "es": "Leche caliente/fría",
+          "pt": "Leite quente/frio"
+        },
+        "category": "boissons",
+        "price": 14,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-chocolat-chaud",
+        "name": {
+          "fr": "Chocolat chaud",
+          "en": "Hot chocolate",
+          "ar": "شوكولا ساخنة",
+          "es": "Chocolate caliente",
+          "pt": "Chocolate quente"
+        },
+        "category": "boissons",
+        "price": 16,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-the-menthe",
+        "name": {
+          "fr": "Thé à la menthe",
+          "en": "Mint tea",
+          "ar": "أتاي بالنعناع",
+          "es": "Té de menta",
+          "pt": "Chá de hortelã"
+        },
+        "category": "boissons",
+        "price": 14,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-the-noir",
+        "name": {
+          "fr": "Thé noir",
+          "en": "Black tea",
+          "ar": "شاي أسود",
+          "es": "Té negro",
+          "pt": "Chá preto"
+        },
+        "category": "boissons",
+        "price": 14,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-the-americain",
+        "name": {
+          "fr": "Thé américain",
+          "en": "American tea",
+          "ar": "شاي أمريكي",
+          "es": "Té americano",
+          "pt": "Chá americano"
+        },
+        "category": "boissons",
+        "price": 16,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-infusion",
+        "name": {
+          "fr": "Infusion",
+          "en": "Herbal infusion",
+          "ar": "أعشاب مغلية",
+          "es": "Infusión",
+          "pt": "Infusão"
+        },
+        "category": "boissons",
+        "price": 14,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-infusion-au-lait",
+        "name": {
+          "fr": "Infusion au lait",
+          "en": "Infusion with milk",
+          "ar": "أعشاب مغلية بالحليب",
+          "es": "Infusión con leche",
+          "pt": "Infusão com leite"
+        },
+        "category": "boissons",
+        "price": 16,
+        "tags": [
+          {
+            "id": "chaudes",
+            "fr": "Chaudes",
+            "ar": "ساخنة",
+            "en": "Hot",
+            "es": "Calientes",
+            "pt": "Quentes"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-eau-minerale-33cl",
+        "name": {
+          "fr": "Eau minérale 33cl",
+          "en": "Mineral water 33cl",
+          "ar": "ماء معدني 33cl",
+          "es": "Agua mineral 33cl",
+          "pt": "Água mineral 33cl"
+        },
+        "category": "boissons",
+        "price": 5,
+        "tags": [
+          {
+            "id": "fraiches",
+            "fr": "Fraîches",
+            "ar": "باردة",
+            "en": "Cold",
+            "es": "Frías",
+            "pt": "Frescas"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-oulmes-25cl",
+        "name": {
+          "fr": "Oulmès 25cl verre",
+          "en": "Oulmès 25cl (glass bottle)",
+          "ar": "أولماس 25cl زجاجة",
+          "es": "Oulmès 25cl (vidrio)",
+          "pt": "Oulmès 25cl (vidro)"
+        },
+        "category": "boissons",
+        "price": 14,
+        "tags": [
+          {
+            "id": "fraiches",
+            "fr": "Fraîches",
+            "ar": "باردة",
+            "en": "Cold",
+            "es": "Frías",
+            "pt": "Frescas"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-soda-canette",
+        "name": {
+          "fr": "Soda canette",
+          "en": "Canned soda",
+          "ar": "مشروب غازي (علبة)",
+          "es": "Refresco en lata",
+          "pt": "Refrigerante em lata"
+        },
+        "category": "boissons",
+        "price": 13,
+        "tags": [
+          {
+            "id": "fraiches",
+            "fr": "Fraîches",
+            "ar": "باردة",
+            "en": "Cold",
+            "es": "Frías",
+            "pt": "Frescas"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-mojito",
+        "name": {
+          "fr": "Mojito",
+          "en": "Mojito",
+          "ar": "موخيتو",
+          "es": "Mojito",
+          "pt": "Mojito"
+        },
+        "category": "boissons",
+        "price": 35,
+        "tags": [
+          {
+            "id": "fraiches",
+            "fr": "Fraîches",
+            "ar": "باردة",
+            "en": "Cold",
+            "es": "Frías",
+            "pt": "Frescas"
+          }
+        ],
+        "available": true
+      },
+      {
+        "id": "boissons-frappuccino",
+        "name": {
+          "fr": "Frappuccino",
+          "en": "Frappuccino",
+          "ar": "فرابوتشينو",
+          "es": "Frappuccino",
+          "pt": "Frappuccino"
+        },
+        "category": "boissons",
+        "price": 40,
+        "tags": [
+          {
+            "id": "fraiches",
+            "fr": "Fraîches",
+            "ar": "باردة",
+            "en": "Cold",
+            "es": "Frías",
+            "pt": "Frescas"
+          }
+        ],
+        "available": true,
+        "description": {
+          "fr": "Café noir, Lait froid, Crème chantilly, Glaçons, Sauce caramel ou chocolat.",
+          "en": "Black coffee, Cold milk, Whipped cream, Ice, Caramel or chocolate sauce."
+        }
       }
     ]
   }
