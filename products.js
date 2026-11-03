@@ -4675,57 +4675,14 @@ window.CATALOG = {
   menu: {
     "categories": [
       {
-        "id": "petit-dejeuner",
-        "icon": "🥐",
-        "name": {
-          "fr": "Petit-déjeuner",
-          "en": "Breakfast",
-          "ar": "الفطور"
-        }
-      },
-      {
-        "id": "carte",
-        "icon": "🍳",
-        "name": {
-          "fr": "À la carte",
-          "en": "À la carte",
-          "ar": "على الطلب"
-        }
-      },
-      {
-        "id": "supplements",
-        "icon": "➕",
-        "name": {
-          "fr": "Suppléments",
-          "en": "Extras",
-          "ar": "إضافات"
-        }
-      },
-      {
-        "id": "boissons-chaudes",
-        "icon": "☕",
-        "name": {
-          "fr": "Boissons chaudes",
-          "en": "Hot drinks",
-          "ar": "مشروبات ساخنة"
-        }
-      },
-      {
-        "id": "boissons-fraiches",
-        "icon": "🥤",
-        "name": {
-          "fr": "Boissons fraîches",
-          "en": "Cold drinks",
-          "ar": "مشروبات باردة"
-        }
-      },
-      {
         "id": "jus",
         "icon": "🧃",
         "name": {
           "fr": "Jus naturels",
           "en": "Fresh juices",
-          "ar": "عصائر طبيعية"
+          "ar": "عصائر طبيعية",
+          "es": "Zumos naturales",
+          "pt": "Sumos naturais"
         }
       },
       {
@@ -4734,7 +4691,9 @@ window.CATALOG = {
         "name": {
           "fr": "Plats",
           "en": "Main dishes",
-          "ar": "الأطباق"
+          "ar": "الأطباق",
+          "es": "Platos principales",
+          "pt": "Pratos principais"
         }
       },
       {
@@ -4743,7 +4702,9 @@ window.CATALOG = {
         "name": {
           "fr": "Tajines",
           "en": "Tagines",
-          "ar": "الطواجن"
+          "ar": "الطواجن",
+          "es": "Tajines",
+          "pt": "Tajines"
         }
       },
       {
@@ -4751,8 +4712,10 @@ window.CATALOG = {
         "icon": "🥣",
         "name": {
           "fr": "Plats chauds",
-          "en": "Hot soups",
-          "ar": "شوربات ساخنة"
+          "en": "Hot dishes",
+          "ar": "أطباق ساخنة",
+          "es": "Platos calientes",
+          "pt": "Pratos quentes"
         }
       },
       {
@@ -4761,7 +4724,9 @@ window.CATALOG = {
         "name": {
           "fr": "Salades",
           "en": "Salads",
-          "ar": "سلطات"
+          "ar": "سلطات",
+          "es": "Ensaladas",
+          "pt": "Saladas"
         }
       },
       {
@@ -4770,7 +4735,9 @@ window.CATALOG = {
         "name": {
           "fr": "Pizzas",
           "en": "Pizzas",
-          "ar": "بيتزا"
+          "ar": "بيتزا",
+          "es": "Pizzas",
+          "pt": "Pizzas"
         }
       },
       {
@@ -4779,7 +4746,9 @@ window.CATALOG = {
         "name": {
           "fr": "Tacos",
           "en": "Tacos",
-          "ar": "تاكوس"
+          "ar": "تاكوس",
+          "es": "Tacos",
+          "pt": "Tacos"
         }
       },
       {
@@ -4788,7 +4757,9 @@ window.CATALOG = {
         "name": {
           "fr": "Wraps",
           "en": "Wraps",
-          "ar": "راب"
+          "ar": "راب",
+          "es": "Wraps",
+          "pt": "Wraps"
         }
       },
       {
@@ -4797,7 +4768,9 @@ window.CATALOG = {
         "name": {
           "fr": "Sandwiches",
           "en": "Sandwiches",
-          "ar": "سندويتشات"
+          "ar": "سندويتشات",
+          "es": "Sándwiches",
+          "pt": "Sanduíches"
         }
       },
       {
@@ -4806,7 +4779,9 @@ window.CATALOG = {
         "name": {
           "fr": "Burgers",
           "en": "Burgers",
-          "ar": "برغر"
+          "ar": "برغر",
+          "es": "Hamburguesas",
+          "pt": "Hambúrgueres"
         }
       },
       {
@@ -4815,7 +4790,9 @@ window.CATALOG = {
         "name": {
           "fr": "Fast food",
           "en": "Fast food",
-          "ar": "وجبات سريعة"
+          "ar": "وجبات سريعة",
+          "es": "Comida rápida",
+          "pt": "Fast food"
         }
       },
       {
@@ -4824,7 +4801,9 @@ window.CATALOG = {
         "name": {
           "fr": "Pasticcio",
           "en": "Pasticcio",
-          "ar": "باستيتشيو"
+          "ar": "باستيتشيو",
+          "es": "Pasticcio",
+          "pt": "Pasticcio"
         }
       },
       {
@@ -4833,703 +4812,396 @@ window.CATALOG = {
         "name": {
           "fr": "Desserts",
           "en": "Desserts",
-          "ar": "حلويات"
+          "ar": "حلويات",
+          "es": "Postres",
+          "pt": "Sobremesas"
         }
       }
     ],
     "products": [
       {
-        "id": "petit-dejeuner-marocain",
-        "name": "Marocain",
-        "category": "petit-dejeuner",
-        "price": 47,
-        "description": "Boisson chaude, Harcha, Baghrir, Reghayaf, Pain grillé, 5 accompagnements (Jben beldi, Beurre, Miel, Amlou, Confiture), Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-chamali",
-        "name": "Chamali",
-        "category": "petit-dejeuner",
-        "price": 45,
-        "description": "Boisson chaude, Pain, 2 Œufs plat, Jben beldi, La vache qui rit, Luncheon, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-fassi",
-        "name": "Fassi",
-        "category": "petit-dejeuner",
-        "price": 50,
-        "description": "Boisson chaude, Pain, Tajine de khlie aux 2 Œufs, Jus d'orange, Eau minérale, Hssoua. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-francais",
-        "name": "Français",
-        "category": "petit-dejeuner",
-        "price": 45,
-        "description": "Boisson chaude, (Chenik, Petit pain, Croissant / deux choix), 3 accompagnements (La vache qui rit, Confiture, Nutella), Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-light",
-        "name": "Light",
-        "category": "petit-dejeuner",
-        "price": 45,
-        "description": "Boisson chaude, Pain grillé, Fromage edam, 3 accompagnements (Jben beldi, La vache qui rit light, Confiture light), Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-hollandais",
-        "name": "Hollandais",
-        "category": "petit-dejeuner",
-        "price": 50,
-        "description": "Boisson chaude, Toast, 2 Œufs, Dinde fumée, Fromage edam, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-espagnol",
-        "name": "Espagnol",
-        "category": "petit-dejeuner",
-        "price": 55,
-        "description": "Boisson chaude, Pain grillé, Purée tomate, Fromage manchego, Huile d'olive, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-classic",
-        "name": "Classic",
-        "category": "petit-dejeuner",
-        "price": 45,
-        "description": "Boisson chaude, Pain, Omelette Fromage, Jben beldi, Olive, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "petit-dejeuner-dejeuner-enfants",
-        "name": "Déjeuner enfants",
-        "category": "petit-dejeuner",
-        "price": 45,
-        "description": "Chocolat chaud, Corn-flakes, Pain au chocolat, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
-        "available": true
-      },
-      {
-        "id": "carte-toast-aux-fromage",
-        "name": "Toast aux fromage",
-        "category": "carte",
-        "price": 18,
-        "available": true
-      },
-      {
-        "id": "carte-toast-aux-fromage-dinde",
-        "name": "Toast aux fromage dinde",
-        "category": "carte",
-        "price": 24,
-        "available": true
-      },
-      {
-        "id": "carte-toast-maison-ufs-fromage-edam-dinde-fumee",
-        "name": "Toast maison, œufs, fromage edam, dinde fumée",
-        "category": "carte",
-        "price": 30,
-        "available": true
-      },
-      {
-        "id": "carte-croque-aux-fromage",
-        "name": "Croque aux fromage",
-        "category": "carte",
-        "price": 25,
-        "available": true
-      },
-      {
-        "id": "carte-croque-aux-fromage-dinde",
-        "name": "Croque aux fromage dinde",
-        "category": "carte",
-        "price": 32,
-        "available": true
-      },
-      {
-        "id": "carte-tajine-aux-khlie-avec-1-uf",
-        "name": "Tajine aux khlie avec 1 œuf",
-        "category": "carte",
-        "price": 35,
-        "available": true
-      },
-      {
-        "id": "carte-tajine-aux-khlie-avec-2-ufs",
-        "name": "Tajine aux khlie avec 2 œufs",
-        "category": "carte",
-        "price": 40,
-        "available": true
-      },
-      {
-        "id": "carte-baghrir-avec-miel",
-        "name": "Baghrir avec miel",
-        "category": "carte",
-        "price": 20,
-        "available": true
-      },
-      {
-        "id": "carte-baghrir-avec-amlou-banane",
-        "name": "Baghrir avec amlou, banane",
-        "category": "carte",
-        "price": 26,
-        "available": true
-      },
-      {
-        "id": "carte-1-uf-au-plat",
-        "name": "1 œuf au plat",
-        "category": "carte",
-        "price": 12,
-        "available": true
-      },
-      {
-        "id": "carte-2-ufs-au-plat",
-        "name": "2 œufs au plat",
-        "category": "carte",
-        "price": 16,
-        "available": true
-      },
-      {
-        "id": "carte-omelette-nature",
-        "name": "Omelette nature",
-        "category": "carte",
-        "price": 18,
-        "available": true
-      },
-      {
-        "id": "carte-omelette-aux-fromage",
-        "name": "Omelette aux fromage",
-        "category": "carte",
-        "price": 22,
-        "available": true
-      },
-      {
-        "id": "carte-omelette-aux-fromage-dinde",
-        "name": "Omelette aux fromage dinde",
-        "category": "carte",
-        "price": 34,
-        "available": true
-      },
-      {
-        "id": "carte-omelette-aux-fromage-champignons",
-        "name": "Omelette aux fromage champignons",
-        "category": "carte",
-        "price": 40,
-        "available": true
-      },
-      {
-        "id": "carte-omelette-legumes",
-        "name": "Omelette légumes",
-        "category": "carte",
-        "price": 30,
-        "available": true
-      },
-      {
-        "id": "carte-omelette-a-l-ail-et-au-persil",
-        "name": "Omelette à l'ail et au persil",
-        "category": "carte",
-        "price": 25,
-        "available": true
-      },
-      {
-        "id": "supplements-amlou",
-        "name": "Amlou",
-        "category": "supplements",
-        "price": 7,
-        "available": true
-      },
-      {
-        "id": "supplements-confiture",
-        "name": "Confiture",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-miel",
-        "name": "Miel",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-beurre",
-        "name": "Beurre",
-        "category": "supplements",
-        "price": 6,
-        "available": true
-      },
-      {
-        "id": "supplements-jben-arabi",
-        "name": "Jben arabi",
-        "category": "supplements",
-        "price": 7,
-        "available": true
-      },
-      {
-        "id": "supplements-nutella",
-        "name": "Nutella",
-        "category": "supplements",
-        "price": 8,
-        "available": true
-      },
-      {
-        "id": "supplements-la-vache-qui-rit",
-        "name": "La vache qui rit",
-        "category": "supplements",
-        "price": 3,
-        "available": true
-      },
-      {
-        "id": "supplements-kiri",
-        "name": "Kiri",
-        "category": "supplements",
-        "price": 4,
-        "available": true
-      },
-      {
-        "id": "supplements-huile-d-olive",
-        "name": "Huile d'olive",
-        "category": "supplements",
-        "price": 7,
-        "available": true
-      },
-      {
-        "id": "supplements-luncheon-chef",
-        "name": "Luncheon (chef)",
-        "category": "supplements",
-        "price": 10,
-        "available": true
-      },
-      {
-        "id": "supplements-dinde-fumee",
-        "name": "Dinde fumée",
-        "category": "supplements",
-        "price": 8,
-        "available": true
-      },
-      {
-        "id": "supplements-uf",
-        "name": "Œuf",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-fromage-edam",
-        "name": "Fromage edam",
-        "category": "supplements",
-        "price": 9,
-        "available": true
-      },
-      {
-        "id": "supplements-pain-normal",
-        "name": "Pain normal",
-        "category": "supplements",
-        "price": 3,
-        "available": true
-      },
-      {
-        "id": "supplements-pain-complet",
-        "name": "Pain complet",
-        "category": "supplements",
-        "price": 4,
-        "available": true
-      },
-      {
-        "id": "supplements-pain-cereales",
-        "name": "Pain céréales",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-pain-makla",
-        "name": "Pain makla",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-toast",
-        "name": "Toast",
-        "category": "supplements",
-        "price": 6,
-        "available": true
-      },
-      {
-        "id": "supplements-harcha",
-        "name": "Harcha",
-        "category": "supplements",
-        "price": 6,
-        "available": true
-      },
-      {
-        "id": "supplements-rghaif",
-        "name": "Rghaif",
-        "category": "supplements",
-        "price": 7,
-        "available": true
-      },
-      {
-        "id": "supplements-baghrir",
-        "name": "Baghrir",
-        "category": "supplements",
-        "price": 6,
-        "available": true
-      },
-      {
-        "id": "supplements-thon",
-        "name": "Thon",
-        "category": "supplements",
-        "price": 12,
-        "available": true
-      },
-      {
-        "id": "supplements-avocat",
-        "name": "Avocat",
-        "category": "supplements",
-        "price": 15,
-        "available": true
-      },
-      {
-        "id": "supplements-leban",
-        "name": "Leban",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-dattes-3",
-        "name": "Dattes (3)",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "supplements-chebakia-2",
-        "name": "Chebakia (2)",
-        "category": "supplements",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-cafe-noir",
-        "name": "Café noir",
-        "category": "boissons-chaudes",
-        "price": 15,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-nespresso",
-        "name": "Nespresso",
-        "category": "boissons-chaudes",
-        "price": 18,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-cafe-au-lait",
-        "name": "Café au lait",
-        "category": "boissons-chaudes",
-        "price": 16,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-nescafe",
-        "name": "Nescafé",
-        "category": "boissons-chaudes",
-        "price": 16,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-nespresso-au-lait",
-        "name": "Nespresso au lait",
-        "category": "boissons-chaudes",
-        "price": 20,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-double-expresso",
-        "name": "Double expresso",
-        "category": "boissons-chaudes",
-        "price": 24,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-latte-macchiato",
-        "name": "Latte macchiato",
-        "category": "boissons-chaudes",
-        "price": 22,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-cappuccino-italien",
-        "name": "Cappuccino italien",
-        "category": "boissons-chaudes",
-        "price": 18,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-lait-chaud-froid",
-        "name": "Lait chaud/froid",
-        "category": "boissons-chaudes",
-        "price": 14,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-chocolat-chaud",
-        "name": "Chocolat chaud",
-        "category": "boissons-chaudes",
-        "price": 16,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-the-a-la-menthe",
-        "name": "Thé à la menthe",
-        "category": "boissons-chaudes",
-        "price": 14,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-the-noir",
-        "name": "Thé noir",
-        "category": "boissons-chaudes",
-        "price": 14,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-the-americain",
-        "name": "Thé américain",
-        "category": "boissons-chaudes",
-        "price": 16,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-infusion",
-        "name": "Infusion",
-        "category": "boissons-chaudes",
-        "price": 14,
-        "available": true
-      },
-      {
-        "id": "boissons-chaudes-infusion-au-lait",
-        "name": "Infusion au lait",
-        "category": "boissons-chaudes",
-        "price": 16,
-        "available": true
-      },
-      {
-        "id": "boissons-fraiches-eau-minerale-33cl",
-        "name": "Eau minérale 33cl",
-        "category": "boissons-fraiches",
-        "price": 5,
-        "available": true
-      },
-      {
-        "id": "boissons-fraiches-oulmes-25cl-verre",
-        "name": "Oulmes 25cl verre",
-        "category": "boissons-fraiches",
-        "price": 14,
-        "available": true
-      },
-      {
-        "id": "boissons-fraiches-soda-canette",
-        "name": "Soda canette",
-        "category": "boissons-fraiches",
-        "price": 13,
-        "available": true
-      },
-      {
-        "id": "boissons-fraiches-mojito",
-        "name": "Mojito",
-        "category": "boissons-fraiches",
-        "price": 35,
-        "available": true
-      },
-      {
-        "id": "boissons-fraiches-frappuccino",
-        "name": "Frappuccino",
-        "category": "boissons-fraiches",
-        "price": 40,
-        "description": "Café noir, lait froid, crème chantilly, glaçons, sauce caramel ou chocolat.",
-        "available": true
-      },
-      {
         "id": "jus-orange",
-        "name": "Orange",
+        "name": {
+          "fr": "Orange",
+          "en": "Orange",
+          "ar": "برتقال",
+          "es": "Naranja",
+          "pt": "Laranja"
+        },
         "category": "jus",
         "price": 25,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-orange.jpg"
       },
       {
         "id": "jus-carotte-orange",
-        "name": "Carotte & orange",
+        "name": {
+          "fr": "Carotte & orange",
+          "en": "Carrot & orange",
+          "ar": "جزر وبرتقال",
+          "es": "Zanahoria y naranja",
+          "pt": "Cenoura e laranja"
+        },
         "category": "jus",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-carotte-orange.jpg"
       },
       {
         "id": "jus-citron",
-        "name": "Citron",
+        "name": {
+          "fr": "Citron",
+          "en": "Lemon",
+          "ar": "ليمون",
+          "es": "Limón",
+          "pt": "Limão"
+        },
         "category": "jus",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-citron.jpg"
       },
       {
         "id": "jus-mangue",
-        "name": "Mangue",
+        "name": {
+          "fr": "Mangue",
+          "en": "Mango",
+          "ar": "مانجو",
+          "es": "Mango",
+          "pt": "Manga"
+        },
         "category": "jus",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-mangue.jpg"
       },
       {
         "id": "jus-amande-lait",
-        "name": "Amande & lait",
+        "name": {
+          "fr": "Amande & lait",
+          "en": "Almond & milk",
+          "ar": "لوز وحليب",
+          "es": "Almendra y leche",
+          "pt": "Amêndoa e leite"
+        },
         "category": "jus",
         "price": 22,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-amande-lait.jpg"
       },
       {
         "id": "jus-dragon",
-        "name": "Dragon",
+        "name": {
+          "fr": "Dragon",
+          "en": "Dragon fruit",
+          "ar": "فاكهة التنين",
+          "es": "Fruta del dragón",
+          "pt": "Pitaya"
+        },
         "category": "jus",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-dragon.jpg"
       },
       {
         "id": "jus-banane-a-l-orange",
-        "name": "Banane à l'orange",
+        "name": {
+          "fr": "Banane à l'orange",
+          "en": "Banana & orange",
+          "ar": "موز وبرتقال",
+          "es": "Plátano y naranja",
+          "pt": "Banana e laranja"
+        },
         "category": "jus",
         "price": 27,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-banane-a-l-orange.jpg"
       },
       {
         "id": "jus-fraise",
-        "name": "Fraise",
+        "name": {
+          "fr": "Fraise",
+          "en": "Strawberry",
+          "ar": "فراولة",
+          "es": "Fresa",
+          "pt": "Morango"
+        },
         "category": "jus",
         "price": 35,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-fraise.jpg"
       },
       {
         "id": "jus-ananas",
-        "name": "Ananas",
+        "name": {
+          "fr": "Ananas",
+          "en": "Pineapple",
+          "ar": "أناناس",
+          "es": "Piña",
+          "pt": "Ananás"
+        },
         "category": "jus",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-ananas.jpg"
       },
       {
         "id": "jus-avocat",
-        "name": "Avocat",
+        "name": {
+          "fr": "Avocat",
+          "en": "Avocado",
+          "ar": "أفوكادو",
+          "es": "Aguacate",
+          "pt": "Abacate"
+        },
         "category": "jus",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-avocat.jpg"
       },
       {
         "id": "jus-panache-au-lait",
-        "name": "Panaché au lait",
+        "name": {
+          "fr": "Panaché au lait",
+          "en": "Mixed fruit with milk",
+          "ar": "كوكتيل فواكه بالحليب",
+          "es": "Combinado de frutas con leche",
+          "pt": "Sumo misto com leite"
+        },
         "category": "jus",
         "price": 47,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-panache-au-lait.jpg"
       },
       {
         "id": "jus-panache-orange",
-        "name": "Panaché orange",
+        "name": {
+          "fr": "Panaché orange",
+          "en": "Mixed fruit with orange",
+          "ar": "كوكتيل فواكه بالبرتقال",
+          "es": "Combinado de frutas con naranja",
+          "pt": "Sumo misto com laranja"
+        },
         "category": "jus",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-panache-orange.jpg"
       },
       {
         "id": "jus-kiwi",
-        "name": "Kiwi",
+        "name": {
+          "fr": "Kiwi",
+          "en": "Kiwi",
+          "ar": "كيوي",
+          "es": "Kiwi",
+          "pt": "Quivi"
+        },
         "category": "jus",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-kiwi.jpg"
       },
       {
         "id": "jus-citron-gingembre",
-        "name": "Citron & gingembre",
+        "name": {
+          "fr": "Citron & gingembre",
+          "en": "Lemon & ginger",
+          "ar": "ليمون وزنجبيل",
+          "es": "Limón y jengibre",
+          "pt": "Limão e gengibre"
+        },
         "category": "jus",
         "price": 35,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-citron-gingembre.jpg"
       },
       {
         "id": "jus-citron-a-la-menthe",
-        "name": "Citron à la menthe",
+        "name": {
+          "fr": "Citron à la menthe",
+          "en": "Lemon & mint",
+          "ar": "ليمون ونعناع",
+          "es": "Limón y menta",
+          "pt": "Limão e hortelã"
+        },
         "category": "jus",
         "price": 35,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-citron-a-la-menthe.jpg"
       },
       {
         "id": "jus-pomme-orange",
-        "name": "Pomme orange",
+        "name": {
+          "fr": "Pomme orange",
+          "en": "Apple & orange",
+          "ar": "تفاح وبرتقال",
+          "es": "Manzana y naranja",
+          "pt": "Maçã e laranja"
+        },
         "category": "jus",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-pomme-orange.jpg"
       },
       {
         "id": "jus-banane-pomme-au-lait",
-        "name": "Banane & pomme au lait",
+        "name": {
+          "fr": "Banane & pomme au lait",
+          "en": "Banana & apple with milk",
+          "ar": "موز وتفاح بالحليب",
+          "es": "Plátano y manzana con leche",
+          "pt": "Banana e maçã com leite"
+        },
         "category": "jus",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-banane-pomme-au-lait.jpg"
       },
       {
         "id": "jus-banane-pomme-a-l-orange",
-        "name": "Banane & pomme à l'orange",
+        "name": {
+          "fr": "Banane & pomme à l'orange",
+          "en": "Banana & apple with orange",
+          "ar": "موز وتفاح بالبرتقال",
+          "es": "Plátano y manzana con naranja",
+          "pt": "Banana e maçã com laranja"
+        },
         "category": "jus",
         "price": 35,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-banane-pomme-a-l-orange.jpg"
       },
       {
         "id": "jus-framboise",
-        "name": "Framboise",
+        "name": {
+          "fr": "Framboise",
+          "en": "Raspberry",
+          "ar": "توت العليق",
+          "es": "Frambuesa",
+          "pt": "Framboesa"
+        },
         "category": "jus",
         "price": 60,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-framboise.jpg"
       },
       {
         "id": "jus-ananas-mint",
-        "name": "Ananas mint",
+        "name": {
+          "fr": "Ananas mint",
+          "en": "Pineapple & mint",
+          "ar": "أناناس ونعناع",
+          "es": "Piña y menta",
+          "pt": "Ananás e hortelã"
+        },
         "category": "jus",
         "price": 47,
-        "available": true
+        "available": true,
+        "image": "images/menu/jus-ananas-mint.jpg"
       },
       {
         "id": "plats-brochettes-de-poulet",
-        "name": "Brochettes de poulet",
+        "name": {
+          "fr": "Brochettes de poulet",
+          "en": "Chicken skewers",
+          "ar": "أسياخ الدجاج",
+          "es": "Brochetas de pollo",
+          "pt": "Espetadas de frango"
+        },
         "category": "plats",
         "price": 60,
-        "description": "Avec légumes sautés.",
-        "available": true
+        "description": {
+          "fr": "Avec légumes sautés.",
+          "en": "With sautéed vegetables.",
+          "ar": "مع خضر مقلية.",
+          "es": "Con verduras salteadas.",
+          "pt": "Com legumes salteados."
+        },
+        "available": true,
+        "image": "images/menu/plats-brochettes-de-poulet.jpg"
       },
       {
         "id": "plats-emince-de-poulet",
-        "name": "Émincé de poulet",
+        "name": {
+          "fr": "Émincé de poulet",
+          "en": "Sliced chicken",
+          "ar": "شرائح الدجاج",
+          "es": "Pollo laminado",
+          "pt": "Tiras de frango"
+        },
         "category": "plats",
         "price": 80,
-        "description": "Avec champignon et légumes sautés.",
-        "available": true
+        "description": {
+          "fr": "Avec champignon et légumes sautés.",
+          "en": "With mushroom and sautéed vegetables.",
+          "ar": "مع فطر وخضر مقلية.",
+          "es": "Con champiñón y verduras salteadas.",
+          "pt": "Com cogumelo e legumes salteados."
+        },
+        "available": true,
+        "image": "images/menu/plats-emince-de-poulet.jpg"
       },
       {
         "id": "plats-brochettes-de-viande-hachee",
-        "name": "Brochettes de viande hachée",
+        "name": {
+          "fr": "Brochettes de viande hachée",
+          "en": "Minced meat skewers",
+          "ar": "أسياخ اللحم المفروم",
+          "es": "Brochetas de carne picada",
+          "pt": "Espetadas de carne picada"
+        },
         "category": "plats",
         "price": 70,
-        "description": "Avec champignon et légumes sautés.",
-        "available": true
+        "description": {
+          "fr": "Avec champignon et légumes sautés.",
+          "en": "With mushroom and sautéed vegetables.",
+          "ar": "مع فطر وخضر مقلية.",
+          "es": "Con champiñón y verduras salteadas.",
+          "pt": "Com cogumelo e legumes salteados."
+        },
+        "available": true,
+        "image": "images/menu/plats-brochettes-de-viande-hachee.jpg"
       },
       {
         "id": "plats-brochettes-mix",
-        "name": "Brochettes mix",
+        "name": {
+          "fr": "Brochettes mix",
+          "en": "Mixed skewers",
+          "ar": "أسياخ مشكلة",
+          "es": "Brochetas mixtas",
+          "pt": "Espetadas mistas"
+        },
         "category": "plats",
         "price": 67,
-        "description": "Avec légumes sautés.",
-        "available": true
+        "description": {
+          "fr": "Avec légumes sautés.",
+          "en": "With sautéed vegetables.",
+          "ar": "مع خضر مقلية.",
+          "es": "Con verduras salteadas.",
+          "pt": "Com legumes salteados."
+        },
+        "available": true,
+        "image": "images/menu/plats-brochettes-mix.jpg"
       },
       {
         "id": "tajine-tajine-de-viande-aux-pruneaux",
-        "name": "Tajine de viande aux pruneaux",
+        "name": {
+          "fr": "Tajine de viande aux pruneaux",
+          "en": "Meat tagine with prunes",
+          "ar": "طاجين اللحم بالبرقوق",
+          "es": "Tajine de carne con ciruelas pasas",
+          "pt": "Tajine de carne com ameixas"
+        },
         "category": "tajine",
-        "description": "Avec pruneaux et œuf.",
+        "description": {
+          "fr": "Avec pruneaux et œuf.",
+          "en": "With prunes and egg.",
+          "ar": "مع برقوق وبيض.",
+          "es": "Con ciruelas pasas y huevo.",
+          "pt": "Com ameixas e ovo."
+        },
         "available": true,
+        "image": "images/menu/tajine-tajine-de-viande-aux-pruneaux.jpg",
         "options": [
           {
             "label": "1/4 kg",
@@ -5547,564 +5219,1340 @@ window.CATALOG = {
       },
       {
         "id": "tajine-tajine-de-viande-hachee",
-        "name": "Tajine de viande hachée",
+        "name": {
+          "fr": "Tajine de viande hachée",
+          "en": "Minced meat tagine",
+          "ar": "طاجين اللحم المفروم",
+          "es": "Tajine de carne picada",
+          "pt": "Tajine de carne picada"
+        },
         "category": "tajine",
         "price": 65,
-        "description": "Avec tomates et œufs.",
-        "available": true
+        "description": {
+          "fr": "Avec tomates et œufs.",
+          "en": "With tomatoes and eggs.",
+          "ar": "مع طماطم وبيض.",
+          "es": "Con tomates y huevos.",
+          "pt": "Com tomates e ovos."
+        },
+        "available": true,
+        "image": "images/menu/tajine-tajine-de-viande-hachee.jpg"
       },
       {
         "id": "tajine-tajine-de-viande-aux-legumes",
-        "name": "Tajine de viande aux légumes",
+        "name": {
+          "fr": "Tajine de viande aux légumes",
+          "en": "Meat tagine with vegetables",
+          "ar": "طاجين اللحم بالخضر",
+          "es": "Tajine de carne con verduras",
+          "pt": "Tajine de carne com legumes"
+        },
         "category": "tajine",
         "price": 75,
-        "description": "Avec légumes.",
-        "available": true
+        "description": {
+          "fr": "Avec légumes.",
+          "en": "With vegetables.",
+          "ar": "مع خضر.",
+          "es": "Con verduras.",
+          "pt": "Com legumes."
+        },
+        "available": true,
+        "image": "images/menu/tajine-tajine-de-viande-aux-legumes.jpg"
       },
       {
         "id": "tajine-tajine-de-pil-pil",
-        "name": "Tajine de pil pil",
+        "name": {
+          "fr": "Tajine de pil pil",
+          "en": "Pil pil tagine",
+          "ar": "طاجين بيل بيل",
+          "es": "Tajine pil pil",
+          "pt": "Tajine pil pil"
+        },
         "category": "tajine",
         "price": 65,
-        "description": "Avec poisson.",
-        "available": true
+        "description": {
+          "fr": "Avec poisson.",
+          "en": "With fish.",
+          "ar": "مع سمك.",
+          "es": "Con pescado.",
+          "pt": "Com peixe."
+        },
+        "available": true,
+        "image": "images/menu/tajine-tajine-de-pil-pil.jpg"
       },
       {
         "id": "tajine-tajine-de-poulet",
-        "name": "Tajine de poulet",
+        "name": {
+          "fr": "Tajine de poulet",
+          "en": "Chicken tagine",
+          "ar": "طاجين الدجاج",
+          "es": "Tajine de pollo",
+          "pt": "Tajine de frango"
+        },
         "category": "tajine",
         "price": 60,
-        "description": "Avec citron, olives et frites.",
-        "available": true
+        "description": {
+          "fr": "Avec citron, olives et frites.",
+          "en": "With lemon, olives and fries.",
+          "ar": "مع ليمون، زيتون وبطاطس مقلية.",
+          "es": "Con limón, aceitunas y patatas fritas.",
+          "pt": "Com limão, azeitonas e batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/tajine-tajine-de-poulet.jpg"
       },
       {
         "id": "plats-chauds-hrira",
-        "name": "Hrira",
+        "name": {
+          "fr": "Hrira",
+          "en": "Harira soup",
+          "ar": "حريرة",
+          "es": "Sopa harira",
+          "pt": "Sopa harira"
+        },
         "category": "plats-chauds",
         "price": 25,
-        "available": true
+        "available": true,
+        "image": "images/menu/plats-chauds-hrira.jpg"
       },
       {
         "id": "plats-chauds-bisara",
-        "name": "Bisara",
+        "name": {
+          "fr": "Bisara",
+          "en": "Bissara soup",
+          "ar": "بيصارة",
+          "es": "Sopa bissara",
+          "pt": "Sopa bissara"
+        },
         "category": "plats-chauds",
         "price": 25,
-        "available": true
+        "available": true,
+        "image": "images/menu/plats-chauds-bisara.jpg"
       },
       {
         "id": "plats-chauds-hssoua",
-        "name": "Hssoua",
+        "name": {
+          "fr": "Hssoua",
+          "en": "Hssoua",
+          "ar": "حسوة",
+          "es": "Hssoua",
+          "pt": "Hssoua"
+        },
         "category": "plats-chauds",
         "price": 15,
-        "available": true
+        "available": true,
+        "image": "images/menu/plats-chauds-hssoua.jpg"
       },
       {
         "id": "salades-marocaine",
-        "name": "Marocaine",
+        "name": {
+          "fr": "Marocaine",
+          "en": "Moroccan salad",
+          "ar": "سلطة مغربية",
+          "es": "Ensalada marroquí",
+          "pt": "Salada marroquina"
+        },
         "category": "salades",
         "price": 45,
-        "description": "Tomate, salade verte, concombre, oignon, thon.",
-        "available": true
+        "description": {
+          "fr": "Tomate, salade verte, concombre, oignon, thon.",
+          "en": "Tomato, green salad, cucumber, onion, tuna.",
+          "ar": "طماطم، سلطة خضراء، خيار، بصل، تونة.",
+          "es": "Tomate, ensalada verde, pepino, cebolla, atún.",
+          "pt": "Tomate, salada verde, pepino, cebola, atum."
+        },
+        "available": true,
+        "image": "images/menu/salades-marocaine.jpg"
       },
       {
         "id": "salades-nicoise",
-        "name": "Niçoise",
+        "name": {
+          "fr": "Niçoise",
+          "en": "Niçoise salad",
+          "ar": "سلطة نيسواز",
+          "es": "Ensalada niçoise",
+          "pt": "Salada niçoise"
+        },
         "category": "salades",
         "price": 60,
-        "description": "Pomme de terre, haricot vert, tomate cerise, œuf, salade verte, carotte, concombre, betterave, thon, maïs.",
-        "available": true
+        "description": {
+          "fr": "Pomme de terre, haricot vert, tomate cerise, œuf, salade verte, carotte, concombre, betterave, thon, maïs.",
+          "en": "Potato, green beans, cherry tomato, egg, green salad, carrot, cucumber, beetroot, tuna, corn.",
+          "ar": "بطاطس، لوبيا خضراء، طماطم كرزية، بيض، سلطة خضراء، جزر، خيار، شمندر، تونة، ذرة.",
+          "es": "Patata, judías verdes, tomate cherry, huevo, ensalada verde, zanahoria, pepino, remolacha, atún, maíz.",
+          "pt": "Batata, feijão-verde, tomate-cereja, ovo, salada verde, cenoura, pepino, beterraba, atum, milho."
+        },
+        "available": true,
+        "image": "images/menu/salades-nicoise.jpg"
       },
       {
         "id": "salades-cesar",
-        "name": "César",
+        "name": {
+          "fr": "César",
+          "en": "Caesar salad",
+          "ar": "سلطة سيزر",
+          "es": "Ensalada César",
+          "pt": "Salada César"
+        },
         "category": "salades",
         "price": 65,
-        "description": "Poulet, salade verte, fromage parmesan, tomate cerise, croûton de pain.",
-        "available": true
+        "description": {
+          "fr": "Poulet, salade verte, fromage parmesan, tomate cerise, croûton de pain.",
+          "en": "Chicken, green salad, parmesan cheese, cherry tomato, bread croutons.",
+          "ar": "دجاج، سلطة خضراء، جبن بارميزان، طماطم كرزية، قطع خبز محمصة.",
+          "es": "Pollo, ensalada verde, queso parmesano, tomate cherry, crutones de pan.",
+          "pt": "Frango, salada verde, queijo parmesão, tomate-cereja, croutons de pão."
+        },
+        "available": true,
+        "image": "images/menu/salades-cesar.jpg"
       },
       {
         "id": "salades-crevette-avocat",
-        "name": "Crevette avocat",
+        "name": {
+          "fr": "Crevette avocat",
+          "en": "Shrimp & avocado salad",
+          "ar": "سلطة الجمبري والأفوكادو",
+          "es": "Ensalada de gambas y aguacate",
+          "pt": "Salada de camarão e abacate"
+        },
         "category": "salades",
         "price": 70,
-        "description": "Salade verte, tomate cerise, avocat, crevette.",
-        "available": true
+        "description": {
+          "fr": "Salade verte, tomate cerise, avocat, crevette.",
+          "en": "Green salad, cherry tomato, avocado, shrimp.",
+          "ar": "سلطة خضراء، طماطم كرزية، أفوكادو، جمبري.",
+          "es": "Ensalada verde, tomate cherry, aguacate, gambas.",
+          "pt": "Salada verde, tomate-cereja, abacate, camarão."
+        },
+        "available": true,
+        "image": "images/menu/salades-crevette-avocat.jpg"
       },
       {
         "id": "salades-russe",
-        "name": "Russe",
+        "name": {
+          "fr": "Russe",
+          "en": "Russian salad",
+          "ar": "سلطة روسية",
+          "es": "Ensaladilla rusa",
+          "pt": "Salada russa"
+        },
         "category": "salades",
         "price": 45,
-        "description": "Riz, 2 œufs durs, thon, maïs, carotte, pomme de terre.",
-        "available": true
+        "description": {
+          "fr": "Riz, 2 œufs durs, thon, maïs, carotte, pomme de terre.",
+          "en": "Rice, 2 hard-boiled eggs, tuna, corn, carrot, potato.",
+          "ar": "أرز، بيضتان مسلوقتان، تونة، ذرة، جزر، بطاطس.",
+          "es": "Arroz, 2 huevos duros, atún, maíz, zanahoria, patata.",
+          "pt": "Arroz, 2 ovos cozidos, atum, milho, cenoura, batata."
+        },
+        "available": true,
+        "image": "images/menu/salades-russe.jpg"
       },
       {
         "id": "pizza-margherita",
-        "name": "Margherita",
+        "name": {
+          "fr": "Margherita",
+          "en": "Margherita",
+          "ar": "مارغريتا",
+          "es": "Margarita",
+          "pt": "Margherita"
+        },
         "category": "pizza",
         "price": 40,
-        "description": "Crevettes, calamars, poulet, viande hachée, thon, sauce tomate, mozzarella, olives noires.",
-        "available": true
+        "description": {
+          "fr": "Sauce tomate, mozzarella, olives noires.",
+          "en": "Tomato sauce, mozzarella, black olives.",
+          "ar": "صلصة الطماطم، موزاريلا، زيتون أسود.",
+          "es": "Salsa de tomate, mozzarella, aceitunas negras.",
+          "pt": "Molho de tomate, mozzarella, azeitonas pretas."
+        },
+        "available": true,
+        "image": "images/menu/pizza-margherita.jpg"
       },
       {
         "id": "pizza-thon",
-        "name": "Thon",
+        "name": {
+          "fr": "Thon",
+          "en": "Tuna",
+          "ar": "تونة",
+          "es": "Atún",
+          "pt": "Atum"
+        },
         "category": "pizza",
         "price": 45,
-        "description": "Thon, sauce tomate, mozzarella, oignons, olives noires.",
-        "available": true
+        "description": {
+          "fr": "Thon, sauce tomate, mozzarella, oignons, olives noires.",
+          "en": "Tuna, tomato sauce, mozzarella, onions, black olives.",
+          "ar": "تونة، صلصة الطماطم، موزاريلا، بصل، زيتون أسود.",
+          "es": "Atún, salsa de tomate, mozzarella, cebollas, aceitunas negras.",
+          "pt": "Atum, molho de tomate, mozzarella, cebolas, azeitonas pretas."
+        },
+        "available": true,
+        "image": "images/menu/pizza-thon.jpg"
       },
       {
         "id": "pizza-poulet",
-        "name": "Poulet",
+        "name": {
+          "fr": "Poulet",
+          "en": "Chicken",
+          "ar": "دجاج",
+          "es": "Pollo",
+          "pt": "Frango"
+        },
         "category": "pizza",
         "price": 55,
-        "description": "Poulet, sauce tomate, mozzarella, champignons.",
-        "available": true
+        "description": {
+          "fr": "Poulet, sauce tomate, mozzarella, champignons.",
+          "en": "Chicken, tomato sauce, mozzarella, mushrooms.",
+          "ar": "دجاج، صلصة الطماطم، موزاريلا، فطر.",
+          "es": "Pollo, salsa de tomate, mozzarella, champiñones.",
+          "pt": "Frango, molho de tomate, mozzarella, cogumelos."
+        },
+        "available": true,
+        "image": "images/menu/pizza-poulet.jpg"
       },
       {
         "id": "pizza-bolognaise",
-        "name": "Bolognaise",
+        "name": {
+          "fr": "Bolognaise",
+          "en": "Bolognese",
+          "ar": "بولونيز",
+          "es": "Boloñesa",
+          "pt": "Bolonhesa"
+        },
         "category": "pizza",
         "price": 65,
-        "description": "Viande hachée, sauce tomate, mozzarella, olives noires.",
-        "available": true
+        "description": {
+          "fr": "Viande hachée, sauce tomate, mozzarella, olives noires.",
+          "en": "Minced meat, tomato sauce, mozzarella, black olives.",
+          "ar": "لحم مفروم، صلصة الطماطم، موزاريلا، زيتون أسود.",
+          "es": "Carne picada, salsa de tomate, mozzarella, aceitunas negras.",
+          "pt": "Carne picada, molho de tomate, mozzarella, azeitonas pretas."
+        },
+        "available": true,
+        "image": "images/menu/pizza-bolognaise.jpg"
       },
       {
         "id": "pizza-fruits-de-mer",
-        "name": "Fruits de mer",
+        "name": {
+          "fr": "Fruits de mer",
+          "en": "Seafood",
+          "ar": "فواكه البحر",
+          "es": "Mariscos",
+          "pt": "Frutos do mar"
+        },
         "category": "pizza",
         "price": 75,
-        "description": "Crevettes, calamars, sauce tomate, mozzarella, champignons.",
-        "available": true
+        "description": {
+          "fr": "Crevettes, calamars, sauce tomate, mozzarella, champignons.",
+          "en": "Shrimp, squid, tomato sauce, mozzarella, mushrooms.",
+          "ar": "جمبري، كالمار، صلصة الطماطم، موزاريلا، فطر.",
+          "es": "Gambas, calamares, salsa de tomate, mozzarella, champiñones.",
+          "pt": "Camarões, lulas, molho de tomate, mozzarella, cogumelos."
+        },
+        "available": true,
+        "image": "images/menu/pizza-fruits-de-mer.jpg"
       },
       {
         "id": "pizza-4-fromages",
-        "name": "4 fromages",
+        "name": {
+          "fr": "4 fromages",
+          "en": "4 cheeses",
+          "ar": "4 أجبان",
+          "es": "4 quesos",
+          "pt": "4 queijos"
+        },
         "category": "pizza",
         "price": 65,
-        "description": "Fromage rouge, mozzarella, cheddar, parmesan.",
-        "available": true
+        "description": {
+          "fr": "Fromage rouge, mozzarella, cheddar, parmesan.",
+          "en": "Red cheese, mozzarella, cheddar, parmesan.",
+          "ar": "جبن أحمر، موزاريلا، شيدر، بارميزان.",
+          "es": "Queso rojo, mozzarella, cheddar, parmesano.",
+          "pt": "Queijo vermelho, mozzarella, cheddar, parmesão."
+        },
+        "available": true,
+        "image": "images/menu/pizza-4-fromages.jpg"
       },
       {
         "id": "pizza-royal",
-        "name": "Royal",
+        "name": {
+          "fr": "Royal",
+          "en": "Royal",
+          "ar": "رويال",
+          "es": "Royal",
+          "pt": "Royal"
+        },
         "category": "pizza",
         "price": 85,
-        "description": "Viande hachée, sauce tomate, mozzarella, olives noires.",
-        "available": true
+        "description": {
+          "fr": "Viande hachée, sauce tomate, mozzarella, olives noires.",
+          "en": "Minced meat, tomato sauce, mozzarella, black olives.",
+          "ar": "لحم مفروم، صلصة الطماطم، موزاريلا، زيتون أسود.",
+          "es": "Carne picada, salsa de tomate, mozzarella, aceitunas negras.",
+          "pt": "Carne picada, molho de tomate, mozzarella, azeitonas pretas."
+        },
+        "available": true,
+        "image": "images/menu/pizza-royal.jpg"
       },
       {
         "id": "pizza-4-saisons",
-        "name": "4 saisons",
+        "name": {
+          "fr": "4 saisons",
+          "en": "4 seasons",
+          "ar": "4 فصول",
+          "es": "4 estaciones",
+          "pt": "4 estações"
+        },
         "category": "pizza",
         "price": 75,
-        "description": "Thon, sauce tomate, mozzarella, oignons, olives noires.",
-        "available": true
+        "description": {
+          "fr": "Thon, sauce tomate, mozzarella, oignons, olives noires.",
+          "en": "Tuna, tomato sauce, mozzarella, onions, black olives.",
+          "ar": "تونة، صلصة الطماطم، موزاريلا، بصل، زيتون أسود.",
+          "es": "Atún, salsa de tomate, mozzarella, cebollas, aceitunas negras.",
+          "pt": "Atum, molho de tomate, mozzarella, cebolas, azeitonas pretas."
+        },
+        "available": true,
+        "image": "images/menu/pizza-4-saisons.jpg"
       },
       {
         "id": "tacos-poulet",
-        "name": "Poulet",
+        "name": {
+          "fr": "Poulet",
+          "en": "Chicken",
+          "ar": "دجاج",
+          "es": "Pollo",
+          "pt": "Frango"
+        },
         "category": "tacos",
         "price": 55,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-poulet.jpg"
       },
       {
         "id": "tacos-viande-hachee",
-        "name": "Viande hachée",
+        "name": {
+          "fr": "Viande hachée",
+          "en": "Minced meat",
+          "ar": "لحم مفروم",
+          "es": "Carne picada",
+          "pt": "Carne picada"
+        },
         "category": "tacos",
         "price": 65,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-viande-hachee.jpg"
       },
       {
         "id": "tacos-mixte",
-        "name": "Mixte",
+        "name": {
+          "fr": "Mixte",
+          "en": "Mixed",
+          "ar": "مشكل",
+          "es": "Mixto",
+          "pt": "Misto"
+        },
         "category": "tacos",
         "price": 65,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-mixte.jpg"
       },
       {
         "id": "tacos-crispy",
-        "name": "Crispy",
+        "name": {
+          "fr": "Crispy",
+          "en": "Crispy",
+          "ar": "كريسبي",
+          "es": "Crispy",
+          "pt": "Crispy"
+        },
         "category": "tacos",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-crispy.jpg"
       },
       {
         "id": "tacos-nuggets",
-        "name": "Nuggets",
+        "name": {
+          "fr": "Nuggets",
+          "en": "Nuggets",
+          "ar": "ناجتس",
+          "es": "Nuggets",
+          "pt": "Nuggets"
+        },
         "category": "tacos",
         "price": 45,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-nuggets.jpg"
       },
       {
         "id": "tacos-cordon-bleu",
-        "name": "Cordon bleu",
+        "name": {
+          "fr": "Cordon bleu",
+          "en": "Cordon bleu",
+          "ar": "كوردون بلو",
+          "es": "Cordon bleu",
+          "pt": "Cordon bleu"
+        },
         "category": "tacos",
         "price": 60,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-cordon-bleu.jpg"
       },
       {
         "id": "tacos-fruits-de-mer",
-        "name": "Fruits de mer",
+        "name": {
+          "fr": "Fruits de mer",
+          "en": "Seafood",
+          "ar": "فواكه البحر",
+          "es": "Mariscos",
+          "pt": "Frutos do mar"
+        },
         "category": "tacos",
         "price": 65,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-fruits-de-mer.jpg"
       },
       {
         "id": "tacos-royal",
-        "name": "Royal",
+        "name": {
+          "fr": "Royal",
+          "en": "Royal",
+          "ar": "رويال",
+          "es": "Royal",
+          "pt": "Royal"
+        },
         "category": "tacos",
         "price": 70,
-        "available": true
+        "available": true,
+        "image": "images/menu/tacos-royal.jpg"
       },
       {
         "id": "wraps-wrap-cesar",
-        "name": "Wrap César",
+        "name": {
+          "fr": "Wrap César",
+          "en": "Caesar wrap",
+          "ar": "راب سيزر",
+          "es": "Wrap César",
+          "pt": "Wrap César"
+        },
         "category": "wraps",
         "price": 45,
-        "description": "Tortilla, poulet pané, laitue, edam, sauce, frites.",
-        "available": true
+        "description": {
+          "fr": "Tortilla, poulet pané, laitue, edam, sauce, frites.",
+          "en": "Tortilla, breaded chicken, lettuce, edam, sauce, fries.",
+          "ar": "تورتيلا، دجاج مقرمش، خس، إيدام، صلصة، بطاطس مقلية.",
+          "es": "Tortilla, pollo empanado, lechuga, edam, salsa, patatas fritas.",
+          "pt": "Tortilla, frango panado, alface, edam, molho, batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/wraps-wrap-cesar.jpg"
       },
       {
         "id": "wraps-wrap-avocat-charcuterie",
-        "name": "Wrap avocat charcuterie",
+        "name": {
+          "fr": "Wrap avocat charcuterie",
+          "en": "Avocado & cold cuts wrap",
+          "ar": "راب أفوكادو ولحوم باردة",
+          "es": "Wrap de aguacate y fiambres",
+          "pt": "Wrap de abacate e charcutaria"
+        },
         "category": "wraps",
         "price": 45,
-        "description": "Avocat, tortilla, œuf omelette, cheddar, charcuterie, sauce, frites.",
-        "available": true
+        "description": {
+          "fr": "Avocat, tortilla, œuf omelette, cheddar, charcuterie, sauce, frites.",
+          "en": "Avocado, tortilla, omelette egg, cheddar, cold cuts, sauce, fries.",
+          "ar": "أفوكادو، تورتيلا، بيض أومليت، شيدر، لحوم باردة، صلصة، بطاطس مقلية.",
+          "es": "Aguacate, tortilla, tortilla de huevo, cheddar, fiambres, salsa, patatas fritas.",
+          "pt": "Abacate, tortilla, ovo de omelete, cheddar, charcutaria, molho, batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/wraps-wrap-avocat-charcuterie.jpg"
       },
       {
         "id": "wraps-wrap-poulet",
-        "name": "Wrap poulet",
+        "name": {
+          "fr": "Wrap poulet",
+          "en": "Chicken wrap",
+          "ar": "راب الدجاج",
+          "es": "Wrap de pollo",
+          "pt": "Wrap de frango"
+        },
         "category": "wraps",
         "price": 45,
-        "description": "Tortilla + poulet, laitue, tomate, fromage edam, sauce, frites.",
-        "available": true
+        "description": {
+          "fr": "Tortilla + poulet, laitue, tomate, fromage edam, sauce, frites.",
+          "en": "Tortilla + chicken, lettuce, tomato, edam cheese, sauce, fries.",
+          "ar": "تورتيلا + دجاج، خس، طماطم، جبن إيدام، صلصة، بطاطس مقلية.",
+          "es": "Tortilla + pollo, lechuga, tomate, queso edam, salsa, patatas fritas.",
+          "pt": "Tortilla + frango, alface, tomate, queijo edam, molho, batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/wraps-wrap-poulet.jpg"
       },
       {
         "id": "sandwiches-poulet",
-        "name": "Poulet",
+        "name": {
+          "fr": "Poulet",
+          "en": "Chicken",
+          "ar": "دجاج",
+          "es": "Pollo",
+          "pt": "Frango"
+        },
         "category": "sandwiches",
         "price": 45,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-poulet.jpg"
       },
       {
         "id": "sandwiches-charcuterie",
-        "name": "Charcuterie",
+        "name": {
+          "fr": "Charcuterie",
+          "en": "Cold cuts",
+          "ar": "لحوم باردة",
+          "es": "Fiambres",
+          "pt": "Charcutaria"
+        },
         "category": "sandwiches",
         "price": 35,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-charcuterie.jpg"
       },
       {
         "id": "sandwiches-viande-hachee",
-        "name": "Viande hachée",
+        "name": {
+          "fr": "Viande hachée",
+          "en": "Minced meat",
+          "ar": "لحم مفروم",
+          "es": "Carne picada",
+          "pt": "Carne picada"
+        },
         "category": "sandwiches",
         "price": 50,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-viande-hachee.jpg"
       },
       {
         "id": "sandwiches-fruit-de-mer",
-        "name": "Fruit de mer",
+        "name": {
+          "fr": "Fruit de mer",
+          "en": "Seafood",
+          "ar": "فواكه البحر",
+          "es": "Mariscos",
+          "pt": "Frutos do mar"
+        },
         "category": "sandwiches",
         "price": 70,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-fruit-de-mer.jpg"
       },
       {
         "id": "sandwiches-mixte",
-        "name": "Mixte",
+        "name": {
+          "fr": "Mixte",
+          "en": "Mixed",
+          "ar": "مشكل",
+          "es": "Mixto",
+          "pt": "Misto"
+        },
         "category": "sandwiches",
         "price": 65,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-mixte.jpg"
       },
       {
         "id": "sandwiches-thon",
-        "name": "Thon",
+        "name": {
+          "fr": "Thon",
+          "en": "Tuna",
+          "ar": "تونة",
+          "es": "Atún",
+          "pt": "Atum"
+        },
         "category": "sandwiches",
         "price": 35,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-thon.jpg"
       },
       {
         "id": "sandwiches-crispy",
-        "name": "Crispy",
+        "name": {
+          "fr": "Crispy",
+          "en": "Crispy",
+          "ar": "كريسبي",
+          "es": "Crispy",
+          "pt": "Crispy"
+        },
         "category": "sandwiches",
         "price": 40,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-crispy.jpg"
       },
       {
         "id": "sandwiches-cordon-bleu",
-        "name": "Cordon bleu",
+        "name": {
+          "fr": "Cordon bleu",
+          "en": "Cordon bleu",
+          "ar": "كوردون بلو",
+          "es": "Cordon bleu",
+          "pt": "Cordon bleu"
+        },
         "category": "sandwiches",
         "price": 45,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-cordon-bleu.jpg"
       },
       {
         "id": "sandwiches-merguez",
-        "name": "Merguez",
+        "name": {
+          "fr": "Merguez",
+          "en": "Merguez",
+          "ar": "مرقاز",
+          "es": "Merguez",
+          "pt": "Merguez"
+        },
         "category": "sandwiches",
         "price": 45,
-        "description": "Servi avec frites et sauce.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites et sauce.",
+          "en": "Served with fries and sauce.",
+          "ar": "تقدم مع البطاطس المقلية والصلصة.",
+          "es": "Se sirve con patatas fritas y salsa.",
+          "pt": "Servido com batatas fritas e molho."
+        },
+        "available": true,
+        "image": "images/menu/sandwiches-merguez.jpg"
       },
       {
         "id": "burgers-cheese-burger",
-        "name": "Cheese burger",
+        "name": {
+          "fr": "Cheese burger",
+          "en": "Cheeseburger",
+          "ar": "تشيز برغر",
+          "es": "Cheeseburger",
+          "pt": "Cheeseburger"
+        },
         "category": "burgers",
         "price": 60,
-        "description": "Œufs, cheddar, salade verte, viande hachée, sauce.",
-        "available": true
+        "description": {
+          "fr": "Œufs, cheddar, salade verte, viande hachée, sauce.",
+          "en": "Eggs, cheddar, green salad, minced meat, sauce.",
+          "ar": "بيض، شيدر، سلطة خضراء، لحم مفروم، صلصة.",
+          "es": "Huevos, cheddar, ensalada verde, carne picada, salsa.",
+          "pt": "Ovos, cheddar, salada verde, carne picada, molho."
+        },
+        "available": true,
+        "image": "images/menu/burgers-cheese-burger.jpg"
       },
       {
         "id": "burgers-double-burger",
-        "name": "Double burger",
+        "name": {
+          "fr": "Double burger",
+          "en": "Double burger",
+          "ar": "دبل برغر",
+          "es": "Hamburguesa doble",
+          "pt": "Hambúrguer duplo"
+        },
         "category": "burgers",
         "price": 70,
-        "description": "Œufs, double cheddar, salade verte, double viande hachée, sauce.",
-        "available": true
+        "description": {
+          "fr": "Œufs, double cheddar, salade verte, double viande hachée, sauce.",
+          "en": "Eggs, double cheddar, green salad, double minced meat, sauce.",
+          "ar": "بيض، دبل شيدر، سلطة خضراء، ضعف اللحم المفروم، صلصة.",
+          "es": "Huevos, doble cheddar, ensalada verde, doble carne picada, salsa.",
+          "pt": "Ovos, duplo cheddar, salada verde, dupla carne picada, molho."
+        },
+        "available": true,
+        "image": "images/menu/burgers-double-burger.jpg"
       },
       {
         "id": "burgers-chicken-burger",
-        "name": "Chicken burger",
+        "name": {
+          "fr": "Chicken burger",
+          "en": "Chicken burger",
+          "ar": "تشيكن برغر",
+          "es": "Hamburguesa de pollo",
+          "pt": "Hambúrguer de frango"
+        },
         "category": "burgers",
         "price": 55,
-        "description": "Cheddar, salade verte, poulet, sauce.",
-        "available": true
+        "description": {
+          "fr": "Cheddar, salade verte, poulet, sauce.",
+          "en": "Cheddar, green salad, chicken, sauce.",
+          "ar": "شيدر، سلطة خضراء، دجاج، صلصة.",
+          "es": "Cheddar, ensalada verde, pollo, salsa.",
+          "pt": "Cheddar, salada verde, frango, molho."
+        },
+        "available": true,
+        "image": "images/menu/burgers-chicken-burger.jpg"
       },
       {
         "id": "fast-food-fromage",
-        "name": "Fromage",
+        "name": {
+          "fr": "Fromage",
+          "en": "Cheese",
+          "ar": "جبن",
+          "es": "Queso",
+          "pt": "Queijo"
+        },
         "category": "fast-food",
         "price": 35,
-        "description": "Servi avec frites.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites.",
+          "en": "Served with fries.",
+          "ar": "تقدم مع البطاطس المقلية.",
+          "es": "Se sirve con patatas fritas.",
+          "pt": "Servido com batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/fast-food-fromage.jpg"
       },
       {
         "id": "fast-food-dinde-fumee",
-        "name": "Dinde fumée",
+        "name": {
+          "fr": "Dinde fumée",
+          "en": "Smoked turkey",
+          "ar": "ديك رومي مدخن",
+          "es": "Pavo ahumado",
+          "pt": "Peru fumado"
+        },
         "category": "fast-food",
         "price": 40,
-        "description": "Servi avec frites.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites.",
+          "en": "Served with fries.",
+          "ar": "تقدم مع البطاطس المقلية.",
+          "es": "Se sirve con patatas fritas.",
+          "pt": "Servido com batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/fast-food-dinde-fumee.jpg"
       },
       {
         "id": "fast-food-thon",
-        "name": "Thon",
+        "name": {
+          "fr": "Thon",
+          "en": "Tuna",
+          "ar": "تونة",
+          "es": "Atún",
+          "pt": "Atum"
+        },
         "category": "fast-food",
         "price": 40,
-        "description": "Servi avec frites.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites.",
+          "en": "Served with fries.",
+          "ar": "تقدم مع البطاطس المقلية.",
+          "es": "Se sirve con patatas fritas.",
+          "pt": "Servido com batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/fast-food-thon.jpg"
       },
       {
         "id": "fast-food-mixte",
-        "name": "Mixte",
+        "name": {
+          "fr": "Mixte",
+          "en": "Mixed",
+          "ar": "مشكل",
+          "es": "Mixto",
+          "pt": "Misto"
+        },
         "category": "fast-food",
         "price": 60,
-        "description": "Servi avec frites.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites.",
+          "en": "Served with fries.",
+          "ar": "تقدم مع البطاطس المقلية.",
+          "es": "Se sirve con patatas fritas.",
+          "pt": "Servido com batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/fast-food-mixte.jpg"
       },
       {
         "id": "fast-food-poulet",
-        "name": "Poulet",
+        "name": {
+          "fr": "Poulet",
+          "en": "Chicken",
+          "ar": "دجاج",
+          "es": "Pollo",
+          "pt": "Frango"
+        },
         "category": "fast-food",
         "price": 50,
-        "description": "Servi avec frites.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites.",
+          "en": "Served with fries.",
+          "ar": "تقدم مع البطاطس المقلية.",
+          "es": "Se sirve con patatas fritas.",
+          "pt": "Servido com batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/fast-food-poulet.jpg"
       },
       {
         "id": "fast-food-crevette",
-        "name": "Crevette",
+        "name": {
+          "fr": "Crevette",
+          "en": "Shrimp",
+          "ar": "جمبري",
+          "es": "Gambas",
+          "pt": "Camarão"
+        },
         "category": "fast-food",
         "price": 65,
-        "description": "Servi avec frites.",
-        "available": true
+        "description": {
+          "fr": "Servi avec frites.",
+          "en": "Served with fries.",
+          "ar": "تقدم مع البطاطس المقلية.",
+          "es": "Se sirve con patatas fritas.",
+          "pt": "Servido com batatas fritas."
+        },
+        "available": true,
+        "image": "images/menu/fast-food-crevette.jpg"
       },
       {
         "id": "pasticcio-poulet",
-        "name": "Poulet",
+        "name": {
+          "fr": "Poulet",
+          "en": "Chicken",
+          "ar": "دجاج",
+          "es": "Pollo",
+          "pt": "Frango"
+        },
         "category": "pasticcio",
         "price": 50,
-        "description": "Frites ou penne.",
-        "available": true
+        "description": {
+          "fr": "Frites ou penne.",
+          "en": "Fries or penne.",
+          "ar": "بطاطس مقلية أو بيني.",
+          "es": "Patatas fritas o penne.",
+          "pt": "Batatas fritas ou penne."
+        },
+        "available": true,
+        "image": "images/menu/pasticcio-poulet.jpg"
       },
       {
         "id": "pasticcio-charcuterie",
-        "name": "Charcuterie",
+        "name": {
+          "fr": "Charcuterie",
+          "en": "Cold cuts",
+          "ar": "لحوم باردة",
+          "es": "Fiambres",
+          "pt": "Charcutaria"
+        },
         "category": "pasticcio",
         "price": 40,
-        "description": "Frites ou penne.",
-        "available": true
+        "description": {
+          "fr": "Frites ou penne.",
+          "en": "Fries or penne.",
+          "ar": "بطاطس مقلية أو بيني.",
+          "es": "Patatas fritas o penne.",
+          "pt": "Batatas fritas ou penne."
+        },
+        "available": true,
+        "image": "images/menu/pasticcio-charcuterie.jpg"
       },
       {
         "id": "pasticcio-viande-hachee",
-        "name": "Viande hachée",
+        "name": {
+          "fr": "Viande hachée",
+          "en": "Minced meat",
+          "ar": "لحم مفروم",
+          "es": "Carne picada",
+          "pt": "Carne picada"
+        },
         "category": "pasticcio",
         "price": 60,
-        "description": "Frites ou penne.",
-        "available": true
+        "description": {
+          "fr": "Frites ou penne.",
+          "en": "Fries or penne.",
+          "ar": "بطاطس مقلية أو بيني.",
+          "es": "Patatas fritas o penne.",
+          "pt": "Batatas fritas ou penne."
+        },
+        "available": true,
+        "image": "images/menu/pasticcio-viande-hachee.jpg"
       },
       {
         "id": "pasticcio-fruit-de-mer",
-        "name": "Fruit de mer",
+        "name": {
+          "fr": "Fruit de mer",
+          "en": "Seafood",
+          "ar": "فواكه البحر",
+          "es": "Mariscos",
+          "pt": "Frutos do mar"
+        },
         "category": "pasticcio",
         "price": 70,
-        "description": "Frites ou penne.",
-        "available": true
+        "description": {
+          "fr": "Frites ou penne.",
+          "en": "Fries or penne.",
+          "ar": "بطاطس مقلية أو بيني.",
+          "es": "Patatas fritas o penne.",
+          "pt": "Batatas fritas ou penne."
+        },
+        "available": true,
+        "image": "images/menu/pasticcio-fruit-de-mer.jpg"
       },
       {
         "id": "pasticcio-mixte",
-        "name": "Mixte",
+        "name": {
+          "fr": "Mixte",
+          "en": "Mixed",
+          "ar": "مشكل",
+          "es": "Mixto",
+          "pt": "Misto"
+        },
         "category": "pasticcio",
         "price": 65,
-        "description": "Frites ou penne.",
-        "available": true
+        "description": {
+          "fr": "Frites ou penne.",
+          "en": "Fries or penne.",
+          "ar": "بطاطس مقلية أو بيني.",
+          "es": "Patatas fritas o penne.",
+          "pt": "Batatas fritas ou penne."
+        },
+        "available": true,
+        "image": "images/menu/pasticcio-mixte.jpg"
       },
       {
         "id": "desserts-browny",
-        "name": "Browny",
+        "name": {
+          "fr": "Browny",
+          "en": "Brownie",
+          "ar": "براوني",
+          "es": "Brownie",
+          "pt": "Brownie"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-browny.jpg"
       },
       {
         "id": "desserts-lingua",
-        "name": "Lingua",
+        "name": {
+          "fr": "Lingua",
+          "en": "Lingua",
+          "ar": "لينغوا",
+          "es": "Lingua",
+          "pt": "Lingua"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-lingua.jpg"
       },
       {
         "id": "desserts-pain-suisse",
-        "name": "Pain suisse",
+        "name": {
+          "fr": "Pain suisse",
+          "en": "Swiss pastry",
+          "ar": "بان سويس",
+          "es": "Pan suizo",
+          "pt": "Pão suíço"
+        },
         "category": "desserts",
         "price": 12,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-pain-suisse.jpg"
       },
       {
         "id": "desserts-pain-au-chocolat",
-        "name": "Pain au chocolat",
+        "name": {
+          "fr": "Pain au chocolat",
+          "en": "Chocolate croissant",
+          "ar": "بان أو شوكولا",
+          "es": "Napolitana de chocolate",
+          "pt": "Pão de chocolate"
+        },
         "category": "desserts",
         "price": 9,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-pain-au-chocolat.jpg"
       },
       {
         "id": "desserts-mille-feuille-vanille",
-        "name": "Mille-feuille vanille",
+        "name": {
+          "fr": "Mille-feuille vanille",
+          "en": "Vanilla millefeuille",
+          "ar": "ميل فوي بالفانيليا",
+          "es": "Milhojas de vainilla",
+          "pt": "Mil-folhas de baunilha"
+        },
         "category": "desserts",
         "price": 23,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-mille-feuille-vanille.jpg"
       },
       {
         "id": "desserts-eclair-au-chocolat",
-        "name": "Éclair au chocolat",
+        "name": {
+          "fr": "Éclair au chocolat",
+          "en": "Chocolate éclair",
+          "ar": "إكلير بالشوكولا",
+          "es": "Eclair de chocolate",
+          "pt": "Eclair de chocolate"
+        },
         "category": "desserts",
         "price": 23,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-eclair-au-chocolat.jpg"
       },
       {
         "id": "desserts-eclair-a-la-vanille",
-        "name": "Éclair à la vanille",
+        "name": {
+          "fr": "Éclair à la vanille",
+          "en": "Vanilla éclair",
+          "ar": "إكلير بالفانيليا",
+          "es": "Eclair de vainilla",
+          "pt": "Eclair de baunilha"
+        },
         "category": "desserts",
         "price": 23,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-eclair-a-la-vanille.jpg"
       },
       {
         "id": "desserts-eclair-aux-amandes",
-        "name": "Éclair aux amandes",
+        "name": {
+          "fr": "Éclair aux amandes",
+          "en": "Almond éclair",
+          "ar": "إكلير باللوز",
+          "es": "Eclair de almendras",
+          "pt": "Eclair de amêndoa"
+        },
         "category": "desserts",
         "price": 23,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-eclair-aux-amandes.jpg"
       },
       {
         "id": "desserts-schneck",
-        "name": "Schneck",
+        "name": {
+          "fr": "Schneck",
+          "en": "Schneck",
+          "ar": "شنيك",
+          "es": "Schneck",
+          "pt": "Schneck"
+        },
         "category": "desserts",
         "price": 9,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-schneck.jpg"
       },
       {
         "id": "desserts-tarte-gourmande-royal",
-        "name": "Tarte gourmande royal",
+        "name": {
+          "fr": "Tarte gourmande royal",
+          "en": "Royal gourmet tart",
+          "ar": "تارت رويال الفاخرة",
+          "es": "Tarta gourmet real",
+          "pt": "Tarte gourmet royal"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-tarte-gourmande-royal.jpg"
       },
       {
         "id": "desserts-tarte-gourmande-aux-pommes",
-        "name": "Tarte gourmande aux pommes",
+        "name": {
+          "fr": "Tarte gourmande aux pommes",
+          "en": "Gourmet apple tart",
+          "ar": "تارت التفاح الفاخرة",
+          "es": "Tarta gourmet de manzana",
+          "pt": "Tarte gourmet de maçã"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-tarte-gourmande-aux-pommes.jpg"
       },
       {
         "id": "desserts-tarte-gourmande-aux-noix",
-        "name": "Tarte gourmande aux noix",
+        "name": {
+          "fr": "Tarte gourmande aux noix",
+          "en": "Gourmet walnut tart",
+          "ar": "تارت الجوز الفاخرة",
+          "es": "Tarta gourmet de nueces",
+          "pt": "Tarte gourmet de nozes"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-tarte-gourmande-aux-noix.jpg"
       },
       {
         "id": "desserts-tarte-gourmande-au-chocolat",
-        "name": "Tarte gourmande au chocolat",
+        "name": {
+          "fr": "Tarte gourmande au chocolat",
+          "en": "Gourmet chocolate tart",
+          "ar": "تارت الشوكولا الفاخرة",
+          "es": "Tarta gourmet de chocolate",
+          "pt": "Tarte gourmet de chocolate"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-tarte-gourmande-au-chocolat.jpg"
       },
       {
         "id": "desserts-sedra",
-        "name": "Sedra",
+        "name": {
+          "fr": "Sedra",
+          "en": "Sedra",
+          "ar": "سدرة",
+          "es": "Sedra",
+          "pt": "Sedra"
+        },
         "category": "desserts",
         "price": 15,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-sedra.jpg"
       },
       {
         "id": "desserts-snickers",
-        "name": "Snickers",
+        "name": {
+          "fr": "Snickers",
+          "en": "Snickers",
+          "ar": "سنيكرز",
+          "es": "Snickers",
+          "pt": "Snickers"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-snickers.jpg"
       },
       {
         "id": "desserts-flan-royal",
-        "name": "Flan royal",
+        "name": {
+          "fr": "Flan royal",
+          "en": "Royal flan",
+          "ar": "فلان رويال",
+          "es": "Flan real",
+          "pt": "Pudim flan real"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-flan-royal.jpg"
       },
       {
         "id": "desserts-tarte-aux-fruits",
-        "name": "Tarte aux fruits",
+        "name": {
+          "fr": "Tarte aux fruits",
+          "en": "Fruit tart",
+          "ar": "تارت الفواكه",
+          "es": "Tarta de frutas",
+          "pt": "Tarte de frutas"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-tarte-aux-fruits.jpg"
       },
       {
         "id": "desserts-tiramisu",
-        "name": "Tiramisu",
+        "name": {
+          "fr": "Tiramisu",
+          "en": "Tiramisu",
+          "ar": "تيراميسو",
+          "es": "Tiramisú",
+          "pt": "Tiramisu"
+        },
         "category": "desserts",
         "price": 35,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-tiramisu.jpg"
       },
       {
         "id": "desserts-cheesecake",
-        "name": "Cheesecake",
+        "name": {
+          "fr": "Cheesecake",
+          "en": "Cheesecake",
+          "ar": "تشيز كيك",
+          "es": "Tarta de queso",
+          "pt": "Cheesecake"
+        },
         "category": "desserts",
         "price": 30,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-cheesecake.jpg"
       },
       {
         "id": "desserts-salade-de-fruits",
-        "name": "Salade de fruits",
+        "name": {
+          "fr": "Salade de fruits",
+          "en": "Fruit salad",
+          "ar": "سلطة فواكه",
+          "es": "Macedonia de frutas",
+          "pt": "Salada de frutas"
+        },
         "category": "desserts",
         "price": 40,
-        "available": true
+        "available": true,
+        "image": "images/menu/desserts-salade-de-fruits.jpg"
       }
     ]
   }
