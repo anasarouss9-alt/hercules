@@ -4673,7 +4673,1439 @@ window.CATALOG = {
 
   /* Menu & Restauration (Relais de l'Aéroport) */
   menu: {
-    categories: [],
-    products: []
+    "categories": [
+      {
+        "id": "petit-dejeuner",
+        "icon": "🥐",
+        "name": {
+          "fr": "Petit-déjeuner",
+          "en": "Breakfast",
+          "ar": "الفطور"
+        }
+      },
+      {
+        "id": "carte",
+        "icon": "🍳",
+        "name": {
+          "fr": "À la carte",
+          "en": "À la carte",
+          "ar": "على الطلب"
+        }
+      },
+      {
+        "id": "supplements",
+        "icon": "➕",
+        "name": {
+          "fr": "Suppléments",
+          "en": "Extras",
+          "ar": "إضافات"
+        }
+      },
+      {
+        "id": "boissons-chaudes",
+        "icon": "☕",
+        "name": {
+          "fr": "Boissons chaudes",
+          "en": "Hot drinks",
+          "ar": "مشروبات ساخنة"
+        }
+      },
+      {
+        "id": "boissons-fraiches",
+        "icon": "🥤",
+        "name": {
+          "fr": "Boissons fraîches",
+          "en": "Cold drinks",
+          "ar": "مشروبات باردة"
+        }
+      },
+      {
+        "id": "jus",
+        "icon": "🧃",
+        "name": {
+          "fr": "Jus naturels",
+          "en": "Fresh juices",
+          "ar": "عصائر طبيعية"
+        }
+      },
+      {
+        "id": "plats",
+        "icon": "🍖",
+        "name": {
+          "fr": "Plats",
+          "en": "Main dishes",
+          "ar": "الأطباق"
+        }
+      },
+      {
+        "id": "tajine",
+        "icon": "🍲",
+        "name": {
+          "fr": "Tajines",
+          "en": "Tagines",
+          "ar": "الطواجن"
+        }
+      },
+      {
+        "id": "plats-chauds",
+        "icon": "🥣",
+        "name": {
+          "fr": "Plats chauds",
+          "en": "Hot soups",
+          "ar": "شوربات ساخنة"
+        }
+      },
+      {
+        "id": "salades",
+        "icon": "🥗",
+        "name": {
+          "fr": "Salades",
+          "en": "Salads",
+          "ar": "سلطات"
+        }
+      },
+      {
+        "id": "pizza",
+        "icon": "🍕",
+        "name": {
+          "fr": "Pizzas",
+          "en": "Pizzas",
+          "ar": "بيتزا"
+        }
+      },
+      {
+        "id": "tacos",
+        "icon": "🌮",
+        "name": {
+          "fr": "Tacos",
+          "en": "Tacos",
+          "ar": "تاكوس"
+        }
+      },
+      {
+        "id": "wraps",
+        "icon": "🌯",
+        "name": {
+          "fr": "Wraps",
+          "en": "Wraps",
+          "ar": "راب"
+        }
+      },
+      {
+        "id": "sandwiches",
+        "icon": "🥪",
+        "name": {
+          "fr": "Sandwiches",
+          "en": "Sandwiches",
+          "ar": "سندويتشات"
+        }
+      },
+      {
+        "id": "burgers",
+        "icon": "🍔",
+        "name": {
+          "fr": "Burgers",
+          "en": "Burgers",
+          "ar": "برغر"
+        }
+      },
+      {
+        "id": "fast-food",
+        "icon": "🥖",
+        "name": {
+          "fr": "Fast food",
+          "en": "Fast food",
+          "ar": "وجبات سريعة"
+        }
+      },
+      {
+        "id": "pasticcio",
+        "icon": "🍝",
+        "name": {
+          "fr": "Pasticcio",
+          "en": "Pasticcio",
+          "ar": "باستيتشيو"
+        }
+      },
+      {
+        "id": "desserts",
+        "icon": "🍰",
+        "name": {
+          "fr": "Desserts",
+          "en": "Desserts",
+          "ar": "حلويات"
+        }
+      }
+    ],
+    "products": [
+      {
+        "id": "petit-dejeuner-marocain",
+        "name": "Marocain",
+        "category": "petit-dejeuner",
+        "price": 47,
+        "description": "Boisson chaude, Harcha, Baghrir, Reghayaf, Pain grillé, 5 accompagnements (Jben beldi, Beurre, Miel, Amlou, Confiture), Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-chamali",
+        "name": "Chamali",
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": "Boisson chaude, Pain, 2 Œufs plat, Jben beldi, La vache qui rit, Luncheon, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-fassi",
+        "name": "Fassi",
+        "category": "petit-dejeuner",
+        "price": 50,
+        "description": "Boisson chaude, Pain, Tajine de khlie aux 2 Œufs, Jus d'orange, Eau minérale, Hssoua. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-francais",
+        "name": "Français",
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": "Boisson chaude, (Chenik, Petit pain, Croissant / deux choix), 3 accompagnements (La vache qui rit, Confiture, Nutella), Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-light",
+        "name": "Light",
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": "Boisson chaude, Pain grillé, Fromage edam, 3 accompagnements (Jben beldi, La vache qui rit light, Confiture light), Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-hollandais",
+        "name": "Hollandais",
+        "category": "petit-dejeuner",
+        "price": 50,
+        "description": "Boisson chaude, Toast, 2 Œufs, Dinde fumée, Fromage edam, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-espagnol",
+        "name": "Espagnol",
+        "category": "petit-dejeuner",
+        "price": 55,
+        "description": "Boisson chaude, Pain grillé, Purée tomate, Fromage manchego, Huile d'olive, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-classic",
+        "name": "Classic",
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": "Boisson chaude, Pain, Omelette Fromage, Jben beldi, Olive, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "petit-dejeuner-dejeuner-enfants",
+        "name": "Déjeuner enfants",
+        "category": "petit-dejeuner",
+        "price": 45,
+        "description": "Chocolat chaud, Corn-flakes, Pain au chocolat, Jus d'orange, Eau minérale. Servi jusqu'à 14h.",
+        "available": true
+      },
+      {
+        "id": "carte-toast-aux-fromage",
+        "name": "Toast aux fromage",
+        "category": "carte",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "carte-toast-aux-fromage-dinde",
+        "name": "Toast aux fromage dinde",
+        "category": "carte",
+        "price": 24,
+        "available": true
+      },
+      {
+        "id": "carte-toast-maison-ufs-fromage-edam-dinde-fumee",
+        "name": "Toast maison, œufs, fromage edam, dinde fumée",
+        "category": "carte",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "carte-croque-aux-fromage",
+        "name": "Croque aux fromage",
+        "category": "carte",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "carte-croque-aux-fromage-dinde",
+        "name": "Croque aux fromage dinde",
+        "category": "carte",
+        "price": 32,
+        "available": true
+      },
+      {
+        "id": "carte-tajine-aux-khlie-avec-1-uf",
+        "name": "Tajine aux khlie avec 1 œuf",
+        "category": "carte",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "carte-tajine-aux-khlie-avec-2-ufs",
+        "name": "Tajine aux khlie avec 2 œufs",
+        "category": "carte",
+        "price": 40,
+        "available": true
+      },
+      {
+        "id": "carte-baghrir-avec-miel",
+        "name": "Baghrir avec miel",
+        "category": "carte",
+        "price": 20,
+        "available": true
+      },
+      {
+        "id": "carte-baghrir-avec-amlou-banane",
+        "name": "Baghrir avec amlou, banane",
+        "category": "carte",
+        "price": 26,
+        "available": true
+      },
+      {
+        "id": "carte-1-uf-au-plat",
+        "name": "1 œuf au plat",
+        "category": "carte",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "carte-2-ufs-au-plat",
+        "name": "2 œufs au plat",
+        "category": "carte",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "carte-omelette-nature",
+        "name": "Omelette nature",
+        "category": "carte",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "carte-omelette-aux-fromage",
+        "name": "Omelette aux fromage",
+        "category": "carte",
+        "price": 22,
+        "available": true
+      },
+      {
+        "id": "carte-omelette-aux-fromage-dinde",
+        "name": "Omelette aux fromage dinde",
+        "category": "carte",
+        "price": 34,
+        "available": true
+      },
+      {
+        "id": "carte-omelette-aux-fromage-champignons",
+        "name": "Omelette aux fromage champignons",
+        "category": "carte",
+        "price": 40,
+        "available": true
+      },
+      {
+        "id": "carte-omelette-legumes",
+        "name": "Omelette légumes",
+        "category": "carte",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "carte-omelette-a-l-ail-et-au-persil",
+        "name": "Omelette à l'ail et au persil",
+        "category": "carte",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "supplements-amlou",
+        "name": "Amlou",
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-confiture",
+        "name": "Confiture",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-miel",
+        "name": "Miel",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-beurre",
+        "name": "Beurre",
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-jben-arabi",
+        "name": "Jben arabi",
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-nutella",
+        "name": "Nutella",
+        "category": "supplements",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "supplements-la-vache-qui-rit",
+        "name": "La vache qui rit",
+        "category": "supplements",
+        "price": 3,
+        "available": true
+      },
+      {
+        "id": "supplements-kiri",
+        "name": "Kiri",
+        "category": "supplements",
+        "price": 4,
+        "available": true
+      },
+      {
+        "id": "supplements-huile-d-olive",
+        "name": "Huile d'olive",
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-luncheon-chef",
+        "name": "Luncheon (chef)",
+        "category": "supplements",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "supplements-dinde-fumee",
+        "name": "Dinde fumée",
+        "category": "supplements",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "supplements-uf",
+        "name": "Œuf",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-fromage-edam",
+        "name": "Fromage edam",
+        "category": "supplements",
+        "price": 9,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-normal",
+        "name": "Pain normal",
+        "category": "supplements",
+        "price": 3,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-complet",
+        "name": "Pain complet",
+        "category": "supplements",
+        "price": 4,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-cereales",
+        "name": "Pain céréales",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-pain-makla",
+        "name": "Pain makla",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-toast",
+        "name": "Toast",
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-harcha",
+        "name": "Harcha",
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-rghaif",
+        "name": "Rghaif",
+        "category": "supplements",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "supplements-baghrir",
+        "name": "Baghrir",
+        "category": "supplements",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "supplements-thon",
+        "name": "Thon",
+        "category": "supplements",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "supplements-avocat",
+        "name": "Avocat",
+        "category": "supplements",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "supplements-leban",
+        "name": "Leban",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-dattes-3",
+        "name": "Dattes (3)",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "supplements-chebakia-2",
+        "name": "Chebakia (2)",
+        "category": "supplements",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-cafe-noir",
+        "name": "Café noir",
+        "category": "boissons-chaudes",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-nespresso",
+        "name": "Nespresso",
+        "category": "boissons-chaudes",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-cafe-au-lait",
+        "name": "Café au lait",
+        "category": "boissons-chaudes",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-nescafe",
+        "name": "Nescafé",
+        "category": "boissons-chaudes",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-nespresso-au-lait",
+        "name": "Nespresso au lait",
+        "category": "boissons-chaudes",
+        "price": 20,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-double-expresso",
+        "name": "Double expresso",
+        "category": "boissons-chaudes",
+        "price": 24,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-latte-macchiato",
+        "name": "Latte macchiato",
+        "category": "boissons-chaudes",
+        "price": 22,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-cappuccino-italien",
+        "name": "Cappuccino italien",
+        "category": "boissons-chaudes",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-lait-chaud-froid",
+        "name": "Lait chaud/froid",
+        "category": "boissons-chaudes",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-chocolat-chaud",
+        "name": "Chocolat chaud",
+        "category": "boissons-chaudes",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-the-a-la-menthe",
+        "name": "Thé à la menthe",
+        "category": "boissons-chaudes",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-the-noir",
+        "name": "Thé noir",
+        "category": "boissons-chaudes",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-the-americain",
+        "name": "Thé américain",
+        "category": "boissons-chaudes",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-infusion",
+        "name": "Infusion",
+        "category": "boissons-chaudes",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boissons-chaudes-infusion-au-lait",
+        "name": "Infusion au lait",
+        "category": "boissons-chaudes",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boissons-fraiches-eau-minerale-33cl",
+        "name": "Eau minérale 33cl",
+        "category": "boissons-fraiches",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boissons-fraiches-oulmes-25cl-verre",
+        "name": "Oulmes 25cl verre",
+        "category": "boissons-fraiches",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boissons-fraiches-soda-canette",
+        "name": "Soda canette",
+        "category": "boissons-fraiches",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boissons-fraiches-mojito",
+        "name": "Mojito",
+        "category": "boissons-fraiches",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "boissons-fraiches-frappuccino",
+        "name": "Frappuccino",
+        "category": "boissons-fraiches",
+        "price": 40,
+        "description": "Café noir, lait froid, crème chantilly, glaçons, sauce caramel ou chocolat.",
+        "available": true
+      },
+      {
+        "id": "jus-orange",
+        "name": "Orange",
+        "category": "jus",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "jus-carotte-orange",
+        "name": "Carotte & orange",
+        "category": "jus",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "jus-citron",
+        "name": "Citron",
+        "category": "jus",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "jus-mangue",
+        "name": "Mangue",
+        "category": "jus",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "jus-amande-lait",
+        "name": "Amande & lait",
+        "category": "jus",
+        "price": 22,
+        "available": true
+      },
+      {
+        "id": "jus-dragon",
+        "name": "Dragon",
+        "category": "jus",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "jus-banane-a-l-orange",
+        "name": "Banane à l'orange",
+        "category": "jus",
+        "price": 27,
+        "available": true
+      },
+      {
+        "id": "jus-fraise",
+        "name": "Fraise",
+        "category": "jus",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "jus-ananas",
+        "name": "Ananas",
+        "category": "jus",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "jus-avocat",
+        "name": "Avocat",
+        "category": "jus",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "jus-panache-au-lait",
+        "name": "Panaché au lait",
+        "category": "jus",
+        "price": 47,
+        "available": true
+      },
+      {
+        "id": "jus-panache-orange",
+        "name": "Panaché orange",
+        "category": "jus",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "jus-kiwi",
+        "name": "Kiwi",
+        "category": "jus",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "jus-citron-gingembre",
+        "name": "Citron & gingembre",
+        "category": "jus",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "jus-citron-a-la-menthe",
+        "name": "Citron à la menthe",
+        "category": "jus",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "jus-pomme-orange",
+        "name": "Pomme orange",
+        "category": "jus",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "jus-banane-pomme-au-lait",
+        "name": "Banane & pomme au lait",
+        "category": "jus",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "jus-banane-pomme-a-l-orange",
+        "name": "Banane & pomme à l'orange",
+        "category": "jus",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "jus-framboise",
+        "name": "Framboise",
+        "category": "jus",
+        "price": 60,
+        "available": true
+      },
+      {
+        "id": "jus-ananas-mint",
+        "name": "Ananas mint",
+        "category": "jus",
+        "price": 47,
+        "available": true
+      },
+      {
+        "id": "plats-brochettes-de-poulet",
+        "name": "Brochettes de poulet",
+        "category": "plats",
+        "price": 60,
+        "description": "Avec légumes sautés.",
+        "available": true
+      },
+      {
+        "id": "plats-emince-de-poulet",
+        "name": "Émincé de poulet",
+        "category": "plats",
+        "price": 80,
+        "description": "Avec champignon et légumes sautés.",
+        "available": true
+      },
+      {
+        "id": "plats-brochettes-de-viande-hachee",
+        "name": "Brochettes de viande hachée",
+        "category": "plats",
+        "price": 70,
+        "description": "Avec champignon et légumes sautés.",
+        "available": true
+      },
+      {
+        "id": "plats-brochettes-mix",
+        "name": "Brochettes mix",
+        "category": "plats",
+        "price": 67,
+        "description": "Avec légumes sautés.",
+        "available": true
+      },
+      {
+        "id": "tajine-tajine-de-viande-aux-pruneaux",
+        "name": "Tajine de viande aux pruneaux",
+        "category": "tajine",
+        "description": "Avec pruneaux et œuf.",
+        "available": true,
+        "options": [
+          {
+            "label": "1/4 kg",
+            "price": 75
+          },
+          {
+            "label": "1/2 kg",
+            "price": 120
+          },
+          {
+            "label": "1 kg",
+            "price": 220
+          }
+        ]
+      },
+      {
+        "id": "tajine-tajine-de-viande-hachee",
+        "name": "Tajine de viande hachée",
+        "category": "tajine",
+        "price": 65,
+        "description": "Avec tomates et œufs.",
+        "available": true
+      },
+      {
+        "id": "tajine-tajine-de-viande-aux-legumes",
+        "name": "Tajine de viande aux légumes",
+        "category": "tajine",
+        "price": 75,
+        "description": "Avec légumes.",
+        "available": true
+      },
+      {
+        "id": "tajine-tajine-de-pil-pil",
+        "name": "Tajine de pil pil",
+        "category": "tajine",
+        "price": 65,
+        "description": "Avec poisson.",
+        "available": true
+      },
+      {
+        "id": "tajine-tajine-de-poulet",
+        "name": "Tajine de poulet",
+        "category": "tajine",
+        "price": 60,
+        "description": "Avec citron, olives et frites.",
+        "available": true
+      },
+      {
+        "id": "plats-chauds-hrira",
+        "name": "Hrira",
+        "category": "plats-chauds",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "plats-chauds-bisara",
+        "name": "Bisara",
+        "category": "plats-chauds",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "plats-chauds-hssoua",
+        "name": "Hssoua",
+        "category": "plats-chauds",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "salades-marocaine",
+        "name": "Marocaine",
+        "category": "salades",
+        "price": 45,
+        "description": "Tomate, salade verte, concombre, oignon, thon.",
+        "available": true
+      },
+      {
+        "id": "salades-nicoise",
+        "name": "Niçoise",
+        "category": "salades",
+        "price": 60,
+        "description": "Pomme de terre, haricot vert, tomate cerise, œuf, salade verte, carotte, concombre, betterave, thon, maïs.",
+        "available": true
+      },
+      {
+        "id": "salades-cesar",
+        "name": "César",
+        "category": "salades",
+        "price": 65,
+        "description": "Poulet, salade verte, fromage parmesan, tomate cerise, croûton de pain.",
+        "available": true
+      },
+      {
+        "id": "salades-crevette-avocat",
+        "name": "Crevette avocat",
+        "category": "salades",
+        "price": 70,
+        "description": "Salade verte, tomate cerise, avocat, crevette.",
+        "available": true
+      },
+      {
+        "id": "salades-russe",
+        "name": "Russe",
+        "category": "salades",
+        "price": 45,
+        "description": "Riz, 2 œufs durs, thon, maïs, carotte, pomme de terre.",
+        "available": true
+      },
+      {
+        "id": "pizza-margherita",
+        "name": "Margherita",
+        "category": "pizza",
+        "price": 40,
+        "description": "Crevettes, calamars, poulet, viande hachée, thon, sauce tomate, mozzarella, olives noires.",
+        "available": true
+      },
+      {
+        "id": "pizza-thon",
+        "name": "Thon",
+        "category": "pizza",
+        "price": 45,
+        "description": "Thon, sauce tomate, mozzarella, oignons, olives noires.",
+        "available": true
+      },
+      {
+        "id": "pizza-poulet",
+        "name": "Poulet",
+        "category": "pizza",
+        "price": 55,
+        "description": "Poulet, sauce tomate, mozzarella, champignons.",
+        "available": true
+      },
+      {
+        "id": "pizza-bolognaise",
+        "name": "Bolognaise",
+        "category": "pizza",
+        "price": 65,
+        "description": "Viande hachée, sauce tomate, mozzarella, olives noires.",
+        "available": true
+      },
+      {
+        "id": "pizza-fruits-de-mer",
+        "name": "Fruits de mer",
+        "category": "pizza",
+        "price": 75,
+        "description": "Crevettes, calamars, sauce tomate, mozzarella, champignons.",
+        "available": true
+      },
+      {
+        "id": "pizza-4-fromages",
+        "name": "4 fromages",
+        "category": "pizza",
+        "price": 65,
+        "description": "Fromage rouge, mozzarella, cheddar, parmesan.",
+        "available": true
+      },
+      {
+        "id": "pizza-royal",
+        "name": "Royal",
+        "category": "pizza",
+        "price": 85,
+        "description": "Viande hachée, sauce tomate, mozzarella, olives noires.",
+        "available": true
+      },
+      {
+        "id": "pizza-4-saisons",
+        "name": "4 saisons",
+        "category": "pizza",
+        "price": 75,
+        "description": "Thon, sauce tomate, mozzarella, oignons, olives noires.",
+        "available": true
+      },
+      {
+        "id": "tacos-poulet",
+        "name": "Poulet",
+        "category": "tacos",
+        "price": 55,
+        "available": true
+      },
+      {
+        "id": "tacos-viande-hachee",
+        "name": "Viande hachée",
+        "category": "tacos",
+        "price": 65,
+        "available": true
+      },
+      {
+        "id": "tacos-mixte",
+        "name": "Mixte",
+        "category": "tacos",
+        "price": 65,
+        "available": true
+      },
+      {
+        "id": "tacos-crispy",
+        "name": "Crispy",
+        "category": "tacos",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "tacos-nuggets",
+        "name": "Nuggets",
+        "category": "tacos",
+        "price": 45,
+        "available": true
+      },
+      {
+        "id": "tacos-cordon-bleu",
+        "name": "Cordon bleu",
+        "category": "tacos",
+        "price": 60,
+        "available": true
+      },
+      {
+        "id": "tacos-fruits-de-mer",
+        "name": "Fruits de mer",
+        "category": "tacos",
+        "price": 65,
+        "available": true
+      },
+      {
+        "id": "tacos-royal",
+        "name": "Royal",
+        "category": "tacos",
+        "price": 70,
+        "available": true
+      },
+      {
+        "id": "wraps-wrap-cesar",
+        "name": "Wrap César",
+        "category": "wraps",
+        "price": 45,
+        "description": "Tortilla, poulet pané, laitue, edam, sauce, frites.",
+        "available": true
+      },
+      {
+        "id": "wraps-wrap-avocat-charcuterie",
+        "name": "Wrap avocat charcuterie",
+        "category": "wraps",
+        "price": 45,
+        "description": "Avocat, tortilla, œuf omelette, cheddar, charcuterie, sauce, frites.",
+        "available": true
+      },
+      {
+        "id": "wraps-wrap-poulet",
+        "name": "Wrap poulet",
+        "category": "wraps",
+        "price": 45,
+        "description": "Tortilla + poulet, laitue, tomate, fromage edam, sauce, frites.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-poulet",
+        "name": "Poulet",
+        "category": "sandwiches",
+        "price": 45,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-charcuterie",
+        "name": "Charcuterie",
+        "category": "sandwiches",
+        "price": 35,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-viande-hachee",
+        "name": "Viande hachée",
+        "category": "sandwiches",
+        "price": 50,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-fruit-de-mer",
+        "name": "Fruit de mer",
+        "category": "sandwiches",
+        "price": 70,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-mixte",
+        "name": "Mixte",
+        "category": "sandwiches",
+        "price": 65,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-thon",
+        "name": "Thon",
+        "category": "sandwiches",
+        "price": 35,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-crispy",
+        "name": "Crispy",
+        "category": "sandwiches",
+        "price": 40,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-cordon-bleu",
+        "name": "Cordon bleu",
+        "category": "sandwiches",
+        "price": 45,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "sandwiches-merguez",
+        "name": "Merguez",
+        "category": "sandwiches",
+        "price": 45,
+        "description": "Servi avec frites et sauce.",
+        "available": true
+      },
+      {
+        "id": "burgers-cheese-burger",
+        "name": "Cheese burger",
+        "category": "burgers",
+        "price": 60,
+        "description": "Œufs, cheddar, salade verte, viande hachée, sauce.",
+        "available": true
+      },
+      {
+        "id": "burgers-double-burger",
+        "name": "Double burger",
+        "category": "burgers",
+        "price": 70,
+        "description": "Œufs, double cheddar, salade verte, double viande hachée, sauce.",
+        "available": true
+      },
+      {
+        "id": "burgers-chicken-burger",
+        "name": "Chicken burger",
+        "category": "burgers",
+        "price": 55,
+        "description": "Cheddar, salade verte, poulet, sauce.",
+        "available": true
+      },
+      {
+        "id": "fast-food-fromage",
+        "name": "Fromage",
+        "category": "fast-food",
+        "price": 35,
+        "description": "Servi avec frites.",
+        "available": true
+      },
+      {
+        "id": "fast-food-dinde-fumee",
+        "name": "Dinde fumée",
+        "category": "fast-food",
+        "price": 40,
+        "description": "Servi avec frites.",
+        "available": true
+      },
+      {
+        "id": "fast-food-thon",
+        "name": "Thon",
+        "category": "fast-food",
+        "price": 40,
+        "description": "Servi avec frites.",
+        "available": true
+      },
+      {
+        "id": "fast-food-mixte",
+        "name": "Mixte",
+        "category": "fast-food",
+        "price": 60,
+        "description": "Servi avec frites.",
+        "available": true
+      },
+      {
+        "id": "fast-food-poulet",
+        "name": "Poulet",
+        "category": "fast-food",
+        "price": 50,
+        "description": "Servi avec frites.",
+        "available": true
+      },
+      {
+        "id": "fast-food-crevette",
+        "name": "Crevette",
+        "category": "fast-food",
+        "price": 65,
+        "description": "Servi avec frites.",
+        "available": true
+      },
+      {
+        "id": "pasticcio-poulet",
+        "name": "Poulet",
+        "category": "pasticcio",
+        "price": 50,
+        "description": "Frites ou penne.",
+        "available": true
+      },
+      {
+        "id": "pasticcio-charcuterie",
+        "name": "Charcuterie",
+        "category": "pasticcio",
+        "price": 40,
+        "description": "Frites ou penne.",
+        "available": true
+      },
+      {
+        "id": "pasticcio-viande-hachee",
+        "name": "Viande hachée",
+        "category": "pasticcio",
+        "price": 60,
+        "description": "Frites ou penne.",
+        "available": true
+      },
+      {
+        "id": "pasticcio-fruit-de-mer",
+        "name": "Fruit de mer",
+        "category": "pasticcio",
+        "price": 70,
+        "description": "Frites ou penne.",
+        "available": true
+      },
+      {
+        "id": "pasticcio-mixte",
+        "name": "Mixte",
+        "category": "pasticcio",
+        "price": 65,
+        "description": "Frites ou penne.",
+        "available": true
+      },
+      {
+        "id": "desserts-browny",
+        "name": "Browny",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-lingua",
+        "name": "Lingua",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-pain-suisse",
+        "name": "Pain suisse",
+        "category": "desserts",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "desserts-pain-au-chocolat",
+        "name": "Pain au chocolat",
+        "category": "desserts",
+        "price": 9,
+        "available": true
+      },
+      {
+        "id": "desserts-mille-feuille-vanille",
+        "name": "Mille-feuille vanille",
+        "category": "desserts",
+        "price": 23,
+        "available": true
+      },
+      {
+        "id": "desserts-eclair-au-chocolat",
+        "name": "Éclair au chocolat",
+        "category": "desserts",
+        "price": 23,
+        "available": true
+      },
+      {
+        "id": "desserts-eclair-a-la-vanille",
+        "name": "Éclair à la vanille",
+        "category": "desserts",
+        "price": 23,
+        "available": true
+      },
+      {
+        "id": "desserts-eclair-aux-amandes",
+        "name": "Éclair aux amandes",
+        "category": "desserts",
+        "price": 23,
+        "available": true
+      },
+      {
+        "id": "desserts-schneck",
+        "name": "Schneck",
+        "category": "desserts",
+        "price": 9,
+        "available": true
+      },
+      {
+        "id": "desserts-tarte-gourmande-royal",
+        "name": "Tarte gourmande royal",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-tarte-gourmande-aux-pommes",
+        "name": "Tarte gourmande aux pommes",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-tarte-gourmande-aux-noix",
+        "name": "Tarte gourmande aux noix",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-tarte-gourmande-au-chocolat",
+        "name": "Tarte gourmande au chocolat",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-sedra",
+        "name": "Sedra",
+        "category": "desserts",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "desserts-snickers",
+        "name": "Snickers",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-flan-royal",
+        "name": "Flan royal",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-tarte-aux-fruits",
+        "name": "Tarte aux fruits",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-tiramisu",
+        "name": "Tiramisu",
+        "category": "desserts",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "desserts-cheesecake",
+        "name": "Cheesecake",
+        "category": "desserts",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "desserts-salade-de-fruits",
+        "name": "Salade de fruits",
+        "category": "desserts",
+        "price": 40,
+        "available": true
+      }
+    ]
   }
 };
