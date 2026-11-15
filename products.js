@@ -1,4 +1,13 @@
+/* ============================================================
+   PRODUCTS — the only file you edit to add products.
+   Every list is empty for now, so each page shows "Coming soon".
+   As soon as you add a product, the page switches to the search
+   system and the filters (categories, brands, tags, price,
+   stock, promo) are generated automatically from your data.
 
+   ------------------------------------------------------------
+   HOW TO ADD A PRODUCT  (copy this block into "products": [ ])
+   ------------------------------------------------------------
    {
      id: "coca-33",                    // unique, required
      name: { fr: "Coca-Cola 33 cl", ar: "كوكا كولا 33 cl", en: "Coca-Cola 33 cl", es: "Coca-Cola 33 cl", pt: "Coca-Cola 33 cl" },
