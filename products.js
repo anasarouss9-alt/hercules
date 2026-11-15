@@ -1,13 +1,4 @@
-/* ============================================================
-   PRODUCTS — the only file you edit to add products.
-   Every list is empty for now, so each page shows "Coming soon".
-   As soon as you add a product, the page switches to the search
-   system and the filters (categories, brands, tags, price,
-   stock, promo) are generated automatically from your data.
 
-   ------------------------------------------------------------
-   HOW TO ADD A PRODUCT  (copy this block into "products": [ ])
-   ------------------------------------------------------------
    {
      id: "coca-33",                    // unique, required
      name: { fr: "Coca-Cola 33 cl", ar: "كوكا كولا 33 cl", en: "Coca-Cola 33 cl", es: "Coca-Cola 33 cl", pt: "Coca-Cola 33 cl" },
@@ -6600,6 +6591,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-marocain",
+        "image": "images/menu/petit-dejeuner-marocain.jpg",
         "name": {
           "fr": "Marocain",
           "en": "Moroccan",
@@ -6617,6 +6609,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-chamali",
+        "image": "images/menu/petit-dejeuner-chamali.jpg",
         "name": {
           "fr": "Chamali",
           "en": "Chamali",
@@ -6634,6 +6627,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-fassi",
+        "image": "images/menu/petit-dejeuner-fassi.jpg",
         "name": {
           "fr": "Fassi",
           "en": "Fassi",
@@ -6651,6 +6645,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-francais",
+        "image": "images/menu/petit-dejeuner-francais.jpg",
         "name": {
           "fr": "Français",
           "en": "French",
@@ -6668,6 +6663,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-light",
+        "image": "images/menu/petit-dejeuner-light.jpg",
         "name": {
           "fr": "Light",
           "en": "Light",
@@ -6685,6 +6681,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-hollandais",
+        "image": "images/menu/petit-dejeuner-hollandais.jpg",
         "name": {
           "fr": "Hollandais",
           "en": "Dutch",
@@ -6702,6 +6699,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-espagnol",
+        "image": "images/menu/petit-dejeuner-espagnol.jpg",
         "name": {
           "fr": "Espagnol",
           "en": "Spanish",
@@ -6719,6 +6717,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-classic",
+        "image": "images/menu/petit-dejeuner-classic.jpg",
         "name": {
           "fr": "Classic",
           "en": "Classic",
@@ -6736,6 +6735,7 @@ window.CATALOG = {
       },
       {
         "id": "petit-dejeuner-dejeuner-enfants",
+        "image": "images/menu/petit-dejeuner-dejeuner-enfants.jpg",
         "name": {
           "fr": "Déjeuner enfants",
           "en": "Kids' breakfast",
@@ -6753,6 +6753,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-toast-fromage",
+        "image": "images/menu/a-la-carte-toast-fromage.jpg",
         "name": {
           "fr": "Toast au fromage",
           "en": "Cheese toast",
@@ -6766,6 +6767,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-toast-fromage-dinde",
+        "image": "images/menu/a-la-carte-toast-fromage-dinde.jpg",
         "name": {
           "fr": "Toast au fromage dinde",
           "en": "Turkey & cheese toast",
@@ -6779,6 +6781,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-toast-maison",
+        "image": "images/menu/a-la-carte-toast-maison.jpg",
         "name": {
           "fr": "Toast maison, œufs, fromage edam, dinde fumée",
           "en": "House toast, eggs, edam cheese, smoked turkey",
@@ -6792,6 +6795,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-croque-fromage",
+        "image": "images/menu/a-la-carte-croque-fromage.jpg",
         "name": {
           "fr": "Croque au fromage",
           "en": "Cheese croque",
@@ -6805,6 +6809,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-croque-fromage-dinde",
+        "image": "images/menu/a-la-carte-croque-fromage-dinde.jpg",
         "name": {
           "fr": "Croque au fromage dinde",
           "en": "Turkey & cheese croque",
@@ -6818,6 +6823,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-tajine-khlie-1-oeuf",
+        "image": "images/menu/a-la-carte-tajine-khlie-1-oeuf.jpg",
         "name": {
           "fr": "Tajine aux khlie avec 1 œuf",
           "en": "Khlie tajine with 1 egg",
@@ -6831,6 +6837,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-tajine-khlie-2-oeufs",
+        "image": "images/menu/a-la-carte-tajine-khlie-2-oeufs.jpg",
         "name": {
           "fr": "Tajine aux khlie avec 2 œufs",
           "en": "Khlie tajine with 2 eggs",
@@ -6844,6 +6851,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-baghrir-miel",
+        "image": "images/menu/a-la-carte-baghrir-miel.jpg",
         "name": {
           "fr": "Baghrir avec miel",
           "en": "Baghrir with honey",
@@ -6857,6 +6865,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-baghrir-amlou-banane",
+        "image": "images/menu/a-la-carte-baghrir-amlou-banane.jpg",
         "name": {
           "fr": "Baghrir avec amlou, banane",
           "en": "Baghrir with amlou, banana",
@@ -6870,6 +6879,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-1-oeuf-plat",
+        "image": "images/menu/a-la-carte-1-oeuf-plat.jpg",
         "name": {
           "fr": "1 œuf au plat",
           "en": "1 fried egg",
@@ -6883,6 +6893,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-2-oeufs-plat",
+        "image": "images/menu/a-la-carte-2-oeufs-plat.jpg",
         "name": {
           "fr": "2 œufs au plat",
           "en": "2 fried eggs",
@@ -6896,6 +6907,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-omelette-nature",
+        "image": "images/menu/a-la-carte-omelette-nature.jpg",
         "name": {
           "fr": "Omelette nature",
           "en": "Plain omelette",
@@ -6909,6 +6921,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-omelette-fromage",
+        "image": "images/menu/a-la-carte-omelette-fromage.jpg",
         "name": {
           "fr": "Omelette aux fromage",
           "en": "Cheese omelette",
@@ -6922,6 +6935,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-omelette-fromage-dinde",
+        "image": "images/menu/a-la-carte-omelette-fromage-dinde.jpg",
         "name": {
           "fr": "Omelette aux fromage dinde",
           "en": "Turkey & cheese omelette",
@@ -6935,6 +6949,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-omelette-fromage-champignons",
+        "image": "images/menu/a-la-carte-omelette-fromage-champignons.jpg",
         "name": {
           "fr": "Omelette aux fromage champignons",
           "en": "Cheese & mushroom omelette",
@@ -6948,6 +6963,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-omelette-legumes",
+        "image": "images/menu/a-la-carte-omelette-legumes.jpg",
         "name": {
           "fr": "Omelette légumes",
           "en": "Vegetable omelette",
@@ -6961,6 +6977,7 @@ window.CATALOG = {
       },
       {
         "id": "a-la-carte-omelette-ail-persil",
+        "image": "images/menu/a-la-carte-omelette-ail-persil.jpg",
         "name": {
           "fr": "Omelette à l'ail et au persil",
           "en": "Garlic & parsley omelette",
@@ -6974,6 +6991,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-amlou",
+        "image": "images/menu/supplements-amlou.jpg",
         "name": {
           "fr": "Amlou",
           "en": "Amlou",
@@ -6987,6 +7005,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-confiture",
+        "image": "images/menu/supplements-confiture.jpg",
         "name": {
           "fr": "Confiture",
           "en": "Jam",
@@ -7000,6 +7019,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-miel",
+        "image": "images/menu/supplements-miel.jpg",
         "name": {
           "fr": "Miel",
           "en": "Honey",
@@ -7013,6 +7033,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-beurre",
+        "image": "images/menu/supplements-beurre.jpg",
         "name": {
           "fr": "Beurre",
           "en": "Butter",
@@ -7026,6 +7047,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-jben-arabi",
+        "image": "images/menu/supplements-jben-arabi.jpg",
         "name": {
           "fr": "Jben arabi",
           "en": "Jben arabi cheese",
@@ -7039,6 +7061,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-nutella",
+        "image": "images/menu/supplements-nutella.jpg",
         "name": {
           "fr": "Nutella",
           "en": "Nutella",
@@ -7052,6 +7075,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-vache-qui-rit",
+        "image": "images/menu/supplements-vache-qui-rit.jpg",
         "name": {
           "fr": "La vache qui rit",
           "en": "La vache qui rit",
@@ -7065,6 +7089,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-kiri",
+        "image": "images/menu/supplements-kiri.jpg",
         "name": {
           "fr": "Kiri",
           "en": "Kiri",
@@ -7078,6 +7103,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-huile-olive",
+        "image": "images/menu/supplements-huile-olive.jpg",
         "name": {
           "fr": "Huile d'olive",
           "en": "Olive oil",
@@ -7091,6 +7117,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-luncheon",
+        "image": "images/menu/supplements-luncheon.jpg",
         "name": {
           "fr": "Luncheon (chef)",
           "en": "Luncheon meat (chef)",
@@ -7104,6 +7131,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-dinde-fumee",
+        "image": "images/menu/supplements-dinde-fumee.jpg",
         "name": {
           "fr": "Dinde fumée",
           "en": "Smoked turkey",
@@ -7117,6 +7145,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-oeuf",
+        "image": "images/menu/supplements-oeuf.jpg",
         "name": {
           "fr": "Œuf",
           "en": "Egg",
@@ -7130,6 +7159,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-fromage-edam",
+        "image": "images/menu/supplements-fromage-edam.jpg",
         "name": {
           "fr": "Fromage edam",
           "en": "Edam cheese",
@@ -7143,6 +7173,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-pain-normal",
+        "image": "images/menu/supplements-pain-normal.jpg",
         "name": {
           "fr": "Pain normal",
           "en": "Regular bread",
@@ -7156,6 +7187,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-pain-complet",
+        "image": "images/menu/supplements-pain-complet.jpg",
         "name": {
           "fr": "Pain complet",
           "en": "Wholemeal bread",
@@ -7169,6 +7201,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-pain-cereales",
+        "image": "images/menu/supplements-pain-cereales.jpg",
         "name": {
           "fr": "Pain céréales",
           "en": "Multigrain bread",
@@ -7182,6 +7215,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-pain-makla",
+        "image": "images/menu/supplements-pain-makla.jpg",
         "name": {
           "fr": "Pain makla",
           "en": "Makla bread",
@@ -7195,6 +7229,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-toast",
+        "image": "images/menu/supplements-toast.jpg",
         "name": {
           "fr": "Toast",
           "en": "Toast",
@@ -7208,6 +7243,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-harcha",
+        "image": "images/menu/supplements-harcha.jpg",
         "name": {
           "fr": "Harcha",
           "en": "Harcha",
@@ -7221,6 +7257,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-rghaif",
+        "image": "images/menu/supplements-rghaif.jpg",
         "name": {
           "fr": "Rghaïf",
           "en": "Rghaif",
@@ -7234,6 +7271,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-baghrir",
+        "image": "images/menu/supplements-baghrir.jpg",
         "name": {
           "fr": "Baghrir",
           "en": "Baghrir",
@@ -7247,6 +7285,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-thon",
+        "image": "images/menu/supplements-thon.jpg",
         "name": {
           "fr": "Thon",
           "en": "Tuna",
@@ -7260,6 +7299,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-avocat",
+        "image": "images/menu/supplements-avocat.jpg",
         "name": {
           "fr": "Avocat",
           "en": "Avocado",
@@ -7273,6 +7313,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-leban",
+        "image": "images/menu/supplements-leban.jpg",
         "name": {
           "fr": "Leban",
           "en": "Leben (buttermilk)",
@@ -7286,6 +7327,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-dattes",
+        "image": "images/menu/supplements-dattes.jpg",
         "name": {
           "fr": "Dattes (3)",
           "en": "Dates (3)",
@@ -7299,6 +7341,7 @@ window.CATALOG = {
       },
       {
         "id": "supplements-chebakia",
+        "image": "images/menu/supplements-chebakia.jpg",
         "name": {
           "fr": "Chebakia (2)",
           "en": "Chebakia (2)",
@@ -7312,6 +7355,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-cafe-noir",
+        "image": "images/menu/boissons-cafe-noir.jpg",
         "name": {
           "fr": "Café noir",
           "en": "Black coffee",
@@ -7335,6 +7379,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-nespresso",
+        "image": "images/menu/boissons-nespresso.jpg",
         "name": {
           "fr": "Nespresso",
           "en": "Nespresso",
@@ -7358,6 +7403,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-cafe-au-lait",
+        "image": "images/menu/boissons-cafe-au-lait.jpg",
         "name": {
           "fr": "Café au lait",
           "en": "Coffee with milk",
@@ -7381,6 +7427,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-nescafe",
+        "image": "images/menu/boissons-nescafe.jpg",
         "name": {
           "fr": "Nescafé",
           "en": "Nescafé",
@@ -7404,6 +7451,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-nespresso-au-lait",
+        "image": "images/menu/boissons-nespresso-au-lait.jpg",
         "name": {
           "fr": "Nespresso au lait",
           "en": "Nespresso with milk",
@@ -7427,6 +7475,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-double-expresso",
+        "image": "images/menu/boissons-double-expresso.jpg",
         "name": {
           "fr": "Double expresso",
           "en": "Double espresso",
@@ -7450,6 +7499,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-latte-macchiato",
+        "image": "images/menu/boissons-latte-macchiato.jpg",
         "name": {
           "fr": "Latte macchiato",
           "en": "Latte macchiato",
@@ -7473,6 +7523,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-cappuccino-italien",
+        "image": "images/menu/boissons-cappuccino-italien.jpg",
         "name": {
           "fr": "Cappuccino italien",
           "en": "Italian cappuccino",
@@ -7496,6 +7547,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-lait-chaud-froid",
+        "image": "images/menu/boissons-lait-chaud-froid.jpg",
         "name": {
           "fr": "Lait chaud/froid",
           "en": "Hot/cold milk",
@@ -7519,6 +7571,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-chocolat-chaud",
+        "image": "images/menu/boissons-chocolat-chaud.jpg",
         "name": {
           "fr": "Chocolat chaud",
           "en": "Hot chocolate",
@@ -7542,6 +7595,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-the-menthe",
+        "image": "images/menu/boissons-the-menthe.jpg",
         "name": {
           "fr": "Thé à la menthe",
           "en": "Mint tea",
@@ -7565,6 +7619,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-the-noir",
+        "image": "images/menu/boissons-the-noir.jpg",
         "name": {
           "fr": "Thé noir",
           "en": "Black tea",
@@ -7588,6 +7643,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-the-americain",
+        "image": "images/menu/boissons-the-americain.jpg",
         "name": {
           "fr": "Thé américain",
           "en": "American tea",
@@ -7611,6 +7667,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-infusion",
+        "image": "images/menu/boissons-infusion.jpg",
         "name": {
           "fr": "Infusion",
           "en": "Herbal infusion",
@@ -7634,6 +7691,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-infusion-au-lait",
+        "image": "images/menu/boissons-infusion-au-lait.jpg",
         "name": {
           "fr": "Infusion au lait",
           "en": "Infusion with milk",
@@ -7657,6 +7715,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-eau-minerale-33cl",
+        "image": "images/menu/boissons-eau-minerale-33cl.jpg",
         "name": {
           "fr": "Eau minérale 33cl",
           "en": "Mineral water 33cl",
@@ -7680,6 +7739,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-oulmes-25cl",
+        "image": "images/menu/boissons-oulmes-25cl.jpg",
         "name": {
           "fr": "Oulmès 25cl verre",
           "en": "Oulmès 25cl (glass bottle)",
@@ -7703,6 +7763,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-soda-canette",
+        "image": "images/menu/boissons-soda-canette.jpg",
         "name": {
           "fr": "Soda canette",
           "en": "Canned soda",
@@ -7726,6 +7787,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-mojito",
+        "image": "images/menu/boissons-mojito.jpg",
         "name": {
           "fr": "Mojito",
           "en": "Mojito",
@@ -7749,6 +7811,7 @@ window.CATALOG = {
       },
       {
         "id": "boissons-frappuccino",
+        "image": "images/menu/boissons-frappuccino.jpg",
         "name": {
           "fr": "Frappuccino",
           "en": "Frappuccino",
