@@ -7869,46 +7869,33 @@ window.CATALOG = {
         }
       },
       {
-        "id": "tanjia-1-4-kg",
+        "id": "tanjia",
         "name": {
-          "fr": "Tanjia 1/4 kg",
-          "en": "Tanjia 1/4 kg",
-          "ar": "طنجية 1/4 كلغ",
-          "es": "Tanjia 1/4 kg",
-          "pt": "Tanjia 1/4 kg"
+          "fr": "Tanjia",
+          "en": "Tanjia",
+          "ar": "طنجية",
+          "es": "Tanjia",
+          "pt": "Tanjia"
         },
         "category": "tanjia",
-        "price": 85,
-        "available": true
-      },
-      {
-        "id": "tanjia-1-2-kg",
-        "name": {
-          "fr": "Tanjia 1/2 kg",
-          "en": "Tanjia 1/2 kg",
-          "ar": "طنجية 1/2 كلغ",
-          "es": "Tanjia 1/2 kg",
-          "pt": "Tanjia 1/2 kg"
+        "image": "images/menu/tanjia.jpg",
+        "description": {
+          "fr": "Spécialité marocaine mijotée lentement dans son pot en terre cuite. Choisissez votre portion : 1/4 kg, 1/2 kg ou 1 kg.",
+          "en": "Moroccan specialty slow-cooked in its traditional clay pot. Choose your portion: 1/4 kg, 1/2 kg or 1 kg.",
+          "ar": "تخصص مغربي يُطهى ببطء في إناء الفخار التقليدي. اختر الحصة: 1/4 كلغ أو 1/2 كلغ أو 1 كلغ.",
+          "es": "Especialidad marroquí cocinada a fuego lento en su vasija de barro. Elige tu ración: 1/4 kg, 1/2 kg o 1 kg.",
+          "pt": "Especialidade marroquina cozinhada lentamente no seu pote de barro. Escolha a porção: 1/4 kg, 1/2 kg ou 1 kg."
         },
-        "category": "tanjia",
-        "price": 140,
-        "available": true
-      },
-      {
-        "id": "tanjia-1-kg",
-        "name": {
-          "fr": "Tanjia 1 kg",
-          "en": "Tanjia 1 kg",
-          "ar": "طنجية 1 كلغ",
-          "es": "Tanjia 1 kg",
-          "pt": "Tanjia 1 kg"
-        },
-        "category": "tanjia",
-        "price": 250,
+        "options": [
+          { "label": { "fr": "1/4 kg", "en": "1/4 kg", "ar": "1/4 كلغ", "es": "1/4 kg", "pt": "1/4 kg" }, "price": 85 },
+          { "label": { "fr": "1/2 kg", "en": "1/2 kg", "ar": "1/2 كلغ", "es": "1/2 kg", "pt": "1/2 kg" }, "price": 140 },
+          { "label": { "fr": "1 kg", "en": "1 kg", "ar": "1 كلغ", "es": "1 kg", "pt": "1 kg" }, "price": 250 }
+        ],
         "available": true
       },
       {
         "id": "special-du-jour-couscous-viande",
+        "image": "images/menu/special-du-jour-couscous-viande.jpg",
         "name": {
           "fr": "Couscous viande",
           "en": "Couscous with meat",
@@ -7942,6 +7929,7 @@ window.CATALOG = {
       },
       {
         "id": "special-du-jour-couscous-poulet",
+        "image": "images/menu/special-du-jour-couscous-poulet.jpg",
         "name": {
           "fr": "Couscous poulet",
           "en": "Couscous with chicken",
@@ -7975,6 +7963,7 @@ window.CATALOG = {
       },
       {
         "id": "special-du-jour-couscous-vegetarien",
+        "image": "images/menu/special-du-jour-couscous-vegetarien.jpg",
         "name": {
           "fr": "Couscous végétarien",
           "en": "Vegetarian couscous",
@@ -8008,6 +7997,7 @@ window.CATALOG = {
       },
       {
         "id": "special-du-jour-rfissa",
+        "image": "images/menu/special-du-jour-rfissa.jpg",
         "name": {
           "fr": "Rfissa",
           "en": "Rfissa",
@@ -8029,6 +8019,7 @@ window.CATALOG = {
         "days": [
           3
         ],
+        "price": 60,
         "options": [
           {
             "label": {
@@ -8037,7 +8028,8 @@ window.CATALOG = {
               "ar": "أفخاذ الدجاج",
               "es": "Muslos de pollo",
               "pt": "Coxas de frango"
-            }
+            },
+            "price": 60
           },
           {
             "label": {
@@ -8046,7 +8038,8 @@ window.CATALOG = {
               "ar": "صدور الدجاج",
               "es": "Pechugas de pollo",
               "pt": "Peitos de frango"
-            }
+            },
+            "price": 60
           }
         ],
         "description": {
