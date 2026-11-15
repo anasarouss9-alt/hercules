@@ -4860,6 +4860,28 @@ window.CATALOG = {
           "es": "Bebidas",
           "pt": "Bebidas"
         }
+      },
+      {
+        "id": "tanjia",
+        "icon": "🍲",
+        "name": {
+          "fr": "Tanjia",
+          "en": "Tanjia",
+          "ar": "طنجية",
+          "es": "Tanjia",
+          "pt": "Tanjia"
+        }
+      },
+      {
+        "id": "special-du-jour",
+        "icon": "⭐",
+        "name": {
+          "fr": "Spécial du jour",
+          "en": "Daily special",
+          "ar": "طبق اليوم",
+          "es": "Plato del día",
+          "pt": "Prato do dia"
+        }
       }
     ],
     "products": [
@@ -7845,6 +7867,196 @@ window.CATALOG = {
           "fr": "Café noir, Lait froid, Crème chantilly, Glaçons, Sauce caramel ou chocolat.",
           "en": "Black coffee, Cold milk, Whipped cream, Ice, Caramel or chocolate sauce."
         }
+      },
+      {
+        "id": "tanjia-1-4-kg",
+        "name": {
+          "fr": "Tanjia 1/4 kg",
+          "en": "Tanjia 1/4 kg",
+          "ar": "طنجية 1/4 كلغ",
+          "es": "Tanjia 1/4 kg",
+          "pt": "Tanjia 1/4 kg"
+        },
+        "category": "tanjia",
+        "price": 85,
+        "available": true
+      },
+      {
+        "id": "tanjia-1-2-kg",
+        "name": {
+          "fr": "Tanjia 1/2 kg",
+          "en": "Tanjia 1/2 kg",
+          "ar": "طنجية 1/2 كلغ",
+          "es": "Tanjia 1/2 kg",
+          "pt": "Tanjia 1/2 kg"
+        },
+        "category": "tanjia",
+        "price": 140,
+        "available": true
+      },
+      {
+        "id": "tanjia-1-kg",
+        "name": {
+          "fr": "Tanjia 1 kg",
+          "en": "Tanjia 1 kg",
+          "ar": "طنجية 1 كلغ",
+          "es": "Tanjia 1 kg",
+          "pt": "Tanjia 1 kg"
+        },
+        "category": "tanjia",
+        "price": 250,
+        "available": true
+      },
+      {
+        "id": "special-du-jour-couscous-viande",
+        "name": {
+          "fr": "Couscous viande",
+          "en": "Couscous with meat",
+          "ar": "كسكس باللحم",
+          "es": "Cuscús de carne",
+          "pt": "Cuscuz de carne"
+        },
+        "category": "special-du-jour",
+        "price": 65,
+        "tags": [
+          {
+            "id": "vendredi",
+            "fr": "Vendredi",
+            "ar": "الجمعة",
+            "en": "Friday",
+            "es": "Viernes",
+            "pt": "Sexta-feira"
+          }
+        ],
+        "days": [
+          5
+        ],
+        "description": {
+          "fr": "Servi tous les vendredis.",
+          "en": "Served every Friday.",
+          "ar": "يُقدَّم كل يوم جمعة.",
+          "es": "Se sirve todos los viernes.",
+          "pt": "Servido todas as sextas-feiras."
+        },
+        "available": true
+      },
+      {
+        "id": "special-du-jour-couscous-poulet",
+        "name": {
+          "fr": "Couscous poulet",
+          "en": "Couscous with chicken",
+          "ar": "كسكس بالدجاج",
+          "es": "Cuscús de pollo",
+          "pt": "Cuscuz de frango"
+        },
+        "category": "special-du-jour",
+        "price": 55,
+        "tags": [
+          {
+            "id": "vendredi",
+            "fr": "Vendredi",
+            "ar": "الجمعة",
+            "en": "Friday",
+            "es": "Viernes",
+            "pt": "Sexta-feira"
+          }
+        ],
+        "days": [
+          5
+        ],
+        "description": {
+          "fr": "Servi tous les vendredis.",
+          "en": "Served every Friday.",
+          "ar": "يُقدَّم كل يوم جمعة.",
+          "es": "Se sirve todos los viernes.",
+          "pt": "Servido todas as sextas-feiras."
+        },
+        "available": true
+      },
+      {
+        "id": "special-du-jour-couscous-vegetarien",
+        "name": {
+          "fr": "Couscous végétarien",
+          "en": "Vegetarian couscous",
+          "ar": "كسكس بالخضر",
+          "es": "Cuscús vegetariano",
+          "pt": "Cuscuz vegetariano"
+        },
+        "category": "special-du-jour",
+        "price": 50,
+        "tags": [
+          {
+            "id": "vendredi",
+            "fr": "Vendredi",
+            "ar": "الجمعة",
+            "en": "Friday",
+            "es": "Viernes",
+            "pt": "Sexta-feira"
+          }
+        ],
+        "days": [
+          5
+        ],
+        "description": {
+          "fr": "Servi tous les vendredis.",
+          "en": "Served every Friday.",
+          "ar": "يُقدَّم كل يوم جمعة.",
+          "es": "Se sirve todos los viernes.",
+          "pt": "Servido todas as sextas-feiras."
+        },
+        "available": true
+      },
+      {
+        "id": "special-du-jour-rfissa",
+        "name": {
+          "fr": "Rfissa",
+          "en": "Rfissa",
+          "ar": "رفيسة",
+          "es": "Rfissa",
+          "pt": "Rfissa"
+        },
+        "category": "special-du-jour",
+        "tags": [
+          {
+            "id": "mercredi",
+            "fr": "Mercredi",
+            "ar": "الأربعاء",
+            "en": "Wednesday",
+            "es": "Miércoles",
+            "pt": "Quarta-feira"
+          }
+        ],
+        "days": [
+          3
+        ],
+        "options": [
+          {
+            "label": {
+              "fr": "Cuisses de poulet",
+              "en": "Chicken thighs",
+              "ar": "أفخاذ الدجاج",
+              "es": "Muslos de pollo",
+              "pt": "Coxas de frango"
+            }
+          },
+          {
+            "label": {
+              "fr": "Blancs de poulet",
+              "en": "Chicken breasts",
+              "ar": "صدور الدجاج",
+              "es": "Pechugas de pollo",
+              "pt": "Peitos de frango"
+            }
+          }
+        ],
+        "description": {
+          "fr": "Servi tous les mercredis.",
+          "en": "Served every Wednesday.",
+          "ar": "تُقدَّم كل يوم أربعاء.",
+          "es": "Se sirve todos los miércoles.",
+          "pt": "Servida todas as quartas-feiras."
+        },
+        "available": true
       }
     ]
   }
