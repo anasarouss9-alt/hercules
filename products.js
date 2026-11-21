@@ -54,6 +54,642 @@ window.CATALOG = {
     products: []
   },
 
+  /* Boutique Shell Select */
+  boutique: {
+    "categories": [],
+    "products": [
+      {
+        "id": "boutique-ain-saiss-1-5l",
+        "name": "AIN SAISS 1.5L",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-ain-saiss-33-cl",
+        "name": "AIN SAISS 33 CL",
+        "available": true
+      },
+      {
+        "id": "boutique-balconi-rollino-cacao-222g",
+        "name": "BALCONI ROLLINO CACAO 222G",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-balconi-rollino-nocciola-222g",
+        "name": "BALCONI ROLLINO NOCCIOLA 222G",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-balconi-wafers-nocciola-hazelnut-45g",
+        "name": "BALCONI WAFERS NOCCIOLA-HAZELNUT 45G",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-balconi-wafers-vaniglia-vanlla-45g",
+        "name": "BALCONI WAFERS VANIGLIA VANLLA 45G",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-bic-j6-squid-game-100u",
+        "name": "BIC J6 SQUID GAME 100U",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-bonbom-zero-citron-32g",
+        "name": "BONBOM ZERO CITRON 32G",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "boutique-briquet-bic",
+        "name": "BRIQUET BIC",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-capppy-pulpy-orange-pet-1l",
+        "name": "CAPPPY PULPY ORANGE PET 1L",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boutique-cappy-pulpy-orange-pet-25cl",
+        "name": "CAPPY PULPY ORANGE PET 25CL",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "boutique-caprisol-mojito-33cl",
+        "name": "CAPRISOL MOJITO 33CL",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boutique-coca-cola-45cl",
+        "name": "COCA COLA 45CL",
+        "available": true
+      },
+      {
+        "id": "boutique-coca-cola-zero-45-cl",
+        "name": "COCA COLA ZERO 45 CL",
+        "available": true
+      },
+      {
+        "id": "boutique-colgate-25ml",
+        "name": "COLGATE 25ML",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-colgate-triple-action-25ml",
+        "name": "COLGATE TRIPLE ACTION 25ML",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-cuetara-krit-cheese-sandwich-125g",
+        "name": "CUETARA KRIT CHEESE SANDWICH 125G",
+        "price": 17,
+        "available": true
+      },
+      {
+        "id": "boutique-diasol-oasis-mojito-fresh-330ml",
+        "name": "DIASOL OASIS MOJITO FRESH 330ML",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boutique-diasol-oasis-virgins-on-the-beach-330ml",
+        "name": "DIASOL OASIS VIRGINS ON THE BEACH 330ML",
+        "price": 16,
+        "available": true
+      },
+      {
+        "id": "boutique-disfruta-melocotton-200ml",
+        "name": "DISFRUTA MELOCOTTON 200ML",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-disfruta-tropical-200ml",
+        "name": "DISFRUTA TROPICAL 200ML",
+        "available": true
+      },
+      {
+        "id": "boutique-dulcesol-croissant-relleno-de-cacao-45g",
+        "name": "DULCESOL CROISSANT RELLENO DE CACAO 45G",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-dutch-delight-230g",
+        "name": "DUTCH DELIGHT 230G",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "boutique-el-toro-pipas-naturel-200-g",
+        "name": "EL TORO PIPAS NATUREL 200 G",
+        "price": 20,
+        "available": true
+      },
+      {
+        "id": "boutique-el-toro-pipas-oglonuts-200-g",
+        "name": "EL TORO PIPAS OGLONUTS 200 G",
+        "available": true
+      },
+      {
+        "id": "boutique-el-toro-potaje-oglonuts-250g",
+        "name": "EL TORO POTAJE OGLONUTS 250G",
+        "price": 26,
+        "available": true
+      },
+      {
+        "id": "boutique-ener-drink-evolution-original",
+        "name": "ENER DRINK EVOLUTION ORIGINAL",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "boutique-fontaneda-pims-naranja-150g",
+        "name": "FONTANEDA PIM'S NARANJA 150G",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "boutique-go-on-energy-peanut-caramel-and-milk-chocolate-45g",
+        "name": "GO ON ENERGY PEANUT CARAMEL & MILK CHOCOLATE 45G",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "boutique-go-on-protein-cranberry-coji-and-chocolate-50g",
+        "name": "GO ON PROTEIN CRANBERRY COJI & CHOCOLATE 50G",
+        "available": true
+      },
+      {
+        "id": "boutique-gullon-biscot-200g",
+        "name": "GULLON BISCOT 200G",
+        "price": 15,
+        "available": true
+      },
+      {
+        "id": "boutique-gullon-wafer-mix-nata-y-chocolate-60g",
+        "name": "GULLON WAFER MIX NATA Y CHOCOLATE 60G",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "boutique-gullon-zero-anadidos-280g",
+        "name": "GULLON ZERO ANADIDOS 280G",
+        "available": true
+      },
+      {
+        "id": "boutique-gullon-zero-sandwich-250g",
+        "name": "GULLON ZERO SANDWICH 250G",
+        "price": 20,
+        "available": true
+      },
+      {
+        "id": "boutique-halls-cherry-flavour-32gg",
+        "name": "HALLS CHERRY FLAVOUR 32GG",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-halls-cola-flavour-32g",
+        "name": "HALLS COLA FLAVOUR 32G",
+        "available": true
+      },
+      {
+        "id": "boutique-halls-honey-and-limon-33-5g",
+        "name": "HALLS HONEY & LIMON 33,5G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-halls-originalsugar-free-32g",
+        "name": "HALLS ORIGINALSUGAR FREE 32G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-haribo-berries-80g",
+        "name": "HARIBO BERRIES 80G",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "boutique-haribo-starmix-65g",
+        "name": "HARIBO STARMIX 65G",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "boutique-haribo-worms-65g",
+        "name": "HARIBO WORMS 65G",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "boutique-hawai-ananas-45cl",
+        "name": "HAWAI ANANAS 45CL",
+        "available": true
+      },
+      {
+        "id": "boutique-hawai-tropical-45cl",
+        "name": "HAWAI TROPICAL 45CL",
+        "available": true
+      },
+      {
+        "id": "boutique-j5-min-marin-50u",
+        "name": "J5 MIN MARIN 50U",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-juver-disfruta-10-frutas-10-vitaminas-300ml",
+        "name": "JUVER DISFRUTA 10 FRUTAS +10 VITAMINAS 300ML",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-juver-disfruta-melocoton-300ml",
+        "name": "JUVER DISFRUTA MELOCOTON 300ML",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-kinder-bueno-43g",
+        "name": "KINDER BUENO 43G",
+        "available": true
+      },
+      {
+        "id": "boutique-kinder-bueno-white-39g",
+        "name": "KINDER BUENO WHITE 39G",
+        "price": 11,
+        "available": true
+      },
+      {
+        "id": "boutique-kitkat-chunky-funky-40g",
+        "name": "KITKAT CHUNKY FUNKY 40G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-kitkat-nestle-dark-41-5g",
+        "name": "KITKAT NESTLE DARK 41,5G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-kitkat-white-41-5g",
+        "name": "KITKAT WHITE 41.5G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-knoppers-black-and-white-25g",
+        "name": "KNOPPERS BLACK & WHITE 25G",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "boutique-lago-poker-vinigilia-45g",
+        "name": "LAGO POKER VINIGILIA 45G",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "boutique-lipton-mango-ice-tea-330ml",
+        "name": "LIPTON MANGO ICE TEA 330ML",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boutique-lipton-naranja-mango-330ml",
+        "name": "LIPTON NARANJA MANGO 330ML",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boutique-lotus-biscoff-125g",
+        "name": "LOTUS BISCOFF 125G",
+        "price": 20,
+        "available": true
+      },
+      {
+        "id": "boutique-lu-choco-prince-enrobe-choco-lait-28-5g",
+        "name": "LU CHOCO PRINCE ENROBE CHOCO LAIT 28,5G",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-maltesers-37g",
+        "name": "MALTESERS 37G",
+        "available": true
+      },
+      {
+        "id": "boutique-mars-51g",
+        "name": "MARS 51G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-mentos-chicle-full-fruit-30g",
+        "name": "MENTOS CHICLE FULL FRUIT 30G",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "boutique-mentos-chicle-sabora-fresa-morango-30g",
+        "name": "MENTOS CHICLE SABORA FRESA MORANGO 30G",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "boutique-mentos-chicle-tutti-frutti-30g",
+        "name": "MENTOS CHICLE TUTTI FRUTTI 30G",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "boutique-milka-choco-mini-cookies-110g",
+        "name": "MILKA CHOCO MINI COOKIES 110G",
+        "price": 28,
+        "available": true
+      },
+      {
+        "id": "boutique-milka-choco-pause-260g",
+        "name": "MILKA CHOCO PAUSE 260G",
+        "available": true
+      },
+      {
+        "id": "boutique-milka-choco-thins-finas-126g",
+        "name": "MILKA CHOCO THINS/FINAS 126G",
+        "price": 30,
+        "available": true
+      },
+      {
+        "id": "boutique-milka-cookies-oreo-creme-156g",
+        "name": "MILKA COOKIES OREO CREME 156G",
+        "price": 28,
+        "available": true
+      },
+      {
+        "id": "boutique-milka-cookies-xl",
+        "name": "MILKA COOKIES XL",
+        "price": 35,
+        "available": true
+      },
+      {
+        "id": "boutique-milka-sensations-cookies-156g",
+        "name": "MILKA SENSATIONS COOKIES 156G",
+        "price": 28,
+        "available": true
+      },
+      {
+        "id": "boutique-nestle-kitkat-have-break-36-5g",
+        "name": "NESTLE KITKAT HAVE BREAK 36,5G",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-nestle-smarties-38g",
+        "name": "NESTLE SMARTIES 38G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-nocilla-mini-pistacho-64g",
+        "name": "NOCILLA MINI PISTACHO 64G",
+        "price": 18,
+        "available": true
+      },
+      {
+        "id": "boutique-orangina-50cl",
+        "name": "ORANGINA 50CL",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-oreo-chip-ahoy-mini-160g",
+        "name": "OREO CHIP AHOY MINI 160G",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-oulmes-1l",
+        "name": "OULMES 1L",
+        "price": 12,
+        "available": true
+      },
+      {
+        "id": "boutique-pascual-bi-frutas-tropical-330-ml",
+        "name": "PASCUAL BI FRUTAS TROPICAL 330 ML",
+        "available": true
+      },
+      {
+        "id": "boutique-pick-up-dark-28g",
+        "name": "PICK UP DARK 28G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-pick-up-salted-caramel-28g",
+        "name": "PICK UP SALTED CARAMEL 28G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-poms-45cl",
+        "name": "POMS 45CL",
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-barbeque-165g",
+        "name": "PRINGLES BARBEQUE 165G",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-cheesy-cheese-165g",
+        "name": "PRINGLES CHEESY CHEESE 165G",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-hot-and-spicy-40g",
+        "name": "PRINGLES HOT & SPICY 40G",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-original-165g",
+        "name": "PRINGLES ORIGINAL 165G",
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-original-40g",
+        "name": "PRINGLES ORIGINAL 40G",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-paprika-40g",
+        "name": "PRINGLES PAPRIKA 40G",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-sour-cream-and-onion-40g",
+        "name": "PRINGLES SOUR CREAM & ONION 40G",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boutique-pringles-texas-bbq-sauce-40g",
+        "name": "PRINGLES TEXAS BBQ SAUCE 40G",
+        "price": 14,
+        "available": true
+      },
+      {
+        "id": "boutique-pringlies-hot-and-spicy",
+        "name": "PRINGLIES HOT & SPICY",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-red-bull-250-ml",
+        "name": "RED BULL 250 ML",
+        "price": 25,
+        "available": true
+      },
+      {
+        "id": "boutique-rostoy-cristal-frutas-mezcladas-200ml",
+        "name": "ROSTOY CRISTAL FRUTAS MEZCLADAS 200ML",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-rostoy-mango-330ml",
+        "name": "ROSTOY MANGO 330ML",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boutique-rostoy-melocoton-peche-330ml",
+        "name": "ROSTOY MELOCOTON PECHE 330ML",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boutique-rostoy-pina-coco-330ml",
+        "name": "ROSTOY PINA-COCO 330ML",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boutique-sante-crunchy-banana-40g",
+        "name": "SANTE CRUNCHY BANANA 40G",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-sante-crunchy-cranberry-and-raspberry-40g",
+        "name": "SANTE CRUNCHY CRANBERRY & RASPBERRY 40G",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-sante-crunchy-plum-40g",
+        "name": "SANTE CRUNCHY PLUM 40G",
+        "price": 8,
+        "available": true
+      },
+      {
+        "id": "boutique-schweppes-citron-45cl",
+        "name": "SCHWEPPES CITRON 45CL",
+        "available": true
+      },
+      {
+        "id": "boutique-schweppes-mojito-33cl",
+        "name": "SCHWEPPES MOJITO 33CL",
+        "price": 13,
+        "available": true
+      },
+      {
+        "id": "boutique-schweppes-tonic-45-cl",
+        "name": "SCHWEPPES TONIC 45 CL",
+        "available": true
+      },
+      {
+        "id": "boutique-sidi-ali-50-cl",
+        "name": "SIDI ALI 50 CL",
+        "price": 5,
+        "available": true
+      },
+      {
+        "id": "boutique-silky-mint-and-eucalyptus-50g",
+        "name": "SILKY MINT & EUCALYPTUS 50G",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "boutique-snickers-50g",
+        "name": "SNICKERS 50G",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-solevita",
+        "name": "SOLEVITA",
+        "price": 10,
+        "available": true
+      },
+      {
+        "id": "boutique-sprite-45cl",
+        "name": "SPRITE 45CL",
+        "available": true
+      },
+      {
+        "id": "boutique-tempo",
+        "name": "TEMPO",
+        "price": 3,
+        "available": true
+      },
+      {
+        "id": "boutique-trident-strawberry-flavor-13-5-g",
+        "name": "TRIDENT STRAWBERRY FLAVOR 13,5 G",
+        "price": 6,
+        "available": true
+      },
+      {
+        "id": "boutique-twins-milk-chocolate-42g",
+        "name": "TWINS MILK CHOCOLATE 42G",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "boutique-twins-white-chocolate-42g",
+        "name": "TWINS WHITE CHOCOLATE 42G",
+        "price": 7,
+        "available": true
+      },
+      {
+        "id": "boutique-twix-hazelnut-flavour-46g",
+        "name": "TWIX HAZELNUT FLAVOUR 46G",
+        "price": 11,
+        "available": true
+      }
+    ]
+  },
+
   /* Huiles & lubrifiants Shell */
   lubrifiants: {
     "categories": [
