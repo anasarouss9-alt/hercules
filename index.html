@@ -861,7 +861,8 @@
           <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm">
             <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">🚻</div>
             <h3 class="text-base font-bold text-slate-900 mb-2" data-i18n="serv4Title">Toilettes & Confort</h3>
-            <p class="text-xs text-slate-500 leading-relaxed" data-i18n="serv4Desc">Sanitaires propres et entretenus accessibles 24h/24 aux clients.</p>
+            <p class="text-xs text-slate-500 leading-relaxed" data-i18n="serv4Desc">Sanitaires propres accessibles 24h/24 et mosquée (salle de prière) à disposition des clients.</p>
+            <button type="button" id="galOpen" class="mt-4 inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition" data-i18n="galBtn">📷 Voir les photos</button>
           </div>
         </div>
 
@@ -875,6 +876,7 @@
             <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200" data-i18n="feat2">⛽ Service en Piste</span>
             <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200" data-i18n="feat3">🚚 Accès Poids Lourds</span>
             <span class="bg-white px-2.5 py-1 rounded-lg border border-amber-200" data-i18n="feat4">🎁 Programme My Shell</span>
+            <span class="bg-white px-2.5 py-1 rounded-lg border border-emerald-200" data-i18n="feat5">🕌 Mosquée sur place</span>
           </div>
         </div>
 
@@ -1198,12 +1200,19 @@
         serv3Title: "Vidange & lubrifiants",
         serv3Desc: "Service de vidange express et conseils en huiles moteur Shell Helix.",
         serv4Title: "Toilettes & confort",
-        serv4Desc: "Sanitaires propres et entretenus accessibles 24h/24 aux clients.",
+        serv4Desc: "Sanitaires propres accessibles 24h/24 et mosquée (salle de prière) à disposition des clients.",
+        galBtn: "📷 Voir les photos",
+        galToilets: "🚻 Toilettes",
+        galMosque: "🕌 Mosquée",
+        galClose: "Fermer",
+        galPrev: "Précédent",
+        galNext: "Suivant",
         extraServTitle: "Équipements répertoriés Shell HERCULES :",
         feat1: "💳 Cartes carburant & bancaires",
         feat2: "⛽ Service en piste",
         feat3: "🚚 Accès poids lourds",
         feat4: "🎁 Programme My Shell",
+        feat5: "🕌 Mosquée sur place",
         revKicker: "Avis & évaluations clients",
         revTitle: "Votre opinion compte pour nous",
         revSub: "Consultez les évaluations ou laissez votre avis avec votre adresse e-mail.",
@@ -1316,12 +1325,19 @@
         serv3Title: "تغيير الزيت والمزلّقات",
         serv3Desc: "خدمة تغيير الزيت السريعة ونصائح حول زيوت المحركات Shell Helix.",
         serv4Title: "المرافق الصحية والراحة",
-        serv4Desc: "مرافق صحية نظيفة ومُعتنى بها، متاحة للزبناء على مدار الساعة.",
+        serv4Desc: "مرافق صحية نظيفة متاحة على مدار الساعة، ومسجد (مصلى) رهن إشارة الزبناء.",
+        galBtn: "📷 عرض الصور",
+        galToilets: "🚻 المراحيض",
+        galMosque: "🕌 المسجد",
+        galClose: "إغلاق",
+        galPrev: "السابق",
+        galNext: "التالي",
         extraServTitle: "التجهيزات المتوفرة في شل هيركوليس:",
         feat1: "💳 بطاقات الوقود والبطاقات البنكية",
         feat2: "⛽ خدمة عند المضخة",
         feat3: "🚚 ولوج الشاحنات",
         feat4: "🎁 برنامج My Shell",
+        feat5: "🕌 مسجد في عين المكان",
         revKicker: "آراء الزبناء وتقييماتهم",
         revTitle: "رأيكم يهمنا",
         revSub: "اطلع على التقييمات أو اترك رأيك باستعمال بريدك الإلكتروني.",
@@ -1434,12 +1450,19 @@
         serv3Title: "Oil change & lubricants",
         serv3Desc: "Express oil change service and advice on Shell Helix motor oils.",
         serv4Title: "Restrooms & comfort",
-        serv4Desc: "Clean, well-maintained restrooms available to customers 24/7.",
+        serv4Desc: "Clean restrooms available 24/7, plus a mosque (prayer room) for our customers.",
+        galBtn: "📷 See photos",
+        galToilets: "🚻 Restrooms",
+        galMosque: "🕌 Mosque",
+        galClose: "Close",
+        galPrev: "Previous",
+        galNext: "Next",
         extraServTitle: "Shell HERCULES facilities:",
         feat1: "💳 Fuel & bank cards",
         feat2: "⛽ Forecourt service",
         feat3: "🚚 Heavy vehicle access",
         feat4: "🎁 My Shell rewards",
+        feat5: "🕌 Mosque on site",
         revKicker: "Customer reviews & ratings",
         revTitle: "Your feedback matters",
         revSub: "Read customer reviews or leave your own using your email address.",
@@ -1552,12 +1575,19 @@
         serv3Title: "Cambio de aceite y lubricantes",
         serv3Desc: "Servicio exprés de cambio de aceite y asesoramiento sobre aceites de motor Shell Helix.",
         serv4Title: "Aseos y confort",
-        serv4Desc: "Aseos limpios y bien cuidados, accesibles las 24 horas para los clientes.",
+        serv4Desc: "Aseos limpios accesibles las 24 horas y mezquita (sala de oración) a disposición de los clientes.",
+        galBtn: "📷 Ver fotos",
+        galToilets: "🚻 Aseos",
+        galMosque: "🕌 Mezquita",
+        galClose: "Cerrar",
+        galPrev: "Anterior",
+        galNext: "Siguiente",
         extraServTitle: "Equipamiento Shell HERCULES:",
         feat1: "💳 Tarjetas de carburante y bancarias",
         feat2: "⛽ Servicio en pista",
         feat3: "🚚 Acceso para camiones",
         feat4: "🎁 Programa My Shell",
+        feat5: "🕌 Mezquita en el lugar",
         revKicker: "Opiniones y valoraciones de clientes",
         revTitle: "Su opinión es importante para nosotros",
         revSub: "Consulte las valoraciones o deje su opinión con su correo electrónico.",
@@ -1670,12 +1700,19 @@
         serv3Title: "Troca de óleo e lubrificantes",
         serv3Desc: "Serviço expresso de troca de óleo e aconselhamento sobre óleos de motor Shell Helix.",
         serv4Title: "Casas de banho e conforto",
-        serv4Desc: "Instalações sanitárias limpas e bem cuidadas, acessíveis 24h por dia aos clientes.",
+        serv4Desc: "Instalações sanitárias limpas, acessíveis 24h por dia, e mesquita (sala de oração) à disposição dos clientes.",
+        galBtn: "📷 Ver fotos",
+        galToilets: "🚻 Casas de banho",
+        galMosque: "🕌 Mesquita",
+        galClose: "Fechar",
+        galPrev: "Anterior",
+        galNext: "Seguinte",
         extraServTitle: "Equipamentos Shell HERCULES:",
         feat1: "💳 Cartões de combustível e bancários",
         feat2: "⛽ Serviço de pista",
         feat3: "🚚 Acesso a veículos pesados",
         feat4: "🎁 Programa My Shell",
+        feat5: "🕌 Mesquita no local",
         revKicker: "Avaliações e opiniões dos clientes",
         revTitle: "A sua opinião é importante para nós",
         revSub: "Consulte as avaliações ou deixe a sua opinião com o seu e-mail.",
@@ -2179,5 +2216,55 @@
     start();
   })();
 </script>
+
+  <!-- Galerie Toilettes & Mosquée -->
+  <div id="galModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true">
+    <div class="bg-white rounded-2xl w-full max-w-md overflow-hidden shadow-2xl">
+      <div class="flex items-center gap-2 p-3 border-b border-slate-200">
+        <button type="button" data-gal="toilettes" class="gal-tab flex-1 text-sm font-bold px-3 py-2 rounded-lg" data-i18n="galToilets">🚻 Toilettes</button>
+        <button type="button" data-gal="mosquee" class="gal-tab flex-1 text-sm font-bold px-3 py-2 rounded-lg" data-i18n="galMosque">🕌 Mosquée</button>
+        <button type="button" id="galClose" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold" aria-label="Fermer">✕</button>
+      </div>
+      <div class="relative bg-slate-100">
+        <img id="galImg" src="" alt="" class="w-full max-h-[70vh] object-contain mx-auto">
+        <button type="button" id="galPrev" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow font-bold text-slate-800" aria-label="Précédent">‹</button>
+        <button type="button" id="galNext" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow font-bold text-slate-800" aria-label="Suivant">›</button>
+      </div>
+      <p id="galCount" class="text-center text-xs text-slate-500 py-2"></p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const G = { toilettes: ["toilettes-1","toilettes-2","toilettes-3"], mosquee: ["mosquee-1","mosquee-2"] };
+      const modal = document.getElementById("galModal"), img = document.getElementById("galImg"), cnt = document.getElementById("galCount");
+      let tab = "toilettes", i = 0;
+      function show() {
+        const list = G[tab];
+        img.src = "images/confort/" + list[i] + ".jpg";
+        img.alt = tab + " " + (i + 1);
+        cnt.textContent = (i + 1) + " / " + list.length;
+        modal.querySelectorAll(".gal-tab").forEach(b => {
+          const on = b.dataset.gal === tab;
+          b.classList.toggle("bg-emerald-600", on); b.classList.toggle("text-white", on);
+          b.classList.toggle("bg-slate-100", !on); b.classList.toggle("text-slate-700", !on);
+        });
+      }
+      function step(d) { const n = G[tab].length; i = (i + d + n) % n; show(); }
+      function open() { modal.classList.remove("hidden"); modal.classList.add("flex"); show(); }
+      function close() { modal.classList.add("hidden"); modal.classList.remove("flex"); }
+      document.getElementById("galOpen").onclick = open;
+      document.getElementById("galClose").onclick = close;
+      document.getElementById("galPrev").onclick = () => step(-1);
+      document.getElementById("galNext").onclick = () => step(1);
+      modal.onclick = e => { if (e.target === modal) close(); };
+      modal.querySelectorAll(".gal-tab").forEach(b => b.onclick = () => { tab = b.dataset.gal; i = 0; show(); });
+      document.addEventListener("keydown", e => {
+        if (modal.classList.contains("hidden")) return;
+        if (e.key === "Escape") close();
+        if (e.key === "ArrowLeft") step(-1);
+        if (e.key === "ArrowRight") step(1);
+      });
+    })();
+  </script>
 </body>
 </html>
