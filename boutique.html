@@ -564,7 +564,9 @@ img { max-width: 100%; }
     try {
       const p = new URLSearchParams(location.search);
       state.q = p.get("q") || "";
-      p.getAll("cat").forEach((v) => state.cats.add(v));
+      // ignore ?cat= values that are not a real category of this page (e.g. an old "?cat=snacks" link)
+      const knownCats = new Set([...catDefs.keys(), ...products.map((x) => String(x.category || "")).filter(Boolean)]);
+      p.getAll("cat").forEach((v) => { if (knownCats.has(v)) state.cats.add(v); });
       p.getAll("brand").forEach((v) => state.brands.add(v));
       p.getAll("tag").forEach((v) => state.tags.add(v));
       state.min = num(p.get("min"));
