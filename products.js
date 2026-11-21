@@ -101,12 +101,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-bic-j6-squid-game-100u",
+        "image": "images/boutique/boutique-bic-j6-squid-game-100u.jpg",
         "name": "BIC J6 SQUID GAME 100U",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-bonbom-zero-citron-32g",
+        "image": "images/boutique/boutique-bonbom-zero-citron-32g.jpg",
         "name": "BONBOM ZERO CITRON 32G",
         "price": 12,
         "available": true
@@ -134,6 +136,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-caprisol-mojito-33cl",
+        "image": "images/boutique/boutique-caprisol-mojito-33cl.jpg",
         "name": "CAPRISOL MOJITO 33CL",
         "price": 14,
         "available": true
@@ -166,18 +169,21 @@ window.CATALOG = {
       },
       {
         "id": "boutique-cuetara-krit-cheese-sandwich-125g",
+        "image": "images/boutique/boutique-cuetara-krit-cheese-sandwich-125g.jpg",
         "name": "CUETARA KRIT CHEESE SANDWICH 125G",
         "price": 17,
         "available": true
       },
       {
         "id": "boutique-diasol-oasis-mojito-fresh-330ml",
+        "image": "images/boutique/boutique-diasol-oasis-mojito-fresh-330ml.jpg",
         "name": "DIASOL OASIS MOJITO FRESH 330ML",
         "price": 16,
         "available": true
       },
       {
         "id": "boutique-diasol-oasis-virgins-on-the-beach-330ml",
+        "image": "images/boutique/boutique-diasol-oasis-virgins-on-the-beach-330ml.jpg",
         "name": "DIASOL OASIS VIRGINS ON THE BEACH 330ML",
         "price": 16,
         "available": true
@@ -197,6 +203,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-dulcesol-croissant-relleno-de-cacao-45g",
+        "image": "images/boutique/boutique-dulcesol-croissant-relleno-de-cacao-45g.jpg",
         "name": "DULCESOL CROISSANT RELLENO DE CACAO 45G",
         "price": 5,
         "available": true
@@ -223,6 +230,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-el-toro-potaje-oglonuts-250g",
+        "image": "images/boutique/boutique-el-toro-potaje-oglonuts-250g.jpg",
         "name": "EL TORO POTAJE OGLONUTS 250G",
         "price": 26,
         "available": true
@@ -256,6 +264,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-gullon-biscot-200g",
+        "image": "images/boutique/boutique-gullon-biscot-200g.jpg",
         "name": "GULLON BISCOT 200G",
         "price": 15,
         "available": true
@@ -289,6 +298,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-halls-cola-flavour-32g",
+        "image": "images/boutique/boutique-halls-cola-flavour-32g.jpg",
         "name": "HALLS COLA FLAVOUR 32G",
         "available": true
       },
@@ -301,6 +311,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-halls-originalsugar-free-32g",
+        "image": "images/boutique/boutique-halls-originalsugar-free-32g.jpg",
         "name": "HALLS ORIGINALSUGAR FREE 32G",
         "price": 10,
         "available": true
@@ -354,6 +365,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-juver-disfruta-melocoton-300ml",
+        "image": "images/boutique/boutique-juver-disfruta-melocoton-300ml.jpg",
         "name": "JUVER DISFRUTA MELOCOTON 300ML",
         "price": 8,
         "available": true
@@ -442,12 +454,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-mars-51g",
+        "image": "images/boutique/boutique-mars-51g.jpg",
         "name": "MARS 51G",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-mentos-chicle-full-fruit-30g",
+        "image": "images/boutique/boutique-mentos-chicle-full-fruit-30g.jpg",
         "name": "MENTOS CHICLE FULL FRUIT 30G",
         "price": 18,
         "available": true
@@ -516,6 +530,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-nestle-smarties-38g",
+        "image": "images/boutique/boutique-nestle-smarties-38g.jpg",
         "name": "NESTLE SMARTIES 38G",
         "price": 10,
         "available": true
@@ -631,6 +646,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-pringlies-hot-and-spicy",
+        "image": "images/boutique/boutique-pringlies-hot-and-spicy.jpg",
         "name": "PRINGLIES HOT & SPICY",
         "price": 25,
         "available": true
@@ -644,6 +660,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-rostoy-cristal-frutas-mezcladas-200ml",
+        "image": "images/boutique/boutique-rostoy-cristal-frutas-mezcladas-200ml.jpg",
         "name": "ROSTOY CRISTAL FRUTAS MEZCLADAS 200ML",
         "price": 10,
         "available": true
@@ -678,6 +695,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-sante-crunchy-cranberry-and-raspberry-40g",
+        "image": "images/boutique/boutique-sante-crunchy-cranberry-and-raspberry-40g.jpg",
         "name": "SANTE CRUNCHY CRANBERRY & RASPBERRY 40G",
         "price": 8,
         "available": true
@@ -717,6 +735,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-silky-mint-and-eucalyptus-50g",
+        "image": "images/boutique/boutique-silky-mint-and-eucalyptus-50g.jpg",
         "name": "SILKY MINT & EUCALYPTUS 50G",
         "price": 6,
         "available": true
