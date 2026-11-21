@@ -131,11 +131,13 @@ window.CATALOG = {
       },
       {
         "id": "boutique-coca-cola-45cl",
+        "image": "images/boutique/boutique-coca-cola-45cl.jpg",
         "name": "COCA COLA 45CL",
         "available": true
       },
       {
         "id": "boutique-coca-cola-zero-45-cl",
+        "image": "images/boutique/boutique-coca-cola-zero-45-cl.jpg",
         "name": "COCA COLA ZERO 45 CL",
         "available": true
       },
@@ -194,12 +196,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-el-toro-pipas-naturel-200-g",
+        "image": "images/boutique/boutique-el-toro-pipas-naturel-200-g.jpg",
         "name": "EL TORO PIPAS NATUREL 200 G",
         "price": 20,
         "available": true
       },
       {
         "id": "boutique-el-toro-pipas-oglonuts-200-g",
+        "image": "images/boutique/boutique-el-toro-pipas-oglonuts-200-g.jpg",
         "name": "EL TORO PIPAS OGLONUTS 200 G",
         "available": true
       },
@@ -303,6 +307,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-hawai-tropical-45cl",
+        "image": "images/boutique/boutique-hawai-tropical-45cl.jpg",
         "name": "HAWAI TROPICAL 45CL",
         "available": true
       },
@@ -326,6 +331,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-kinder-bueno-43g",
+        "image": "images/boutique/boutique-kinder-bueno-43g.jpg",
         "name": "KINDER BUENO 43G",
         "available": true
       },
@@ -431,6 +437,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-milka-choco-thins-finas-126g",
+        "image": "images/boutique/boutique-milka-choco-thins-finas-126g.jpg",
         "name": "MILKA CHOCO THINS/FINAS 126G",
         "price": 30,
         "available": true
@@ -443,12 +450,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-milka-cookies-xl",
+        "image": "images/boutique/boutique-milka-cookies-xl.jpg",
         "name": "MILKA COOKIES XL",
         "price": 35,
         "available": true
       },
       {
         "id": "boutique-milka-sensations-cookies-156g",
+        "image": "images/boutique/boutique-milka-sensations-cookies-156g.jpg",
         "name": "MILKA SENSATIONS COOKIES 156G",
         "price": 28,
         "available": true
@@ -485,6 +494,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-oulmes-1l",
+        "image": "images/boutique/boutique-oulmes-1l.jpg",
         "name": "OULMES 1L",
         "price": 12,
         "available": true
@@ -496,6 +506,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-pick-up-dark-28g",
+        "image": "images/boutique/boutique-pick-up-dark-28g.jpg",
         "name": "PICK UP DARK 28G",
         "price": 10,
         "available": true
@@ -508,6 +519,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-poms-45cl",
+        "image": "images/boutique/boutique-poms-45cl.jpg",
         "name": "POMS 45CL",
         "available": true
       },
@@ -566,6 +578,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-red-bull-250-ml",
+        "image": "images/boutique/boutique-red-bull-250-ml.jpg",
         "name": "RED BULL 250 ML",
         "price": 25,
         "available": true
@@ -584,6 +597,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-rostoy-melocoton-peche-330ml",
+        "image": "images/boutique/boutique-rostoy-melocoton-peche-330ml.jpg",
         "name": "ROSTOY MELOCOTON PECHE 330ML",
         "price": 13,
         "available": true
@@ -608,12 +622,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-sante-crunchy-plum-40g",
+        "image": "images/boutique/boutique-sante-crunchy-plum-40g.jpg",
         "name": "SANTE CRUNCHY PLUM 40G",
         "price": 8,
         "available": true
       },
       {
         "id": "boutique-schweppes-citron-45cl",
+        "image": "images/boutique/boutique-schweppes-citron-45cl.jpg",
         "name": "SCHWEPPES CITRON 45CL",
         "available": true
       },
@@ -625,11 +641,13 @@ window.CATALOG = {
       },
       {
         "id": "boutique-schweppes-tonic-45-cl",
+        "image": "images/boutique/boutique-schweppes-tonic-45-cl.jpg",
         "name": "SCHWEPPES TONIC 45 CL",
         "available": true
       },
       {
         "id": "boutique-sidi-ali-50-cl",
+        "image": "images/boutique/boutique-sidi-ali-50-cl.jpg",
         "name": "SIDI ALI 50 CL",
         "price": 5,
         "available": true
@@ -642,6 +660,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-snickers-50g",
+        "image": "images/boutique/boutique-snickers-50g.jpg",
         "name": "SNICKERS 50G",
         "price": 10,
         "available": true
@@ -654,6 +673,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-sprite-45cl",
+        "image": "images/boutique/boutique-sprite-45cl.jpg",
         "name": "SPRITE 45CL",
         "available": true
       },
@@ -671,12 +691,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-twins-milk-chocolate-42g",
+        "image": "images/boutique/boutique-twins-milk-chocolate-42g.jpg",
         "name": "TWINS MILK CHOCOLATE 42G",
         "price": 7,
         "available": true
       },
       {
         "id": "boutique-twins-white-chocolate-42g",
+        "image": "images/boutique/boutique-twins-white-chocolate-42g.jpg",
         "name": "TWINS WHITE CHOCOLATE 42G",
         "price": 7,
         "available": true
