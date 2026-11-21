@@ -60,35 +60,41 @@ window.CATALOG = {
     "products": [
       {
         "id": "boutique-ain-saiss-1-5l",
+        "image": "images/boutique/boutique-ain-saiss-1-5l.jpg",
         "name": "AIN SAISS 1.5L",
         "price": 8,
         "available": true
       },
       {
         "id": "boutique-ain-saiss-33-cl",
+        "image": "images/boutique/boutique-ain-saiss-33-cl.jpg",
         "name": "AIN SAISS 33 CL",
         "available": true
       },
       {
         "id": "boutique-balconi-rollino-cacao-222g",
+        "image": "images/boutique/boutique-balconi-rollino-cacao-222g.jpg",
         "name": "BALCONI ROLLINO CACAO 222G",
         "price": 25,
         "available": true
       },
       {
         "id": "boutique-balconi-rollino-nocciola-222g",
+        "image": "images/boutique/boutique-balconi-rollino-nocciola-222g.jpg",
         "name": "BALCONI ROLLINO NOCCIOLA 222G",
         "price": 25,
         "available": true
       },
       {
         "id": "boutique-balconi-wafers-nocciola-hazelnut-45g",
+        "image": "images/boutique/boutique-balconi-wafers-nocciola-hazelnut-45g.jpg",
         "name": "BALCONI WAFERS NOCCIOLA-HAZELNUT 45G",
         "price": 5,
         "available": true
       },
       {
         "id": "boutique-balconi-wafers-vaniglia-vanlla-45g",
+        "image": "images/boutique/boutique-balconi-wafers-vaniglia-vanlla-45g.jpg",
         "name": "BALCONI WAFERS VANIGLIA VANLLA 45G",
         "price": 5,
         "available": true
@@ -107,18 +113,21 @@ window.CATALOG = {
       },
       {
         "id": "boutique-briquet-bic",
+        "image": "images/boutique/boutique-briquet-bic.jpg",
         "name": "BRIQUET BIC",
         "price": 8,
         "available": true
       },
       {
         "id": "boutique-capppy-pulpy-orange-pet-1l",
+        "image": "images/boutique/boutique-capppy-pulpy-orange-pet-1l.jpg",
         "name": "CAPPPY PULPY ORANGE PET 1L",
         "price": 16,
         "available": true
       },
       {
         "id": "boutique-cappy-pulpy-orange-pet-25cl",
+        "image": "images/boutique/boutique-cappy-pulpy-orange-pet-25cl.png",
         "name": "CAPPY PULPY ORANGE PET 25CL",
         "price": 6,
         "available": true
@@ -143,12 +152,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-colgate-25ml",
+        "image": "images/boutique/boutique-colgate-25ml.jpg",
         "name": "COLGATE 25ML",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-colgate-triple-action-25ml",
+        "image": "images/boutique/boutique-colgate-triple-action-25ml.jpg",
         "name": "COLGATE TRIPLE ACTION 25ML",
         "price": 10,
         "available": true
@@ -173,12 +184,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-disfruta-melocotton-200ml",
+        "image": "images/boutique/boutique-disfruta-melocotton-200ml.jpg",
         "name": "DISFRUTA MELOCOTTON 200ML",
         "price": 5,
         "available": true
       },
       {
         "id": "boutique-disfruta-tropical-200ml",
+        "image": "images/boutique/boutique-disfruta-tropical-200ml.png",
         "name": "DISFRUTA TROPICAL 200ML",
         "available": true
       },
@@ -190,6 +203,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-dutch-delight-230g",
+        "image": "images/boutique/boutique-dutch-delight-230g.jpg",
         "name": "DUTCH DELIGHT 230G",
         "price": 30,
         "available": true
@@ -215,24 +229,28 @@ window.CATALOG = {
       },
       {
         "id": "boutique-ener-drink-evolution-original",
+        "image": "images/boutique/boutique-ener-drink-evolution-original.jpg",
         "name": "ENER DRINK EVOLUTION ORIGINAL",
         "price": 15,
         "available": true
       },
       {
         "id": "boutique-fontaneda-pims-naranja-150g",
+        "image": "images/boutique/boutique-fontaneda-pims-naranja-150g.jpg",
         "name": "FONTANEDA PIM'S NARANJA 150G",
         "price": 30,
         "available": true
       },
       {
         "id": "boutique-go-on-energy-peanut-caramel-and-milk-chocolate-45g",
+        "image": "images/boutique/boutique-go-on-energy-peanut-caramel-and-milk-chocolate-45g.jpg",
         "name": "GO ON ENERGY PEANUT CARAMEL & MILK CHOCOLATE 45G",
         "price": 15,
         "available": true
       },
       {
         "id": "boutique-go-on-protein-cranberry-coji-and-chocolate-50g",
+        "image": "images/boutique/boutique-go-on-protein-cranberry-coji-and-chocolate-50g.jpg",
         "name": "GO ON PROTEIN CRANBERRY COJI & CHOCOLATE 50G",
         "available": true
       },
@@ -244,23 +262,27 @@ window.CATALOG = {
       },
       {
         "id": "boutique-gullon-wafer-mix-nata-y-chocolate-60g",
+        "image": "images/boutique/boutique-gullon-wafer-mix-nata-y-chocolate-60g.jpg",
         "name": "GULLON WAFER MIX NATA Y CHOCOLATE 60G",
         "price": 6,
         "available": true
       },
       {
         "id": "boutique-gullon-zero-anadidos-280g",
+        "image": "images/boutique/boutique-gullon-zero-anadidos-280g.jpg",
         "name": "GULLON ZERO ANADIDOS 280G",
         "available": true
       },
       {
         "id": "boutique-gullon-zero-sandwich-250g",
+        "image": "images/boutique/boutique-gullon-zero-sandwich-250g.png",
         "name": "GULLON ZERO SANDWICH 250G",
         "price": 20,
         "available": true
       },
       {
         "id": "boutique-halls-cherry-flavour-32gg",
+        "image": "images/boutique/boutique-halls-cherry-flavour-32gg.jpg",
         "name": "HALLS CHERRY FLAVOUR 32GG",
         "price": 10,
         "available": true
@@ -272,6 +294,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-halls-honey-and-limon-33-5g",
+        "image": "images/boutique/boutique-halls-honey-and-limon-33-5g.jpg",
         "name": "HALLS HONEY & LIMON 33,5G",
         "price": 10,
         "available": true
@@ -284,41 +307,47 @@ window.CATALOG = {
       },
       {
         "id": "boutique-haribo-berries-80g",
+        "image": "images/boutique/boutique-haribo-berries-80g.jpg",
         "name": "HARIBO BERRIES 80G",
         "price": 12,
         "available": true
       },
       {
         "id": "boutique-haribo-starmix-65g",
+        "image": "images/boutique/boutique-haribo-starmix-65g.jpg",
         "name": "HARIBO STARMIX 65G",
         "price": 12,
         "available": true
       },
       {
         "id": "boutique-haribo-worms-65g",
+        "image": "images/boutique/boutique-haribo-worms-65g.jpg",
         "name": "HARIBO WORMS 65G",
         "price": 12,
         "available": true
       },
       {
         "id": "boutique-hawai-ananas-45cl",
+        "image": "images/boutique/boutique-hawai-ananas-45cl.png",
         "name": "HAWAI ANANAS 45CL",
         "available": true
       },
       {
         "id": "boutique-hawai-tropical-45cl",
-        "image": "images/boutique/boutique-hawai-tropical-45cl.jpg",
+        "image": "images/boutique/boutique-hawai-tropical-45cl.png",
         "name": "HAWAI TROPICAL 45CL",
         "available": true
       },
       {
         "id": "boutique-j5-min-marin-50u",
+        "image": "images/boutique/boutique-j5-min-marin-50u.jpg",
         "name": "J5 MIN MARIN 50U",
         "price": 5,
         "available": true
       },
       {
         "id": "boutique-juver-disfruta-10-frutas-10-vitaminas-300ml",
+        "image": "images/boutique/boutique-juver-disfruta-10-frutas-10-vitaminas-300ml.jpg",
         "name": "JUVER DISFRUTA 10 FRUTAS +10 VITAMINAS 300ML",
         "price": 8,
         "available": true
@@ -337,66 +366,77 @@ window.CATALOG = {
       },
       {
         "id": "boutique-kinder-bueno-white-39g",
+        "image": "images/boutique/boutique-kinder-bueno-white-39g.jpg",
         "name": "KINDER BUENO WHITE 39G",
         "price": 11,
         "available": true
       },
       {
         "id": "boutique-kitkat-chunky-funky-40g",
+        "image": "images/boutique/boutique-kitkat-chunky-funky-40g.jpg",
         "name": "KITKAT CHUNKY FUNKY 40G",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-kitkat-nestle-dark-41-5g",
+        "image": "images/boutique/boutique-kitkat-nestle-dark-41-5g.jpg",
         "name": "KITKAT NESTLE DARK 41,5G",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-kitkat-white-41-5g",
+        "image": "images/boutique/boutique-kitkat-white-41-5g.jpg",
         "name": "KITKAT WHITE 41.5G",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-knoppers-black-and-white-25g",
+        "image": "images/boutique/boutique-knoppers-black-and-white-25g.png",
         "name": "KNOPPERS BLACK & WHITE 25G",
         "price": 6,
         "available": true
       },
       {
         "id": "boutique-lago-poker-vinigilia-45g",
+        "image": "images/boutique/boutique-lago-poker-vinigilia-45g.jpg",
         "name": "LAGO POKER VINIGILIA 45G",
         "price": 6,
         "available": true
       },
       {
         "id": "boutique-lipton-mango-ice-tea-330ml",
+        "image": "images/boutique/boutique-lipton-mango-ice-tea-330ml.png",
         "name": "LIPTON MANGO ICE TEA 330ML",
         "price": 13,
         "available": true
       },
       {
         "id": "boutique-lipton-naranja-mango-330ml",
+        "image": "images/boutique/boutique-lipton-naranja-mango-330ml.jpg",
         "name": "LIPTON NARANJA MANGO 330ML",
         "price": 13,
         "available": true
       },
       {
         "id": "boutique-lotus-biscoff-125g",
+        "image": "images/boutique/boutique-lotus-biscoff-125g.jpg",
         "name": "LOTUS BISCOFF 125G",
         "price": 20,
         "available": true
       },
       {
         "id": "boutique-lu-choco-prince-enrobe-choco-lait-28-5g",
+        "image": "images/boutique/boutique-lu-choco-prince-enrobe-choco-lait-28-5g.png",
         "name": "LU CHOCO PRINCE ENROBE CHOCO LAIT 28,5G",
         "price": 5,
         "available": true
       },
       {
         "id": "boutique-maltesers-37g",
+        "image": "images/boutique/boutique-maltesers-37g.webp",
         "name": "MALTESERS 37G",
         "available": true
       },
@@ -414,24 +454,28 @@ window.CATALOG = {
       },
       {
         "id": "boutique-mentos-chicle-sabora-fresa-morango-30g",
+        "image": "images/boutique/boutique-mentos-chicle-sabora-fresa-morango-30g.jpg",
         "name": "MENTOS CHICLE SABORA FRESA MORANGO 30G",
         "price": 18,
         "available": true
       },
       {
         "id": "boutique-mentos-chicle-tutti-frutti-30g",
+        "image": "images/boutique/boutique-mentos-chicle-tutti-frutti-30g.png",
         "name": "MENTOS CHICLE TUTTI FRUTTI 30G",
         "price": 18,
         "available": true
       },
       {
         "id": "boutique-milka-choco-mini-cookies-110g",
+        "image": "images/boutique/boutique-milka-choco-mini-cookies-110g.jpg",
         "name": "MILKA CHOCO MINI COOKIES 110G",
         "price": 28,
         "available": true
       },
       {
         "id": "boutique-milka-choco-pause-260g",
+        "image": "images/boutique/boutique-milka-choco-pause-260g.jpg",
         "name": "MILKA CHOCO PAUSE 260G",
         "available": true
       },
@@ -444,6 +488,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-milka-cookies-oreo-creme-156g",
+        "image": "images/boutique/boutique-milka-cookies-oreo-creme-156g.jpg",
         "name": "MILKA COOKIES OREO CREME 156G",
         "price": 28,
         "available": true
@@ -464,6 +509,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-nestle-kitkat-have-break-36-5g",
+        "image": "images/boutique/boutique-nestle-kitkat-have-break-36-5g.jpg",
         "name": "NESTLE KITKAT HAVE BREAK 36,5G",
         "price": 8,
         "available": true
@@ -476,18 +522,21 @@ window.CATALOG = {
       },
       {
         "id": "boutique-nocilla-mini-pistacho-64g",
+        "image": "images/boutique/boutique-nocilla-mini-pistacho-64g.png",
         "name": "NOCILLA MINI PISTACHO 64G",
         "price": 18,
         "available": true
       },
       {
         "id": "boutique-orangina-50cl",
+        "image": "images/boutique/boutique-orangina-50cl.png",
         "name": "ORANGINA 50CL",
         "price": 10,
         "available": true
       },
       {
         "id": "boutique-oreo-chip-ahoy-mini-160g",
+        "image": "images/boutique/boutique-oreo-chip-ahoy-mini-160g.jpg",
         "name": "OREO CHIP AHOY MINI 160G",
         "price": 25,
         "available": true
@@ -501,6 +550,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-pascual-bi-frutas-tropical-330-ml",
+        "image": "images/boutique/boutique-pascual-bi-frutas-tropical-330-ml.jpg",
         "name": "PASCUAL BI FRUTAS TROPICAL 330 ML",
         "available": true
       },
@@ -513,6 +563,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-pick-up-salted-caramel-28g",
+        "image": "images/boutique/boutique-pick-up-salted-caramel-28g.png",
         "name": "PICK UP SALTED CARAMEL 28G",
         "price": 10,
         "available": true
@@ -525,47 +576,55 @@ window.CATALOG = {
       },
       {
         "id": "boutique-pringles-barbeque-165g",
+        "image": "images/boutique/boutique-pringles-barbeque-165g.jpg",
         "name": "PRINGLES BARBEQUE 165G",
         "price": 25,
         "available": true
       },
       {
         "id": "boutique-pringles-cheesy-cheese-165g",
+        "image": "images/boutique/boutique-pringles-cheesy-cheese-165g.png",
         "name": "PRINGLES CHEESY CHEESE 165G",
         "price": 25,
         "available": true
       },
       {
         "id": "boutique-pringles-hot-and-spicy-40g",
+        "image": "images/boutique/boutique-pringles-hot-and-spicy-40g.jpg",
         "name": "PRINGLES HOT & SPICY 40G",
         "price": 14,
         "available": true
       },
       {
         "id": "boutique-pringles-original-165g",
+        "image": "images/boutique/boutique-pringles-original-165g.jpg",
         "name": "PRINGLES ORIGINAL 165G",
         "available": true
       },
       {
         "id": "boutique-pringles-original-40g",
+        "image": "images/boutique/boutique-pringles-original-40g.jpg",
         "name": "PRINGLES ORIGINAL 40G",
         "price": 14,
         "available": true
       },
       {
         "id": "boutique-pringles-paprika-40g",
+        "image": "images/boutique/boutique-pringles-paprika-40g.jpg",
         "name": "PRINGLES PAPRIKA 40G",
         "price": 14,
         "available": true
       },
       {
         "id": "boutique-pringles-sour-cream-and-onion-40g",
+        "image": "images/boutique/boutique-pringles-sour-cream-and-onion-40g.jpg",
         "name": "PRINGLES SOUR CREAM & ONION 40G",
         "price": 14,
         "available": true
       },
       {
         "id": "boutique-pringles-texas-bbq-sauce-40g",
+        "image": "images/boutique/boutique-pringles-texas-bbq-sauce-40g.jpg",
         "name": "PRINGLES TEXAS BBQ SAUCE 40G",
         "price": 14,
         "available": true
@@ -591,6 +650,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-rostoy-mango-330ml",
+        "image": "images/boutique/boutique-rostoy-mango-330ml.jpg",
         "name": "ROSTOY MANGO 330ML",
         "price": 13,
         "available": true
@@ -604,12 +664,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-rostoy-pina-coco-330ml",
+        "image": "images/boutique/boutique-rostoy-pina-coco-330ml.jpg",
         "name": "ROSTOY PINA-COCO 330ML",
         "price": 13,
         "available": true
       },
       {
         "id": "boutique-sante-crunchy-banana-40g",
+        "image": "images/boutique/boutique-sante-crunchy-banana-40g.png",
         "name": "SANTE CRUNCHY BANANA 40G",
         "price": 8,
         "available": true
@@ -635,6 +697,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-schweppes-mojito-33cl",
+        "image": "images/boutique/boutique-schweppes-mojito-33cl.jpg",
         "name": "SCHWEPPES MOJITO 33CL",
         "price": 13,
         "available": true
@@ -647,7 +710,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-sidi-ali-50-cl",
-        "image": "images/boutique/boutique-sidi-ali-50-cl.jpg",
+        "image": "images/boutique/boutique-sidi-ali-50-cl.png",
         "name": "SIDI ALI 50 CL",
         "price": 5,
         "available": true
@@ -667,6 +730,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-solevita",
+        "image": "images/boutique/boutique-solevita.jpg",
         "name": "SOLEVITA",
         "price": 10,
         "available": true
@@ -679,12 +743,14 @@ window.CATALOG = {
       },
       {
         "id": "boutique-tempo",
+        "image": "images/boutique/boutique-tempo.jpg",
         "name": "TEMPO",
         "price": 3,
         "available": true
       },
       {
         "id": "boutique-trident-strawberry-flavor-13-5-g",
+        "image": "images/boutique/boutique-trident-strawberry-flavor-13-5-g.webp",
         "name": "TRIDENT STRAWBERRY FLAVOR 13,5 G",
         "price": 6,
         "available": true
@@ -705,6 +771,7 @@ window.CATALOG = {
       },
       {
         "id": "boutique-twix-hazelnut-flavour-46g",
+        "image": "images/boutique/boutique-twix-hazelnut-flavour-46g.jpg",
         "name": "TWIX HAZELNUT FLAVOUR 46G",
         "price": 11,
         "available": true
